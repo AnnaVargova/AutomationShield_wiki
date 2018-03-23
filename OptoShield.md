@@ -14,6 +14,8 @@ The OptoShield is an open hardware product, you are free to make your own device
 
 ## Circuit design
 
+[/fig/test.jpg|ALT TEXT]
+
 ## Parts
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
