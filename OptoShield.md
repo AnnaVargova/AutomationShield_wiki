@@ -2,7 +2,7 @@ Lorem ipsum dolor sit amet
 
 # Library functions
 
-Lorem ipsum dolor sit amet
+All functions and examples needed to work with the OptoShield are included in the[AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). 
 
 ## Examples
 
