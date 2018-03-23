@@ -37,7 +37,7 @@ The PCB from the front:
 ..and from the back:
 [[/fig/Opto_PCB_Back.png|OptoShield PCB from the back.]]
 
-#About
+# About
 
 The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
 
