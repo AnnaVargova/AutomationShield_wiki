@@ -14,6 +14,8 @@ The OptoShield is an open hardware product, you are free to make your own device
 
 ## Circuit design
 
+This is the fig
+[[/fig/test.jpg|ALT TEXT]]
 
 ## Parts
 
