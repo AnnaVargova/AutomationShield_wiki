@@ -15,3 +15,4 @@ Lorem ipsum dolor sit amet
 ## Parts
 
 ## PCB
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer. 
