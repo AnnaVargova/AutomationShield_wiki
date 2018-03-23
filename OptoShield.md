@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet
 
 # Examples
 
-Lorem ipsum dolor sit amet
+Lorem ipsum dolor sit ameta
 
 # Detailed Hardware Description
 
