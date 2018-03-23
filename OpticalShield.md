@@ -1,6 +1,6 @@
 Lorem ipsum dolor sit amet
 
-# Software
+# Library functions
 
 Lorem ipsum dolor sit amet
 
