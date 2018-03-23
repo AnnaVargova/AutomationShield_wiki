@@ -32,4 +32,4 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 
 The PCB from the front:
-[[/fig/Opto_PCB_Front|OptoShield PCB from the front.]]
+[[/fig/Opto_PCB_Front.png|OptoShield PCB from the front.]]
