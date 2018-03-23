@@ -33,12 +33,15 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 The PCB from the front:
 [[/fig/Opto_PCB_Front.png|OptoShield PCB from the front.]]
+
 ..and from the back:
 [[/fig/Opto_PCB_Back.png|OptoShield PCB from the back.]]
 
 #About
+
 The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
 
 ## Authors
-Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
-Software design: Tibor Konkoly, Gergely Takács
+
+* Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
+* Software design: Tibor Konkoly, Gergely Takács
