@@ -8,7 +8,9 @@ Lorem ipsum dolor sit amet
 
 Lorem ipsum dolor sit amet
 
-# Hardware description
+# Detailed Hardware Description
+
+The OptoShield is an open hardware product, you are free to make your own. The discussion below should help you to improvise one on a breadboard or even manufacture one by a professional PCB making service. 
 
 ## Circuit design
 
