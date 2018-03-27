@@ -2,7 +2,20 @@ Lorem ipsum dolor sit amet
 
 # Library functions
 
-All functions and examples needed to work with the OptoShield are included in the[AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). 
+All functions and examples needed to work with the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). 
+
+The input to the actuator LED (along with the auxiliary LED) is written by 
+```
+Opto.actuatorWrite(u);
+```
+where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to the LEDs.
+
+The output from the LDR is read by 
+```
+Opto.sensorRead();
+```
+where the function outputs the voltage detected on the sensor circuit that can be used as feedback.
+
 
 ## Examples
 
