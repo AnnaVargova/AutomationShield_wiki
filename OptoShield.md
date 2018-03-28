@@ -20,6 +20,12 @@ Opto.sensorRead();
 ```
 where the function outputs the voltage detected on the sensor circuit that can be used as a feedback signal. The function returns a floating point value. 
 
+The user reference is read from the potentiometer by calling
+```
+Opto.referenceRead();
+```
+and the function returns the desired user reference setpoint in percents in the range of 0-100 \% as a floating point number.
+
 The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments. The auxiliary LDR can be read by calling 
 The output from the LDR is read by 
 ```
