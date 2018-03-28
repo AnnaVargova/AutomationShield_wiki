@@ -52,13 +52,21 @@ The circuit schematics has been designed in  in the Freeware version of the [DIP
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-| Name             | Part | pcs.  | Value | Note |
-|------------------|------|-------|------|------|
-| Bright white LED |      |       |      |      |
-| Potentiometer    |      |1      | 10k  |      |
-| Photoresistor    |      |2      | 10k  |      |
-| Resistor         |      |2      | 10k  |      |
-
+|Part              | Name             | Value | PCS  | Note                       |
+|------------------|------------------|-------|------|----------------------------|
+| LDR1             | Photoresistor    | 10 k  | 1    | 5 mm                       |
+| LDR2             | Photoresistor    | 10 k  | 1    | 5 mm                       |
+| D1               | LED              |       | 1    | 5 mm, bright white         |
+| D2               | LED              |       | 1    | 5 mm, bright white         |
+| POT1             | Potentiometer    | 10 k  | 1    | Pin size 12.5x10, [e.g.] https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf)|
+| R1               | Resistor         | 10 k  | 1    |                            |
+| R2               | Resistor         | 10 k  | 1    |                            |
+| R3               | Resistor         | 220   | 1    |                            |
+| R4               | Resistor         | 220   | 1    |                            |
+|                  | Header           | 10 pin| 1    | long, stackable            |
+|                  | Header           | 8 pin | 2    | long, stackable            |
+|                  | Header           | 6 pin | 1    | long, stackable            |
+|                  | Tube             | 20 mm | 1    | opaque, 5 mm inner dia.    |
 
 ## PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
