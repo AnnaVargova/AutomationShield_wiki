@@ -1,21 +1,37 @@
-Lorem ipsum dolor sit amet
+# Introduction
+
+The OptoShield belongs to the family of control systems engineering education devices for Arduino from the [AutomationShield project](https://www.automationshield.com). This low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
 
 # Library functions
 
-All functions and examples needed to work with the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). 
+All functions and examples belonging to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). 
+
+## Inputs and outputs
 
 The input to the actuator LED (along with the auxiliary LED) is written by 
 ```
 Opto.actuatorWrite(u);
 ```
-where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to the LEDs.
+where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 The output from the LDR is read by 
 ```
 Opto.sensorRead();
 ```
-where the function outputs the voltage detected on the sensor circuit that can be used as feedback.
+where the function outputs the voltage detected on the sensor circuit that can be used as a feedback signal. The function returns a floating point value. 
 
+The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments. The auxiliary LDR can be read by calling 
+The output from the LDR is read by 
+```
+Opto.sensorAuxRead();
+```
+and similarly to `Opto.sensorRead()` the function returns the voltage on the sensor circuit as a floating point parameter.
+
+# System Identification 
+
+```
+Opto.step();
+```
 
 ## Examples
 
