@@ -27,7 +27,7 @@ Opto.sensorAuxRead();
 ```
 and similarly to `Opto.sensorRead()` the function returns the voltage on the sensor circuit as a floating point parameter.
 
-# System Identification 
+## System Identification 
 
 ```
 Opto.step();
