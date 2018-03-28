@@ -43,7 +43,7 @@ The OptoShield is an open hardware product, you are free to make your own device
 
 ## Circuit design
 
-The circuit schematics has been designed in  in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Schematics.zip).
+The circuit schematics has been designed in  in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip).
 
 
 ## Parts
