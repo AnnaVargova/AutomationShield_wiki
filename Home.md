@@ -5,3 +5,5 @@ Currently these shields are available:
 * [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
 * [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a levitating ball feedback experiment
+
+# About the library
