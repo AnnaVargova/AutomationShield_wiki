@@ -46,6 +46,14 @@ Opto.step();
 
 Lorem ipsum dolor sit
 
+# Step Cesponse
+
+Lorem ipsum dolor sit
+
+# PID Control
+
+Lorem ipsum dolor sit
+
 # Detailed Hardware Description
 
 The OptoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB  by a PCB fabrication service.
