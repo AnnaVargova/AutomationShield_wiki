@@ -29,6 +29,8 @@ Opto.referenceRead();
 ```
 and the function returns the desired user reference setpoint in percents in the range of 0-100 \% as a floating point number.
 
+[[/fig/Opto_R.jpg|A photograph of the OptoShield focused on the referencepot.]]
+
 The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments. The auxiliary LDR can be read by calling 
 The output from the LDR is read by 
 ```
