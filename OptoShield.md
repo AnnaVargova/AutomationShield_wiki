@@ -42,15 +42,15 @@ and similarly to `Opto.sensorRead()` the function returns the voltage on the sen
 Opto.step();
 ```
 
-## Examples
+# Examples
 
 Lorem ipsum dolor sit
 
-# Step Cesponse
+## Step Response
 
 Lorem ipsum dolor sit
 
-# PID Control
+## PID Control
 
 Lorem ipsum dolor sit
 
