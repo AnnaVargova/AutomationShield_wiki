@@ -55,8 +55,16 @@ and the function returns the desired user reference setpoint in percents in the 
 
 ## System Identification 
 
+The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
+
+### Step response
 ```
 Opto.step();
+```
+
+### Impulse response
+```
+Opto.impulse();
 ```
 
 # Examples
