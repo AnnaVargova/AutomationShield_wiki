@@ -11,7 +11,7 @@ All functions and examples associated to the OptoShield are included in the [Aut
 
 The summary of functions and the illustration below should get you started quickly:
 * Output (sensor): `Opto.sensorRead();` 
-* Input (actuator): `Opto.actuatorWrite();` 
+* Input [[/math/uk.png|u(k).]] (actuator): `Opto.actuatorWrite();` 
 * Reference (setpoint): `Opto.referenceRead();` 
 
 [[/fig/Opto_Functions.gif|A quick-start guide for the Opto functions.]]
