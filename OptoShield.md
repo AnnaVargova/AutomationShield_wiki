@@ -10,7 +10,7 @@ The OptoShield belongs to the family of control engineering education devices fo
 All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield are included in the `Opto` class of functions. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
 The summary of functions and the illustration below should get you started quickly:
-* Input (sensor): `Opto.sensorRead();` 
+* Input $u$ (sensor): `Opto.sensorRead();` 
 * Output (actuator): `Opto.actuatorWrite();` 
 * Reference (setpoint): `Opto.referenceRead();` 
 
@@ -91,6 +91,7 @@ Lorem ipsum dolor sit
 The OptoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB  by a PCB fabrication service.
 
 For those who wish to use the board without the library, the components are connected to the following pins:
+
 [[/fig/Opto_PIN.gif|OptoShield PIN assignments.]]
 
 
