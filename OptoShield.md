@@ -9,6 +9,12 @@ The OptoShield belongs to the family of control engineering education devices fo
 
 All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield are included in the `Opto` class of functions. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
+The summary of functions and the illustration below should get you started quickly:
+* Input (sensor): `Opto.sensorRead();` 
+* Output (actuator): `Opto.actuatorWrite();` 
+* Reference (setpoint): `Opto.referenceRead();` 
+[[/fig/Opto_Functions.jpg|A quick-start guide for the Opto functions.]]
+
 ## Inputs and outputs
 
 ### Input
