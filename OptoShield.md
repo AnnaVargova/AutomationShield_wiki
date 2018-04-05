@@ -7,7 +7,7 @@ The OptoShield belongs to the family of control engineering education devices fo
 
 # Library functions
 
-All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield are included in the `Opto` class of functions. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
+All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield are included in the `Opto` class of functions, these mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
 The summary of functions and the illustration below should get you started quickly:
 * Output (sensor): `Opto.sensorRead();` 
@@ -17,6 +17,8 @@ The summary of functions and the illustration below should get you started quick
 [[/fig/Opto_Functions.gif|A quick-start guide for the Opto functions.]]
 
 ## Inputs and outputs
+
+The following sections describe the methods used to access the input and output of the OptoShield.
 
 ### Input
 The input to the actuator LED (along with the auxiliary LED) is written by 
@@ -62,7 +64,9 @@ and the function returns the desired user reference setpoint in percents in the 
 
 ## System Identification 
 
-The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
+The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The formatting corresponds to a space-separated table format, where spaces separate columns and the line ending character begins a new line.
+
+The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
 ### Step response
 ```
