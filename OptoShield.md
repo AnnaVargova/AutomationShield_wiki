@@ -124,3 +124,4 @@ The board was developed within the framework of a bachelor's thesis at the Insti
 
 * Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
 * Software design: Tibor Konkoly, Gergely Takács
+* Wiki: Gergely Takács
