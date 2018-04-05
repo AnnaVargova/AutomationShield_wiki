@@ -1,6 +1,6 @@
 ﻿# Introduction
 
-The OptoShield belongs to the family of control engineering education devices for Arduino from the [AutomationShield project](https://www.automationshield.com). This low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
+The OptoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. This particular low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
 
 [[/fig/Opto_Iso.jpg|Isometric photograph of the OptoShield.]]
 [[/fig/Opto_Front.jpg|A photograph of the OptoShield from the front.]]
@@ -31,6 +31,12 @@ Opto.calibrate();
 ```
 in the `setup()` function, after which the `Opto.sensorRead()' will return the output readings in the correct percentual range.
 
+A sensor reading can be requested instead of calibrated percents directly in units of voltage by calling
+```
+Opto.sensorReadVoltage();
+```
+which will return a floating point number. 
+
 The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments. The auxiliary LDR can be read by calling 
 The output from the LDR is read by 
 ```
@@ -59,7 +65,7 @@ Lorem ipsum dolor sit
 
 ## Step Response
 
-Lorem ipsum dolor sit
+Lorem ipsum dolor sit 
 
 ## PID Control
 
@@ -99,11 +105,7 @@ To make an OptoShield either on a PCB or on a breadboard you will need the follo
 ## PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
 
-
-The PCB from the front:
 [[/fig/Opto_PCB_Front.png|OptoShield PCB from the front.]]
-
-..and from the back:
 [[/fig/Opto_PCB_Back.png|OptoShield PCB from the back.]]
 
 # About
