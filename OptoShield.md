@@ -90,6 +90,10 @@ Lorem ipsum dolor sit
 
 The OptoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB  by a PCB fabrication service.
 
+For those who wish to use the board without the library, the components are connected to the following pins:
+[[/fig/Opto_PIN.gif|OptoShield PIN assignments.]]
+
+
 ## Circuit design
 
 The circuit schematics has been designed in  in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip).
