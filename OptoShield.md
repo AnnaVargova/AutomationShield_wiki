@@ -13,7 +13,8 @@ The summary of functions and the illustration below should get you started quick
 * Input (sensor): `Opto.sensorRead();` 
 * Output (actuator): `Opto.actuatorWrite();` 
 * Reference (setpoint): `Opto.referenceRead();` 
-[[/fig/Opto_Functions.jpg|A quick-start guide for the Opto functions.]]
+
+[[/fig/Opto_Functions.gif|A quick-start guide for the Opto functions.]]
 
 ## Inputs and outputs
 
