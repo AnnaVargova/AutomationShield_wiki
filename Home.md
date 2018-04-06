@@ -1,4 +1,5 @@
-[[/fig/header.gif|Isometric photograph of the OptoShield.]]
+[[/fig/header.gif|AutomationShield logo and site header.]]
+
 AutomationShield is an open-source hardware and software project focused on control engineering education.
 
 # Shields
