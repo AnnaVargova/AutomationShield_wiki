@@ -1,4 +1,4 @@
-![AutomationShield logo and header](/fig/header.gif)
+[AutomationShield logo and header](/fig/header.gif)
 
 AutomationShield is an open-source hardware and software project focused on control engineering education.
 
