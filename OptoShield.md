@@ -46,12 +46,11 @@ Opto.sensorReadVoltage();
 ```
 which will return a floating point number. 
 
-The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments. The auxiliary LDR can be read by calling 
-The output from the LDR is read by 
+The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments.  The output from the auxiliary LDR is read by 
 ```
 Opto.sensorAuxRead();
 ```
-and similarly to `Opto.sensorRead()` the function returns the voltage on the sensor circuit as a floating point parameter. Note that this sensor is merely for testing and calibration, like in the case of the main sensor, is not possible.
+and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on the sensor circuit as a floating point parameter. Note that this sensor is merely for testing and calibration, like in the case of the main sensor, is not possible.
 
 ### Reference
 
@@ -101,7 +100,7 @@ For those who wish to use the board without the library, the components are conn
 
 ## Circuit design
 
-The circuit schematics has been designed in  in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip).
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip).
 
 [[/fig/Opto_Circuit.png|OptoShield Circuit Schematics.]]
 
