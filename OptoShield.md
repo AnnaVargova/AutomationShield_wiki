@@ -111,8 +111,8 @@ To make an OptoShield either on a PCB or on a breadboard you will need the follo
 
 |Part              | Name             | Value | PCS  | Note                       |
 |------------------|------------------|-------|------|----------------------------|
-| LDR1             | Photoresistor    | 10 k  | 1    | 5 mm                       |
-| LDR2             | Photoresistor    | 10 k  | 1    | 5 mm                       |
+| LDR1             | Photoresistor    | 10 k  | 1    | 5.5 mm                     |
+| LDR2             | Photoresistor    | 10 k  | 1    | 5.5 mm                     |
 | D1               | LED              |       | 1    | 5 mm, bright white         |
 | D2               | LED              |       | 1    | 5 mm, bright white         |
 | D3               | LED              |       | 1    | 1.8 mm, 2.2-2.5V / 10mA    |
