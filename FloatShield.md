@@ -5,4 +5,9 @@ The basic design of FloatShield consists of a potentiometer, a distance sensor, 
 The function principle is based on controlling the distance of the reference item using the PID feedback controller. Manual control is operated by power regulation of the fan through a potentiometer, which is scaled to a pulse width modulated signal (PWM).
 
 
-### Hardware insight 
+# Hardware insight 
+## Circuit design
+## Components
+## PCB layout
+
+# Library functions
