@@ -10,7 +10,8 @@ The function principle is based on controlling the distance of the reference ite
 The Float Shield is an open-source hardware product, dedicated to be widely spread among a control engineering community. Feel free to use any part of it for your own experiments. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. A documentation posted below might help you while working on improvised experimental prototype on breadboard or perforated board. 
 
 ## Circuit design
-![Scheme](file:///C:/Users/Martin%20Lu%C4%8Dan/Downloads/30714672_10216147450821952_5080504483587293184_n.jpg)
+
+![scheme](AutomationShield/FloatShield_scheme.jpg)
 
 ## Components
 
@@ -42,5 +43,7 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 ````
 
 ## PCB layout
+
+
 
 # Library functions
