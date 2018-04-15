@@ -40,10 +40,8 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 |      | Header                     | 10 pin | 1   | long, stackable            |
 |      | Header                     | 8 pin  | 2   | long, stackable            |
 |      | Header                     | 6 pin  | 1   | long, stackable            |
-````
-
-## PCB layout
 
 
+# PCB layout
 
 # Library functions
