@@ -11,7 +11,7 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 
 ## Circuit design
 
-![scheme](AutomationShield/FloatShield_scheme.jpg)
+![floatshield_scheme](https://user-images.githubusercontent.com/37963774/38776699-6c15ab8a-409b-11e8-91c4-a139d820b9f6.jpg)
 
 ## Components
 
