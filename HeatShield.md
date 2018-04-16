@@ -4,6 +4,7 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 # 3D VISUALIZATION
 3D model was designed in software CATIA V5R20 (student freeware version).
+![3d](https://user-images.githubusercontent.com/38358320/38812667-413d8e94-418d-11e8-9dc3-1854140b5a3a.jpg)
 
 
 # DETAILED HARDWARE DESCRIPTION
