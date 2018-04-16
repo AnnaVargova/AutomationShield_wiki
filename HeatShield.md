@@ -8,10 +8,13 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 
 # DETAILED HARDWARE DESCRIPTION
+
+
+## Circuit schematics
+
 The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed through DIPTrace software (freeware version).
 ![schema](https://user-images.githubusercontent.com/38358320/38783464-a8084960-4102-11e8-892e-114c7f417ea8.jpg)
 
-## Electrical circuit (Measuring temperature circuit part)
 Dependance of the NTC thermistor at the temperature defines Stein-Hart formula.Due to the fact that only the Beta factor is found in the relevant NTC thermistor documentation. In order to use the NTC thermistor as a temperature sensor it was necessary to use a voltage divider.
 
 Since the materials used in 3D printing have a melting temperature of about 240-260°C, the maximum working temperature of the HeatShield has to be reduced.The maximum working temperature of HeatShield was set at 80°C for safety purposes. The lowering of the temperature was regulated by reducing the voltage using the adjustable LM317T stabilizer.
