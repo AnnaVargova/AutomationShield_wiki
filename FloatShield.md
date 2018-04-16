@@ -31,17 +31,24 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 |      | Fan                        |        | 1   | Sunon PMD1204PQB1          |
 |      | Sensor Time of flight      |        | 1   | VL5310X                    |
 |      | Wire                       |        | 1   | 1m, VFL 4x0,14             |
-|      | Transparent pipe           |        | 1   | O35.5mm, 0.4m              |
-|      | Cork ball                  |        | 1   | O30mm                      |
-|      | Cotton ball                |        | 1   | O30mm                      |
-|      | Polystyrene ball           |        | 1   | O30mm                      |
+|      | Transparent pipe           |        | 1   | diam. 35.5mm, 0.4m         |
+|      | Cork ball                  |        | 1   | diam. 30mm                 |
+|      | Cotton ball                |        | 1   | diam. 30mm                 |
+|      | Polystyrene ball           |        | 1   | diam. 30mm                 |
 |      | Plastic profile type U     |        | 1   | 8,0mm x 330mm, hide cable  |
-|      | Set shaft on potentiometer |        | 1   | O5mm x 18.7mm, 14187-NE    |
+|      | Set shaft on potentiometer |        | 1   | diam. 5mm x 18.7mm, 14187-NE |
 |      | Header                     | 10 pin | 1   | long, stackable            |
 |      | Header                     | 8 pin  | 2   | long, stackable            |
 |      | Header                     | 6 pin  | 1   | long, stackable            |
 
 
 # PCB layout
+
+
+[[ https://user-images.githubusercontent.com/37963774/38803059-54d4a448-416e-11e8-8299-c3bb86522d75.jpg | height = 300px ]]
+
+[[ https://user-images.githubusercontent.com/37963774/38803083-69ab7464-416e-11e8-875d-9e2fdc4ee684.jpg | height = 300px ]]
+
+
 
 # Library functions
