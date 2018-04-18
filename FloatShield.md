@@ -17,11 +17,13 @@ fotka shield
 
 The Float Shield is an open-source hardware product, dedicated to be widely spread among a control engineering community. Feel free to use any part of it for your own experiments. If you come up with improvements, please let us know so we can improve our design as well. A documentation posted below might help you while working on improvised experimental prototype on breadboard or perforated board. 
 
+[FloatShield.zip](https://github.com/gergelytakacs/AutomationShield/files/1925550/FloatShield.zip)
+
 ## Circuit design
 
 The circuit schematics has been designed in the Freeware version of the DIPTrace CAD software. You may download the circuit schematics for the OptoShield from here.
 
-![floatshield_scheme](https://user-images.githubusercontent.com/37963774/38776699-6c15ab8a-409b-11e8-91c4-a139d820b9f6.jpg)
+<img width="1450" alt="floatshield_schemepng" src="https://user-images.githubusercontent.com/37963774/38952961-91a10444-434d-11e8-9ab2-7707e9070782.png">
 
 ## Components
 
@@ -56,9 +58,11 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
 
-[[ https://user-images.githubusercontent.com/37963774/38803059-54d4a448-416e-11e8-8299-c3bb86522d75.jpg | height = 300px ]]
+<img width="400" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/38953392-e529b61e-434e-11e8-946b-e3f4d14f5c98.png">
 
-[[ https://user-images.githubusercontent.com/37963774/38803083-69ab7464-416e-11e8-875d-9e2fdc4ee684.jpg | height = 300px ]]
+
+<img width="400" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/38953332-b74ee67e-434e-11e8-8e5b-12c815c9a0a9.png">
+
 
 # About
 
