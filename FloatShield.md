@@ -56,7 +56,7 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 |      | Header                     | 6 pin  | 1   | long, stackable            |
 
 
-# PCB layout
+## PCB layout
 
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
 
