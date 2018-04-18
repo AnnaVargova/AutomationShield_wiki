@@ -1,15 +1,25 @@
 # Introduction
 
-FloatShield is a didactic tool based on Arduino platform. This project has been created by  students of control engineering as a part of AutomationShield projects and is aimed at students of control engineering.
+FloatShield is a didactic tool based on Arduino platform. This project has been created by students of control engineering as a part of [AutomationShield](https://www.automationshield.com) projects and is aimed at students of control engineering.
+
 The basic design of FloatShield consists of a potentiometer, a distance sensor, a reference item and a computer fan attached to our own-design PCB. A transparent tube and a distance sensor is mounted by 3D printed parts.
 The function principle is based on controlling the distance of the reference item using the PID feedback controller. Manual control is operated by power regulation of the fan through a potentiometer, which is scaled to a pulse width modulated signal (PWM).
 
+fotka shield
+
+fotka shield
+
+
+
+# Library functions
 
 # Hardware insight 
 
 The Float Shield is an open-source hardware product, dedicated to be widely spread among a control engineering community. Feel free to use any part of it for your own experiments. If you come up with improvements, please let us know so we can improve our design as well. A documentation posted below might help you while working on improvised experimental prototype on breadboard or perforated board. 
 
 ## Circuit design
+
+The circuit schematics has been designed in the Freeware version of the DIPTrace CAD software. You may download the circuit schematics for the OptoShield from here.
 
 ![floatshield_scheme](https://user-images.githubusercontent.com/37963774/38776699-6c15ab8a-409b-11e8-91c4-a139d820b9f6.jpg)
 
@@ -44,11 +54,18 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 
 # PCB layout
 
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
 
 [[ https://user-images.githubusercontent.com/37963774/38803059-54d4a448-416e-11e8-8299-c3bb86522d75.jpg | height = 300px ]]
 
 [[ https://user-images.githubusercontent.com/37963774/38803083-69ab7464-416e-11e8-875d-9e2fdc4ee684.jpg | height = 300px ]]
 
+# About
 
+The board was developed within the framework of semester project at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. 
 
-# Library functions
+## Authors
+
+* Hardware design: Marcel Vdoleček,...
+* Software design: Gábor Penzinger,...
+* Wiki: Martin Lučan, Dávid Šroba, Miloš Podbielančík
