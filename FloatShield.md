@@ -60,13 +60,12 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 
 ## PCB layout
 
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/files/1934485/FloatShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/files/1934489/FloatShield_Gerber.zip).
 
 <img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/38953392-e529b61e-434e-11e8-946b-e3f4d14f5c98.png">
 <img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/38953332-b74ee67e-434e-11e8-8e5b-12c815c9a0a9.png">
 
 
-Feel free to download DipTrace file by clicking [here](https://github.com/gergelytakacs/AutomationShield/files/1934485/FloatShield_PCB.zip)
 
 # About
 
