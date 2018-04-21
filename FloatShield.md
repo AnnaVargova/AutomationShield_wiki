@@ -66,6 +66,8 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 <img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/38953332-b74ee67e-434e-11e8-8e5b-12c815c9a0a9.png">
 
 
+Feel free to download DipTrace file by clicking [here](https://github.com/gergelytakacs/AutomationShield/files/1934485/FloatShield_PCB.zip)
+
 # About
 
 The board was developed within the framework of semester project at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. 
