@@ -20,7 +20,7 @@ The following figure shows the HeatShield electrical circuit diagram. It is a si
 
 Dependance of the NTC thermistor at the temperature defines Stein-Hart formula.Due to the fact that only the Beta factor is found in the relevant NTC thermistor documentation. In order to use the NTC thermistor as a temperature sensor it was necessary to use a voltage divider.
 
-Since the materials used in 3D printing have a melting temperature of about 240-260°C, the maximum working temperature of the HeatShield has to be reduced.The maximum working temperature of HeatShield was set at 80°C for safety purposes. The lowering of the temperature was regulated by reducing the voltage using the adjustable LM317T stabilizer.
+Since the materials used in 3D printing have a melting temperature of about 240-260°C, the maximum working temperature of the HeatShield has to be reduced.The maximum working temperature of HeatShield was set at 80°C for safety purposes. The lowering of the temperature was regulated by reducing the voltage using the adjustable LM317T voltage regulator.
 
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
@@ -33,7 +33,24 @@ A PCB (printed circuit design) was designed and created in [DIPTrace](https://di
 # COMPONENTS
 Here is a list of components used in the project.
 
-![components](https://user-images.githubusercontent.com/38358320/38783763-18e9a792-4107-11e8-8b77-0259dcd5be54.png)
+| Name              | Type/Value   | Number of pieces |
+|-------------------|--------------|------------------|
+| Transistor        | MOSFET-BUZ11 | 1                |
+| Voltage regulator | LM317T       | 1                |
+| Resistor          | 240Ω         | 1                |
+| Resistor          | 1kΩ          | 2                |
+| Resistor          | 10kΩ         | 1                |
+| Resistor          | 100kΩ        | 1                |
+| Aluminum cube     | 3D print     | 1                |
+| Heating patron    |              | 1                |
+| Thermistor NTC    |              | 1                |
+| Temperature isolator |           | 1                |
+| Bolt              | M6x10        | 3                |
+| Bolt              | M6x20        | 3                |
+| Bolt              | M3x8         | 3                |
+| Nut               | M3           | 3                |
 
 # ABOUT
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
+
+## Authors
