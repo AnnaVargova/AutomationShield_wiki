@@ -54,3 +54,7 @@ Here is a list of components used in the project.
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
 ## Authors
+* 3D Model:
+* Hardware design:
+* Software design:
+* Wiki:
