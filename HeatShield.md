@@ -43,7 +43,7 @@ Here is a list of components used in the project.
 | Resistor          | 100kΩ        | 1                |
 | Aluminum cube     | 3D print     | 1                |
 | Heating patron    |              | 1                |
-| Thermistor NTC    |              | 1                |
+| Thermistor NTC    | NTC3950      | 1                |
 | Temperature isolator |           | 1                |
 | Bolt              | M6x10        | 3                |
 | Bolt              | M6x20        | 3                |
