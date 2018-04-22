@@ -67,7 +67,9 @@ void stepTimer(){
 ```
 
 # PCB
-A PCB (printed circuit design) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1935396/HeatShield_PCB.zip).
+A PCB (printed circuit board) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1935396/HeatShield_PCB.zip).
+Gerber files are available to download [here](https://github.com/richardsalini/HeatShield/files/1935740/HeatShield_Gerber.zip).
+
 
 ![pcb1](https://user-images.githubusercontent.com/38358320/39092967-e3861f84-4617-11e8-9536-c7d2b333961c.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39092994-4b031b6c-4618-11e8-90be-81771ea70638.png)
