@@ -13,7 +13,7 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 ## Circuit schematics
 
 The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed through DIPTrace software (freeware version).
-![schema](https://user-images.githubusercontent.com/38358320/38783464-a8084960-4102-11e8-892e-114c7f417ea8.jpg)
+![scheme](https://user-images.githubusercontent.com/38358320/39093157-25df132e-461b-11e8-9a21-0880fe9cd45f.png)
 
 Dependance of the NTC thermistor at the temperature defines Stein-Hart formula.Due to the fact that only the Beta factor is found in the relevant NTC thermistor documentation. In order to use the NTC thermistor as a temperature sensor it was necessary to use a voltage divider.
 
@@ -29,6 +29,7 @@ A PCB (printed circuit design) was designed and created through DIPTrace softwar
 
 # COMPONENTS
 Here is a list of components used in the project.
+
 ![components](https://user-images.githubusercontent.com/38358320/38783763-18e9a792-4107-11e8-8b77-0259dcd5be54.png)
 
 # ABOUT
