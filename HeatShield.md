@@ -56,5 +56,5 @@ This shield was designed and created for the subject of Microcomputers and Micro
 ## Authors
 * 3D Model:
 * Hardware design:
-* Software design:
-* Wiki:
+* Software design: 
+* Wiki: 
