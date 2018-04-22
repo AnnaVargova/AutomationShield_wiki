@@ -23,8 +23,9 @@ Output voltage setting is secured by two resistors. The first resistor having a 
 
 # PCB
 A PCB (printed circuit design) was designed and created through DIPTrace software (freeware version). The folowing diagram shows both sides of the PCB.
-![pcb1](https://user-images.githubusercontent.com/38358320/38783725-5b73f08c-4106-11e8-8614-4f86847e732a.png)
-![pcb2](https://user-images.githubusercontent.com/38358320/38783727-5f893fe2-4106-11e8-8fd7-8cb86c64c6af.png)
+
+![pcb1](https://user-images.githubusercontent.com/38358320/39092967-e3861f84-4617-11e8-9536-c7d2b333961c.png)
+![pcb2](https://user-images.githubusercontent.com/38358320/39092994-4b031b6c-4618-11e8-90be-81771ea70638.png)
 
 # COMPONENTS
 Here is a list of components used in the project.
