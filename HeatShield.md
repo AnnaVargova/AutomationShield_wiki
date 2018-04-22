@@ -7,6 +7,48 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 ![3d](https://user-images.githubusercontent.com/38358320/38812667-413d8e94-418d-11e8-9dc3-1854140b5a3a.jpg)
 
+# LIBRARY FUNCTIONS
+## Timer
+Library Timer.h is a part of the AutomationShield.h library.
+### Simplified descriptions of what Timer public method do
+At first you must call this method to specify the sampling period in microseconds.
+
+`void interruptInitialize(unsigned long microseconds)`
+
+Next you must call this method to specify the function which will be executed when ISR occur.
+
+`void setInterruptCallback(void (*isr)())`
+
+This method return sampling period in seconds (sampling period is set by calling `interruptInitialize()).`
+
+`float getSamplingPeriod()`
+
+### Example
+
+```
+#include "AutomationShield.h"
+
+bool stepEnable=false;
+
+void setup() {
+  
+  Serial.begin(9600);
+  Timer.interruptInitialize(1000000);
+  Timer.setInterruptCallback(stepTimer);
+}
+
+void loop() {
+
+    if (stepEnable) {
+    Serial.println(“Hello world“);
+    stepEnable=false;
+    }  
+}
+
+void stepTimer(){
+  stepEnable=true;
+}
+```
 
 # DETAILED HARDWARE DESCRIPTION
 
