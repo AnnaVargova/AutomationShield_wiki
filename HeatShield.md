@@ -3,7 +3,7 @@ The aim of this project was to create an instructive device called a HeatShield.
 The project was inspired by 3D printing, from which an aluminum block (thermal block) was used and allowed for the simple installation of a temperature sensor (NTC thermistor) and a heating patron. The maximum working temperature of the Heatshield was set at 80°C. Due to safety features, a specific safety box had to be designed to eliminate the risk of injury. HeatShield is part of an [AutomationShield](https://www.automationshield.com) project group for Arduino.
 
 # 3D VISUALIZATION
-3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
+3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1). The entire assembly of the HeatShield 3D model is available [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip).
 
 ![3d](https://user-images.githubusercontent.com/38358320/38812667-413d8e94-418d-11e8-9dc3-1854140b5a3a.jpg)
 
@@ -42,10 +42,10 @@ Here is a list of components used in the project.
 | Resistor          | 1kΩ          | 2                |
 | Resistor          | 10kΩ         | 1                |
 | Resistor          | 100kΩ        | 1                |
-| Aluminum cube     |              | 1                |
-| Heating patron    |              | 1                |
-| Thermistor NTC    | NTC3950      | 1                |
-| Temperature isolator |           | 1                |
+| Aluminum cube     | [Link](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)             | 1                |
+| Heating patron    | [Link](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w)             | 1                |
+| Thermistor NTC    | NTC3950, [Link](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel)      | 1                |
+| Temperature isolator |[Link](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493) |       1                
 | Bolt              | M6x10        | 3                |
 | Bolt              | M6x20        | 3                |
 | Bolt              | M3x8         | 3                |
