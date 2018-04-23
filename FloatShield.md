@@ -21,7 +21,7 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 
 ## 3D assembly
 
-Firsty, the whole assembly was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1925550/FloatShield.zip).
+Firsty, the whole assembly was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1925550/FloatShield.zip). Other assembly parts, a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) are downloadable from GrabCAD database.
 
 <img width="800" alt="FloatShield_parts" src="https://user-images.githubusercontent.com/37963774/39097690-fb94c628-465f-11e8-8892-587151f1e415.png">
 
