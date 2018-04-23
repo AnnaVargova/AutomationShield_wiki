@@ -23,49 +23,6 @@ Since the materials used in 3D printing have a melting temperature of about 240-
 
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
-# LIBRARY FUNCTIONS
-## Timer
-Library Timer.h is a part of the AutomationShield.h library.
-### Simplified descriptions of what Timer public method do
-At first you must call this method to specify the sampling period in microseconds.
-
-`void interruptInitialize(unsigned long microseconds)`
-
-Next you must call this method to specify the function which will be executed when ISR occur.
-
-`void setInterruptCallback(void (*isr)())`
-
-This method return sampling period in seconds (sampling period is set by calling `interruptInitialize()).`
-
-`float getSamplingPeriod()`
-
-### Example
-
-```
-#include "AutomationShield.h"
-
-bool stepEnable=false;
-
-void setup() {
-  
-  Serial.begin(9600);
-  Timer.interruptInitialize(1000000);
-  Timer.setInterruptCallback(stepTimer);
-}
-
-void loop() {
-
-    if (stepEnable) {
-    Serial.println(“Hello world“);
-    stepEnable=false;
-    }  
-}
-
-void stepTimer(){
-  stepEnable=true;
-}
-```
-
 # PCB
 A PCB (printed circuit board) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1935396/HeatShield_PCB.zip).
 Gerber files are available to download [here](https://github.com/richardsalini/HeatShield/files/1935740/HeatShield_Gerber.zip).
