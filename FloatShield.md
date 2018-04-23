@@ -55,6 +55,9 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 |      | Polystyrene ball           |        | 1   | diam. 30mm                 |
 |      | Plastic profile type U     |        | 1   | 8,0mm x 330mm, hide cable  |
 |      | Set shaft on potentiometer |        | 1   | diam. 5mm x 18.7mm, 14187-NE |
+|      | Tube clamp                 |        | 1   | 3D printed                 |
+|      | Tube lid                   |        | 1   | 3D printed                 |
+|      | Sensor holder              |        | 1   | 3D printed                 |
 |      | Header                     | 10 pin | 1   | long, stackable            |
 |      | Header                     | 8 pin  | 2   | long, stackable            |
 |      | Header                     | 6 pin  | 1   | long, stackable            |
