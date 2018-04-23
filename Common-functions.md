@@ -2,6 +2,47 @@
 
 ## Sampling
 
+Library Timer.h is a part of the AutomationShield.h library.
+### Simplified descriptions of what Timer public method do
+`void interruptInitialize(unsigned long microseconds)`
+
+At first you must call this method to specify the sampling period in microseconds.
+
+`void setInterruptCallback(void (*isr)())`
+
+Next you must call this method to specify the function which will be executed when ISR occur.
+
+`float getSamplingPeriod()`
+
+This method return sampling period in seconds (sampling period is set by calling `interruptInitialize()).`
+
+### Example
+
+```
+#include "AutomationShield.h"
+
+bool stepEnable=false;
+
+void setup() {
+  
+  Serial.begin(9600);
+  Timer.interruptInitialize(1000000);
+  Timer.setInterruptCallback(stepTimer);
+}
+
+void loop() {
+
+    if (stepEnable) {
+    Serial.println(“Hello world“);
+    stepEnable=false;
+    }  
+}
+
+void stepTimer(){
+  stepEnable=true;
+}
+```
+
 ## PID
 
 
