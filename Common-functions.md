@@ -3,7 +3,7 @@
 ## Sampling
 
 Library Timer.h is a part of the AutomationShield.h library.
-### Simplified descriptions of what Timer public method do
+### Simplified descriptions of what public Timer method does
 `void interruptInitialize(unsigned long microseconds)`
 
 At first you must call this method to specify the sampling period in microseconds.
