@@ -14,7 +14,7 @@ Next you must call this method to specify the function which will be executed wh
 
 `float getSamplingPeriod()`
 
-This method return sampling period in seconds (sampling period is set by calling `interruptInitialize()).`
+This method return sampling period in seconds sampling period will be set by calling: `interruptInitialize()`
 
 ### Example
 
