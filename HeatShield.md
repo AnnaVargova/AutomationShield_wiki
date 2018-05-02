@@ -28,9 +28,8 @@ Output voltage setting is secured by two resistors. The first resistor having a 
 A PCB (printed circuit board) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1935396/HeatShield_PCB.zip).
 Gerber files are available to download [here](https://github.com/richardsalini/HeatShield/files/1935740/HeatShield_Gerber.zip).
 
-
-![pcb1](https://user-images.githubusercontent.com/38358320/39537926-5b1423ae-4e3b-11e8-8f5f-ae5ff077d3ec.png)
-![pcb2](https://user-images.githubusercontent.com/38358320/39092994-4b031b6c-4618-11e8-90be-81771ea70638.png)
+![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
+![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
 
 # COMPONENTS
 Here is a list of components used in the project.
