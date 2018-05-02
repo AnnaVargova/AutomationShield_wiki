@@ -25,8 +25,8 @@ Since the materials used in 3D printing have a melting temperature of about 240-
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
 # PCB
-A PCB (printed circuit board) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1935396/HeatShield_PCB.zip).
-Gerber files are available to download [here](https://github.com/richardsalini/HeatShield/files/1935740/HeatShield_Gerber.zip).
+A PCB (printed circuit board) was designed and created in [DIPTrace](https://diptrace.com/) software (freeware version). The folowing diagram shows both sides of the PCB. The PCB layout may be downloaded [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip).
+Gerber files are available to download [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
 
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
