@@ -13,7 +13,7 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 ## Circuit schematics
 
-The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed in [DIPTrace](https://diptrace.com/) software (freeware version). You can download circuit schematics layout [here](https://github.com/richardsalini/HeatShield/files/1935400/HeatShield_Circuit.zip).
+The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed in [DIPTrace](https://diptrace.com/) software (freeware version). You can download circuit schematics layout [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
 
 
 ![schema](https://user-images.githubusercontent.com/38358320/39537574-534a42c6-4e3a-11e8-8927-0fbf338a4aca.png)
