@@ -13,6 +13,10 @@ photo shield
 
 # Library functions
 
+# Example
+
+lorem ipsum
+ 
 # Hardware insight 
 
 The Float Shield is an open-source hardware product, dedicated to be widely spread among a control engineering community. Feel free to use any part of it for your own experiments. If you come up with improvements, please let us know so we can improve our design as well. A documentation posted below might help you while working on improvised experimental prototype on breadboard or perforated board. 
