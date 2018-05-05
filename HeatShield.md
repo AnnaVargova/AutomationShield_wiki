@@ -2,7 +2,9 @@
 The aim of this project was to create an instructive device called a HeatShield. This is a simple and affordable project in which emphasis are placed on timing and feedback control.
 The project was inspired by 3D printing, from which an aluminum block (thermal block) was used and allowed for the simple installation of a temperature sensor (NTC thermistor) and a heating patron. The maximum working temperature of the Heatshield was set at 80°C. Due to safety features, a specific safety box had to be designed to eliminate the risk of injury. HeatShield is part of an [AutomationShield](https://www.automationshield.com) project group for Arduino.
 
-Photo
+![heatshield1](https://user-images.githubusercontent.com/38358320/39665030-5ee65566-508d-11e8-967d-cb33fd17e5c7.png)
+![heatshield21](https://user-images.githubusercontent.com/38358320/39665042-950aabce-508d-11e8-9686-4ca6596240d4.png)
+
 
 # 3D VISUALIZATION
 3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1). The entire assembly of the HeatShield 3D model is available [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip).
