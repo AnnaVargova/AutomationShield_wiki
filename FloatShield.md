@@ -7,7 +7,7 @@ The function principle is based on controlling the distance of the reference ite
 
 <img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39666628-d2997bb4-50a6-11e8-922f-b6e33f5e90ac.jpg">
 <img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39666630-d528035a-50a6-11e8-9020-083c3e945547.jpg">
-
+<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39666845-8a7002f0-50aa-11e8-9aba-8688659f45b2.JPG">
 
 
 # Library functions
@@ -22,7 +22,7 @@ The Float Shield is an open-source hardware product, dedicated to be widely spre
 
 ## 3D assembly
 
-Firstly, the whole [assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1939331/FloatShield.zip). Other assembly parts, a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) are downloadable from GrabCAD database.
+Firstly, the whole [assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). Other assembly parts, a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) are downloadable from GrabCAD database.
 
 <img width="600" alt="FloatShield_parts" src="https://user-images.githubusercontent.com/37963774/39174444-154dc80a-47a8-11e8-9d1e-c78b2c2862db.jpg">
 
