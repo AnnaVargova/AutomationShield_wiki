@@ -6,11 +6,11 @@ Library Sampling.h is a part of the AutomationShield.h library.
 ### Simplified description of Sampling method
 `void interruptInitialize(unsigned long microseconds)`
 
-At first you must call this method to specify the sampling period in microseconds.
+You must call this method to specify the sampling period in microseconds.
 
 `void setInterruptCallback(void (*interruptCallback)())`
 
-Next you must call this method to specify the function, which will be executed when interrupt occur.
+You must call this method to specify the function, which will be executed when interrupt occur.
 
 `float getSamplingPeriod()`
 
