@@ -10,7 +10,7 @@ At first you must call this method to specify the sampling period in microsecond
 
 `void setInterruptCallback(void (*interruptCallback)())`
 
-Next you must call this method to specify the function, which will be executed when ISR occur.
+Next you must call this method to specify the function, which will be executed when interrupt occur.
 
 `float getSamplingPeriod()`
 
