@@ -2,19 +2,19 @@
 
 ## Sampling
 
-Library Timer.h is a part of the AutomationShield.h library.
-### Simplified descriptions of what public Timer method does
+Library Sampling.h is a part of the AutomationShield.h library.
+### Simplified description of Sampling method
 `void interruptInitialize(unsigned long microseconds)`
 
 At first you must call this method to specify the sampling period in microseconds.
 
-`void setInterruptCallback(void (*isr)())`
+`void setInterruptCallback(void (*interruptCallback)())`
 
 Next you must call this method to specify the function, which will be executed when ISR occur.
 
 `float getSamplingPeriod()`
 
-This method return sampling period in seconds, sampling period will be set by calling: `interruptInitialize()`
+This method return sampling period in seconds.
 
 ### Example
 
