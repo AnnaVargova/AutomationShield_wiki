@@ -17,30 +17,7 @@ You must call this method to specify the function, which will be executed when i
 This method return sampling period in seconds.
 
 ### Example
-
-```
-#include "AutomationShield.h"
-
-bool stepEnable=false;
-
-void setup() {
-  
-  Serial.begin(9600);
-  Timer.interruptInitialize(1000000);
-  Timer.setInterruptCallback(stepTimer);
-}
-
-void loop() {
-
-    if (stepEnable) {
-    Serial.println(“Hello world“);
-    stepEnable=false;
-    }  
-}
-
-void stepTimer(){
-  stepEnable=true;
-}
+Here is the [Link](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/Sampling/Sampling.ino).
 ```
 
 ## PID
