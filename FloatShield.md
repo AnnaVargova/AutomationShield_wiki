@@ -12,6 +12,60 @@ The function principle is based on controlling the distance of the reference ite
 
 # Library functions
 
+```
+float compute (float err)
+```
+
+
+```
+float compute (float err, float saturationMin, float saturationMax)
+```
+
+```
+float compute (float err, float saturationMin, float saturationMax, float antiWindupMin, float antiWindupMax)
+```
+
+```
+void setKp(float Kp)
+```
+
+```
+void setKi(float Ki)
+```
+
+```
+  void setKd(float Kd)
+```
+
+```
+ void setTi(float Ti)
+```
+
+```
+ 
+ void setTd(float Td)
+
+```
+
+```
+  float getKp()
+```
+
+```
+  float getKi()
+```
+
+```
+  float getKd()
+```
+
+```
+ float getTi()
+```
+
+```
+ float getTd()
+```
 # Example
 
 lorem ipsum
