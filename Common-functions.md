@@ -18,7 +18,6 @@ This method return sampling period in seconds.
 
 ### Example
 Here is the [Link](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/Sampling/Sampling.ino).
-```
 
 ## PID
 
