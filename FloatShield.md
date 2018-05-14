@@ -14,7 +14,21 @@ The function principle is based on controlling the distance of the reference ite
 
 # Library functions
 
+` void initialize(); `
 
+` void debug(); `
+
+` int referencePercent(); ` 
+           
+` int positionPercent();  ` 
+           
+` void ventInPercent(int value); ` 
+    
+` float manualControl(); `  
+            
+` int  positionMillimeter(); ` 
+        
+` void calibrate();`
 
 
 # Example
