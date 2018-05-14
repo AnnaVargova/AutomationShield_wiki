@@ -19,7 +19,7 @@ The function principle is based on controlling the distance of the reference ite
 
 # Example
 
-lorem ipsum
+*[Open-loop control](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield_open_loop/FloatShield_open_loop.ino)
  
 # Hardware insight 
 
