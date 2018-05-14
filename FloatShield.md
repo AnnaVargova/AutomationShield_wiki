@@ -19,7 +19,7 @@ The function principle is based on controlling the distance of the reference ite
 
 # Example
 
-##Open-loop control
+## Open-loop control
 ```
 
 #include <AutomationShield.h>
@@ -42,7 +42,7 @@ void loop() {
   Serial.println(dist);
 }
 ```
-##PID control
+## PID control
 ```
 #include <AutomationShield.h>
 #include <FloatShield.h>
