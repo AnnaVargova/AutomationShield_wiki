@@ -21,6 +21,62 @@ Here is the [Link](https://github.com/gergelytakacs/AutomationShield/blob/master
 
 ## PID
 
+Automationshield.h contains two PID versions. If we want to calculate an action by using an incremental form of equation,  we call the `PIDInc` object that is the instance of the `PIDIncClass` class. If we want to calculate the action by using an equation in absolute form, then we must call the `PIDAbs` object, which is an instance of the `PIDAbsClass` class.
+
+This method accepts a control deviation as an input parameter and returns the action.
+```
+float compute (float err)
+```
+This method accepts two parameters: a control deviation and the boundaries that can be acquired. It returns an action within the given boundaries.
+```
+float compute (float err, float saturationMin, float saturationMax)
+```
+this method accepts as a parameter the regulatory deviation, the boundaries of which the intervention can be acquired and the boundaries that the integrating member can acquire. You are returning an action hit within the given boundaries. This method can only be called on the `PIDAbs` object.
+```
+float compute (float err, float saturationMin, float saturationMax, float antiWindupMin, float antiWindupMax)
+```
+
+```
+void setKp(float Kp)
+```
+
+```
+void setKi(float Ki)
+```
+
+```
+  void setKd(float Kd)
+```
+
+```
+ void setTi(float Ti)
+```
+
+```
+ 
+ void setTd(float Td)
+
+```
+
+```
+  float getKp()
+```
+
+```
+  float getKi()
+```
+
+```
+  float getKd()
+```
+
+```
+ float getTi()
+```
+
+```
+ float getTd()
+```
 
 # Mathematics
 
