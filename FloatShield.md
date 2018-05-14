@@ -10,20 +10,28 @@ The function principle is based on controlling the distance of the reference ite
 
 # Library functions
 
+This function needs to be called during setup. It will initiate the sensor.
 ` void initialize(); `
 
+This function has to be called during setup before initialize. It will print out debug data for the sensor if necessary.
 ` void debug(); `
 
+This function will return current potentiometer position in percent.
 ` int referencePercent(); ` 
-           
+
+This function will return current position of the ball as read by the sensor in percent.
 ` int positionPercent();  ` 
-           
+
+This function will drive the ventilator. Argument of this function is in percent from 0 to 100 - full power.
 ` void ventInPercent(int value); ` 
-    
+
+Calling this function will switch floatshield into manual control mode. By adjusting the potentiometer ventilator power will adjust accordingly. 
 ` float manualControl(); `  
-            
+
+This function will return current distance between the sensor and the ball in millimeters.
 ` int  positionMillimeter(); ` 
-        
+
+This function is recommended to be called during setup. It will run an algorithm, which will adjust minimum and maximum distatnce between the sensor and the ball, so that it corrensponds to 0 and 100% when read.
 ` void calibrate();`
 
 
