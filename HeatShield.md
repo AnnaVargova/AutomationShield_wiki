@@ -9,7 +9,7 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 # 3D VISUALIZATION
 3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1). The entire assembly of the HeatShield 3D model is available [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip).
 
-![3d1](https://user-images.githubusercontent.com/38358320/40002255-6c1ec4a2-5790-11e8-8729-0ea274dc206a.png)
+![3d1](https://user-images.githubusercontent.com/38358320/40002314-a9aa6042-5790-11e8-8b4d-d476e85f654b.png)
 
 
 # LIBRARY FUNCTIONS
