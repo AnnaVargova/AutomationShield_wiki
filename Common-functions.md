@@ -36,47 +36,7 @@ this method accepts as a parameter the regulatory deviation, the boundaries of w
 float compute (float err, float saturationMin, float saturationMax, float antiWindupMin, float antiWindupMax)
 ```
 
-```
-void setKp(float Kp)
-```
-
-```
-void setKi(float Ki)
-```
-
-```
-  void setKd(float Kd)
-```
-
-```
- void setTi(float Ti)
-```
-
-```
- 
- void setTd(float Td)
-
-```
-
-```
-  float getKp()
-```
-
-```
-  float getKi()
-```
-
-```
-  float getKd()
-```
-
-```
- float getTi()
-```
-
-```
- float getTd()
-```
+Feel free to use our example [link](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield_PID/FloatShield_PID.ino).
 
 # Mathematics
 
