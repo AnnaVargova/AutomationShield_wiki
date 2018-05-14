@@ -5,10 +5,9 @@ FloatShield is a didactic tool based on the Arduino platform. This project has b
 The basic design of FloatShield consists of a potentiometer, a distance sensor, a translucent vertical tunnel containing a ball (reference item) that is floating inside and a computer fan attached to our own-design PCB. A transparent tube and a distance sensor is mounted by 3D printed parts.
 The function principle is based on controlling the distance of the reference item using the PID feedback controller. Manual control is operated by power regulation of the fan through a potentiometer, which is scaled to a pulse width modulated signal (PWM).
 
-<p float="left">
-<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39666628-d2997bb4-50a6-11e8-922f-b6e33f5e90ac.jpg"/> 
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39666630-d528035a-50a6-11e8-9020-083c3e945547.jpg"/>
-<p/>
+
+
+
 
 <img width="400" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39856510-8a0526cc-5430-11e8-8727-c349480db9a3.jpg">
 
@@ -17,62 +16,7 @@ The function principle is based on controlling the distance of the reference ite
 
 ## PID
 
-Automationshield.h contains two PID versions. If we want to calculate an action by using an incremental form of equation,  we call the `PIDInc` object that is the instance of the `PIDIncClass` class. If we want to calculate the action by using an equation in absolute form, then we must call the `PIDAbs` object, which is an instance of the `PIDAbsClass` class.
 
-This method accepts a control deviation as an input parameter and returns the action.
-```
-float compute (float err)
-```
-This method accepts two parameters: a control deviation and the boundaries that can be acquired. It returns an action within the given boundaries.
-```
-float compute (float err, float saturationMin, float saturationMax)
-```
-this method accepts as a parameter the regulatory deviation, the boundaries of which the intervention can be acquired and the boundaries that the integrating member can acquire. You are returning an action hit within the given boundaries. This method can only be called on the `PIDAbs` object.
-```
-float compute (float err, float saturationMin, float saturationMax, float antiWindupMin, float antiWindupMax)
-```
-
-```
-void setKp(float Kp)
-```
-
-```
-void setKi(float Ki)
-```
-
-```
-  void setKd(float Kd)
-```
-
-```
- void setTi(float Ti)
-```
-
-```
- 
- void setTd(float Td)
-
-```
-
-```
-  float getKp()
-```
-
-```
-  float getKi()
-```
-
-```
-  float getKd()
-```
-
-```
- float getTi()
-```
-
-```
- float getTd()
-```
 # Example
 
 lorem ipsum
@@ -129,10 +73,15 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/files/1916198/FloatShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/files/1916200/FloatShield_Gerber.zip).
 
-<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/38953392-e529b61e-434e-11e8-946b-e3f4d14f5c98.png">
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/38953332-b74ee67e-434e-11e8-8e5b-12c815c9a0a9.png">
+<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39986438-ef45542e-5761-11e8-8869-8ff14c35a95a.png">
+<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39986439-ef812314-5761-11e8-88a9-eab1ce675225.png">
 
 # Photogallery
+
+<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39666628-d2997bb4-50a6-11e8-922f-b6e33f5e90ac.jpg"/> 
+
+<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39666630-d528035a-50a6-11e8-9020-083c3e945547.jpg"/>
+
 <img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39859055-d32716b4-5438-11e8-82a1-a2bf6ed928e7.JPG">
 
 <img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39859319-cf669b98-5439-11e8-9d2e-31fc22400bc5.JPG">
