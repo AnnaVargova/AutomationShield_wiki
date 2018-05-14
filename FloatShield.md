@@ -19,9 +19,85 @@ The function principle is based on controlling the distance of the reference ite
 
 # Example
 
-[Open-loop control](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield_open_loop/FloatShield_open_loop.ino)
+##Open-loop control
+```
 
-[PID control](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield_PID/FloatShield_PID.ino)
+#include <AutomationShield.h>
+#include <FloatShield.h>
+
+int dist;
+
+
+void setup() {
+  // FloatShield.debug();     will print out in monitor sensor debug data
+  Serial.begin(115200);
+  FloatShield.initialize();
+  FloatShield.calibrate();
+}
+
+void loop() {
+  FloatShield.manualControl();
+  dist = FloatShield.positionMillimeter();
+  Serial.print("Distance (mm): ");
+  Serial.println(dist);
+}
+```
+##PID control
+```
+#include <AutomationShield.h>
+#include <FloatShield.h>
+
+int dist;
+unsigned long int Ts = 100;
+bool enable = false;
+int y;
+float u;
+int r;
+float Ti,Td,Kp;
+float error;
+void setup() {
+  Serial.begin(115200);
+  FloatShield.initialize();
+  FloatShield.calibrate();
+  Sampling.interruptInitialize(Ts*1000);
+  Sampling.setInterruptCallback(StepEnable);
+  PIDAbs.setKp(0.86);
+  PIDAbs.setKi(1.729);
+  PIDAbs.setKd(0.1081);
+  Ti = PIDAbs.getTi();
+  Td = PIDAbs.getTd();
+  Kp = PIDAbs.getKp();
+}
+
+void loop() 
+{
+  if(enable)
+  {
+    Step();
+    enable = false;
+  }
+}
+
+void StepEnable(void)
+{
+  enable = true;
+}
+
+void Step (void)
+{
+  y = FloatShield.positionPercent();
+  r = FloatShield.referencePercent();
+
+  error = r - y;
+  u = PIDAbs.compute(error,25,55,0,100);
+  FloatShield.ventInPercent(u);
+  Serial.print(r);
+  Serial.print(", ");
+  Serial.print(u);
+  Serial.print(", ");
+  Serial.println(y);
+}
+```
  
 # Hardware insight 
 
