@@ -66,6 +66,7 @@ void step(){
   Serial.println(r);
 }
 ```
+![bez nazvu](https://user-images.githubusercontent.com/23738757/40050824-decfe7e4-5838-11e8-9bbb-9cc4dc6faa7e.png)
 
 # DETAILED HARDWARE DESCRIPTION
 
