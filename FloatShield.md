@@ -53,7 +53,6 @@ This function is recommended to be called during setup. It will run an algorithm
 
 ## Open-loop control
 ```
-
 #include <AutomationShield.h>
 #include <FloatShield.h>
 
@@ -62,17 +61,20 @@ int dist;
 
 void setup() {
   // FloatShield.debug();     will print out in monitor sensor debug data
-  Serial.begin(115200);
-  FloatShield.initialize();
-  FloatShield.calibrate();
+  Serial.begin(115200);  //start serial communication
+  FloatShield.initialize(); //FloatShield initialization
+  FloatShield.calibrate(); //FloatShield calibration for more accurate measurements
 }
 
 void loop() {
-  FloatShield.manualControl();
-  dist = FloatShield.positionMillimeter();
+  FloatShield.manualControl(); //Calling this function will switch floatshield into manual
+                               //control mode. By adjusting the potentiometer ventilator power
+                               //will adjust accordingly.
+  dist = FloatShield.positionMillimeter(); // read sensor 
   Serial.print("Distance (mm): ");
   Serial.println(dist);
 }
+
 ```
 ## PID control
 ```
@@ -80,25 +82,27 @@ void loop() {
 #include <FloatShield.h>
 
 int dist;
-unsigned long int Ts = 100;
-bool enable = false;
-int y;
-float u;
-int r;
-float Ti,Td,Kp;
-float error;
+unsigned long int Ts = 100; //sampling time in ms
+bool enable = false; //flag 
+int y;  //output
+float u; //input
+int r; //reference
+float Ti,Td,Kp; // PID constants
+float error; //error
 void setup() {
-  Serial.begin(115200);
-  FloatShield.initialize();
-  FloatShield.calibrate();
-  Sampling.interruptInitialize(Ts*1000);
-  Sampling.setInterruptCallback(StepEnable);
+  Serial.begin(115200); //start serial communication
+  FloatShield.initialize(); //FloatShield initialization
+  FloatShield.calibrate(); //FloatShield calibration for more accurate measurements
+  Sampling.interruptInitialize(Ts*1000); //Sampling initialization in microseconds
+  Sampling.setInterruptCallback(StepEnable); // seting the interrupt functon
+  //Setting the PID constants
   PIDAbs.setKp(0.86);
   PIDAbs.setKi(1.729);
   PIDAbs.setKd(0.1081);
-  Ti = PIDAbs.getTi();
-  Td = PIDAbs.getTd();
-  Kp = PIDAbs.getKp();
+  //Getting constants needed for calculating PID in absolute form
+  Ti = PIDAbs.getTi(); // integral time constant
+  Td = PIDAbs.getTd(); // derivative time constant
+  Kp = PIDAbs.getKp(); 
 }
 
 void loop() 
@@ -106,22 +110,22 @@ void loop()
   if(enable)
   {
     Step();
-    enable = false;
+    enable = false; //enable flag becomes false after the execution of the Step() function
   }
 }
 
-void StepEnable(void)
+void StepEnable(void) // interrupt function
 {
-  enable = true;
+  enable = true; // when the interrupt function is called, the enable is true
 }
 
 void Step (void)
 {
-  y = FloatShield.positionPercent();
-  r = FloatShield.referencePercent();
+  y = FloatShield.positionPercent(); //reading the  sensor value
+  r = FloatShield.referencePercent(); //reading the reference value
 
-  error = r - y;
-  u = PIDAbs.compute(error,25,55,0,100);
+  error = r - y; 
+  u = PIDAbs.compute(error,25,55,0,100); // absolute PID function with anti-wind up and saturation
   FloatShield.ventInPercent(u);
   Serial.print(r);
   Serial.print(", ");
@@ -129,6 +133,7 @@ void Step (void)
   Serial.print(", ");
   Serial.println(y);
 }
+
 ```
  
 # Hardware insight 
