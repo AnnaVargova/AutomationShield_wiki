@@ -13,6 +13,18 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 
 # LIBRARY FUNCTIONS
+`void begin()`
+
+This method initialize pins of the Heatshield.
+
+`float sensorReadTemperature()`
+
+This method returns temperature in °C, which is detect by sensor.
+
+`void actuatorWrite(float percent)`
+
+This method 
+
 
 # EXAMPLE
 
