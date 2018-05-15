@@ -23,7 +23,7 @@ This method returns temperature in °C, which is detect by sensor.
 
 `void actuatorWrite(float percent)`
 
-Parameter of this method is in percent from 0 to 100% - maximum heating power. It will write adequate value to drive the heating body.
+This method accepts as parameter action in percent and writes adequate value to drive the heating body.
 
 
 # EXAMPLE
