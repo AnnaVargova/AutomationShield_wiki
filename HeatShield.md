@@ -14,7 +14,9 @@ The project was inspired by 3D printing, from which an aluminum block (thermal b
 
 # LIBRARY FUNCTIONS
 
-# EXAMPLES
+# EXAMPLE
+
+Example for PID control temperature from 28°C to 40°C.
 
 ```
 #include "AutomationShield.h"
