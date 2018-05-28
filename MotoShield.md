@@ -206,3 +206,4 @@ converted = AutomationShield.mapFloat(senzor,minimum,maximum,0.00,100.00); // co
 
 Motoshield is an open-source hardware designed primarily for control engineering students. Feel free to use the whole project or any part of it, and if you come up with improvements, please let us know so we can improve our design as well. You can find the documentation, needed for making your own prototypes, below. 
 
+To be continued...
