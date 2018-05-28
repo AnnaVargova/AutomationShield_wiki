@@ -3,7 +3,7 @@
 Motoshield was created within the open-source project called AutomationShield, which's main aim is to develop Arduino compatible shields suitable for control engineering education. The main component of the shield is a 6V brushed DC motor equipped with an encoder. The motor unit has 6 outputs, 4 of them are belonging to the encoder (you can find a link about the used motor in the table of used components). The L293D IC performs the motor control. L293D is a very handy and easy to use IC containing a four-channel H-bridge, which makes it able to control two DC motors, a stepper motor or four other loads like solenoid or relay. Motoshield also contains an LM358 OPAMP, which performs two operations. First, it subtracts  two values of the voltage (calculates the voltage drop through the resistor used for measuring current) and as a second operation amplifies the subtracted voltage. The gain of the OPAMP can be set changing the values of the used resistors. The fourth component of the board is a potentiometer. It's purpose is to set the reference values at speed control. The shield is suitable to perform, among other things, PID control of the motor's speed or making step response experiments (see examples below). 
 
 [[/fig/Moto1.jpg| The Motoshield.]]   
-[[/fig/Moto2.jpg| Applied Motoshield on Arduino.]]  
+
 
 
 # Library functions
@@ -207,4 +207,8 @@ converted = AutomationShield.mapFloat(senzor,minimum,maximum,0.00,100.00); // co
 
 Motoshield is an open-source hardware designed primarily for control engineering students. Feel free to use the whole project or any part of it, and if you come up with improvements, please let us know so we can improve our design as well. You can find the documentation, needed for making your own prototypes, below. 
 
-To be continued...
+
+
+
+
+[[/fig/Moto2.jpg| Applied Motoshield on Arduino.]]  
