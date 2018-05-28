@@ -7,7 +7,7 @@ The OptoShield belongs to the family of control engineering education devices fo
 
 # Library functions
 
-All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield are included in the `Opto` class of functions, these mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
+All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
 The summary of functions and the illustration below should get you started quickly:
 * Output (sensor): `Opto.sensorRead();` 
@@ -23,32 +23,32 @@ The following sections describe the methods used to access the input and output 
 ### Input
 The input to the actuator LED (along with the auxiliary LED) is written by 
 ```
-Opto.actuatorWrite(u);
+OptoShield.actuatorWrite(u);
 ```
 where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 ### Output
 The output from the LDR is read by 
 ```
-Opto.sensorRead();
+OptoShield.sensorRead();
 ```
 where the function outputs the brightness in the range of 0-100 % as detected by the sensor circuit. This reading can be used as a feedback signal. The function returns a floating point value. 
 
 Note that the sensor reading in percents is only available after the system has been calibrated. The sensor can be calibrated by calling
 ```
-Opto.calibrate();
+OptoShield.calibration();
 ```
 in the `setup()` function, after which the `Opto.sensorRead()' will return the output readings in the correct percentual range.
 
 A sensor reading can be requested instead of calibrated percents directly in units of voltage by calling
 ```
-Opto.sensorReadVoltage();
+OptoShield.sensorReadVoltage();
 ```
 which will return a floating point number. 
 
 The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments.  The output from the auxiliary LDR is read by 
 ```
-Opto.sensorAuxRead();
+OptoShield.sensorAuxRead();
 ```
 and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on the sensor circuit as a floating point parameter. Note that this sensor is merely for testing and calibration, like in the case of the main sensor, is not possible.
 
@@ -56,7 +56,7 @@ and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on 
 
 The user reference is read from the potentiometer by calling
 ```
-Opto.referenceRead();
+OptoShield.referenceRead();
 ```
 and the function returns the desired user reference setpoint in percents in the range of 0-100 \% as a floating point number.
 
@@ -67,27 +67,129 @@ The functions listed below implement tests signals that can be used for system i
 
 The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
-### Step response
-```
-Opto.step();
-```
-
-### Impulse response
-```
-Opto.impulse();
-```
 
 # Examples
 
-Lorem ipsum dolor sit
-
 ## Step Response
+```
+#include "AutomationShield.h"
 
-Lorem ipsum dolor sit 
+float Setpoint = 70.00;
+
+bool enable=false;
+unsigned long int curTime=0;
+unsigned long int prevTime=0;
+
+unsigned long Ts = 0.1;
+
+void setup() {
+  
+Serial.begin(115200);
+
+Sampling.interruptInitialize(Ts * 1000);
+Sampling.setInterruptCallback(stepEnable);
+  
+OptoShield.begin();
+OptoShield.calibration();
+delay(1000);
+OptoShield.actuatorWrite(Setpoint);
+}
+
+void loop() {
+
+  curTime=millis();
+  if (enable) {
+    step();
+    enable=false;
+    
+  } // end of the if statement  
+} // end of the loop
+
+
+void stepEnable(){
+  enable=true;
+}
+
+void step(){
+  float Senzor = OptoShield.sensorRead();
+  
+  Serial.print(Setpoint);
+  Serial.print(",");
+  Serial.println(Senzor);
+
+}
+```
+ 
 
 ## PID Control
 
-Lorem ipsum dolor sit
+```
+#include "AutomationShield.h"
+
+unsigned long Ts = 1; // sampling time in milliseconds
+
+bool enable=false; // flag for the sampling function
+
+// variables for the PID
+
+float r = 0.00;
+float y = 0.00;
+float u = 0.00;
+float error = 0.00;
+
+
+void setup() {
+  
+  Serial.begin(9600);
+  
+  OptoShield.begin(); // defining hardware pins
+  OptoShield.calibration(); // calibration function for accurate measurements
+  
+  Sampling.interruptInitialize(Ts * 1000);  // initialize the sampling function, input is the sampling time in microseconds
+  Sampling.setInterruptCallback(stepEnable); // setting the interrupts, the input is the ISR function
+
+ // setting the PID constants
+ PIDAbs.setKp(0.00173244161800246); // 0.000287897244979394 - identified value
+ PIDAbs.setKi(10.0061553434575); // 5.75794489958787 - identified value
+ PIDAbs.setKd(0); // 0 - identified value
+
+}// end of the setup
+
+void loop() {
+
+  if (enable) {
+    step();
+    enable=false;
+    
+  }  
+
+} // end of the loop
+
+
+void stepEnable(){  // ISR
+  enable=true;
+}
+
+void step(){ // we have to put our code here
+
+r = OptoShield.referenceRead();  // reading the reference value of the potentiometer
+y = OptoShield.sensorRead();    // reading the sensor value (LDR in the tube)
+
+error = r - y; 
+
+ u = PIDAbs.compute(error,0,100,0,100);
+
+OptoShield.actuatorWrite(u);
+
+Serial.print(r);
+Serial.print(",");
+Serial.print(u);
+Serial.print(",");
+Serial.println(y);
+  
+
+}
+```
 
 # Detailed Hardware Description
 
