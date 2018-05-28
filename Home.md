@@ -1,12 +1,23 @@
 [[/fig/header.gif|AutomationShield logo and site header.]]
 
-AutomationShield is an open-source hardware and software project focused on control engineering education.
+AutomationShield is an open-source hardware and software project focused on tools for control engineering and mechatronics education.
 
-# Shields
+The core of the project are extension boards to the popular Arduino microcontroller prototyping boards implementing feedback control experiments to teach control systems engineering. These hardware extensions—known in the Arduino world as shields—are then in essence experimental systems on a single printed circuit board (PCB). 
+
+The didactic process for teaching control engineering is often overly focused on theory and lacks practical implementation and hands on experience. In numerous universities the didactic tools and lab equipment for control engineering and mechatronics is simply not available, since a single laboratory tool for feedback control costs in the order of tens of thousands of dollars. Even if the tools are available in the laboratory, students cannot take these home and complete assignments or experiment outside of the academic environment.
+
+# Available Shields
 Currently these shields are available:
-* [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
 * [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a levitating ball feedback experiment
+* [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system experiment
+* [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation experiment
+
+# Where can I buy an AutomationShield?
+
+Unfortunately we lack the infrastructure to manufacture and sell the shields. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempted to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
 
 # About the library
+
+The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In addition to this the AutomationShield library aims to provide complete routines for implementing precise timing for control and certain feedback control algorithms.
