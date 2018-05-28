@@ -209,9 +209,13 @@ Motoshield is an open-source hardware designed primarily for control engineering
 
 ## Circuit design
 
-The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.zip). 
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
 
 [[/fig/Moto_Schematics.eps|MotoShield Circuit Schematics.]] 
+
+## Components
+
+
 
 
 [[/fig/Moto2.jpg| Applied Motoshield on Arduino.]]  
