@@ -215,6 +215,20 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ## Components
 
+|Part              | Name             | Value | PCS  | Note                       |
+|------------------|------------------|-------|------|----------------------------|
+| DC motor         | brushed DC motor with encoder   | 6V    | 1    | Pin size 12.5x10, [URL](https://www.dfrobot.com/product-1437.html)|
+|                  |                  |       |      |                            |
+| R1               | Resistor         | 2.4 k  | 1    |                            |
+| R2               | Resistor         | 2.4 k  | 1    |                            |
+| R3               | Resistor         | 4.7 k  | 1    |                            |
+| R4               | Resistor         | 4.7 k  | 1    |                            |
+| R5               | Resistor         | 270   | 1    |                            |
+|                  | Header           | 10 pin| 1    | long, stackable            |
+|                  | Header           | 8 pin | 2    | long, stackable            |
+|                  | Header           | 6 pin | 1    | long, stackable            |
+|                  |                  |       |      |                            |
+
 
 
 
