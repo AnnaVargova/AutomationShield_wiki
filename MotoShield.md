@@ -247,6 +247,10 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 [[/fig/Moto2.jpg| Applied Motoshield on Arduino.]]  
 
+# About
+
+The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
+
 ## Authors
 
 * Hardware design: Tibor Konkoly
