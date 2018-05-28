@@ -211,19 +211,25 @@ Motoshield is an open-source hardware designed primarily for control engineering
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
 
-[[/fig/Moto_Schematics.eps|MotoShield Circuit Schematics.]] 
+[[/fig/Moto_Schematics.png|MotoShield Circuit Schematics.]] 
 
 ## Components
 
 |Part              | Name             | Value | PCS  | Note                       |
 |------------------|------------------|-------|------|----------------------------|
-| DC motor         | brushed DC motor with encoder   | 6V    | 1    | Pin size 12.5x10, [URL](https://www.dfrobot.com/product-1437.html)|
-|                  |                  |       |      |                            |
-| R1               | Resistor         | 2.4 k  | 1    |                            |
-| R2               | Resistor         | 2.4 k  | 1    |                            |
-| R3               | Resistor         | 4.7 k  | 1    |                            |
-| R4               | Resistor         | 4.7 k  | 1    |                            |
-| R5               | Resistor         | 270   | 1    |                            |
+| DC motor         | brushed DC motor with encoder   | -    | 1    |  [URL](https://www.dfrobot.com/product-1437.html)|
+| LM358            | OPAMP            |  -    |  1   |       -                    |
+| L293D            | Motor driver IC  |  -    |  1   |      -                     |
+| POT1             | Potentiometer    | 10 k  | 1    | Pin size 12.5x10, [URL](https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf)|
+| R                | Resistor         | 10    |   1   |used for measuring the current draw of the motor |
+| R1               | Resistor         | 1 M  | 1    |      SMD  0805          |
+| R2               | Resistor         | 1 M  | 1    |      SMD  0805          |
+| R3               | Resistor         | 1 M  | 1    |      SMD  0805          |
+| R4               | Resistor         | 1 M  | 1    |      SMD  0805          |
+| Rf               | Resistor         | 10 k  |  1  |      SMD  0805          |
+|   Rg             | Resistor         |  5.1 k |  1 |      SMD 0805           |
+| R8               | Resistor         | 270   | 1    |     SMD 0805           |
+| D1               | LED              |       | 1    | SMD 0805, Green color  |
 |                  | Header           | 10 pin| 1    | long, stackable            |
 |                  | Header           | 8 pin | 2    | long, stackable            |
 |                  | Header           | 6 pin | 1    | long, stackable            |
