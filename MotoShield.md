@@ -257,6 +257,6 @@ The board was developed within the framework of a bachelor's thesis at the Insti
 
 ## Authors
 
-* Hardware design: Tibor Konkoly
+* Hardware design: Tibor Konkoly, Gergely Takács
 * Software design: Tibor Konkoly
-* Wiki: Tibor Konkoly
+* Wiki: Tibor Konkoly, Gergely Takács
