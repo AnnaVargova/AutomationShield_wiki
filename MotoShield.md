@@ -1,76 +1,63 @@
 # Introduction
 
-The MotoShield was created within the framework of the AutomationShield open-source. The main aim of the AutomationShield project is to develop ready-to use Arduino compatible shields suitable for control engineering education. The MotoShield implements a motor equipped with gear reduction and hall-effect feedback. The MotoShield enables one to run many well-known control engineering experiments, ranging from first-principles and grey-box system identification, speed control and position control. 
-
-The fourth component of the board is a potentiometer. It's purpose is to set the reference values at speed control. The shield is suitable to perform, among other things, PID control of the motor's speed or making step response experiments (see examples below). 
-
+The MotoShield was created within the framework of the AutomationShield open-source hardware and software project. The main aim of the AutomationShield project is to develop ready-to use Arduino compatible shields suitable for control engineering education. The MotoShield implements a motor equipped with gear reduction as an actuator and a hall-effect encoder feedback. The MotoShield enables one to run many well-known control engineering experiments, ranging from first-principles modeling and grey-box system identification, speed control and position control. 
 [[/fig/Moto1.jpg| The Motoshield.]]   
 
-
-
 # Library functions
-Here you can find a short description of the functions, which were written for making the work with the Motoshield more easier and efficient.
+Here you can find a short description of the functions, which have been created to make the work with the shield easier more efficient.
 
-You have to call this function in the setup, it initializes the pins used by the components.
+To initialize the pins used by the MotoShield, call
 
 ```
 MotoShield.begin();
 ``` 
 
-The next function is for setting the direction of the rotation. It has two input parameters - true or false. If you apply true, the motor will turn in counter-clockwise direction and vice versa. You can call it in the setup - if the constant direction suits to you, or it can be called in the loop too and the direction can be changed later.  
-
+The next function is to set rotation direction. It has two input parameters: true or false. If you apply true, the motor will turn in counter-clockwise direction and vice versa. You can call it this function in the the `setup()' if a fixed rotation direction is desired. Alternatively it can also be called in the loop to change rotation direction at any time:
 ```
-MotoShield.setDirection(true/false);
+MotoShield.setDirection(bool);
 ```
-If the direction is set, only one thing is remaining to start the motor - setting it's speed. You can do it using different functions. First of these function switches on the motor at full speed. 
 
+The following function starts the motor at full speed
 ```
 MotoShield.motorON();
 ``` 
-
-You can switch off the motor using the next function:
-
+while you can switch the motor off using
 ```
 MotoShield.motorOFF();
 ``` 
-Another function was created to set the motor's speed. It has one input parameter - the speed in percents. Please, do not apply lower speed than 30%.
-
+Another function was created to set the motor speed as a percent value, where 0% a fully stopped motor and 100% means a motor turning at full speed. A speed lower than 30% will not turn on the motor, as it cannot overcome static electro-mechanical effects:
 ```
-MotoShield.setMotorSpeed(speed in %);
+MotoShield.setMotorSpeed(speed);
 ``` 
 
-Now the motor is running, but what if you want to change it's direction? This function reverses the pre-set direction of the motor.
-
+The motor is running, but what if you want to change it's direction? This function reverses the pre-set direction of the motor:
 ```
 MotoShield.revDirection();
 ```
-The next function reads the value of the potentiometer and returns it in percents.
 
+The next function reads the value of the reference potentiometer and returns it in percents.
 ```
 MotoShield.referenceRead();
 ``` 
-The Motoshield allows you to perform some measurements, like voltage, current or speed. The next function measures the voltage drop across the resistor used for measuring the current draw of the motor. 
 
+The Motoshield allows you to perform certain measurements. The next function measures the voltage drop across the resistor that is used for measuring the current draw of the motor:
 ```
 MotoShield.readVoltage();
 ```
-
-This function measures the current draw of the motor and returns the current value in mA. 
-
+This function measures the current draw of the motor (calculated based on a reference resistor and Ohm's law) and returns the current value in the units of mA:
 ```
 MotoShield.readCurrent();
 ```
-This function measures the duration of one revolution and returns the value in ms.
-
+The following function measures the duration of a single complete revolution and returns the value in ms.
 ```
 MotoShield.durationTime();
 ```
 
-The last function measures the motor speed in revolutions per minute (RPM). It has only one input parameter - the sampling time (used by the Sampling() function) in milliseconds.
-
+The last function for the MotoShield API measures motor speed in revolutions per minute (RPM). It has only one input parameter - the sampling time in milliseconds.
 ```
 MotoShield.readRevolutions(int SamplingTime);
 ```
+
 # Examples
 ## PID control
 ```
@@ -207,14 +194,13 @@ converted = AutomationShield.mapFloat(senzor,minimum,maximum,0.00,100.00); // co
 
 # Hardware description
 
-Motoshield is an open-source hardware designed primarily for control engineering students. Feel free to use the whole project or any part of it, and if you come up with improvements, please let us know so we can improve our design as well. You can find the documentation, needed for making your own prototypes, below. 
+The MotoShield is an open-source hardware designed primarily for control engineering students. Feel free to use the whole project or any part of it, and if you come up with improvements, please let us know so we can improve our design as well. You can find the full hardware documentation that is needed for making your own prototypes here. 
 
 ## Circuit design
 
-The main component of the shield is a 6 V brushed DC motor equipped with an encoder. The motor unit has 6 outputs, 4 of them belong to the encoder (you can find a link about the used motor in the table of components). The L293D H-bridge IC is used as a driver. The L293D is a very handy and easy to use IC containing a four-channel H-bridge, which makes it able to control two DC motors, a stepper motor or four other loads like solenoids or relays. The Motoshield also contains an LM358 operational amplifier that has two roles. First, it subtracts  two values of the voltage (calculates the voltage drop through the resistor used for measuring current) and as a second operation amplifies the subtracted voltage. The gain of the OPAMP can be set changing the values of the used resistors.
+The main component of the shield is a 6 V brushed DC motor equipped with an encoder. The motor unit has 6 outputs, 4 of them belong to the encoder (you can find a link to the motor in the table of components). The L293D H-bridge IC is used as amotor driver. The L293D is a very handy and easy to use IC containing a four-channel H-bridge, which enables it to control two DC motors, one stepper motor or four other loads like solenoids or relays. The MotoShield also contains an LM358 operational amplifier that has two roles. First, it subtracts  two voltage values and thereby calculates the voltage drop through the resistor used for measuring current. Second, it amplifies the subtracted voltage for the A/D of the Arduino. 
 
-The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
-
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
 [[/fig/Moto_Schematics.png|MotoShield Circuit Schematics.]] 
 
 ## Components
@@ -243,7 +229,6 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 ## PCB layout
 
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Gerber.zip).
-
 [[/fig/MotoShieldFront.png|MotoShield PCB from the front.]]
 [[/fig/MotoShieldBack.png|MotoShield PCB from the back.]]
 
@@ -253,7 +238,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 # About
 
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
+The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. You may download the resulting thesis [here](https://github.com/gergelytakacs/AutomationShield/wiki/Publications)
 
 ## Authors
 
