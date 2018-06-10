@@ -158,7 +158,7 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 |Part              | Name             | Value | PCS  | Note                       |
 |------------------|------------------|-------|------|----------------------------|
 | Electromagnet      | P20/15   | -    | 1    |  [URL](https://www.ebay.com/itm/322722704471)|
-| Hall effect sensor            | A1302ELHLT-T            |  -    |  1   |  [URL](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/|
+| Hall effect sensor            | A1302ELHLT-T            |  -    |  1   |  [URL](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/)|
 | Mosfet            | IRF520  |  -    |  1   |      -                     |
 | DA convertor             | PCF8591T    |  -   | 1    |  [URL](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)|
 | R1                | Resistor         | 10 kΩ    |   1   |   -   |
