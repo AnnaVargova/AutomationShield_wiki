@@ -58,7 +58,7 @@ This function makes a difference between desired position of flying and current 
 MagnetoShield.error();
 ``` 
 
-# Examples
+# Example
 ## PID control of levitation
 ```
 #include <AutomationShield.h>
@@ -161,7 +161,7 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 | Hall effect sensor            | A1302ELHLT-T            |  -    |  1   |  [URL](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/|
 | Mosfet            | IRF520  |  -    |  1   |      -                     |
 | DA convertor             | PCF8591T    |  -   | 1    |  [URL](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)|
-| R1                | Resistor         | 10 kΩ    |   1   |used for measuring the current draw of the motor |
+| R1                | Resistor         | 10 kΩ    |   1   |   -   |
 | R2               | Resistor         | 10 kΩ  | 1    |      SMD  0805          |
 | R5               | Resistor         | 270 Ω  | 1    |      SMD  0805          |
 | R6               | Resistor         | 1.2 kΩ  | 1    |      SMD  0805          |
@@ -171,27 +171,26 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 |                  | Header           | 10 pin| 1    | long, stackable            |
 |                  | Header           | 8 pin | 2    | long, stackable            |
 |                  | Header           | 6 pin | 1    | long, stackable            |
-|                  | Aluminium plate  | 50x20x2 mm  |   1   |                            |
-|                  | Spacer bolt  | 35 mm  |   4   |  thread M5                          |
-|                  | Plastic screws  | 50x20x2 mm  |   1   |                            |
+|                  | Aluminium plate  | 50x20x2 mm  |   1   |     -        |
+|                  | Spacer bolt  | 35 mm  |   4   |  thread M5         |
+|                  | Plastic screw  |  -  |   4   |  thread M5       |
+|                  | rubber O ring  |  inside diameter 12 mm  |   1   |   -   |
+|                  | transparent tube  |  height 9 mm; 10x12 mm  |   1   |   -   |
+|                  |                  |       |      |                            |
+
 
 
 ## PCB layout
 
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Gerber.zip).
-[[/fig/MotoShieldFront.png|MotoShield PCB from the front.]]
-[[/fig/MotoShieldBack.png|MotoShield PCB from the back.]]
-
-# Photogallery
-
-[[/fig/Moto2.jpg| Applied Motoshield on Arduino.]]  
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded here, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from here.
+ 
 
 # About
 
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. You may download the resulting thesis [here](https://github.com/gergelytakacs/AutomationShield/wiki/Publications)
+The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018
 
 ## Authors
 
-* Hardware design: Tibor Konkoly, Gergely Takács
-* Software design: Tibor Konkoly
-* Wiki: Tibor Konkoly, Gergely Takács
+* Hardware design: Jakub Mihalík, Gergely Takács
+* Software design: Jakub Mihalík
+* Wiki: Jakub Mihalík
