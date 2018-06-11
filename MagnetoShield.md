@@ -1,9 +1,8 @@
-﻿# Introduction
+# Introduction
 
 The MagnetoShield is a device designed for educational purposes of automatic control and is another product of an [AutomationShield](https://www.automationshield.com) project. This device is able to lift up and control position of a permanent magnet.   Thanks to these possibilities we are able to build up closed-loop regulation program (for instance PID regulator) and create levitation effect of the magnet. Device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The position of the magnet is controlled by a Hall effect sensor. Because of a fast dynamic and complexity of the system device is great tool for learning and testing regulation algorithms.
 
-[[/fig/Opto_Iso.jpg|Isometric photograph of the OptoShield.]]
-[[/fig/Opto_Front.jpg|A photograph of the OptoShield from the front.]]
+[[/fig/Magneto/Magneto.png|Isometric photograph of the MagnetoShield.]]
 
 # Library functions
 
@@ -142,15 +141,19 @@ void step(){
 
 # Hardware description
 
-An area of levitation is surrounded by transparent tube enclosed on the top. These borders prevent the magnet from drawing up to electromagnet under the influence magnetic field of the permanent magnet and disable oscillations of the magnet in horizontal plane.  Parameters of the tube and the gate where is electromagnet located depend on used permanent magnet. In my case I used a neodymium disc with diameter 8 mm and 2 mm thick. Parameters of this case you can see on the picture below.
+An area of levitation is surrounded by transparent tube enclosed on the top. These borders prevent the magnet from drawing up to electromagnet under the influence magnetic field of the permanent magnet and disable oscillations of the magnet in horizontal plane.  Parameters of the tube and the gate where is electromagnet located depend on used permanent magnet. In my case I used a neodymium disc with diameter 8 mm and 2 mm thick. By me used parameters you can see on the picture below.
+
+[[/fig/Magneto/Branicka.png| Parameters of the transparent tube and the height of the electromagnet.]]
 
 The MagnetoShield is a part of open-source project the AutoamtionShield. In the text below are circuit schematics, PCB layout and are described all components of the MagnetoShield. If you have ideas how to make hardware or software better please let us know, any other improvements are welcome.
 
 ## Circuit
 
-The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MagnetoShield_Circuit.rar). 
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
 
-Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins “+” and “-” in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 kΩ. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 Ω is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 kΩ. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet. 
+[[/fig/Magneto/Magneto_schema.jpg|MagnetoShield circuit.]]
+
+Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins �+� and �-� in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet. 
 
 
 ## Components
@@ -161,11 +164,11 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 | Hall effect sensor            | A1302ELHLT-T            |  -    |  1   |  [URL](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/)|
 | Mosfet            | IRF520  |  -    |  1   |      -                     |
 | DA convertor             | PCF8591T    |  -   | 1    |  [URL](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)|
-| R1                | Resistor         | 10 kΩ    |   1   |   -   |
-| R2               | Resistor         | 10 kΩ  | 1    |      SMD  0805          |
-| R5               | Resistor         | 270 Ω  | 1    |      SMD  0805          |
-| R6               | Resistor         | 1.2 kΩ  | 1    |      SMD  0805          |
-| C1               | Capacitor         | 0.1 μF  | 1    |      SMD  0805          |
+| R1                | Resistor         | 10 k?    |   1   |   -   |
+| R2               | Resistor         | 10 k?  | 1    |      SMD  0805          |
+| R5               | Resistor         | 270 ?  | 1    |      SMD  0805          |
+| R6               | Resistor         | 1.2 k?  | 1    |      SMD  0805          |
+| C1               | Capacitor         | 0.1 ?F  | 1    |      SMD  0805          |
 | D1               | LED         |   |  1  |      SMD 0805 color-red         |
 | D2               | LED         |   |  1  |      SMD 0805 color-green          |
 |                  | Header           | 10 pin| 1    | long, stackable            |
@@ -174,7 +177,7 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 |                  | Aluminium plate  | 50x20x2 mm  |   1   |     -        |
 |                  | Spacer bolt  | 35 mm  |   4   |  thread M5         |
 |                  | Plastic screw  |  -  |   4   |  thread M5       |
-|                  | rubber O ring  |  inside diameter 12 mm  |   1   |   -   |
+|                  | rubber ?O? ring  |  inside diameter 12 mm  |   1   |   -   |
 |                  | transparent tube  |  height 9 mm; 10x12 mm  |   1   |   -   |
 |                  |                  |       |      |                            |
 
@@ -182,15 +185,18 @@ Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic s
 
 ## PCB layout
 
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded here, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from here.
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_gerber.zip).
+
+[[/fig/Magneto/PCB1.jpg|MagnetoShield PCB from the front.]]
+[[/fig/Magneto/PCB2.jpg|MagnetoShield PCB from the back.]]
  
 
 # About
 
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018
+The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018.You may download the resulting thesis [here](https://github.com/gergelytakacs/AutomationShield/wiki/Publications).
 
 ## Authors
 
-* Hardware design: Jakub Mihalík, Gergely Takács
-* Software design: Jakub Mihalík
-* Wiki: Jakub Mihalík
+* Hardware design: Jakub Mihal�k, Gergely Tak�cs
+* Software design: Jakub Mihal�k
+* Wiki: Jakub Mihal�k
