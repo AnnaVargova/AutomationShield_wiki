@@ -1,3 +1,7 @@
+* BibTeX references
+
+Here you can find BibTeX database entries to reference the material presented on these pages. You may copy and paste the database entries or download the entire BibTeX database file associated with the AutomationShield project.
+
 ```
 @INPROCEEDINGS{Takacs2019a,
 author={Gergely Tak\'{a}cs and Tibor Konkoly and Martin Gulan},
