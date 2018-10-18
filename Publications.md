@@ -1,7 +1,7 @@
 # Publications
 ## Conference articles
 
-1. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In 8th IFAC Symposium on Mechatronics Systems, Vienna, Austria. doi: TBD. Preprint submitted for review.
+1. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. doi: TBD. Preprint submitted for review.
 
 ## Thesis works
 
