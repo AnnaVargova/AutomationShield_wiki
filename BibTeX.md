@@ -4,12 +4,12 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
-Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In 8th IFAC Symposium on Mechatronics Systems, Vienna, Austria. doi: TBD. Preprint submitted for review.
+Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. doi: TBD. Preprint submitted for review.
 
 ```
 @INPROCEEDINGS{Takacs2019a,
 author={Gergely Tak\'{a}cs and Tibor Konkoly and Martin Gulan},
-booktitle={8th IFAC Symposium on Mechatronics Systems},
+booktitle={Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan.},
 title={OptoShield: A Low-Cost Tool for Control and Mechatronics Education},
 year={2019},
 volume={},
@@ -18,9 +18,9 @@ pages={1--6},
 keywords={educational aids, education, teaching,  microcomputer-based control, microcontroller, low-cost, Arduino, Simulink, optical, mechatronics},
 doi={TBD},
 ISSN={TBD},
-month={Sept},
-date={4--6},
-address={Vienna, Austria},
+month={Jun},
+date={9--12},
+address={Kitakyushu, Japan},
 note={Preprint submitted for review.},
 }
 ```
