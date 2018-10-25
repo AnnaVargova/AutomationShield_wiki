@@ -5,7 +5,9 @@
 * [MotoShield][moto]
 * [MagnetoShield][opto]
 ## Library and API
-* [Common][common]
+### Arduino
+* [Common functions][common]
+
 ## Publications
 * [Publications][publications]
 * [BiBTeX][bibtex]
