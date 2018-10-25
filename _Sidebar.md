@@ -1,6 +1,6 @@
 ## Shields
-* [FloatShield][heat]
-* [HeatShield][float]
+* [FloatShield][float]
+* [HeatShield][heat]
 * [MagnetoShield][magneto]
 * [MotoShield][moto]
 * [OptoShield][opto]
