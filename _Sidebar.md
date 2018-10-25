@@ -3,7 +3,7 @@
 * [HeatShield][float]
 * [MagnetoShield][magneto]
 * [MotoShield][moto]
-* [MagnetoShield][opto]
+* [OptoShield][opto]
 ## Library and API
 ### Arduino
 * [Common functions][common]
