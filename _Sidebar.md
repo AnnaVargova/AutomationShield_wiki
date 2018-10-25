@@ -1,11 +1,13 @@
-# My menu
 * [Home][home]
-* [Common][common]
+# Shields
 * [FloatShield][heat]
 * [HeatShield][float]
 * [MagnetoShield][magneto]
 * [MotoShield][moto]
 * [MagnetoShield][opto]
+# API
+* [Common][common]
+# Publications
 * [Publications][publications]
 * [BiBTeX][bibtex]
 
