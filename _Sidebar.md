@@ -1,5 +1,3 @@
-# Menu
-* [Home][home]
 ## Shields
 * [FloatShield][heat]
 * [HeatShield][float]
