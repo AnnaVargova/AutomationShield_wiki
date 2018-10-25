@@ -5,7 +5,7 @@
 * [MagnetoShield][magneto]
 * [MotoShield][moto]
 * [MagnetoShield][opto]
-# API
+# Library and API
 * [Common][common]
 # Publications
 * [Publications][publications]
