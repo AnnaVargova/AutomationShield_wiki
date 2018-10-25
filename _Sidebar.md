@@ -1,13 +1,14 @@
+# AutomationShield
 * [Home][home]
-# Shields
+## Shields
 * [FloatShield][heat]
 * [HeatShield][float]
 * [MagnetoShield][magneto]
 * [MotoShield][moto]
 * [MagnetoShield][opto]
-# Library and API
+## Library and API
 * [Common][common]
-# Publications
+## Publications
 * [Publications][publications]
 * [BiBTeX][bibtex]
 
