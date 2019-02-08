@@ -16,6 +16,8 @@ Currently these shields are available:
 * [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system experiment
 * [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation experiment
 
+We are in the process of developing new types of shields. We are currently working on more than 4 new experimental devices to add to this portfolio by the end of 2019 or early 2020.
+
 # Where can I buy an AutomationShield?
 
 Unfortunately we lack the infrastructure to manufacture and sell the shields. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempted to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
