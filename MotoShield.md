@@ -200,7 +200,7 @@ The MotoShield is an open-source hardware designed primarily for control enginee
 
 The main component of the shield is a 6 V brushed DC motor equipped with an encoder. The motor unit has 6 outputs, 4 of them belong to the encoder (you can find a link to the motor in the table of components). The L293D H-bridge IC is used as amotor driver. The L293D is a very handy and easy to use IC containing a four-channel H-bridge, which enables it to control two DC motors, one stepper motor or four other loads like solenoids or relays. The MotoShield also contains an LM358 operational amplifier that has two roles. First, it subtracts  two voltage values and thereby calculates the voltage drop through the resistor used for measuring current. Second, it amplifies the subtracted voltage for the A/D of the Arduino. 
 
-The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MotoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/MotoShield_Circuit.rar). 
 [[/fig/Moto_Schematics.png|MotoShield Circuit Schematics.]] 
 
 ## Components
