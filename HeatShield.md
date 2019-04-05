@@ -3,11 +3,7 @@ The HeatShield belongs to the family of control engineering education devices fo
 
 ![Heat](https://user-images.githubusercontent.com/18485913/55647718-ae4aba80-57de-11e9-9ba4-b93ec63d62b5.png)
 
-# 3D Visualization
-3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1). The entire assembly of the HeatShield 3D model is available [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip).
-
-![3d1](https://user-images.githubusercontent.com/38358320/40002314-a9aa6042-5790-11e8-8b4d-d476e85f654b.png)
-
+For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (student freeware version) and can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip). Note that it features the model of Arduino Uno available from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
 
 # Library Functions
 `void begin()`
