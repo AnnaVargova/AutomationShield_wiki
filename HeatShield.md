@@ -98,18 +98,18 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 |-------|-------------------|-----------------|-----|
 | Q1    | Transistor        | MOSFET-BUZ11, 50V | 1 |
 | U2    | Voltage regulator | LM317T, 1.2-37V   | 1 |
-| R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel), 100kΩ-+1% | NTC 3950 | 1 |
+| R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel) | NTC 3950, 100kΩ | 1 |
 | R2    | Resistor          | 100kΩ, 1/4W       | 1 |
 | R3,R5 | Resistor          | 1kΩ, 1/4W         | 2 |
 | R4    | Resistor          | 240kΩ, 1/4W       | 1 |
 | -     | Heat sink         | for the voltage regulator | 1 |
-| -     | [Heating cartridge](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w) | 24V,30W       | 1 |
-| -     | [Heating block](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)      | -             | 1 |
-| -     | [Thermal insulator](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493)| - | 1 |
+| -     | [Heating cartridge](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w) | 24V, 30W, 20x6mm     | 1 |
+| -     | [Heating block](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)      | aluminum, 20x16x12mm | 1 |
+| -     | [Thermal insulator](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493)| hexagonal, M6 IS20HH625, 25x20mm | 1 |
 | -     | PCB               | FR4, 2-layer, 1.6mm thick | 1 |
 | -     | Header            | 6x1, female, 2.54mm pitch | 1 |
 | -     | Header            | 8x1, female, 2.54mm pitch | 3 |
-| -     | Bolt              | M6x20mm, headless | 1 |
+| -     | Bolt              | M6x20mm, headless, block to insulator | 1 |
 | -     | Bolt              | M6x10mm, rounded  | 1 |
 
 Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
