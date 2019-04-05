@@ -102,17 +102,17 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 
 |Part              | Name             | Type/Value | PCS  | Note                  |
 |------------------|------------------|-------|------|----------------------------|
-| Q1 | Transistor        | BUZ11, N-channel power MOSFET | 1 | 50V |
-| U2 | Voltage regulator | LM317T, Adjustable positive linear voltage regulator | 1 | 1.2--37V |
+| Q1    | Transistor        | MOSFET-BUZ11  | 1 | 50V     |
+| U2    | Voltage regulator | LM317T        | 1 | 1.2-37V |
+| R1    | Thermistor        | NTC 3950      | 1 |  |
+| R2    | Resistor          | 100kΩ         | 1 |  |
+| R3,R5 | Resistor          | 1kΩ           | 2 |  |
+| R4    | Resistor          | 240kΩ         | 1 |  |
+| -     | Heat sink         |               | 1 |  |
+| -     | Heat cartridge    | 24V,30W       | 1 |  |
 
 | Name              | Type/Value   | Number of pieces |
 |-------------------|--------------|------------------|
-| Transistor        | MOSFET-BUZ11 | 1                |
-| Voltage regulator | LM317T       | 1                |
-| Resistor          | 240Ω         | 1                |
-| Resistor          | 1kΩ          | 2                |
-| Resistor          | 10kΩ         | 1                |
-| Resistor          | 100kΩ        | 1                |
 | Aluminum cube     | [Link](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)             | 1                |
 | Heating patron    | [Link](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w)             | 1                |
 | Thermistor NTC    | NTC3950, [Link](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel)      | 1                |
