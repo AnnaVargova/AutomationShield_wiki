@@ -96,8 +96,8 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 
 |Part   | Name              | Type/Value/Note | PCS |
 |-------|-------------------|-----------------|-----|
-| Q1    | Transistor        | BUZ11, N-channel power MOSFET, 50V, TO-220, THT | 1 |
-| U2    | Voltage regulator | LM317T, 1.2-37V, TO-220, THT   | 1 |
+| Q1    | Transistor        | BUZ11, N-channel power MOSFET, 50V, TO-220, through-hole technology (THT) mounting | 1 |
+| U2    | Voltage regulator | LM317T, adjustable positive linear voltage regulator, 1.2-37V, TO-220, THT   | 1 |
 | R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel) | NTC 3950, 100kΩ, rated 300°C with wiring | 1 |
 | R2    | Resistor          | 100kΩ, 1/4W ,THT  | 1 |
 | R3,R5 | Resistor          | 1kΩ, 1/4W, THT    | 2 |
@@ -127,4 +127,4 @@ This shield was designed and created for the subject of Microcomputers and Micro
 * **3D model design:** Michal Kováč
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
 * **Software design:** Richard Köplinger
-* **Wiki:** Richard Salíni, Juraj Bavlna, Sohaibullah Zarghoon
+* **Wiki:** Martin Gulan, Richard Salíni, Juraj Bavlna, Sohaibullah Zarghoon
