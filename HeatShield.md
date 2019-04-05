@@ -2,7 +2,7 @@
 The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple feedback loop. The maximal temperature of the heating block is maximized at ~80°C. The HeatShield also features a transparent safety enclosure.
 
 <!-- [Heat](https://user-images.githubusercontent.com/18485913/55647718-ae4aba80-57de-11e9-9ba4-b93ec63d62b5.png)-->
-![Heat2](https://user-images.githubusercontent.com/18485913/55652982-6a12e680-57ed-11e9-975f-031abaf2f8b5.png)
+![Heat2](https://user-images.githubusercontent.com/18485913/55653082-afcfaf00-57ed-11e9-9187-0f1797fd71b2.png)
 
 For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip). Note that it features the model of Arduino Uno available from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
 
@@ -97,8 +97,8 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 
 |Part   | Name              | Type/Value/Note | PCS |
 |-------|-------------------|-----------------|-----|
-| Q1    | Transistor        | BUZ11, N-channel power MOSFET, 50V, TO-220, through-hole technology (THT) mounting | 1 |
-| U2    | Voltage regulator | LM317T, adjustable positive linear voltage regulator, 1.2-37V, TO-220, THT   | 1 |
+| Q1    | [Transistor](https://www.tme.eu/sk/details/buz11/tranzistory-s-kanalom-n-tht/on-semiconductor-fairchild/buz11-nr4941/) | BUZ11, N-channel power MOSFET, 50V, TO-220, through-hole technology (THT) mounting | 1 |
+| U2    | [Voltage regulator](https://www.tme.eu/sk/details/lm317t/stabilizatory-napatia-regulovane/st-microelectronics/) | LM317T, adjustable positive linear voltage regulator, 1.2-37V, TO-220, THT   | 1 |
 | R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel) | NTC 3950, 100kΩ, rated 300°C with wiring | 1 |
 | R2    | Resistor          | 100kΩ, 1/4W ,THT  | 1 |
 | R3,R5 | Resistor          | 1kΩ, 1/4W, THT    | 2 |
