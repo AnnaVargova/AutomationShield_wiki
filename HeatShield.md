@@ -112,16 +112,13 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 | -     | [Heating cartridge](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w) | 24V,30W       | 1 |  |
 | -     | [Heating block](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)      | -             | 1 |  |
 | -     | [Thermal insulator](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493)| - | 1 |  |
-| -     | PCB               | -             | 1 |  |
+| -     | PCB               | FR4, 2-layer, 1.6mm thick | 1 |  |
+| -     | Header            | 6x1, female, 2.54mm pitch | 1 |  |
+| -     | Header            | 8x1, female, 2.54mm pitch | 3 |  |
+| -     | Bolt              | M6x20mm, headless | 1 |  |
+| -     | Bolt              | M6x10mm, rounded  | 1 |  |
 
-| Name              | Type/Value   | Number of pieces |
-|-------------------|--------------|------------------|
-| Bolt              | M6x10        | 3                |
-| Bolt              | M6x20        | 3                |
-| Bolt              | M3x8         | 3                |
-| Nut               | M3           | 3                |
-
-Note that the total cost of the above components and thus of the entire HeatShield is no more than $5.
+Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
 
 # About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
