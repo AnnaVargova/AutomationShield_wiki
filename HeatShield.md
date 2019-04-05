@@ -2,10 +2,7 @@
 The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple feedback loop. The maximal temperature of the heating block is maximized at ~80°C. The HeatShield also features a transparent safety enclosure.
 
 ![isoHeatShield](https://user-images.githubusercontent.com/18485913/55643295-18f5f900-57d3-11e9-9b5b-0ecdd72ef6e4.jpg)
-![topHeatShield](https://user-images.githubusercontent.com/18485913/55643297-198e8f80-57d3-11e9-94e7-99c6b0e39643.jpg)
-
-![heatshield1](https://user-images.githubusercontent.com/38358320/39665030-5ee65566-508d-11e8-967d-cb33fd17e5c7.png)
-![heatshield21](https://user-images.githubusercontent.com/38358320/39665042-950aabce-508d-11e8-9686-4ca6596240d4.png)
+![cageHeatShield](https://user-images.githubusercontent.com/18485913/55643507-9a4d8b80-57d3-11e9-8a1b-41d3a76e7c84.jpg)
 
 
 # 3D Visualization
