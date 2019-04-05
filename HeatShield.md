@@ -91,34 +91,34 @@ Since the materials used in 3D printing have a melting temperature of about 240-
 
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
+## Parts
+To make an HeatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+
+|Part   | Name              | Type/Value/Note | PCS |
+|-------|-------------------|-----------------|-----|
+| Q1    | Transistor        | MOSFET-BUZ11, 50V | 1 |
+| U2    | Voltage regulator | LM317T, 1.2-37V   | 1 |
+| R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel), 100kΩ-+1% | NTC 3950 | 1 |
+| R2    | Resistor          | 100kΩ, 1/4W       | 1 |
+| R3,R5 | Resistor          | 1kΩ, 1/4W         | 2 |
+| R4    | Resistor          | 240kΩ, 1/4W       | 1 |
+| -     | Heat sink         | for the voltage regulator | 1 |
+| -     | [Heating cartridge](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w) | 24V,30W       | 1 |
+| -     | [Heating block](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)      | -             | 1 |
+| -     | [Thermal insulator](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493)| - | 1 |
+| -     | PCB               | FR4, 2-layer, 1.6mm thick | 1 |
+| -     | Header            | 6x1, female, 2.54mm pitch | 1 |
+| -     | Header            | 8x1, female, 2.54mm pitch | 3 |
+| -     | Bolt              | M6x20mm, headless | 1 |
+| -     | Bolt              | M6x10mm, rounded  | 1 |
+
+Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
+
 ## PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip), while the ready-to-manufacture Gerber files are available from [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
 
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
-
-## Parts
-To make an HeatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
-
-|Part              | Name             | Type/Value | PCS  | Note                  |
-|------------------|------------------|-------|------|----------------------------|
-| Q1    | Transistor        | MOSFET-BUZ11  | 1 | 50V     |
-| U2    | Voltage regulator | LM317T        | 1 | 1.2-37V |
-| R1    | [Thermistor](https://www.na3d.sk/p/2482/termistor-pre-3d-tlaciaren-1-m-kabel) | NTC 3950      | 1 |  |
-| R2    | Resistor          | 100kΩ         | 1 |  |
-| R3,R5 | Resistor          | 1kΩ           | 2 |  |
-| R4    | Resistor          | 240kΩ         | 1 |  |
-| -     | Heat sink         | -             | 1 |  |
-| -     | [Heating cartridge](https://www.na3d.sk/p/2634/vyhrevne-teleso-24v-30w) | 24V,30W       | 1 |  |
-| -     | [Heating block](https://www.na3d.sk/p/2638/e3d-v6-hlinikova-kocka)      | -             | 1 |  |
-| -     | [Thermal insulator](http://www.conrad.sk/izolator-sestiuhelnik-m6-is20hh625-20-mm-25-mm.k887493)| - | 1 |  |
-| -     | PCB               | FR4, 2-layer, 1.6mm thick | 1 |  |
-| -     | Header            | 6x1, female, 2.54mm pitch | 1 |  |
-| -     | Header            | 8x1, female, 2.54mm pitch | 3 |  |
-| -     | Bolt              | M6x20mm, headless | 1 |  |
-| -     | Bolt              | M6x10mm, rounded  | 1 |  |
-
-Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
 
 # About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
