@@ -1,17 +1,17 @@
 # Introduction
-The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) as the sensor, which creates a simple feedback loop. The maximal temperature of the heating block is maximized at ~80°C. The device also features a transparent safety enclosure.
+The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple feedback loop. The maximal temperature of the heating block is maximized at ~80°C. The HeatShield also features a transparent safety enclosure.
 
 ![heatshield1](https://user-images.githubusercontent.com/38358320/39665030-5ee65566-508d-11e8-967d-cb33fd17e5c7.png)
 ![heatshield21](https://user-images.githubusercontent.com/38358320/39665042-950aabce-508d-11e8-9686-4ca6596240d4.png)
 
 
-# 3D VISUALIZATION
+# 3D Visualization
 3D model was designed in software CATIA V5R20 (student freeware version). Arduino UNO 3D model was used and downloaded from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1). The entire assembly of the HeatShield 3D model is available [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip).
 
 ![3d1](https://user-images.githubusercontent.com/38358320/40002314-a9aa6042-5790-11e8-8b4d-d476e85f654b.png)
 
 
-# LIBRARY FUNCTIONS
+# Library Functions
 `void begin()`
 
 This method initialize pins of the Heatshield.
@@ -25,7 +25,7 @@ This method returns temperature in °C, which is detect by sensor.
 This method accepts as parameter action in percent and writes adequate value to drive the heating body.
 
 
-# EXAMPLE
+# Example
 
 Example for PID control temperature from 28°C to 40°C.
 
@@ -81,10 +81,10 @@ void step(){
 ```
 ![bez nazvu](https://user-images.githubusercontent.com/23738757/40050933-3f97931a-5839-11e8-940c-04a633e233a8.png)
 
-# DETAILED HARDWARE DESCRIPTION
+# Detailed Hardware Description
 
 
-## Circuit schematics
+## Circuit Schematics
 
 The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed in [DIPTrace](https://diptrace.com/) software (freeware version). You can download circuit schematics layout [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
 
@@ -104,7 +104,7 @@ Gerber files are available to download [here](https://github.com/richardsalini/H
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
 
-# COMPONENTS
+# Components
 Here is a list of components used in the project.
 
 | Name              | Type/Value   | Number of pieces |
@@ -124,7 +124,7 @@ Here is a list of components used in the project.
 | Bolt              | M3x8         | 3                |
 | Nut               | M3           | 3                |
 
-# ABOUT
+# About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
 ## Authors
