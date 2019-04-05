@@ -97,8 +97,13 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
 
-# Components
-Here is a list of components used in the project.
+## Parts
+To make an HeatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+
+|Part              | Name             | Type/Value | PCS  | Note                  |
+|------------------|------------------|-------|------|----------------------------|
+| Q1 | Transistor        | BUZ11, N-channel power MOSFET | 1 | 50V |
+| U2 | Voltage regulator | LM317T, Adjustable positive linear voltage regulator | 1 | 1.2--37V |
 
 | Name              | Type/Value   | Number of pieces |
 |-------------------|--------------|------------------|
@@ -116,6 +121,8 @@ Here is a list of components used in the project.
 | Bolt              | M6x20        | 3                |
 | Bolt              | M3x8         | 3                |
 | Nut               | M3           | 3                |
+
+Note that the total cost of the above components and thus of the entire HeatShield is no more than $5.
 
 # About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
