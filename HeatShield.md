@@ -7,9 +7,7 @@
 
 [Simulink API](#simulink)
 [Examples](#examples)
-
 [Detailed Hardware Description](#hardware)
-
 [About](#about)
 
 
