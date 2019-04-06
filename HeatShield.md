@@ -84,7 +84,7 @@ which is what `sensorRead()` essentially does.
 
 ## <a name="matlab"/>MATLAB API
 
-If you cannot program in C/C++ just yet, you may want to try out the MATLAB API for the HeatShield that enables to access the hardware through the [MATLAB](https://www.mathworks.com/downloads/) command line and scripts. It requires the [The MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/47522-matlab-support-package-for-arduino-hardware) which enables communication between the Arduino prototyping platform and the development computer. Various commands accessing the hardware are executed directly in quasi real time without the need to compile code. This means that code is not deployed to the processor, and the Arduino merely acts as an external laboratory measurement card.
+If you cannot program in C/C++ just yet, you may want to try out the MATLAB API for the HeatShield that enables to access the hardware through the [MATLAB](https://www.mathworks.com/downloads/) command line and scripts. It utilizes the [The MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/47522-matlab-support-package-for-arduino-hardware) which enables communication between the Arduino prototyping platform and the development computer. Various commands accessing the hardware are executed directly in quasi real time without the need to compile code. This means that code is not deployed to the processor, and the Arduino merely acts as an external laboratory measurement card.
 
 To prevent confusion between the C/C++ and the MATLAB API, the two interfaces are as similar as possible. The MATLAB API is written in object-oriented script and the user must first create an instance from the class:
 
@@ -110,7 +110,7 @@ Note that the use of the high-level commands of MATLAB allows for a simple imple
 
 ## <a name="simulink"/>Simulink API
 
-[Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware)
+An even more intuitive to create control loops and perform live experiments may be the Simulink API for the HeatShield. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. In direct contrast with the way MATLAB handles Arduinos, the block scheme in Simulink is transcribed into C/C++, then compiled to machine code and uploaded to the prototyping board. In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session; or data may be displayed and logged conveniently.
 
 The Simulink API offers the following algorithmic blocks:
 ![HeatShield_Simulink_API](https://user-images.githubusercontent.com/18485913/55669618-e81ccf00-5879-11e9-9480-19b2cc51143f.png)
