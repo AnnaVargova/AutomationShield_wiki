@@ -2,8 +2,9 @@
 [Library functions](#api)  
 [Inputs and outputs](##io)  
 
-<a name="intro"/>
+
 # Introduction
+<a name="intro"/>
 The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple single-input single-output (SISO) feedback loop. In place of the usual extrusion nozzle supplying the melted plastic filament is a steel screw connecting the heating block to a thermal insulator that prevents heat damage to the printed circuit board (PCB). The maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator. The HeatShield also features an optional transparent safety enclosure.
 
 <!-- [Heat](https://user-images.githubusercontent.com/18485913/55647718-ae4aba80-57de-11e9-9ba4-b93ec63d62b5.png)-->
@@ -13,9 +14,9 @@ For a better visualization the entire assembly was 3D-modeled using the CAD soft
 
 
 
-<a name="api"/>
-# Library functions
 
+# Library functions
+<a name="api"/>
 The basic aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
