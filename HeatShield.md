@@ -41,6 +41,10 @@ The thermistor in the heating block is accessed by calling the
 
 method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
 
+%%
+R=\frac{V_{\mathrm{o}}R_{\mathrm{r}}}{V_{\mathrm{r}}-V_{\mathrm{o}}};
+%%
+
 # Example
 
 Example for PID control temperature from 28°C to 40°C.
