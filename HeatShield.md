@@ -1,15 +1,15 @@
 #### Contents 
 [Introduction](#intro)<br/>
-[Library functions](#api)<br/>
-&nbsp;&nbsp;[Inputs and outputs](#io)<br/>
+[Application Programming Interface](#api)<br/>
+&nbsp;&nbsp;[C/C++ library for Arduino IDE](#io)<br/>
 &nbsp;&nbsp;[MATLAB API](#matlab)<br/>
 &nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
-[Detailed hardware description](#hardware)<br/>
+[Detailed Hardware Description](#hardware)<br/>
 &nbsp;&nbsp;[Circuit design](#io)<br/>
 &nbsp;&nbsp;[Parts](#io)<br/>
 &nbsp;&nbsp;[PCB](#io)<br/>
-[About](#about)
+[About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 
