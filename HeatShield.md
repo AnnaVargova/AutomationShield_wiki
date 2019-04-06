@@ -41,11 +41,7 @@ The thermistor in the heating block is accessed by calling the
 
 method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
 
-     V         R            
-      mathrm{o} mathrm{r}   
-R = -----------------------;
-    V          - V          
-     mathrm{r}    mathrm{o} 
+[img]http://bit.ly/2CXl9Fm[/img]
 
 
 
