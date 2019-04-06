@@ -78,7 +78,7 @@ void step(){
 
 # Detailed Hardware Description
 
-The OptoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
+The HeatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
 For those who wish to use the board without the library, the components are connected to the following pins:
 
@@ -88,7 +88,7 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![HeatScheme](https://user-images.githubusercontent.com/18485913/55666313-644ced80-584d-11e9-86c1-06162b22571e.png)
 
-Temperature feedback is based on a negative temperature coefficient (NTC) thermistor (R1) with a nominal 100kΩ resistance, connected to the A0 analog input of the Arduino Uno's microcontroller (U1) in a voltage divider circuit paired with another 100kΩ resistor (R2). Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer e.g. for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator (U2).
+Temperature feedback is based on a negative temperature coefficient (NTC) thermistor (**R1**) with a nominal 100kΩ resistance, connected to the A0 analog input of the Arduino Uno's microcontroller (**U1**) in a voltage divider circuit paired with another 100kΩ resistor (**R2**). Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer e.g. for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator (**U2**).
 
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
