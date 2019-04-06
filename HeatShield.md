@@ -90,9 +90,14 @@ method, where the variable `y` will hold the temperature in degrees Celsius. Fin
 
 which accepts the input power `u` in percents.
 
-Note that the use of the high-level commands of MATLAB further allows for a simple implementation of more advanced control engineering concepts that would be complex and time consuming to implement in C/C++.
+Note that the use of the high-level commands of MATLAB allows for a simple implementation of more advanced control engineering concepts that would be complex and time consuming to implement in C/C++.
 
 ## Simulink API
+
+The Simulink API offers the following algorithmic blocks:
+![HeatShield_Simulink_API](https://user-images.githubusercontent.com/18485913/55669618-e81ccf00-5879-11e9-9480-19b2cc51143f.png)
+
+
 
 # Example
 
