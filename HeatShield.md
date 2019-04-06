@@ -88,7 +88,9 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![HeatScheme](https://user-images.githubusercontent.com/18485913/55666313-644ced80-584d-11e9-86c1-06162b22571e.png)
 
-Temperature feedback is based on a negative temperature coefficient (NTC) thermistor (**R1**) with a nominal 100kΩ resistance, connected to the A0 analog input of the Arduino Uno's microcontroller (**U1**) in a voltage divider circuit paired with another 100kΩ resistor (**R2**). Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer e.g. for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator (**U2**).
+Temperature feedback is based on a negative temperature coefficient (NTC) thermistor **R1** connected to the A0 analog input of the Arduino Uno's microcontroller **U1** in a voltage divider circuit paired with resistor **R2**. Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator **U2**.
+
+The power circuitry is driven by an N-channel metal-oxide semiconductor field-effect transistor (MOSFET) **Q1** connected to the pulse-width modulation (PWM) capable D3 pin of the Arduino. A series resistor **R5** protects the MCU in transients, while a resistor **R6** parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
 
 Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
 
@@ -118,7 +120,7 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
 
 ## PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip), while the ready-to-manufacture Gerber files are available from [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip), while the ready-to-manufacture Gerber files are available from [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
 
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
