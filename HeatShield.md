@@ -90,6 +90,8 @@ method, where the variable `y` will hold the temperature in degrees Celsius. Fin
 
 which accepts the input power `u` in percents.
 
+Note that the use of the high-level commands of MATLAB further allows for a simple implementation of more advanced control engineering concepts that would be complex and time consuming to implement in C/C++.
+
 ## Simulink API
 
 # Example
