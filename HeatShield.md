@@ -6,7 +6,14 @@ The HeatShield belongs to the family of control engineering education devices fo
 
 For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip). Note that it features the model of Arduino Uno available from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
 
-# Library Functions
+# Library functions
+
+All functions and examples associated to the HeatShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
+
+The summary of functions and the illustration below should get you started quickly:
+* Output (sensor): `HeatShield.sensorRead();` 
+* Input  (actuator): `HeatShield.actuatorWrite();` 
+
 `void begin()`
 
 This method initialize pins of the Heatshield.
