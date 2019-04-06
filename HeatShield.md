@@ -79,12 +79,11 @@ void step(){
 # Detailed Hardware Description
 
 
-## Circuit Schematics
+## Circuit design
 
-The following figure shows the HeatShield electrical circuit diagram. It is a simple electrical circuit. The meaning of the individual parts of the circuit is given below. The scheme was designed in [DIPTrace](https://diptrace.com/) software (freeware version). You can download circuit schematics layout [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the HeatShield from [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
 
-
-![schema](https://user-images.githubusercontent.com/38358320/39537574-534a42c6-4e3a-11e8-8927-0fbf338a4aca.png)
+![HeatScheme](https://user-images.githubusercontent.com/18485913/55666313-644ced80-584d-11e9-86c1-06162b22571e.png)
 
 Dependance of the NTC thermistor at the temperature defines Stein-Hart formula.Due to the fact that only the Beta factor is found in the relevant NTC thermistor documentation. In order to use the NTC thermistor as a temperature sensor it was necessary to use a voltage divider.
 
