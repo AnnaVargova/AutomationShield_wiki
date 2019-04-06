@@ -6,7 +6,6 @@
 [MATLAB API](#matlab)
 
 [Simulink API](#simulink)
-
 [Examples](#examples)
 
 [Detailed Hardware Description](#hardware)
