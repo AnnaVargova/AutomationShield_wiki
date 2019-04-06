@@ -114,6 +114,10 @@ Note that the use of the high-level commands of MATLAB allows for a simple imple
 
 The Simulink API offers the following algorithmic blocks:
 ![HeatShield_Simulink_API](https://user-images.githubusercontent.com/18485913/55669618-e81ccf00-5879-11e9-9480-19b2cc51143f.png)
+The 'Actuator Write' block accepts real numbers from 0--100\% and supplies power to the cartridge.
+The 'Sensor Read' block reads the input from the thermistor. Users may choose between raw ADC levels, voltage, resistance and temperature. The parameters of the voltage divider and the thermistor can be also fine-tuned.
+The 'HeatShield' block unites the input and output functionality into a single entity that can be conveniently used for identification and control experiments.
+The dynamic process of heating the printer head is mathematically represented by a black-box nonlinear ARX model and a first-order ordinary differential equation. The blocks can be used to simulate the response of HeatShield and thereby tuning controllers without the need to run the experiments on the live system.
 
 
 
