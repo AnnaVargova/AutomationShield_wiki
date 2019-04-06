@@ -22,7 +22,9 @@ The HeatShield belongs to the family of control engineering education devices fo
 
 For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip). Note that it features the model of Arduino Uno available from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
 
-# <a name="api"/>Application programming interface 
+# <a name="api"/>Application programming interface
+
+## <a name="io"/>C/C++ API
 
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
@@ -32,9 +34,7 @@ The summary of basic functions and the illustration below should get you started
 
 ![Heat_Functions](https://user-images.githubusercontent.com/18485913/55668007-c4e72500-5863-11e9-99f6-b117947494d9.png)
 
-## <a name="io"/>C/C++ API
-
-The following sections describe the methods used to access the input and output of the HeatShield.
+The following subsections describe the methods used to access the input and output of the HeatShield.
 Note that before you begin an experiment you must initialize the hardware by calling
 
 `HeatShield.begin();`
@@ -228,7 +228,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
 ## <a name="authors"/>Authors
-* **3D model design:** Michal Kováč
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
 * **Software design:** Richard Köplinger
+* **3D model design:** Michal Kováč
 * **Wiki:** Martin Gulan, Gergely Takács
