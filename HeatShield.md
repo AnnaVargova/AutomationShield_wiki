@@ -131,6 +131,8 @@ The remaining two blocks mathematically represented the dynamic process of heati
 
 Input-output experiments for data gathering can be launched, displayed and logged in C/C++ (Arduino IDE), MATLAB and Simulink as well. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/HeatShield/HeatShield_Identification/HeatShield_Identification.ino) sends a series of step changes that can be logged in various ways through the serial line, while [another example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/HeatShield/HeatShield_Random/HeatShield_Random.ino) also adds a random component to the inputs to collect more information-rich signals. Similarly, a [worked MATLAB example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_Identification_Experiment.m) and a [worked Simulink example](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_InputsOutputs.slx) perform a simple step change of input, displays the progress of the response live on screen and saves a data file.
 
+![IDArduino](https://user-images.githubusercontent.com/18485913/55674328-94c77280-58b3-11e9-967f-5e6fddd7392e.png)
+
 ## <a name="control"/>Control
 
 # <a name="hardware"/>Detailed hardware description
