@@ -8,7 +8,7 @@ For a better visualization the entire assembly was 3D-modeled using the CAD soft
 
 # Library functions
 
-The aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+The basic aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `HeatShield.sensorRead();` 
@@ -67,6 +67,8 @@ by
 which is what `sensorRead()` essentially does.
 
 ## MATLAB API
+
+If you cannot program in C/C++ just yet, you may want to try out the MATLAB API for the HeatShield that enables to access the hardware through the [MATLAB](https://www.mathworks.com/downloads/) command line and scripts. It requires the [The MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/47522-matlab-support-package-for-arduino-hardware) which enables communication between the Arduino prototyping platform and the development computer. Various commands accessing the hardware are executed directly in quasi real time without the need to compile code.
 
 To prevent confusion between the C/C++ and the MATLAB API, the two interfaces are as similar as possible. The MATLAB API is written in object-oriented script and the user must first create an instance from the class:
 
@@ -204,4 +206,4 @@ This shield was designed and created for the subject of Microcomputers and Micro
 * **3D model design:** Michal Kováč
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
 * **Software design:** Richard Köplinger
-* **Wiki:** Martin Gulan
+* **Wiki:** Martin Gulan, Gergely Takács
