@@ -8,13 +8,19 @@ For a better visualization the entire assembly was 3D-modeled using the CAD soft
 
 # Library functions
 
-All functions and examples associated to the HeatShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
+The aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
-The summary of functions and the illustration below should get you started quickly:
+The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `HeatShield.sensorRead();` 
 * Input  (actuator): `HeatShield.actuatorWrite();` 
 
 ![Heat_Functions](https://user-images.githubusercontent.com/18485913/55668007-c4e72500-5863-11e9-99f6-b117947494d9.png)
+
+## Inputs and outputs
+
+The following sections describe the methods used to access the input and output of the HeatShield.
+
+### Input
 
 `void begin()`
 
