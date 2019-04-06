@@ -1,12 +1,16 @@
 #### Contents 
 [Introduction](#intro)<br/>
 [Library functions](#api)<br/>
-&nbsp;[Inputs and outputs](#io)<br/>
-&nbsp;[MATLAB API](#matlab)<br/>
-&nbsp;[Simulink API](#simulink)<br/>
+&nbsp;&nbsp;[Inputs and outputs](#io)<br/>
+&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
+&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
 [Detailed hardware description](#hardware)<br/>
+&nbsp;&nbsp;[Circuit design](#io)<br/>
+&nbsp;&nbsp;[Parts](#io)<br/>
+&nbsp;&nbsp;[PCB](#io)<br/>
 [About](#about)
+&nbsp;&nbsp;[Authors](#authors)<br/>
 
 
 # <a name="intro"/>Introduction
@@ -180,7 +184,7 @@ For those who wish to use the board without the library, the components are conn
 
 ![Heat_PIN](https://user-images.githubusercontent.com/18485913/55667701-20afaf00-5860-11e9-8070-3cb1de7f9597.png)
 
-## Circuit design
+## <a name="circuit"/>Circuit design
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the HeatShield from [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
 
@@ -194,7 +198,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 
 The exact component specification and required quantities are given next. Note that only components with through-hole technology (THT) mounting are utilized in order to make assembly and servicing easy even if you are inexperienced with electronics.
 
-## Parts
+## <a name="parts"/>Parts
 To make an HeatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 |Part   | Name              | Type/Value/Note | PCS |
@@ -217,7 +221,7 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 
 Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
 
-## PCB
+## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout of the HeatShield can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip), while the ready-to-manufacture Gerber files are available from [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
 
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
@@ -226,7 +230,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 # <a name="about"/>About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
-## Authors
+## <a name="authors"/>Authors
 * **3D model design:** Michal Kováč
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
 * **Software design:** Richard Köplinger
