@@ -4,6 +4,9 @@
 [Inputs and outputs](#io)
 [MATLAB API](#matlab)
 [Simulink API](#simulink)
+[Examples](#examples)
+[Detailed Hardware Description](#hardware)
+[About](#about)
 
 
 # <a name="intro"/>Introduction
@@ -169,7 +172,7 @@ void step(){
 ```
 ![bez nazvu](https://user-images.githubusercontent.com/23738757/40050933-3f97931a-5839-11e8-940c-04a633e233a8.png)
 
-# Detailed Hardware Description
+# <a name="hardware"/>Detailed Hardware Description
 
 The HeatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
@@ -220,7 +223,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
 
-# About
+# <a name="about"/>About
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
 ## Authors
