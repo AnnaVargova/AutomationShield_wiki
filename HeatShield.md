@@ -14,6 +14,8 @@ The summary of functions and the illustration below should get you started quick
 * Output (sensor): `HeatShield.sensorRead();` 
 * Input  (actuator): `HeatShield.actuatorWrite();` 
 
+![Heat_Functions](https://user-images.githubusercontent.com/18485913/55667955-5ace8000-5863-11e9-9ece-47f6357df048.png)
+
 `void begin()`
 
 This method initialize pins of the Heatshield.
