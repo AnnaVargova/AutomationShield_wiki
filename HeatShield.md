@@ -5,6 +5,8 @@
 &nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+&nbsp;&nbsp;&nbsp;[Control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#io)<br/>
@@ -110,12 +112,12 @@ Note that the use of the high-level commands of MATLAB allows for a simple imple
 
 ## <a name="simulink"/>Simulink API
 
-An even more intuitive to create control loops and perform live experiments is the Simulink API for the HeatShield. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the prototyping board. In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
+An even more intuitive to create control loops and perform live experiments is the Simulink API for the HeatShield. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the MCU. In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
 
 The Simulink API offers the following algorithmic blocks:
 ![HeatShield_Simulink_API](https://user-images.githubusercontent.com/18485913/55669618-e81ccf00-5879-11e9-9480-19b2cc51143f.png)
 
-The 'Actuator Write' block accepts real numbers from 0--100\% and supplies power to the cartridge.
+The 'Actuator Write' block accepts real numbers from 0-100\% and supplies power to the cartridge.
 
 The 'Sensor Read' block reads the input from the thermistor. Users may choose between raw ADC levels, voltage, resistance and temperature. The parameters of the voltage divider and the thermistor can be also fine-tuned.
 
@@ -125,59 +127,9 @@ The remaining two blocks mathematically represented the dynamic process of heati
 
 # <a name="examples"/>Examples
 
-Example for PID control temperature from 28°C to 40°C.
+## <a name="ident"/>System identification
 
-```
-#include "AutomationShield.h"
-
-float r;
-float y;
-float u=0.0;
-float e;
-
-bool enable = false;
-
-void setup(void) {
-
-  Serial.begin(9600);          
-  HeatShield.begin(); 
-  Sampling.interruptInitialize(1000000); //period in us
-  Sampling.setInterruptCallback(stepEnable); 
-  PIDAbs.setKp(10.3022952672455);
-  PIDAbs.setTi(300);
-  PIDAbs.setTd(0);
-}
-
-void loop(void) {
-
-  if (enable) {
-    
-    step();
-    enable=false;
-  }
-}
-
-void stepEnable() {
-
-  enable=true;
-}
-
-void step(){
-  
-  HeatShield.actuatorWrite(u);
-  r=40.0;
-  y=HeatShield.sensorReadTemperature();
-  e=r-y;
-  u=PIDAbs.compute(e,0.0,100.0,-100.0,100.0);
-    
-  Serial.print(y);
-  Serial.print(" ");
-  Serial.print(u);
-  Serial.print(" ");
-  Serial.println(r);
-}
-```
-![bez nazvu](https://user-images.githubusercontent.com/23738757/40050933-3f97931a-5839-11e8-940c-04a633e233a8.png)
+## <a name="control"/>Control
 
 # <a name="hardware"/>Detailed hardware description
 
