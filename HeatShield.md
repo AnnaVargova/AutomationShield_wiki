@@ -82,6 +82,8 @@ The HeatShield is an open hardware product, you are free to make your own device
 
 For those who wish to use the board without the library, the components are connected to the following pins:
 
+![Heat_PIN](https://user-images.githubusercontent.com/18485913/55667689-e3e3b800-585f-11e9-8de9-9fd2aac596d5.png)
+
 ## Circuit design
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the HeatShield from [here](https://github.com/richardsalini/HeatShield/files/1968266/HeatShield_Circuit.zip).
