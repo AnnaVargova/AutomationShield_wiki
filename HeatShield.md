@@ -82,7 +82,7 @@ The HeatShield is an open hardware product, you are free to make your own device
 
 For those who wish to use the board without the library, the components are connected to the following pins:
 
-![Heat_PIN](https://user-images.githubusercontent.com/18485913/55667689-e3e3b800-585f-11e9-8de9-9fd2aac596d5.png)
+![Heat_PIN](https://user-images.githubusercontent.com/18485913/55667701-20afaf00-5860-11e9-8070-3cb1de7f9597.png)
 
 ## Circuit design
 
