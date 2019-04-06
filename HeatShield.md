@@ -133,6 +133,8 @@ Input-output experiments for data gathering can be launched, displayed and logge
 
 ![IDArduino](https://user-images.githubusercontent.com/18485913/55674360-fbe52700-58b3-11e9-8b4e-acbca2f05968.png)
 
+![SimulatedResponse](https://user-images.githubusercontent.com/18485913/55674398-7615ab80-58b4-11e9-92b1-6fe56623f551.png)
+
 ## <a name="control"/>Control
 
 # <a name="hardware"/>Detailed hardware description
