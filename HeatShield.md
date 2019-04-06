@@ -1,6 +1,7 @@
+##### Contents 
 [Introduction](#intro)  
 [Library functions](#api)  
-  [Inputs and outputs](##io)  
+[  Inputs and outputs](##io)  
 
 <a name="intro"/>
 
@@ -27,6 +28,7 @@ The summary of basic functions and the illustration below should get you started
 ![Heat_Functions](https://user-images.githubusercontent.com/18485913/55668007-c4e72500-5863-11e9-99f6-b117947494d9.png)
 
 <a name="io"/>
+
 ## Inputs and outputs
 
 The following sections describe the methods used to access the input and output of the HeatShield.
