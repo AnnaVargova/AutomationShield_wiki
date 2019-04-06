@@ -88,11 +88,11 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![HeatScheme](https://user-images.githubusercontent.com/18485913/55666313-644ced80-584d-11e9-86c1-06162b22571e.png)
 
-Temperature feedback is based on a negative temperature coefficient (NTC) thermistor **R1** connected to the A0 analog input of the Arduino Uno's microcontroller **U1** in a voltage divider circuit paired with resistor **R2**. Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator **U2**.
-
 The power circuitry is driven by an N-channel metal-oxide semiconductor field-effect transistor (MOSFET) **Q1** connected to the pulse-width modulation (PWM) capable D3 pin of the Arduino. A series resistor **R5** protects the MCU in transients, while a resistor **R6** parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
 
-Output voltage setting is secured by two resistors. The first resistor having a value of 240Ω being recommended by the manufacturer. The value of the second resistor is determined by the desired output voltage.In this case, the temperature of 80°C was reached at a voltage of 6.45V, the resistor R2 used had a value of 1kΩ. A resistor with a 1kΩ resistance value serves to protect the Arduin pins. The 10kΩ resistor provides a transistor closure. The used transistor is a MOSFET marked as BUZ11, a type of transistor that is only controlled by voltage.
+Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator **U2**, which takes the external 12V input from the Vin pin of the MCU and reduces it to a voltage configured by resistors **R3** and **R4** supplying its adjustable input.
+
+Temperature feedback is based on a negative temperature coefficient (NTC) thermistor **R1** connected to the A0 analog input of the Arduino Uno MCU **U1** in a voltage divider circuit paired with resistor **R2**. 
 
 The exact component specification and required quantities are given next. Note that only components with through-hole technology (THT) mounting are utilized in order to make assembly and servicing easy even if you are inexperienced with electronics.
 
