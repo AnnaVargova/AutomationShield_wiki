@@ -43,6 +43,15 @@ method, which returns the block temperature in degrees Celsius to the variable `
 
 <img src="http://bit.ly/2CXl9Fm" align="center" border="0" alt="R=\frac{V_{o}R_{r}}{V_{r}-V_{o}};" width="104" height="46" />
 
+     V R    
+      o r   
+R = -------;
+    V  - V  
+     r    o 
+
+
+
+
 
 
 # Example
