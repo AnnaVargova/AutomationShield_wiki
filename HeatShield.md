@@ -1,14 +1,14 @@
 #### Contents 
 [Introduction](#intro)<br/>
-[Application Programming Interface](#api)<br/>
-&nbsp;&nbsp;[C/C++ library for Arduino IDE](#io)<br/>
-&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
-&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+[Application programming interface](#api)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
+&nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
+&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
-[Detailed Hardware Description](#hardware)<br/>
-&nbsp;&nbsp;[Circuit design](#io)<br/>
-&nbsp;&nbsp;[Parts](#io)<br/>
-&nbsp;&nbsp;[PCB](#io)<br/>
+[Detailed hardware description](#hardware)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#io)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#io)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#io)<br/>
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
@@ -25,7 +25,7 @@ For a better visualization the entire assembly was 3D-modeled using the CAD soft
 
 
 
-# <a name="api"/>Library functions
+# <a name="api"/>C/C++ API
 
 The basic aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
