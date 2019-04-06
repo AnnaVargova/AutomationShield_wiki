@@ -19,21 +19,19 @@ The summary of basic functions and the illustration below should get you started
 ## Inputs and outputs
 
 The following sections describe the methods used to access the input and output of the HeatShield.
+Note that before you begin an experiment you must initialize the hardware by calling
+
+`HeatShield.begin();`
+
+which determines the mode of the input and output pins.
 
 ### Input
 
-`void begin()`
+Assuming the power supplied to the heating cartridge is stored in the variable `u` as a floating point number in the range of 0-100 (%), the actuator is supplied by the input signal after calling the method
 
-This method initialize pins of the Heatshield.
+`HeatShield.actuatorWrite(u);`
 
-`float sensorReadTemperature()`
-
-This method returns temperature in °C, which is detect by sensor.
-
-`void actuatorWrite(float percent)`
-
-This method accepts as parameter action in percent and writes adequate value to drive the heating body.
-
+which will convert the percentage value to an 8-bit number driving the pulse-width modulation (PWM) output of the microcontroller.
 
 # Example
 
@@ -105,7 +103,7 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![HeatScheme](https://user-images.githubusercontent.com/18485913/55666313-644ced80-584d-11e9-86c1-06162b22571e.png)
 
-The power circuitry is driven by an N-channel metal-oxide semiconductor field-effect transistor (MOSFET) **Q1** connected to the pulse-width modulation (PWM) capable D3 pin of the Arduino. A series resistor **R5** protects the microcontroller unit (MCU) **U1** in transients, while a resistor **R6** parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
+The power circuitry is driven by an N-channel metal-oxide semiconductor field-effect transistor (MOSFET) **Q1** connected to the PWM capable D3 pin of the Arduino. A series resistor **R5** protects the microcontroller unit (MCU) **U1** in transients, while a resistor **R6** parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
 
 Normal temperatures used to melt plastics in 3D printing are over 200°C and may reach as high as 320°C for polycarbonate filaments. To make the experiment safer for general classroom use, the maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator **U2**, which takes the external 12V input from the Vin pin of the MCU and reduces it to a voltage configured by resistors **R3** and **R4** supplying its adjustable input.
 
