@@ -68,6 +68,26 @@ which is what `sensorRead()` essentially does.
 
 ## MATLAB API
 
+To prevent confusion between the C/C++ and the MATLAB API, the two interfaces are as similar as possible. The MATLAB API is written in object-oriented script and the user must first create an instance from the class:
+
+`HeatShield=HeatShield;`
+
+The shield is then initialized by calling
+
+`HeatShield.begin();`
+
+which, unless already done, uploads the server code to the prototyping board.
+
+The temperature reading procedure is identical to that of C/C++ API. The voltage from the `getThermistorVoltage()` method is passed to the `getThermistorResistance()` and this will calculate the resistance of the thermistor based on the voltage divider. The sensor is then directly accessed by calling the
+
+`y = HeatShield.sensorRead();`
+
+method, where the variable `y` will hold the temperature in degrees Celsius. Finally, the heating cartridge power is set through
+
+`HeatShield.actuatorWrite(u);`
+
+which accepts the input power `u` in percents.
+
 ## Simulink API
 
 # Example
