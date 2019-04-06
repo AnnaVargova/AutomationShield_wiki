@@ -14,7 +14,7 @@ The summary of functions and the illustration below should get you started quick
 * Output (sensor): `HeatShield.sensorRead();` 
 * Input  (actuator): `HeatShield.actuatorWrite();` 
 
-![Heat_Functions](https://user-images.githubusercontent.com/18485913/55667955-5ace8000-5863-11e9-9ece-47f6357df048.png)
+![Heat_Functions](https://user-images.githubusercontent.com/18485913/55668007-c4e72500-5863-11e9-99f6-b117947494d9.png)
 
 `void begin()`
 
