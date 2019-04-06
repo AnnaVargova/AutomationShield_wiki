@@ -22,12 +22,9 @@ The HeatShield belongs to the family of control engineering education devices fo
 
 For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from [here](https://github.com/richardsalini/HeatShield/files/1939152/HeatShieldAssembly.zip). Note that it features the model of Arduino Uno available from [here](https://grabcad.com/library/arduino-uno-r3-shield-in-description-1).
 
+# <a name="api"/>Application programming interface 
 
-
-
-# <a name="api"/>C/C++ API
-
-The basic aplication programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the HeatShield is included in the `HeatShield.h` header, which contains the `HeatShieldClass` class that is constructed by default as the `HeatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `HeatShield.sensorRead();` 
@@ -35,7 +32,7 @@ The summary of basic functions and the illustration below should get you started
 
 ![Heat_Functions](https://user-images.githubusercontent.com/18485913/55668007-c4e72500-5863-11e9-99f6-b117947494d9.png)
 
-## <a name="io"/>Inputs and outputs
+## <a name="io"/>C/C++ API
 
 The following sections describe the methods used to access the input and output of the HeatShield.
 Note that before you begin an experiment you must initialize the hardware by calling
@@ -176,7 +173,7 @@ void step(){
 ```
 ![bez nazvu](https://user-images.githubusercontent.com/23738757/40050933-3f97931a-5839-11e8-940c-04a633e233a8.png)
 
-# <a name="hardware"/>Detailed Hardware Description
+# <a name="hardware"/>Detailed hardware description
 
 The HeatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
