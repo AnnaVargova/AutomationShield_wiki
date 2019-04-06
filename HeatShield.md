@@ -33,6 +33,14 @@ Assuming the power supplied to the heating cartridge is stored in the variable `
 
 which will convert the percentage value to an 8-bit number driving the pulse-width modulation (PWM) output of the microcontroller.
 
+### Output
+
+The thermistor in the heating block is accessed by calling the
+
+`y = HeatShield.sensorRead();`
+
+method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
+
 # Example
 
 Example for PID control temperature from 28°C to 40°C.
@@ -147,4 +155,4 @@ This shield was designed and created for the subject of Microcomputers and Micro
 * **3D model design:** Michal Kováč
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
 * **Software design:** Richard Köplinger
-* **Wiki:** Martin Gulan, Richard Salíni, Juraj Bavlna, Sohaibullah Zarghoon
+* **Wiki:** Martin Gulan
