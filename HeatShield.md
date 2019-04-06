@@ -135,7 +135,7 @@ Input-output experiments for data gathering can be launched, displayed and logge
 
 ...
 
-![SimulatedResponse](https://user-images.githubusercontent.com/18485913/55674555-83cc3080-58b6-11e9-90a9-c868c8cc2a55.png)
+![SimulatedResponse](https://user-images.githubusercontent.com/18485913/55674572-afe7b180-58b6-11e9-9914-46083c48101b.png)
 
 More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf).
 
