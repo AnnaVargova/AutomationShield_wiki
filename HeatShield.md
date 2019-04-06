@@ -1,9 +1,9 @@
-##### Contents 
+#### Contents 
 [Introduction](#intro)<br/>
-[Inouts and outputs](#io)<br/>
 [Library functions](#api)<br/>
-[MATLAB API](#matlab)<br/>
-[Simulink API](#simulink)<br/>
+&[Inputs and outputs](#io)<br/>
+&nbsp[MATLAB API](#matlab)<br/>
+&nbsp[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
 [Detailed hardware description](#hardware)<br/>
 [About](#about)
