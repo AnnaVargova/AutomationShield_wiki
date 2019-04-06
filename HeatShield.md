@@ -40,9 +40,15 @@ The thermistor in the heating block is accessed by calling the
 `y = HeatShield.sensorRead();`
 
 method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
-This function first calls the `getThermistorVoltage()` method, which returns the output potential at the voltage divider. Based on the known input reference voltage , the known reference resistance  and the the output voltage
+This function first calls the `getThermistorVoltage()` method, which returns the output potential at the voltage divider. Based on the known input reference voltage 
+<img src="http://latex.codecogs.com/gif.latex?V_{\mathrm{r}}" border="0"/> 
+, the known reference resistance 
+<img src="http://latex.codecogs.com/gif.latex?R_{\mathrm{r}}" border="0"/> 
+and the the output voltage
 <img src="http://latex.codecogs.com/gif.latex?V_{\mathrm{o}}" border="0"/>
-one may use Kirchhoff's current law to compute the unknown resistance  according to
+one may use Kirchhoff's current law to compute the unknown resistance 
+<img src="http://latex.codecogs.com/gif.latex?R" border="0"/> 
+according to
 
 <img src="http://latex.codecogs.com/gif.latex?R=\frac{V_{\mathrm{o}}R_{\mathrm{r}}}{V_{\mathrm{r}}-V_{\mathrm{o}}};" border="0"/>
 
