@@ -149,7 +149,7 @@ Here we have merely chosen to demonstrate closed-loop temperature control by the
 
 ![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
-The same feedback control loop can be easily built using the Simulink API. Shown below is the full block scheme for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API to implement the input/output of the hardware. The rest of the blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
+The same feedback control loop can be easily built using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_PID_Simulate.slx) for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API library to implement the input/output of the hardware. The rest of the blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
 
 ![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
 
