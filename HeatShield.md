@@ -6,7 +6,7 @@
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
-&nbsp;&nbsp;&nbsp;[Control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#io)<br/>
@@ -141,7 +141,7 @@ The MATLAB API for the the proposed device contains a [worked example](https://g
 
 More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf).
 
-## <a name="control"/>Control
+## <a name="control"/>Temperature control
 
 For a start you may want to experiment with a closed-loop temperature control by the proportional–integral–derivative controller (PID) algorithm.
 
