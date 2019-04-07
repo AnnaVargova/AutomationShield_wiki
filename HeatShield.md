@@ -70,7 +70,7 @@ according to
 
 <img src="http://latex.codecogs.com/gif.latex?R=\frac{V_{\mathrm{o}}R_{\mathrm{r}}}{V_{\mathrm{r}}-V_{\mathrm{o}}};" border="0"/>
 
-which is implemented in the device's API as the `getThermistorResistance()` method. Though searching for the unknown temperature is more precise according to tables associating the nonlinear relationship of resistance and temperature, a simplified form of the Steinhart-Hart equation is used. Given a known reference temperature
+which is implemented in the device's API as the `getThermistorResistance()` method. Though searching for the unknown temperature is more precise according to tables associating the nonlinear relationship of resistance and temperature, a simplified form of the [Steinhart-Hart equation](https://en.wikipedia.org/wiki/Steinhart%E2%80%93Hart_equation) is used. Given a known reference temperature
 <img src="http://latex.codecogs.com/gif.latex?T_{0}\,(\mathrm{K})" border="0"/>
 and corresponding nominal resistance
 <img src="http://latex.codecogs.com/gif.latex?R_{0}\,(\omega)" border="0"/>
