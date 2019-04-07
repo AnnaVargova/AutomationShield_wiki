@@ -149,7 +149,7 @@ The implementation of PID control in C/C++ is demonstrated by a [worked example]
 
 ![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
-The same feedback control loop can be easily built using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_PID_Simulate.slx) for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
+The same feedback control loop can be built even easier using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_PID_Simulate.slx) for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
 
 ![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
 
@@ -157,7 +157,7 @@ After selecting the External running mode the block scheme is re-interpreted to 
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
 
-Thus, the full high-level mathematic might of MATLAB may be utilized when exploiting the provided API.
+Note that the MATLAB and Simulink APIs enable to exploit full high-level mathematic might of MATLAB in order to create and test more complex control algorithms. 
 
 # <a name="hardware"/>Detailed hardware description
 
