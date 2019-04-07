@@ -157,7 +157,7 @@ After selecting the External running mode the block scheme is re-interpreted to 
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
 
-Note that the provided MATLAB and Simulink APIs enable to exploit full high-level mathematic power of MATLAB in order to create and test more complex control algorithms. 
+Note that the provided MATLAB and Simulink APIs enable to exploit full high-level mathematic power of MATLAB in order to create and test more complex estimation and control algorithms. 
 
 # <a name="hardware"/>Detailed hardware description
 
@@ -215,6 +215,6 @@ This shield was designed and created for the subject of Microcomputers and Micro
 
 ## <a name="authors"/>Authors
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
-* **Software design:** Richard Köplinger
 * **3D model design:** Michal Kováč
+* **Software design:** Richard Köplinger
 * **Wiki:** Martin Gulan, Gergely Takács
