@@ -145,6 +145,10 @@ More details on the identification procedure can be found [here](https://github.
 
 ![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
+![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
+
+![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
+
 # <a name="hardware"/>Detailed hardware description
 
 The HeatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
