@@ -133,7 +133,10 @@ Input-output experiments for data gathering can be launched, displayed and logge
 
 ![IDArduino](https://user-images.githubusercontent.com/18485913/55674551-7747d800-58b6-11e9-80f2-a8496d21bf76.png)
 
-...
+After you gather enough data sufficient for system identification, you may try to fit a model to the experimental response. By inspecting the response it is clear that the dynamics is of the first order, and one may assume that the identification procedure is straightforward. Nevertheless, the simple dynamics of the HeatShield holds surprises and may be used to illustrate several abstract principles by a real-life example.
+
+The MATLAB API for the the proposed device contains a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_Identification_Blackbox.m) for black-box system identification using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html). This creates a simple but inadequate process model and a more complex and valid nonlinear ARX model.
+
 
 ![SimulatedResponse](https://user-images.githubusercontent.com/18485913/55674702-64360780-58b8-11e9-8e41-359adf661315.png)
 
