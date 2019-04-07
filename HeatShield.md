@@ -145,8 +145,7 @@ More details on the identification procedure can be found [here](https://github.
 
 For a start you may want to experiment with a closed-loop temperature control by the proportional–integral–derivative controller (PID) algorithm.
 
-The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/HeatShield/HeatShield_PID/HeatShield_PID.ino), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID methods with integral windup handling by clamping.
-The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB. The results of the PID controlled temperature response of the printer head are shown below. The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_PID.m).
+The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/HeatShield/HeatShield_PID/HeatShield_PID.ino), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID methods with integral windup handling by clamping.<br/>The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB. The results of the PID controlled temperature response of the printer head are shown below. The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_PID.m).
 
 ![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
@@ -158,7 +157,7 @@ After selecting the External running mode the block scheme is re-interpreted to 
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
 
-Note that the provided MATLAB and Simulink APIs enable to exploit full high-level mathematic might of MATLAB in order to create and test more complex control algorithms. 
+Note that the provided MATLAB and Simulink APIs enable to exploit full high-level mathematic power of MATLAB in order to create and test more complex control algorithms. 
 
 # <a name="hardware"/>Detailed hardware description
 
