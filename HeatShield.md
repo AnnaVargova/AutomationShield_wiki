@@ -143,19 +143,21 @@ More details on the identification procedure can be found [here](https://github.
 
 ## <a name="control"/>Control
 
-The possible range of student experiments in implementing control algorithms is only limited by imagination and, more pragmatically,  the computational load of the chosen method on the AVR processor architecture. From the viewpoint of the sampling period and the processor load this is not an issue, since the slow thermal response of the 3D printer head allows sampling in the range of several seconds. The aspect of limited operational or program memory is not likely to prohibit creativity either. Although the 8-bit microcontroller of the Arduino tends to be underestimated, it has been even used to implement model predictive control in real time \cite{Takacs2016b,gulan2017}. Even if students reach the limits of the MCU, the MATLAB API still provides a way to test complex control and estimation algorithms. Thus, the full high-level mathematic might of MATLAB may be utilized when exploiting the provided API.
+For a start you may want to experiment with a closed-loop temperature control by the proportional–integral–derivative controller (PID) algorithm.
 
-Here we have merely chosen to demonstrate closed-loop temperature control by the PID algorithm, as this is likely to be part of any and all undergraduate control curricula. The implementation of PID control in C/C++ is demonstrated by a worked example (\code{HeatShield_PID.ino}). This example makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID methods with integral windup handling by clamping.  The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE, here we have chosen to log the response in MATLAB. The results of the PID controlled temperature response of the printer head are shown in Fig. \ref{HeatShield_PID_C}. The same experiment can be conveniently launched from the MATLAB API as well, see Fig. \ref{HeatShield_PID_Matlab}. Meaningful experiments such as the one illustrated here can be conducted in less than 30 minutes of time.
+The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/HeatShield/HeatShield_PID/HeatShield_PID.ino), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID methods with integral windup handling by clamping. The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB. The results of the PID controlled temperature response of the printer head are shown below. The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_PID.m).
 
 ![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
-The same feedback control loop can be easily built using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_PID_Simulate.slx) for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API library to implement the input/output of the hardware. The rest of the blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
+The same feedback control loop can be easily built using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/HeatShield/HeatShield_PID_Simulate.slx) for discrete saturated PID control of the process. You need only to select the 'HeatShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
 
 ![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
 
 After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a Scope.
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
+
+Thus, the full high-level mathematic might of MATLAB may be utilized when exploiting the provided API.
 
 # <a name="hardware"/>Detailed hardware description
 
