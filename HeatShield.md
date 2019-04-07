@@ -143,7 +143,7 @@ More details on the identification procedure can be found [here](https://github.
 
 ## <a name="control"/>Control
 
-![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687564-93a74b80-596e-11e9-8ecb-ac8fd733b6fc.png)
+![HeatShield_PID_C](https://user-images.githubusercontent.com/18485913/55687584-dc5f0480-596e-11e9-815c-bf1d8eabe6bf.png)
 
 # <a name="hardware"/>Detailed hardware description
 
