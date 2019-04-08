@@ -214,7 +214,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 This shield was designed and created for the subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 
 ## <a name="authors"/>Authors
-* **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni
-* **3D model design:** Michal Kováč
-* **Software design:** Richard Köplinger
+* **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni, Gergely Takács
+* **3D model design:** Michal Kováč, Erik Mikuláš
+* **Software design:** Gergely Takács, Richard Köplinger
 * **Wiki:** Martin Gulan, Gergely Takács
