@@ -11,12 +11,16 @@ Our aim is to design feedback control experimental devices that can fit on an Ar
 # Available Shields
 Currently these shields are available:
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
-* [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a levitating ball feedback experiment
+* [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a floating ball feedback experiment
 * [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
-* [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system experiment
-* [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation experiment
+* [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system feedback experiment
+* [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation feedback  experiment
 
-We are in the process of developing new types of shields. We are currently working on more than 4 new experimental devices to add to this portfolio by the end of 2019 or early 2020.
+We are in the process of developing new types of shields. We are currently working on more than 4 new experimental devices to add to this portfolio by the end of 2019 or early 2020, namely
+* TugShield - an elastic structural deformation feedback experiment
+* LinkShield - a rotational link feedback experiment
+* VibroShield - an active vibration control experiment
+* BobShield - the classic ball-ob-beam experiment
 
 # Where can I buy an AutomationShield?
 
