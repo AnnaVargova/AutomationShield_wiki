@@ -1,4 +1,15 @@
 # Publications
+
+The publication status of the shields is as follows:
+
+|               | Thesis | Paper                |
+|---------------|--------|----------------------|
+| FloatShield   |        |                      |
+| HeatShield    |        | ✅                   |
+| MagnetoShield | ✅     |                      |
+| MotoShield    | ✅     |                      |
+| OptoShield    | ✅     | ✅                   |
+
 ## Conference articles
 
 1. Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kovác, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, pp. 385-394 UAE. ISBN: 978-1-5386-9506-7. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
