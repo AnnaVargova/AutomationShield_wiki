@@ -31,6 +31,7 @@ Unfortunately we lack the infrastructure to manufacture and sell the shields. Ho
 The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In other words, the library is an application programming interface (API), so that students and educators can focus on feedback control design, instead of programming low-level hardware drivers. In addition to this the AutomationShield library aims to provide complete routines for implementing precise timing for control. The library contains numerous examples that implement examples in system identification an feedback control. The library contains examples written for the Arduino IDE, Matlab and Simulink. Those who do not wish to complete the hardware may still benefit from the library, as there are numerous experimental measurement that can be used for system identification tasks, and feedback control simulations based on the physical hardware.
 
 The current status of the library is as follows:
+
 |               | Release | Beta | Arduino  | MATLAB | Simulink |
 |---------------|---------|------|----------|--------|----------|
 | FloatShield   |         | ✅    | ✅        |        |          |
