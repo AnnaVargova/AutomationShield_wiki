@@ -1,14 +1,16 @@
 # Publications
 
+## Overview
+
 The publication status of the shields is as follows:
 
-|               | Thesis | Paper                |
-|---------------|--------|----------------------|
-| FloatShield   |        |                      |
-| HeatShield    |        | ✅                   |
-| MagnetoShield | ✅     |                      |
-| MotoShield    | ✅     |                      |
-| OptoShield    | ✅     | ✅                   |
+|               	| Journal 	| Conference 	| Thesis 	|
+|---------------	|---------	|------------	|--------	|
+| FloatShield   	|         	|            	|        	|
+| HeatShield    	|         	| ✅          	|        	|
+| MagnetoShield 	|         	|            	| ✅      	|
+| MotoShield    	|         	|            	| ✅      	|
+| OptoShield    	|         	| ✅          	| ✅      	|
 
 ## Conference articles
 
