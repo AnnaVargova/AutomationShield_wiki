@@ -8,7 +8,8 @@ The didactic process for teaching control engineering is often overly focused on
 
 Our aim is to design feedback control experimental devices that can fit on an Arduino shield and provide an application programmer's interface (API) and examples for students and educators.
 
-# Available Shields
+# About the Shields
+
 Currently these shields are available:
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
 * [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a floating ball feedback experiment
@@ -22,11 +23,11 @@ We are in the process of developing new types of shields. We are currently worki
 * VibroShield - an active vibration control experiment
 * BobShield - the classic ball-ob-beam experiment
 
-# Where can I buy an AutomationShield?
+## Where can I buy an AutomationShield Device?
 
 Unfortunately we lack the infrastructure to manufacture and sell the shields. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempted to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
 
-# About the library
+# About the Library
 
 The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In other words, the library is an application programming interface (API), so that students and educators can focus on feedback control design, instead of programming low-level hardware drivers. In addition to this the AutomationShield library aims to provide complete routines for implementing precise timing for control. The library contains numerous examples that implement examples in system identification an feedback control. The library contains examples written for the Arduino IDE, Matlab and Simulink. Those who do not wish to complete the hardware may still benefit from the library, as there are numerous experimental measurement that can be used for system identification tasks, and feedback control simulations based on the physical hardware.
 
