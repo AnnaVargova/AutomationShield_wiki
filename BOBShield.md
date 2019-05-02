@@ -10,7 +10,7 @@
 #### [PCB layout](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#pcb-layout-1)
 #### [Gallery](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#gallery-1)
 #### [About](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#about-1) 
-#### [Authors](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#authors)
+#### [Authors](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#authors-1)
 
 # Introduction
 
