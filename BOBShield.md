@@ -1,7 +1,7 @@
 **Content:**
 
 #### [Introduction](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#introduction-1)
-#### [Arduino library](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#arduino-library)
+#### [Arduino library](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#arduino-library-1)
 * servo motor and sensor
 * PID control
 #### [3D sketch](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#3d-sketch)
