@@ -7,7 +7,7 @@
 #### [3D sketch](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#3d-sketch-1)
 #### [Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#circuit-design-1)
 #### [Components](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#components-1)
-#### [PCB layout](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#pcb-layout)
+#### [PCB layout](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#pcb-layout-1)
 #### [Gallery](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#gallery)
 #### [About](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#about) 
 #### [Authors](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#authors)
