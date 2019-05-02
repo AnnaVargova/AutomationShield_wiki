@@ -6,7 +6,7 @@
 * PID control
 #### [3D sketch](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#3d-sketch-1)
 #### [Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#circuit-design-1)
-#### [Components](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#components)
+#### [Components](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#components-1)
 #### [PCB layout](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#pcb-layout)
 #### [Gallery](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#gallery)
 #### [About](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#about) 
