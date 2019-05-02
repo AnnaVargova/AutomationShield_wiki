@@ -5,7 +5,7 @@
 * servo motor and sensor
 * PID control
 #### [3D sketch](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#3d-sketch-1)
-#### [Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#circuit-design)
+#### [Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#circuit-design-1)
 #### [Components](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#components)
 #### [PCB layout](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#pcb-layout)
 #### [Gallery](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#gallery)
