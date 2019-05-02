@@ -8,6 +8,8 @@ The didactic process for teaching control engineering is often overly focused on
 
 Our aim is to design feedback control experimental devices that can fit on an Arduino shield and provide an application programmer's interface (API) and examples for students and educators.
 
+[[/fig/AS_Illustration.jpg|AutomationShield devices.]]
+
 # About the Shields
 
 Currently these shields are available:
