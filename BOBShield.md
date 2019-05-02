@@ -1,7 +1,7 @@
 **Content:**
 
 #### [Introduction](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#introduction-1)
-#### [Arduino library](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#arduion-library)
+#### [Arduino library](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield#arduino-library)
 * servo motor and sensor
 * PID control
 #### [3D sketch](https://github.com/gergelytakacs/AutomationShield/wiki/BOBShield/_edit#3d-sketch)
@@ -16,7 +16,7 @@
 
 BOBShield or Ball on beam shield is device which consist from micro servo motor, plastic transparent tube, ball, Time of Flight distance sensor,  PID controller which can be or is control by Arduino Zero or Uno or Due, because it can work on 3.3 or 5V . The project BOBShield is didactical device for education feedback control principles. Main goal of the device is to stabilize the ball in the center of the tube. The length of tube is 100mm and diameter is 10mm. The ball diameter is 8mm and can be made from various material, such as glass, plastic, wood, cork or metal. The tube is placed in the center of tube holder, which is connect to micro servo motor, which can tilt the tube in clockwise and counter-clockwise directions. Other end of tube holder is palced in a ball bearing, which is inserted in plastic holder. The micro servo motor is also inserted in plastic holder and fixed with steel screws. The holder are fixed with steel screws to printed circuit board. TOF distance sensor VL6180X marking the position of the ball, the sensor contains a very tiny laser source, and a matching sensor. He can handle about 5mm to 100mm of range distance. Sensor is placed in holder on the end of  the tube, on other side of the tube is simple closure. PID controller control the position of the tube and is placed on printed circuit board.                                                                                                         This device is inexpensive and mechanically simple for construction.
 
-# Arduion library
+# Arduino library
 
 **C/C++ API**
 
