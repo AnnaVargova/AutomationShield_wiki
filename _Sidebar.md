@@ -1,7 +1,8 @@
 ## Shields
+* [MagnetoShield][magneto]
+* [BoBShield][bob]
 * [FloatShield][float]
 * [HeatShield][heat]
-* [MagnetoShield][magneto]
 * [MotoShield][moto]
 * [OptoShield][opto]
 ## Library and API
@@ -23,5 +24,6 @@
 [magneto]: https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield
 [moto]: https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield
 [opto]: https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield
+[bob]: https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield
 [publications]: https://github.com/gergelytakacs/AutomationShield/wiki/Publications
 [license]: https://creativecommons.org/licenses/by-nc/4.0/
