@@ -23,7 +23,7 @@ We are in the process of developing new types of shields. We are currently worki
 * TugShield - an elastic structural deformation feedback experiment
 * LinkShield - a rotational link feedback experiment
 * VibroShield - an active vibration control experiment
-* BobShield - the classic ball-ob-beam experiment
+* BoBShield - the classical ball-on-beam (seesaw) control experiment
 
 ## Where can I buy an AutomationShield Device?
 
