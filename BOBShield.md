@@ -14,16 +14,22 @@
 
 # Introduction
 
-BOBShield or Ball on beam shield is device which consist from microservo motor, plastic transparent tube, ball, Time of Flight distance sensor and potentiometer with which PID control is achieved. Components such as the microservo motor, distance sensor and potentiometer are controlled by the Arduino. These components can be controlled by Arduino Zero or Uno or Due. Arduino is powered by USB. The average power of a USB port is about 5 volts. The project BOBShield is didactical device for education feedback control principles. Main goal of the device is to stabilize the ball in the center of the tube. The length of tube is 100mm and diameter is 10mm. The ball diameter is 8mm and can be made from various material, such as glass, plastic, wood, cork or metal. Metal ball turned out to be the best solution. The tube is placed in the center of tube holder, one side of the holder is connect to microservo motor and other side of tube holder is place in a ball bearing, which is insert in plastic holder. The microservo motor is also insert in plastic holder and fixed with steel screws. The plastic holders are fix with steel screws to printed circuit board. Microservo motor tilts the tube in clockwise and counter-clockwise directions. TOF distance sensor Adafruit VL6180X marking the position of the ball, the sensor contains a very tiny laser source, and a matching sensor. He can handle about 5mm to 100mm of range distance. Sensor is place in holder on the end of  the tube, on other side of the tube is simple closure. PID controller control the position of the tube and is place on printed circuit board.                                                                                                         This device is inexpensive and mechanically simple for construction.
+BOBShield or Ball on beam shield is didactical device for education feedback control principles and is a part of the AutomationShield project. The project BOBShield is device which consist from microservo motor, plastic transparent tube, ball, Time of Flight distance sensor and potentiometer with which PID control is achieved. Components such as the microservo motor, distance sensor and potentiometer are controlled by the Arduino. These components can be controlled by Arduino Zero or Uno or Due. Arduino is powered by USB. The average power of a USB port is about 5 volts. Main goal of the device is to stabilize the ball in the center of the tube. The length of tube is 100mm and diameter is 10mm. The ball diameter is 8mm and can be made from various material, such as glass, plastic, wood, cork or metal. Metal ball turned out to be the best solution. The tube is placed in the center of tube holder, one side of the holder is connect to microservo motor and other side of tube holder is place in a ball bearing, which is insert in plastic holder. The microservo motor is also insert in plastic holder and fixed with steel screws. The plastic holders are fix with steel screws to printed circuit board. Microservo motor tilts the tube in clockwise and counter-clockwise directions. TOF distance sensor Adafruit VL6180X marking the position of the ball, the sensor contains a very tiny laser source, and a matching sensor. He can handle about 5mm to 100mm of range distance. Sensor is put in holder on the end of  the tube, on other side of the tube is simple closure. PID controller control the position of the tube and is placed on printed circuit board.                                                                                                         This device is inexpensive and mechanically simple for construction.
 
 # Arduino library
 
 **C/C++ API**
 
-The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and functions for PID controller and feedback control device. All functionality associated with the BOBShield is included in the BOBShield.h header.
+The following subsections describe the methods used for manage microservo motor, sensor and PID controller.
+The function which declaring PIN and initializing sensor is `BOBClass::begin()` .
+* Servo motor and sensor functions
+Function for start of the servo motor is:
+`BOBClass::calibration()`
+In this operation
 
 # 3D sketch
-
+The whole model was designed in CAD software and forwarded to 3D print service. There are five parts to be printed, a motor holder, ball bearing holder in which one side of the tube holder is insert, tube holder, sensor holder and simple closure. Other assembly parts, a sensor, Arduino microcontroller, potentiometer and servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
 
 
 # Circuit design
