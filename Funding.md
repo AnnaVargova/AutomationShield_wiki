@@ -1,0 +1,1 @@
+The AutomationShield project gratefully acknowledges the funding received from the The Ministry of Education, Science, Research and Sport of the Slovak Republic (MŠVVaŠ SR) through the Cultural and Educational Grant Agency (KEGA) within the framework of project no. KEGA 005STU-4/2018.
