@@ -52,7 +52,7 @@ The printed circuit board (PCB) has been designed in the CAD software [DIPTrace]
 
 On the picture of the upper layout can be seen black line is starting from digital pin 9 and going to the pin where micro servo motor has connector, it is signal for micro servo motor. Power for black line come from 3.3V pin and go to pin AREF. Analogue REFerence it allows to feed the Arduino a reference voltage from an external power supply. It would be feed with 3.3V into the AREF pin – perhaps from a voltage regulator IC. From 5V pin exit red line which is  power for resistor and diode and continuous to the ServoPinout. Blue line is ground for SensorPinout diode resistor and ServoPinout.
 
-![The bottom part of the PCB](https://user-images.githubusercontent.com/37699408/56760628-e6b93500-679b-11e9-85ba-842c4c616c45.png)
+[[/fig/BOBShield_Bottom_part_of_the_PCB.png|AutomationShield logo and site header.]]
 
 On the bottom layout can be seen black line starting from power of 3.3V going to + of SensorPinout then continue to USB. Blue line is ground. The other two black lines starting from pins Serial Clock Line (SCL) and Serial Data Line (SDA) and going to SCL and SDA on SensorPinOut. I2C uses only two bidirectional open collector or open drain lines for SDA and SCL pulled up with resistors. Typical voltages used are +5 V or +3.3 V.
 # Gallery
