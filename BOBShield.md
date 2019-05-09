@@ -35,13 +35,13 @@ The whole model was designed in CAD software and forwarded to 3D print service. 
 # Circuit design
 The circuit schematics has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from here.
 
-
+Power for circuit is coming from pin 5V. This pin powering microservo motor SM, capacitor C1 and diode D1. From the pin with 3.3V is powered TOF sensor J and potentiometer POT1. Everything is connect to the pin GND ground. The digital pin 9 is connect microservo motor from which comes signal for....Analog signal A0
 
 
 
 # Components
 To make an BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
-.tbl("Part", "Name", "Type/Value/Note", "PCS", "Link" \ J, [Adafruit VL6180x](https://www.mouser.sk/ProductDetail/Adafruit/3316?qs=sGAEpiMZZMuYaq4aOfOV%252BNGpcmpxct%252BzTY0qY%2FO75Rw%3D), 485-3316, 1 )
+ .tbl ("Part", "Name", "Type/Value/Note", "PCS", "Link" \ J, [Adafruit VL6180x](https://www.mouser.sk/ProductDetail/Adafruit/3316?qs=sGAEpiMZZMuYaq4aOfOV%252BNGpcmpxct%252BzTY0qY%2FO75Rw%3D), 485-3316, 1 )
 
 
 # PCB Layout
