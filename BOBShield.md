@@ -41,9 +41,24 @@ Power for circuit is coming from pin 5V. This pin powering microservo motor SM, 
 
 # Components
 To make an BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
- .tbl ("Part", "Name", "Type/Value/Note", "PCS", "Link" \ J, [Adafruit VL6180x](https://www.mouser.sk/ProductDetail/Adafruit/3316?qs=sGAEpiMZZMuYaq4aOfOV%252BNGpcmpxct%252BzTY0qY%2FO75Rw%3D), 485-3316, 1 )
-
-
+|   Part   |             Name             | Type/Value/Note | PCS |
+|:--------:|:----------------------------:|:---------------:|-----|
+|     J    |       Adafruit VL6180x       |     485-3316    |  1  |
+|    D1    |             Diode            |   625-RGF1D-E3  |  1  |
+|    C1    |   Capacitor, tantallum 0805  | 581-F980J107MSA |  1  |
+|     M    |   Metal Geared Micro Servo   |   426-SER0039   |  1  |
+|          |       Stackable Header       |  474-PRT-11417  |  1  |
+|          |         FFC 7W cable         |    25001-0706   |  1  |
+|          |    FFC 7W connector to PCB   |    5-520314-7   |  1  |
+|          | FFC 7W connector to breakout |   67013-007LF   |  1  |
+| ARDUINO1 |       Arduino Uno Rev3       |                 |  1  |
+|          |              PCB             |                 |  1  |
+|   POT1   |         Potentiometer        |                 |  1  |
+|          |            Screws            |                 |     |
+|          |             Nuts             |                 |     |
+|          |       3D printed parts       |                 |  5  |
+|          |             Tube             |                 |  1  |
+|          |         Ball-bearing         |                 |  1  |
 # PCB Layout
 
 The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version.  The PCB has two layers and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/files/3126564/BoBShield_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/files/3126563/BoBShield_Production_R1.zip).
