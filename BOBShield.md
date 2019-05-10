@@ -35,7 +35,7 @@ The whole model was designed in CAD software and forwarded to 3D print service. 
 ![Picture3](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_3.jpg)
 
 # Circuit design
-The circuit schematics has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from here.
+The circuit schematics has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
 
 ![Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Circuit.png)
 
