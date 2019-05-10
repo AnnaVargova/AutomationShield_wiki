@@ -59,6 +59,7 @@ To make an BOBShield either on a PCB or on a breadboard you will need the follow
 |          |       3D printed parts       |                 |  5  |
 |          |             Tube             |                 |  1  |
 |          |         Ball-bearing         |                 |  1  |
+
 # PCB Layout
 
 The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version.  The PCB has two layers and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/files/3126564/BoBShield_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/files/3126563/BoBShield_Production_R1.zip).
