@@ -35,6 +35,8 @@ The whole model was designed in CAD software and forwarded to 3D print service. 
 # Circuit design
 The circuit schematics has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from here.
 
+![Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Circuit.png)
+
 Power for circuit is coming from pin 5V. This pin powering microservo motor SM, capacitor C1 and diode D1. From the pin with 3.3V is powered TOF sensor J and potentiometer POT1. Everything is connect to the pin GND ground. The digital pin 9 is connect microservo motor from which comes signal for....Analog signal A0
 
 
