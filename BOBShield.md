@@ -45,8 +45,9 @@ Power for circuit is coming from pin 5V. This pin powering microservo motor SM, 
 
 # Components
 To make an BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
-|   Part   |             Name             | Type/Value/Note | PCS |
-|:--------:|:----------------------------:|:---------------:|-----|
+
+|   Part   |             Name             | Type, Value, Note | PCS |
+|:--------:|:-----------------------------|:----------------|-----|
 |     J    |       Adafruit VL6180x       |     485-3316    |  1  |
 |    D1    |             Diode            |   625-RGF1D-E3  |  1  |
 |    C1    |   Capacitor, tantallum 0805  | 581-F980J107MSA |  1  |
