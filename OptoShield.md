@@ -216,17 +216,18 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-|Part              | Name             | Value | PCS  | Note                       |
-|------------------|------------------|-------|------|----------------------------|
-| LDR1,LDR2        | [Photoresistor](https://www.tme.eu/sk/details/pgm5516-mp/fotorezistory/token/) | 5-10kΩ  | 2    | 5mm                     |
-| D1,D2            | LED              |       | 2    | 5mm, clear                 |
-| POT1             | [Potentiometer](https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf)    | 10kΩ  | 1    | Pin size 12.5x10|
-| R1,R2            | Resistor         | 2.4kΩ | 2    |                            |
-| R3,R4            | Resistor         | 4.7kΩ | 2    |                            |
-| -                | Header           | 10x1, female| 1    | long, stackable            |
-| -                | Header           | 8x1, female | 2    | long, stackable            |
-| -                | Header           | 6x1, female | 1    | long, stackable            |
-| -                | Tube             | 20mm | 1    | Ø5mm, opaque    |
+|Part              | Name             | Type/Value/Note                | PCS  |
+|------------------|------------------|--------------------------------|------|
+| LDR1,LDR2        | [Photoresistor](https://www.tme.eu/sk/details/pgm5516-mp/fotorezistory/token/) |
+                                        5-10kΩ, 5mm                    | 2    |
+| D1,D2            | LED              | 5mm, clear                     | 2    |
+| POT1             | [Potentiometer](https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf) |                             10kΩ, pin size 12.5x10         | 1    |
+| R1,R2            | Resistor         | 2.4kΩ                          | 2    |
+| R3,R4            | Resistor         | 4.7kΩ                          | 2    |
+| -                | Header           | 10x1, female, long, stackable  | 1    |
+| -                | Header           | 8x1, female, long, stackable   | 2    |
+| -                | Header           | 6x1, female, long, stackable   | 1    |
+| -                | Tube             | 20mm, Ø5mm, opaque             | 1    |
 
 ## PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
