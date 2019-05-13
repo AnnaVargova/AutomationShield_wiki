@@ -1,3 +1,8 @@
+#### Contents 
+[About](#about)<br/>
+&nbsp;&nbsp;[Authors](#authors)<br/>
+
+
 ﻿# Introduction
 
 The OptoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. This particular low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
@@ -235,12 +240,10 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 [[/fig/Opto_PCB_Front.png|OptoShield PCB from the front.]]
 [[/fig/Opto_PCB_Back.png|OptoShield PCB from the back.]]
 
-# About
+# <a name="about"/>About
+This shield was designed and created within the framework of a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics in 2017/2018. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava. 
 
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
-
-## Authors
-
+## <a name="authors"/>Authors
 * Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
 * Software design: Tibor Konkoly, Gergely Takács
 * Wiki: Tibor Konkoly, Gergely Takács
