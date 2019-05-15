@@ -35,9 +35,7 @@ Note that before you begin an experiment you must initialize the hardware by cal
 
 `OptoShield.begin();`
 
-which determines the mode of the input and output pins.
-
-This must be followed by
+which determines the mode of the input and output pins. This must be followed by
 
 `OptoShield.calibrate();`
 
