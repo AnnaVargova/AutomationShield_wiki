@@ -96,11 +96,11 @@ Input-output experiments for data gathering can be launched, displayed and logge
 
 The results can be also listed using the Arduino Serial Monitor or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
-Apart from this simple graphical representation, the library includes a [function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/plotOptoShield_Step.m) to read the results to the [MATLAB](https://www.mathworks.com/products/matlab.html) workspace. This way you can perform system identification procedures on the collected data. The figure below shows the input and output data gathered through the latter example.
+Apart from this simple graphical representation, the library includes a [function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/plotOptoShield_Step.m) to read the results to the [MATLAB](https://www.mathworks.com/products/matlab.html) workspace and plot them. The figure below shows the input and output data gathered through the latter example.
 
 ![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
-One may, for example, identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
+The collected data can be readily used to perform system identification procedures. Using the [function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/identifyOptoShield_Step.m) one may identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
 
 <img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s} ," border="0"/>
 
