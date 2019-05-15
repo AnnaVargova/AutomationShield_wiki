@@ -1,5 +1,7 @@
 #### Contents
 [Introduction](#intro)<br/>
+[Application programming interface](#api)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
@@ -13,7 +15,9 @@ The OptoShield belongs to the family of control engineering education devices fo
 
 ![Opto_Iso](https://user-images.githubusercontent.com/18485913/57761885-bd3a5c00-76fe-11e9-8b29-d3ccd2b5b196.png)
 
-# Library functions
+# <a name="api"/>Application programming interface
+
+## <a name="io"/>C/C++ API
 
 All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
