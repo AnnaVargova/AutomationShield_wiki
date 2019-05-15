@@ -94,12 +94,15 @@ The functions listed below implement tests signals that can be used for system i
 
 The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
-![ide](https://user-images.githubusercontent.com/18485913/57801796-da017e80-7754-11e9-8339-e6ae19af0949.png)
+![ide](https://user-images.githubusercontent.com/18485913/57801853-061cff80-7755-11e9-8055-8543ae303ecc.png)
 ![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
 
 ## <a name="control"/>PID control
 
+![pidoutput](https://user-images.githubusercontent.com/18485913/57801971-47151400-7755-11e9-93c0-89d105337365.png)
+![PIDSimulink](https://user-images.githubusercontent.com/18485913/57801974-48ded780-7755-11e9-99e1-4c20885ca43c.png)
+![scope](https://user-images.githubusercontent.com/18485913/57801984-4ed4b880-7755-11e9-8bf5-41d969c7a8bb.png)
 
 # <a name="hardware"/>Detailed hardware description
 
