@@ -2,9 +2,8 @@
 
 [Introduction](#introduction)<br/>
 [Arduino library](#arduino-library)<br/>
-* servo motor and sensor
-* PID control<br/>
-<br/>
+&nbsp;&nbsp;&nbsp;servo motor and sensor<br/>
+&nbsp;&nbsp;&nbsp;PID control<br/>
 [3D sketch](#3d-sketch)<br/>
 [Circuit design](#circuit-design)<br/>
 [Components](#components-1)<br/>
