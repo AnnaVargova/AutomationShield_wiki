@@ -119,7 +119,7 @@ The PID control examples included within the library contain an [example](https:
 ![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
 
 Shown above is a PID controlled closed-loop experiment, where the algorithm was tuned to
-<img src="http://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.1" border="0"/> , <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=0.015" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.015" border="0"/>. Despite the true hysteretic an nonlinear nature of the process the PID algorithm handles feedback control quite well. Note that the output oscillates around the setpoint — especially at lower reference levels — because the LED is powered by a PWM signal instead of a stable true analog input from a digital-to-analog converter (DAC).
+<img src="http://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.1" border="0"/> , <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=0.015" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.015" border="0"/>. Despite the true hysteretic an nonlinear nature of the process the PID algorithm handles feedback control quite well. Note that the output oscillates around the setpoint—especially at lower reference levels—because the LED is powered by a PWM signal instead of a stable true analog input from a digital-to-analog converter (DAC).
 
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 ![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
