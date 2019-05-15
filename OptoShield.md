@@ -125,7 +125,7 @@ The same feedback control loop can be built even easier using the Simulink API. 
 
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 
-After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU, while two-way communication is preserved between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope' as shown below.
+After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU, while two-way communication is preserved between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
 
 ![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
 
