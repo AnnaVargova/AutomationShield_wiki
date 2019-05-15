@@ -4,6 +4,9 @@
 &nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Detailed hardware description](#hardware)<br/>
+[Examples](#examples)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+&nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
@@ -83,135 +86,17 @@ The 'Sensor Read' and 'Sensor Aux. Read' blocks read the input from the LDR and 
 
 The 'OptoShield' block unites the input and output functionality into a single entity that can be conveniently used for identification and control experiments. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0-100 % and reads the calibrated brightness signal from the main LDR. One may also use the 'OptoShield TF' block to model the process dynamics by a continuous linear transfer function for simulation-only exercises. 
 
-## System Identification 
+# <a name="examples"/>Examples
+
+## <a name="ident"/>System identification
 
 The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The formatting corresponds to a space-separated table format, where spaces separate columns and the line ending character begins a new line.
 
 The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
 
-# Examples
+## <a name="control"/>Temperature control
 
-## Step Response
-```
-#include "AutomationShield.h"
-
-float Setpoint = 70.00;
-
-bool enable=false;
-unsigned long int curTime=0;
-unsigned long int prevTime=0;
-
-unsigned long Ts = 0.1;
-
-void setup() {
-  
-Serial.begin(115200);
-
-Sampling.interruptInitialize(Ts * 1000);
-Sampling.setInterruptCallback(stepEnable);
-  
-OptoShield.begin();
-OptoShield.calibration();
-delay(1000);
-OptoShield.actuatorWrite(Setpoint);
-}
-
-void loop() {
-
-  curTime=millis();
-  if (enable) {
-    step();
-    enable=false;
-    
-  } // end of the if statement  
-} // end of the loop
-
-
-void stepEnable(){
-  enable=true;
-}
-
-void step(){
-  float Senzor = OptoShield.sensorRead();
-  
-  Serial.print(Setpoint);
-  Serial.print(",");
-  Serial.println(Senzor);
-
-}
-```
- 
-
-## PID Control
-
-```
-#include "AutomationShield.h"
-
-unsigned long Ts = 1; // sampling time in milliseconds
-
-bool enable=false; // flag for the sampling function
-
-// variables for the PID
-
-float r = 0.00;
-float y = 0.00;
-float u = 0.00;
-float error = 0.00;
-
-
-void setup() {
-  
-  Serial.begin(9600);
-  
-  OptoShield.begin(); // defining hardware pins
-  OptoShield.calibration(); // calibration function for accurate measurements
-  
-  Sampling.interruptInitialize(Ts * 1000);  // initialize the sampling function, input is the sampling time in microseconds
-  Sampling.setInterruptCallback(stepEnable); // setting the interrupts, the input is the ISR function
-
- // setting the PID constants
- PIDAbs.setKp(0.00173244161800246); // 0.000287897244979394 - identified value
- PIDAbs.setKi(10.0061553434575); // 5.75794489958787 - identified value
- PIDAbs.setKd(0); // 0 - identified value
-
-}// end of the setup
-
-void loop() {
-
-  if (enable) {
-    step();
-    enable=false;
-    
-  }  
-
-} // end of the loop
-
-
-void stepEnable(){  // ISR
-  enable=true;
-}
-
-void step(){ // we have to put our code here
-
-r = OptoShield.referenceRead();  // reading the reference value of the potentiometer
-y = OptoShield.sensorRead();    // reading the sensor value (LDR in the tube)
-
-error = r - y; 
-
- u = PIDAbs.compute(error,0,100,0,100);
-
-OptoShield.actuatorWrite(u);
-
-Serial.print(r);
-Serial.print(",");
-Serial.print(u);
-Serial.print(",");
-Serial.println(y);
-  
-
-}
-```
 
 # <a name="hardware"/>Detailed hardware description
 
