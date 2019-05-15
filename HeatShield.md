@@ -53,11 +53,11 @@ which will convert the percentage value to an 8-bit number driving the pulse-wid
 
 ### Output
 
-The thermistor in the heating block is accessed by calling the
+The thermistor in the heating block is accessed by calling the method
 
 `y = HeatShield.sensorRead();`
 
-method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
+which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
 This function first calls the `getThermistorVoltage()` method, which returns the output potential at the voltage divider. Based on the known input reference voltage
 <img src="http://latex.codecogs.com/gif.latex?V_{\mathrm{r}}" border="0"/>
 , the known reference resistance
