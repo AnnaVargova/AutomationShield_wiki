@@ -96,7 +96,7 @@ The results can be listed using the Arduino Serial Monitor, the Arduino IDE Seri
 
 ![ide](https://user-images.githubusercontent.com/18485913/57801156-614df280-7753-11e9-9484-cffe19e724b2.png)
 
-![identification](https://user-images.githubusercontent.com/18485913/57801606-59428280-7754-11e9-806a-36a4e4b6575e.png)
+![identification](https://user-images.githubusercontent.com/18485913/57801665-80994f80-7754-11e9-84f3-dc7487c7548f.png)
 
 
 ## <a name="control"/>PID control
