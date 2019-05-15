@@ -42,7 +42,7 @@ This must be followed by
 `OptoShield.calibrate();`
 
 to re-scale the input and output values.
-Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `\code{calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and  `returnMaxVal()` method return the sensor calibration levels.
+Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and  `returnMaxVal()` method return the sensor calibration levels.
 
 ### Input
 
@@ -53,23 +53,12 @@ OptoShield.actuatorWrite(u);
 which accepts input `u` as a floating-point number in the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 ### Output
-The output from the LDR is read by 
-```
-OptoShield.sensorRead();
-```
-where the function outputs the brightness in the range of 0-100 % as detected by the sensor circuit. This reading can be used as a feedback signal. The function returns a floating point value. 
 
-A sensor reading can be requested instead of calibrated percents directly in units of voltage by calling
+The output from the LDR is read by calling
 ```
-OptoShield.sensorReadVoltage();
+y = OptoShield.sensorRead();
 ```
-which will return a floating point number. 
-
-The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments.  The output from the auxiliary LDR is read by 
-```
-OptoShield.sensorAuxRead();
-```
-and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on the sensor circuit as a floating point parameter. Note that this sensor is merely for testing and calibration, like in the case of the main sensor, is not possible.
+which returns a floating-point number in the calibrated range of 0-100 % representing process output `y`. The voltage at the main sensor is accessible through the `sensorReadVoltage` method as well, while the auxiliary sensor can be accessed via `sensorAuxRead()`.
 
 ### Reference
 
