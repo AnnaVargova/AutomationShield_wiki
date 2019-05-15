@@ -1,9 +1,13 @@
-#### Contents 
+#### Contents
+[Introduction](#intro)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 
-﻿# Introduction
+# <a name="intro"/>Introduction
 
 The OptoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. This particular low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
 
@@ -205,14 +209,14 @@ For those who wish to use the board without the library, the components are conn
 [[/fig/Opto_PIN.gif|OptoShield PIN assignments.]]
 
 
-## Circuit design
+## <a name="circuit"/>Circuit design
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip). 
 
 [[/fig/Opto_Schematics.png|OptoShield Circuit Schematics.]] 
 
 
-## Parts
+## <a name="parts"/>Parts
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
