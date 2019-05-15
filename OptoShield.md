@@ -100,7 +100,7 @@ Apart from this simple graphical representation, the library includes a [MATLAB 
 
 ![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
-The collected data can be readily used to perform system identification procedures. Using another [function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/identifyOptoShield_Step.m) one may identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
+The collected data can be readily used to perform system identification procedures. Using another [MATLAB function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/identifyOptoShield_Step.m) one may identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
 
 <img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s}" border="0"/>
 
