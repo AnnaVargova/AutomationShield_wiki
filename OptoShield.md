@@ -47,25 +47,25 @@ Because the LDR cannot measure physically valid units, the signal to the LED and
 ### Input
 
 The input to both actuator LED an auxiliary LED is written by calling the method
-```
-OptoShield.actuatorWrite(u);
-```
+
+`OptoShield.actuatorWrite(u);`
+
 which accepts input `u` as a floating-point number in the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 ### Output
 
 The output from the LDR is read by calling
-```
-y = OptoShield.sensorRead();
-```
+
+`y = OptoShield.sensorRead();`
+
 which returns a floating-point number in the calibrated range of 0-100 % representing process output `y`. The voltage at the main sensor is accessible through the `sensorReadVoltage()` method as well, while the auxiliary sensor can be accessed via `sensorAuxRead()`.
 
 ### Reference
 
 The onboard potentiometer can be used in any role, but the most straightforward one is to read a user-defined setpoint `r`  using
-```
-r = OptoShield.referenceRead();
-```
+
+`r = OptoShield.referenceRead();`
+
 returning a floating-point number between 0-100\%.
 
 ## System Identification 
