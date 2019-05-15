@@ -46,11 +46,11 @@ Because the LDR cannot measure physically valid units, the signal to the LED and
 
 ### Input
 
-The input to the actuator LED (along with the auxiliary LED) is written by 
+The input to both actuator LED an auxiliary LED is written by calling the method
 ```
 OptoShield.actuatorWrite(u);
 ```
-where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
+which accepts input `u` as a floating-point number in the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 ### Output
 The output from the LDR is read by 
