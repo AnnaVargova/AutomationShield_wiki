@@ -5,7 +5,7 @@
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
-&nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[PID control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
@@ -94,8 +94,12 @@ The functions listed below implement tests signals that can be used for system i
 
 The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
+![ide](https://user-images.githubusercontent.com/18485913/57801156-614df280-7753-11e9-9484-cffe19e724b2.png)
 
-## <a name="control"/>Temperature control
+![identification](https://user-images.githubusercontent.com/18485913/57801477-1385ba00-7754-11e9-9845-15d6024e6f6a.png)
+
+
+## <a name="control"/>PID control
 
 
 # <a name="hardware"/>Detailed hardware description
