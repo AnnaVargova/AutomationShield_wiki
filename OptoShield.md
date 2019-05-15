@@ -90,11 +90,12 @@ The 'OptoShield' block unites the input and output functionality into a single e
 
 ## <a name="ident"/>System identification
 
-The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The formatting corresponds to a space-separated table format, where spaces separate columns and the line ending character begins a new line.
-
-The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
+Input-output experiments for data gathering can be launched, displayed and logged in C/C++ (Arduino IDE) and Simulink as well. The AutomationShield library for OptoShield incorporates several worked examples. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_StepResponse/OptoShield_StepResponse.ino) illustrates the input-output step response of the onboard optical system. A more [detailed example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_Identification/OptoShield_Identification.ino) runs through a pre-set array of open-loop inputs, incorporates an interrupt-based sampling system and lists the results to the serial communication line. The dynamic response of the system can be followed through the built-in Serial Plotter of the Arduino IDE. This enables one to display the process dynamics within the development environment itself.
 
 ![ide](https://user-images.githubusercontent.com/18485913/57801853-061cff80-7755-11e9-8055-8543ae303ecc.png)
+
+The results can be also listed using the Arduino Serial Monitor or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
+
 ![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
 
