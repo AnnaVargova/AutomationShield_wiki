@@ -1,16 +1,16 @@
 **Content:**
 
-#### [Introduction](#introduction)<br/>
-#### [Arduino library](#arduino-library)<br/>
+[Introduction](#introduction)<br/>
+[Arduino library](#arduino-library)<br/>
 * servo motor and sensor
 * PID control
-#### [3D sketch](#3d-sketch)<br/>
-#### [Circuit design](#circuit-design)<br/>
-#### [Components](#components)<br/>
-#### [PCB layout](#pcb-layout)<br/>
-#### [Gallery](#gallery)<br/>
-#### [About](#about)<br/>
-#### [Authors](#authors)<br/>
+[3D sketch](#3d-sketch)<br/>
+[Circuit design](#circuit-design)<br/>
+[Components](#components-1)<br/>
+[PCB layout](#pcb-layout)<br/>
+[Gallery](#gallery)<br/>
+[About](#about)<br/>
+[Authors](#authors)<br/>
 
 # <a name="introduction"/>Introduction
 
@@ -43,7 +43,7 @@ Power for circuit is coming from pin 5V. This pin powering microservo motor SM, 
 
 
 
-# <a name="components"/>Components
+# <a name="components-1"/>Components
 To make an BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 |   Part   |             Name             | Type, Value, Note | PCS |
