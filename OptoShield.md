@@ -100,11 +100,13 @@ Apart from this simple graphical representation, the library includes a [functio
 
 ![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
-One may, for example, identify a continuous-time first-order process model using the MATLAB;s [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
-\begin{eqnarray}
-  G(s) = \frac{3.35}{1+0.0041s}
-\end{eqnarray}
-with a $K$=3.35 (-) D.C. gain and $T$=0.0024 s time constant produces a 96.46\% match with measurement data, as long as we compare a unit step from zero level up to the expected working range of the optical tunnel.
+One may, for example, identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
+
+<img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s}," border="0"/>
+
+with a 
+<img src="http://latex.codecogs.com/gif.latex?K=3.35 " border="0"/>
+(-) D.C. gain and $T$=0.0024 s time constant produces a 96.46\% match with measurement data, as long as we compare a unit step from zero level up to the expected working range of the optical tunnel.
 
 
 
