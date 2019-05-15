@@ -102,12 +102,13 @@ Apart from this simple graphical representation, the library includes a [MATLAB 
 
 The collected data can be readily used to perform system identification procedures. Using another [function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/identifyOptoShield_Step.m) one may identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
 
-<img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s} ," border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s}" border="0"/>
 
 produces a ∼96.5% match with measurement data, as long as we compare a unit step from zero level up to the expected working range of the optical tunnel.
 
 By inspecting the response it is however clear that this simplified dynamic representation is far from perfect, as the real process demonstrates hysteresis and significant nonlinearity. One may therefore attempt to create models compensating for these effects as well.
 
+Similarly, a [worked Simulink example](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/OptoShield/OptoShield_InputsOutputs.slx) performs a simple step change of input, displays the progress of the response live on screen and saves a data file.
 
 ## <a name="control"/>PID control
 
