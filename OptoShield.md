@@ -81,7 +81,7 @@ The 'Actuator Write' block accepts real numbers from 0-100% and supplies power t
 
 The 'Sensor Read' and 'Sensor Aux. Read' blocks read the input from the LDR and its auxiliary twin, respectively. User may select the desired type of outputs such as voltage, ADC levels or a manually calibrated signal in percentages. The onboard potentiometer may be accessed in a similar fashion using the 'Reference Read' block.
 
-The 'OptoShield' block unites the input and output functionality into a single entity that can be conveniently used for identification and control experiments. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0-100 % and reads the calibrated brightness signal from the main LDR. Using the 'OptoShield TF' block the process dynamics can be also represented by a continuous linear transfer function for simulation-only exercises. 
+The 'OptoShield' block unites the input and output functionality into a single entity that can be conveniently used for identification and control experiments. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0-100 % and reads the calibrated brightness signal from the main LDR. One may also use the 'OptoShield TF' block to model the process dynamics by a continuous linear transfer function for simulation-only exercises. 
 
 ## System Identification 
 
