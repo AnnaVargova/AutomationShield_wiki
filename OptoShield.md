@@ -121,11 +121,11 @@ The PID control examples included within the library contain an [example](https:
 Shown above is a PID controlled closed-loop experiment, where the algorithm was tuned to
 <img src="http://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.1" border="0"/> , <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=0.015" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.015" border="0"/>. Despite the true hysteretic an nonlinear nature of the process the PID algorithm handles feedback control quite well. Note that the output oscillates around the setpoint—especially at lower reference levels—because the LED is powered by a PWM signal instead of a stable true analog input from a digital-to-analog converter (DAC).
 
-The same feedback control loop can be built even easier using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/OptoShield/OptoShield_PID_Control.slx) for discrete saturated PID control of the process. You need only to select the 'OptoShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
+The same feedback control loop can be built even easier using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/OptoShield/OptoShield_PID_Control.slx) for discrete saturated PID control of the process. You need only to select the 'OptoShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the built-in 'Discrete PID Controller', can be readily selected from the Simulink's default library.
 
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 
-After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a Scope.
+After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU, while two-way communication is preserved between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope' as shown below.
 
 ![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
 
