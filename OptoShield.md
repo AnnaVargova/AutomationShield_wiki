@@ -35,12 +35,13 @@ Note that before you begin an experiment you must initialize the hardware by cal
 
 `OptoShield.begin();`
 
-which determines the mode of the input and output pins. This must be followed by
+which determines the mode of the input and output pins.
+
+This must be followed by
 
 `OptoShield.calibrate();`
 
 to re-scale the input and output values.
-
 Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `\code{calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and  `returnMaxVal()` method return the sensor calibration levels.
 
 ### Input
