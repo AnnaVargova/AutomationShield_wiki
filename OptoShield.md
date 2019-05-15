@@ -112,6 +112,10 @@ Similarly, a [worked Simulink example](https://github.com/gergelytakacs/Automati
 
 ## <a name="control"/>PID control
 
+For a start you may want to experiment with a closed-loop control of the LED brightness using the well-known proportional–integral–derivative controller (PID) algorithm.
+
+The PID control examples included within the library contain an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDManual/OptoShield_PIDManual.ino) with manual reference levels set through the potentiometer and an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDAuto/OptoShield_PIDAuto.ino) with pre-determined setpoints. The example code initializes the board and by calling the generic `AutomationShield.h` header also makes use of the sampling and PID functionality of the library. Discrete sampling is realized by launching an interrupt-enabled callback routine at each sampling period. You may be also program your own PID routines, or alternatively, the library contains PID algorithms in both absolute and incremental forms with integral wind-up and saturation limits.
+
 ![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 ![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
