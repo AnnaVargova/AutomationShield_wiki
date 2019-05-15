@@ -105,8 +105,8 @@ One may, for example, identify a continuous-time first-order process model using
 <img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s} ," border="0"/>
 
 with a 
-<img src="http://latex.codecogs.com/gif.latex?K"=3.35 (-) border="0"/>
-DC gain and
+<img src="http://latex.codecogs.com/gif.latex?K" border="0"/>
+=3.35 (-) DC gain and
 <img src="http://latex.codecogs.com/gif.latex?T=0.0024 \mathrm{s}" border="0"/>
 time constant produces a ∼96.5% match with measurement data, as long as we compare a unit step from zero level up to the expected working range of the optical tunnel.
 
