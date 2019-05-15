@@ -42,7 +42,7 @@ This must be followed by
 `OptoShield.calibrate();`
 
 to re-scale the input and output values.
-Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and  `returnMaxVal()` method return the sensor calibration levels.
+Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and `returnMaxVal()` method return the sensor calibration levels.
 
 ### Input
 
@@ -58,7 +58,7 @@ The output from the LDR is read by calling
 ```
 y = OptoShield.sensorRead();
 ```
-which returns a floating-point number in the calibrated range of 0-100 % representing process output `y`. The voltage at the main sensor is accessible through the `sensorReadVoltage` method as well, while the auxiliary sensor can be accessed via `sensorAuxRead()`.
+which returns a floating-point number in the calibrated range of 0-100 % representing process output `y`. The voltage at the main sensor is accessible through the `sensorReadVoltage()` method as well, while the auxiliary sensor can be accessed via `sensorAuxRead()`.
 
 ### Reference
 
