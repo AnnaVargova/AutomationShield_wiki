@@ -2,6 +2,7 @@
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
 &nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
+&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
@@ -66,7 +67,14 @@ The onboard potentiometer can be used in any role, but the most straightforward 
 
 `r = OptoShield.referenceRead();`
 
-returning a floating-point number between 0-100\%.
+which returns a floating-point number between 0-100\%.
+
+## <a name="simulink"/>Simulink API
+
+An even more intuitive to create control loops and perform live experiments is the Simulink API for the HeatShield. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the microcontroller unit (MCU). In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
+
+The Simulink API offers the following algorithmic blocks:
+![OptoSimulink](https://user-images.githubusercontent.com/18485913/57798916-2e553000-774e-11e9-8749-4d8769ff7176.png)
 
 ## System Identification 
 
