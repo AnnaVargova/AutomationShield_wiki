@@ -59,12 +59,6 @@ OptoShield.sensorRead();
 ```
 where the function outputs the brightness in the range of 0-100 % as detected by the sensor circuit. This reading can be used as a feedback signal. The function returns a floating point value. 
 
-Note that the sensor reading in percents is only available after the system has been calibrated. The sensor can be calibrated by calling
-```
-OptoShield.calibration();
-```
-in the `setup()` function, after which the `Opto.sensorRead()' will return the output readings in the correct percentual range.
-
 A sensor reading can be requested instead of calibrated percents directly in units of voltage by calling
 ```
 OptoShield.sensorReadVoltage();
@@ -81,7 +75,7 @@ and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on 
 
 The onboard potentiometer can be used in any role, but the most straightforward one is to read a user-defined setpoint `r`  using
 ```
-r=OptoShield.referenceRead();
+r = OptoShield.referenceRead();
 ```
 returning a floating-point number between 0-100\%.
 
