@@ -102,7 +102,7 @@ The results can be listed using the Arduino Serial Monitor, the Arduino IDE Seri
 
 ![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
-![scope](https://user-images.githubusercontent.com/18485913/57802162-ab37d800-7755-11e9-8c56-9c89b0424326.png)
+![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
 
 # <a name="hardware"/>Detailed hardware description
 
