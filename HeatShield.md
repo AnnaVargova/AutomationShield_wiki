@@ -153,7 +153,7 @@ The same feedback control loop can be built even easier using the Simulink API. 
 
 ![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
 
-After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a Scope.
+After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
 
