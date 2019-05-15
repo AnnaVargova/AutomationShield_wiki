@@ -100,9 +100,9 @@ The results can be listed using the Arduino Serial Monitor, the Arduino IDE Seri
 
 ## <a name="control"/>PID control
 
-![pidoutput](https://user-images.githubusercontent.com/18485913/57801971-47151400-7755-11e9-93c0-89d105337365.png)
-![PIDSimulink](https://user-images.githubusercontent.com/18485913/57801974-48ded780-7755-11e9-99e1-4c20885ca43c.png)
-![scope](https://user-images.githubusercontent.com/18485913/57801984-4ed4b880-7755-11e9-8bf5-41d969c7a8bb.png)
+![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
+![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
+![scope](https://user-images.githubusercontent.com/18485913/57802162-ab37d800-7755-11e9-8c56-9c89b0424326.png)
 
 # <a name="hardware"/>Detailed hardware description
 
