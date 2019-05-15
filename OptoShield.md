@@ -117,6 +117,10 @@ For a start you may want to experiment with a closed-loop control of the LED bri
 The PID control examples included within the library contain an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDManual/OptoShield_PIDManual.ino) with manual reference levels set through the potentiometer and an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDAuto/OptoShield_PIDAuto.ino) with pre-determined setpoints. The example code initializes the board and by calling the generic `AutomationShield.h` header also makes use of the sampling and PID functionality of the library. Discrete sampling is realized by launching an interrupt-enabled callback routine at each sampling period. You may be also program your own PID routines, or alternatively, the library contains PID algorithms in both absolute and incremental forms with integral wind-up and saturation limits.
 
 ![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
+
+Shown above is a PID controlled closed-loop experiment, where the algorithm was tuned to
+<img src="http://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.1" border="0"/>, <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=0.015" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{D}}" border="0"/> to a  rather symbolic T_{\mathrm{D}}=0.015" border="0"/>. Despite the true hysteretic an nonlinear nature of the process the PID algorithm handles feedback control quite well. Note that the output oscillates around the setpoint---especially at lower reference levels---because the LED is powered by a PWM signal instead of a stable true analog input from a digital-to-analog converter (DAC).
+
 ![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 ![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
 
