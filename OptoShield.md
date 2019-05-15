@@ -213,8 +213,7 @@ For those who wish to use the board without the library, the components are conn
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip). 
 
-[scheme.pdf](https://github.com/gergelytakacs/AutomationShield/files/3181293/scheme.pdf)
-
+![scheme](https://user-images.githubusercontent.com/18485913/57755559-814cca00-76f1-11e9-8bfa-f4fed6276e9b.png)
 
 ## <a name="parts"/>Parts
 
