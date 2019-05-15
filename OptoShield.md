@@ -3,10 +3,10 @@
 [Application programming interface](#api)<br/>
 &nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
-[Detailed hardware description](#hardware)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 &nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
+[Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
