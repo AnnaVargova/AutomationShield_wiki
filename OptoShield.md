@@ -79,12 +79,11 @@ and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on 
 
 ### Reference
 
-The user reference is read from the potentiometer by calling
+The onboard potentiometer can be used in any role, but the most straightforward one is to read a user-defined setpoint `r`  using
 ```
-OptoShield.referenceRead();
+r=OptoShield.referenceRead();
 ```
-and the function returns the desired user reference setpoint in percents in the range of 0-100 \% as a floating point number.
-
+returning a floating-point number between 0-100\%.
 
 ## System Identification 
 
