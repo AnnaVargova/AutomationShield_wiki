@@ -8,9 +8,9 @@
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 &nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
-&nbsp;&nbsp;&nbsp;[Circuit design](#io)<br/>
-&nbsp;&nbsp;&nbsp;[Parts](#io)<br/>
-&nbsp;&nbsp;&nbsp;[PCB](#io)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
