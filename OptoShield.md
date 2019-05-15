@@ -72,10 +72,14 @@ which returns a floating-point number between 0-100\%.
 
 ## <a name="simulink"/>Simulink API
 
-If you cannot program in C/C++ just yet, you may want to try out the Simulink API for the OptoShield that enables to create control loops and perform live experiments in the MATLAB/[Simulink](https://www.mathworks.com/products/simulink.html) environment. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. The block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the microcontroller unit (MCU). In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
+If you cannot program in C/C++ just yet, you may want to try out the Simulink API for the OptoShield that enables to create control loops and perform live experiments in the [Simulink](https://www.mathworks.com/products/simulink.html) environment. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. The block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the microcontroller unit (MCU). In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
 
 The Simulink API offers the following algorithmic blocks:
 ![OptoSimulink](https://user-images.githubusercontent.com/18485913/57798916-2e553000-774e-11e9-8749-4d8769ff7176.png)
+
+The onboard LEDs have a dedicated block to which the user supplies a signal from the range of 0--100 (\%). The LDR and its auxiliary twin are serviced by individual algorithmic blocks; in these the user may select the desired type of outputs such as voltage, ADC levels or a manually calibrated signal in percentages. The user may access the onboard potentiometer in a similar fashion.
+
+The most important block in the Simulink API represents the inputs and outputs of the physical system in a single package. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0--100 (\%) and reads the calibrated brightness signal from the main LDR. The process dynamics is also represented by a continuous linear transfer function for simulation-only exercises.
 
 ## System Identification 
 
