@@ -215,6 +215,10 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![scheme](https://user-images.githubusercontent.com/18485913/57755559-814cca00-76f1-11e9-8bfa-f4fed6276e9b.png)
 
+The current to both the main LED **D1** and its external duplicate **D2** is limited by series resistors **R3** and **R4**. The value of these resistors has been chosen so as to create a maximum brightness that is within the sensing range of the LDR. Both LED are connected to digital output **D3** of the MCU, therefore the brightness of the external LED copies that of the main one.
+
+The main LDR acting as a sensor **LDR1** is connected to the **A1** analog input of the MCU through a voltage divider configuration using resistor **R1**. Its value has been chosen to increase the resolution at the output measurement when combined with the brightness of the LED. This is repeated for the external sensor with **LDR2** and **R2** connected to the input **A2**. Finally, the potentiometer is connected to the **A0** input of the MCU, while the power LED with its series resistor is omitted from the scheme.
+
 ## <a name="parts"/>Parts
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
