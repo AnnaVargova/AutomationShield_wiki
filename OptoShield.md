@@ -77,7 +77,11 @@ If you cannot program in C/C++ just yet, you may want to try out the Simulink AP
 The Simulink API offers the following algorithmic blocks:
 ![OptoSimulink](https://user-images.githubusercontent.com/18485913/57798916-2e553000-774e-11e9-8749-4d8769ff7176.png)
 
-The onboard LEDs have a dedicated block to which the user supplies a signal from the range of 0--100 (\%). The LDR and its auxiliary twin are serviced by individual algorithmic blocks; in these the user may select the desired type of outputs such as voltage, ADC levels or a manually calibrated signal in percentages. The user may access the onboard potentiometer in a similar fashion.
+The 'Actuator Write' block accepts real numbers from 0-100% and supplies power to the onboard LEDs.
+
+The 'Sensor Read' and 'Sensor Aux. Read' blocks read the input from the LDR and its auxiliary twin, respectively. User may select the desired type of outputs such as voltage, ADC levels or a manually calibrated signal in percentages.
+
+The user may access the onboard potentiometer in a similar fashion.
 
 The most important block in the Simulink API represents the inputs and outputs of the physical system in a single package. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0--100 (\%) and reads the calibrated brightness signal from the main LDR. The process dynamics is also represented by a continuous linear transfer function for simulation-only exercises.
 
