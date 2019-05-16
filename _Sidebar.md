@@ -1,10 +1,11 @@
 ## Shields
+* [HeatShield][heat]
+* [OptoShield][opto]
 * [MagnetoShield][magneto]
 * [BoBShield][bob]
-* [FloatShield][float]
-* [HeatShield][heat]
 * [MotoShield][moto]
-* [OptoShield][opto]
+* [FloatShield][float]
+
 ## Library and API
 ### Arduino
 * [Common functions][common]
