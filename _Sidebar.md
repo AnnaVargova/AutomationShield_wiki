@@ -8,9 +8,11 @@
 
 ## Library and API
 ### Arduino
-* [Common functions][common]
+* [Introduction][commonArduino]
 ### MATLAB
+* [Introduction][introMATLAB]
 ### Simulink
+* [Introduction][introSimulink]
 
 ## Publications
 * [Publications][publications]
@@ -24,7 +26,11 @@
 
 [home]: https://github.com/gergelytakacs/AutomationShield/wiki
 [bibtex]: https://github.com/gergelytakacs/AutomationShield/wiki/BibTeX
-[common]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+
+[commonArduino]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[introMatlab]:  https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[introSimulink]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
 [heat]: https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield
 [magneto]: https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield
