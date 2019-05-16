@@ -48,14 +48,14 @@ To make an BOBShield either on a PCB or on a breadboard you will need the follow
 
 |   Part   |             Name             | Type, Value, Note | PCS |
 |:--------:|:-----------------------------|:----------------|-----|
-|     J    |       Adafruit VL6180x       |     485-3316    |  1  |
-|    D1    |             Diode            |   625-RGF1D-E3  |  1  |
-|    C1    |   Capacitor, tantallum 0805  | 581-F980J107MSA |  1  |
-|     M    |   Metal Geared Micro Servo   |   426-SER0039   |  1  |
-|          |       Stackable Header       |  474-PRT-11417  |  1  |
-|          |         FFC 7W cable         |    25001-0706   |  1  |
-|          |    FFC 7W connector to PCB   |    5-520314-7   |  1  |
-|          | FFC 7W connector to breakout |   67013-007LF   |  1  |
+|     J    |       Adafruit VL6180x       |     [485-3316](https://www.mouser.sk/ProductDetail/Adafruit/3316?qs=sGAEpiMZZMuYaq4aOfOV%252BNGpcmpxct%252BzTY0qY%2FO75Rw%3D)    |  1  |
+|    D1    |             Diode            |   [625-RGF1D-E3](https://www.mouser.sk/ProductDetail/Vishay-Semiconductors/RGF1D-E3-67A?qs=sGAEpiMZZMtoHjESLttvktgFZl1w4a%2F%2F3p6qGDZZc4o%3D)  |  1  |
+|    C1    |   Capacitor, tantallum 0805  | [581-F980J107MSA](https://www.mouser.sk/ProductDetail/AVX/F980J107MSA?qs=sGAEpiMZZMukHu%252BjC5l7YXOgdEVzCIlfrJV01KbJCe0%3D) |  1  |
+|     M    |   Metal Geared Micro Servo   |   [426-SER0039](https://www.mouser.sk/ProductDetail/DFRobot/SER0039?qs=sGAEpiMZZMuYaq4aOfOV%252BLexKvAPmd2jLf6dNsIPlOo%3D)   |  1  |
+|          |       Stackable Header       |  [474-PRT-11417](https://www.mouser.sk/ProductDetail/SparkFun/PRT-11417?qs=sGAEpiMZZMuWWq7rhECaKREdwluNxBetc4EOoXderyo%3D)  |  1  |
+|          |         FFC 7W cable         |    [25001-0706](https://www.mouser.sk/ProductDetail/Molex/25001-0706?qs=%2Fha2pyFadugZmsfhHu5zKysic76yyPDnAtsFMVzXfdw%3D)   |  1  |
+|          |    FFC 7W connector to PCB   |    [5-520314-7](https://www.mouser.sk/ProductDetail/TE-Connectivity-AMP/5-520314-7?qs=%2Fha2pyFadugNrkwlo5BkC5EJBJfGK4mrwxpJfvEWOpo%3D)   |  1  |
+|          | FFC 7W connector to breakout |   [67013-007LF](https://www.mouser.sk/ProductDetail/Amphenol-FCI/67013-007LF?qs=%2Fha2pyFaduiSCRu%252BHsRKk0mUg9V%252BraZZnrjJDL1VIyTIiluBEDAwSA%3D%3D)   |  1  |
 | ARDUINO1 |       Arduino Uno Rev3       |                 |  1  |
 |          |              PCB             |                 |  1  |
 |   POT1   |         Potentiometer        |                 |  1  |
