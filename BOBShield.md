@@ -25,14 +25,14 @@ The function which declaring PIN and initializing sensor is `BOBClass::begin()` 
 * <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions<br/>
 Function for start of the servo motor is:
 `BOBClass::calibration()`
-In this operation there is a control of the angle of the servo motor, The angles are 130 and 70 deg. Delay time and also sensor detection.
+In this operation there is a control of the angle of the servo motor, The angles are 130 and 70 deg. Delay time and also sensor detection.<br/>
 `BOBClass::referenceRead()`
-Reads values from the potentiometer. 
+Reads values from the potentiometer.<br/> 
 `BOBClass::actuatorWrite(float degree)`
-It is for potentiometer to control the position of angle on servo motor.
+It is for potentiometer to control the position of angle on servo motor.<br/>
 `BOBClass::sensorReadPerc()` and
 `BOBClass::sensorRead()`
-This variables are for TOF sensor, allows to control and recieve signal from the ball position. 
+This variables are for TOF sensor, allows to control and recieve signal from the ball position. <br/>
 
 # <a name="3d-skecth-1"/>3D sketch
 The whole model was designed in CAD software and forwarded to 3D print service. There are five parts to be printed, a motor holder, ball bearing holder in which one side of the tube holder is insert, tube holder, sensor holder and simple closure. Other assembly parts, a sensor, Arduino microcontroller, potentiometer and servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
