@@ -1,13 +1,30 @@
-﻿# Introduction
+#### Contents
+[Introduction](#intro)<br/>
+[Application programming interface](#api)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
+&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+[Examples](#examples)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+&nbsp;&nbsp;&nbsp;[PID control](#control)<br/>
+[Detailed hardware description](#hardware)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
+[About](#about)<br/>
+&nbsp;&nbsp;[Authors](#authors)<br/>
+
+
+# <a name="intro"/>Introduction
 
 The OptoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. This particular low-cost shield contains a simple circuitry implementing a light emitting diode (LED) as the actuator and a light-dependent resistor (LDR) as a sensor. The LED and LDR are enclosed in an opaque tube that blocks ambient light. The power of the LED can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating its apparent brightness. The LED and LDR thus creates a simple feedback loop that can be used in control engineering experiments.
 
-[[/fig/Opto_Iso.jpg|Isometric photograph of the OptoShield.]]
-[[/fig/Opto_Front.jpg|A photograph of the OptoShield from the front.]]
+![Opto_Iso](https://user-images.githubusercontent.com/18485913/57761885-bd3a5c00-76fe-11e9-8b29-d3ccd2b5b196.png)
 
-# Library functions
+# <a name="api"/>Application programming interface
 
-All functions and examples associated to the OptoShield are included in the [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
+## <a name="io"/>C/C++ API
+
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. The OptoShield API is located in the `OptoShield.h` header and a corresponding source file; these implement the `OptoClass` class which is then declared as default `OptoShield` instance. The functions specific to this shield mostly perform input/output peripheral communication. [Certain library functions](https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions) are common to all of our shields and are included in the `AutomationShield` class. 
 
 The summary of functions and the illustration below should get you started quickly:
 * Output (sensor): `Opto.sensorRead();` 
@@ -19,179 +36,100 @@ The summary of functions and the illustration below should get you started quick
 ## Inputs and outputs
 
 The following sections describe the methods used to access the input and output of the OptoShield.
+Note that before you begin an experiment you must initialize the hardware by calling
+
+`OptoShield.begin();`
+
+which determines the mode of the input and output pins.
+
+This must be followed by
+
+`OptoShield.calibrate();`
+
+to re-scale the input and output values.
+Because the LDR cannot measure physically valid units, the signal to the LED and from the LDR will be given in percents of the full scale. The method `calibrated()` thus finds the minimal and maximal analog-to-digital converter (ADC) levels measured at the sensor. The `returnCalibrated()` method returns a flag informing on the calibration state, while the `returnMinVal()` and `returnMaxVal()` method return the sensor calibration levels.
 
 ### Input
-The input to the actuator LED (along with the auxiliary LED) is written by 
-```
-OptoShield.actuatorWrite(u);
-```
-where `u` is a floating point number from the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
+
+The input to both actuator LED an auxiliary LED is written by calling the method
+
+`OptoShield.actuatorWrite(u);`
+
+which accepts input `u` as a floating-point number in the range of 0-100 %. This will send a PWM signal to both LEDs. The behavior of the visible LED is mirrored in the one located in the tube.
 
 ### Output
-The output from the LDR is read by 
-```
-OptoShield.sensorRead();
-```
-where the function outputs the brightness in the range of 0-100 % as detected by the sensor circuit. This reading can be used as a feedback signal. The function returns a floating point value. 
 
-Note that the sensor reading in percents is only available after the system has been calibrated. The sensor can be calibrated by calling
-```
-OptoShield.calibration();
-```
-in the `setup()` function, after which the `Opto.sensorRead()' will return the output readings in the correct percentual range.
+The output from the LDR is read by calling
 
-A sensor reading can be requested instead of calibrated percents directly in units of voltage by calling
-```
-OptoShield.sensorReadVoltage();
-```
-which will return a floating point number. 
+`y = OptoShield.sensorRead();`
 
-The board contains a second, independent LDR in addition to the one used as a sensor. This allows the user to test the functionality of the sensor and perform simple experiments.  The output from the auxiliary LDR is read by 
-```
-OptoShield.sensorAuxRead();
-```
-and similarly to `Opto.sensorReadVoltage()` the function returns the voltage on the sensor circuit as a floating point parameter. Note that this sensor is merely for testing and calibration, like in the case of the main sensor, is not possible.
+which returns a floating-point number in the calibrated range of 0-100 % representing process output `y`. The voltage at the main sensor is accessible through the `sensorReadVoltage()` method as well, while the auxiliary sensor can be accessed via `sensorAuxRead()`.
 
 ### Reference
 
-The user reference is read from the potentiometer by calling
-```
-OptoShield.referenceRead();
-```
-and the function returns the desired user reference setpoint in percents in the range of 0-100 \% as a floating point number.
+The onboard potentiometer can be used in any role, but the most straightforward one is to read a user-defined setpoint `r`  using
 
+`r = OptoShield.referenceRead();`
 
-## System Identification 
+which returns a floating-point number between 0-100\%.
 
-The functions listed below implement tests signals that can be used for system identification and modeling. The functions, when called without input parameters, run a specific identification experiment with pre-set parameters and length that we deemed suitable for identification. Upon evaluating the function, the Arduino board will start to list the results to the serial communication port. The formatting corresponds to a space-separated table format, where spaces separate columns and the line ending character begins a new line.
+## <a name="simulink"/>Simulink API
 
-The results can be listed using the Arduino Serial Monitor, the Arduino IDE Serial Plotter or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
+If you cannot program in C/C++ just yet, you may want to try out the Simulink API for the OptoShield that enables to create control loops and perform live experiments in the [Simulink](https://www.mathworks.com/products/simulink.html) environment. It utilizes the [Simulink Support Package for Arduino Hardware ](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality. The block scheme in [Simulink](https://www.mathworks.com/downloads/) is transcribed into C/C++, then compiled to machine code and uploaded to the microcontroller unit (MCU). In other words, code is run directly on the microcontroller. Simulink not only transcribes the block schemes for hardware, it also maintains the connection between the development computer and MCU. This way controllers can be fine-tuned in a live session, or data may be displayed and logged conveniently.
 
+The Simulink API offers the following algorithmic blocks:
+![OptoSimulink](https://user-images.githubusercontent.com/18485913/57798916-2e553000-774e-11e9-8749-4d8769ff7176.png)
 
-# Examples
+The 'Actuator Write' block accepts real numbers from 0-100% and supplies power to the onboard LEDs.
 
-## Step Response
-```
-#include "AutomationShield.h"
+The 'Sensor Read' and 'Sensor Aux. Read' blocks read the input from the LDR and its auxiliary twin, respectively. User may select the desired type of outputs such as voltage, ADC levels or a manually calibrated signal in percentages. The onboard potentiometer may be accessed in a similar fashion using the 'Reference Read' block.
 
-float Setpoint = 70.00;
+The 'OptoShield' block unites the input and output functionality into a single entity that can be conveniently used for identification and control experiments. The block automatically calibrates the sensor to the available range, then accepts a saturated input signal in the range of 0-100 % and reads the calibrated brightness signal from the main LDR. One may also use the 'OptoShield TF' block to model the process dynamics by a continuous linear transfer function for simulation-only exercises. 
 
-bool enable=false;
-unsigned long int curTime=0;
-unsigned long int prevTime=0;
+# <a name="examples"/>Examples
 
-unsigned long Ts = 0.1;
+## <a name="ident"/>System identification
 
-void setup() {
-  
-Serial.begin(115200);
+Input-output experiments for data gathering can be launched, displayed and logged in C/C++ (Arduino IDE) and Simulink as well. The AutomationShield library for OptoShield incorporates several worked examples. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_StepResponse/OptoShield_StepResponse.ino) illustrates the input-output step response of the onboard optical system. A more [detailed example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_Identification/OptoShield_Identification.ino) runs through a pre-set array of open-loop inputs, incorporates an interrupt-based sampling system and lists the results to the serial communication line. The dynamic response of the system can be followed through the built-in Serial Plotter of the Arduino IDE. This enables one to display the process dynamics within the development environment itself.
 
-Sampling.interruptInitialize(Ts * 1000);
-Sampling.setInterruptCallback(stepEnable);
-  
-OptoShield.begin();
-OptoShield.calibration();
-delay(1000);
-OptoShield.actuatorWrite(Setpoint);
-}
+![ide](https://user-images.githubusercontent.com/18485913/57801853-061cff80-7755-11e9-8055-8543ae303ecc.png)
 
-void loop() {
+The results can be also listed using the Arduino Serial Monitor or even logged by a number of [third party applications](http://freeware.the-meiers.org/), then exported to other software for visualization and post-processing.
 
-  curTime=millis();
-  if (enable) {
-    step();
-    enable=false;
-    
-  } // end of the if statement  
-} // end of the loop
+Apart from this simple graphical representation, the library includes a [MATLAB function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/plotOptoShield_Step.m) to read the results to the [MATLAB](https://www.mathworks.com/products/matlab.html) workspace and plot them. The figure below shows the input and output data gathered through the latter example.
 
+![identification](https://user-images.githubusercontent.com/18485913/57801799-db32ab80-7754-11e9-81ab-3bd4efecf683.png)
 
-void stepEnable(){
-  enable=true;
-}
+The collected data can be readily used to perform system identification procedures. Using another [MATLAB function](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/OptoShield/identifyOptoShield_Step.m) one may identify a continuous-time first-order process model using the MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html) and compare the model to the measurement results. As a result, the first-order transfer function
 
-void step(){
-  float Senzor = OptoShield.sensorRead();
-  
-  Serial.print(Setpoint);
-  Serial.print(",");
-  Serial.println(Senzor);
+<img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{3.35}{1+0.0041s}" border="0"/>
 
-}
-```
- 
+produces a ∼96.5% match with measurement data, as long as we compare a unit step from zero level up to the expected working range of the optical tunnel.
 
-## PID Control
+By inspecting the response it is however clear that this simplified dynamic representation is far from perfect, as the real process demonstrates hysteresis and significant nonlinearity. One may therefore attempt to create models compensating for these effects as well.
 
-```
-#include "AutomationShield.h"
+Similarly, a [worked Simulink example](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/OptoShield/OptoShield_InputsOutputs.slx) performs a simple step change of input, displays the progress of the response live on screen and saves a data file.
 
-unsigned long Ts = 1; // sampling time in milliseconds
+## <a name="control"/>PID control
 
-bool enable=false; // flag for the sampling function
+For a start you may want to experiment with a closed-loop control of the LED brightness using the well-known proportional–integral–derivative controller (PID) algorithm.
 
-// variables for the PID
+The PID control examples included within the library contain an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDManual/OptoShield_PIDManual.ino) with manual reference levels set through the potentiometer and an [example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/OptoShield/OptoShield_PIDAuto/OptoShield_PIDAuto.ino) with pre-determined setpoints. The example code initializes the board and by calling the generic `AutomationShield.h` header also makes use of the sampling and PID functionality of the library. Discrete sampling is realized by launching an interrupt-enabled callback routine at each sampling period. You may be also program your own PID routines, or alternatively, the library contains PID algorithms in both absolute and incremental forms with integral wind-up and saturation limits.
 
-float r = 0.00;
-float y = 0.00;
-float u = 0.00;
-float error = 0.00;
+![pidoutput](https://user-images.githubusercontent.com/18485913/57802153-a7a45100-7755-11e9-8edf-619efc03122a.png)
 
+Shown above is a PID controlled closed-loop experiment, where the algorithm was tuned to
+<img src="http://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.1" border="0"/> , <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=0.015" border="0"/> and <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.015" border="0"/>. Despite the true hysteretic an nonlinear nature of the process the PID algorithm handles feedback control quite well. Note that the output oscillates around the setpoint—especially at lower reference levels—because the LED is powered by a PWM signal instead of a stable true analog input from a digital-to-analog converter (DAC).
 
-void setup() {
-  
-  Serial.begin(9600);
-  
-  OptoShield.begin(); // defining hardware pins
-  OptoShield.calibration(); // calibration function for accurate measurements
-  
-  Sampling.interruptInitialize(Ts * 1000);  // initialize the sampling function, input is the sampling time in microseconds
-  Sampling.setInterruptCallback(stepEnable); // setting the interrupts, the input is the ISR function
+The same feedback control loop can be built even easier using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/OptoShield/OptoShield_PID_Control.slx) for discrete saturated PID control of the process. You need only to select the 'OptoShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
 
- // setting the PID constants
- PIDAbs.setKp(0.00173244161800246); // 0.000287897244979394 - identified value
- PIDAbs.setKi(10.0061553434575); // 5.75794489958787 - identified value
- PIDAbs.setKd(0); // 0 - identified value
+![PIDSimulink](https://user-images.githubusercontent.com/18485913/57802158-aa06ab00-7755-11e9-81db-1e2478f02064.png)
 
-}// end of the setup
+After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU, while two-way communication is preserved between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
 
-void loop() {
+![scope](https://user-images.githubusercontent.com/18485913/57802256-d91d1c80-7755-11e9-895e-168906ccd453.png)
 
-  if (enable) {
-    step();
-    enable=false;
-    
-  }  
-
-} // end of the loop
-
-
-void stepEnable(){  // ISR
-  enable=true;
-}
-
-void step(){ // we have to put our code here
-
-r = OptoShield.referenceRead();  // reading the reference value of the potentiometer
-y = OptoShield.sensorRead();    // reading the sensor value (LDR in the tube)
-
-error = r - y; 
-
- u = PIDAbs.compute(error,0,100,0,100);
-
-OptoShield.actuatorWrite(u);
-
-Serial.print(r);
-Serial.print(",");
-Serial.print(u);
-Serial.print(",");
-Serial.println(y);
-  
-
-}
-```
-
-# Detailed Hardware Description
+# <a name="hardware"/>Detailed hardware description
 
 The OptoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB  by a PCB fabrication service.
 
@@ -199,48 +137,45 @@ For those who wish to use the board without the library, the components are conn
 
 [[/fig/Opto_PIN.gif|OptoShield PIN assignments.]]
 
-
-## Circuit design
+## <a name="circuit"/>Circuit design
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Circuit.zip). 
 
-[[/fig/Opto_Schematics.png|OptoShield Circuit Schematics.]] 
+![scheme](https://user-images.githubusercontent.com/18485913/57755559-814cca00-76f1-11e9-8bfa-f4fed6276e9b.png)
 
+The current to both the main LED **D1** and its external duplicate **D2** is limited by series resistors **R3** and **R4**. The value of these resistors has been chosen so as to create a maximum brightness that is within the sensing range of the LDR. Both LED are connected to digital output **D3** of the MCU, therefore the brightness of the external LED copies that of the main one.
 
-## Parts
+The main LDR acting as a sensor **LDR1** is connected to the **A1** analog input of the MCU through a voltage divider configuration using resistor **R1**. Its value has been chosen to increase the resolution at the output measurement when combined with the brightness of the LED. This is repeated for the external sensor with **LDR2** and **R2** connected to the input **A2**. Finally, the potentiometer is connected to the **A0** input of the MCU, while the power LED with its series resistor is omitted from the scheme.
+
+## <a name="parts"/>Parts
 
 To make an OptoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-|Part              | Name             | Value | PCS  | Note                       |
-|------------------|------------------|-------|------|----------------------------|
-| [LDR1](https://www.tme.eu/sk/details/pgm5516-mp/fotorezistory/token/)             | Photoresistor    | 10 k  | 1    | 5.5 mm                     |
-| LDR2             | Photoresistor    | 10 k  | 1    | 5.5 mm                     |
-| D1               | LED              |       | 1    | 5 mm, bright white         |
-| D2               | LED              |       | 1    | 5 mm, bright white         |
-| D3               | LED              |       | 1    | 1.8 mm, 2.2-2.5V / 10mA    |
-| POT1             | Potentiometer    | 10 k  | 1    | Pin size 12.5x10, [URL](https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf)|
-| R1               | Resistor         | 2.4 k  | 1    |                            |
-| R2               | Resistor         | 2.4 k  | 1    |                            |
-| R3               | Resistor         | 4.7 k  | 1    |                            |
-| R4               | Resistor         | 4.7 k  | 1    |                            |
-| R5               | Resistor         | 270   | 1    |                            |
-|                  | Header           | 10 pin| 1    | long, stackable            |
-|                  | Header           | 8 pin | 2    | long, stackable            |
-|                  | Header           | 6 pin | 1    | long, stackable            |
-|                  | Tube             | 20 mm | 1    | opaque, 5 mm inner dia.    |
+|Part       | Name             | Type/Value/Note                | PCS |
+|-----------|------------------|--------------------------------|-----|
+| LDR1,LDR2 | [Photoresistor](https://www.tme.eu/sk/details/pgm5516-mp/fotorezistory/token/) |5-10kΩ, 5mm | 2 |
+| D1,D2     | LED              | 5mm, clear                     | 2 |
+| POT1      | [Potentiometer](https://www.tme.eu/sk/Document/a8800d4bf548c3723171950d7cc2898f/ACP_CA14-CE14.pdf) |                             10kΩ, pin size 12.5x10 | 1 |
+| R1,R2     | Resistor         | 2.4kΩ                          | 2 |
+| R3,R4     | Resistor         | 4.7kΩ                          | 2 |
+| -         | Header           | 10x1, female, long, stackable  | 1 |
+| -         | Header           | 8x1, female, long, stackable   | 2 |
+| -         | Header           | 6x1, female, long, stackable   | 1 |
+| -         | Tube             | 20mm, Ø5mm, opaque             | 1 |
 
-## PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
+Note that the total cost of the above components, including the PCB, and thus of the entire OptoShield is less than $3 excluding labor and postage.
 
-[[/fig/Opto_PCB_Front.png|OptoShield PCB from the front.]]
-[[/fig/Opto_PCB_Back.png|OptoShield PCB from the back.]]
+## <a name="pcb"/>PCB
 
-# About
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
 
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. 
+![PCBtop](https://user-images.githubusercontent.com/18485913/57757206-3cc32d80-76f5-11e9-98f9-5817f5af3eb1.png)
+![PCBbottom](https://user-images.githubusercontent.com/18485913/57757207-3df45a80-76f5-11e9-8446-6a6815e3f356.png)
 
-## Authors
+# <a name="about"/>About
+This shield was designed and created within the framework of a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics in 2017/2018. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava. 
 
+## <a name="authors"/>Authors
 * Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
 * Software design: Tibor Konkoly, Gergely Takács
-* Wiki: Tibor Konkoly, Gergely Takács
+* Wiki: Martin Gulan, Gergely Takács

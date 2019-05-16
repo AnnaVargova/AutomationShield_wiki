@@ -1,13 +1,15 @@
 ## Shields
+* [HeatShield][heat]
+* [OptoShield][opto]
 * [MagnetoShield][magneto]
 * [BoBShield][bob]
-* [FloatShield][float]
-* [HeatShield][heat]
 * [MotoShield][moto]
-* [OptoShield][opto]
+* [FloatShield][float]
+
 ## Library and API
-### Arduino
-* [Common functions][common]
+* [Arduino IDE][commonArduino]
+* [MATLAB][MATLABAPI]
+* [Simulink][SimulinkAPI]
 
 ## Publications
 * [Publications][publications]
@@ -21,7 +23,11 @@
 
 [home]: https://github.com/gergelytakacs/AutomationShield/wiki
 [bibtex]: https://github.com/gergelytakacs/AutomationShield/wiki/BibTeX
-[common]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+
+[commonArduino]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[MATLABAPI]:  https://github.com/gergelytakacs/AutomationShield/wiki/MATLAB-API
+[SimulinkAPI]: https://github.com/gergelytakacs/AutomationShield/wiki/Simulink-API
+
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
 [heat]: https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield
 [magneto]: https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield

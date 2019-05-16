@@ -8,16 +8,16 @@
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 &nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
-&nbsp;&nbsp;&nbsp;[Circuit design](#io)<br/>
-&nbsp;&nbsp;&nbsp;[Parts](#io)<br/>
-&nbsp;&nbsp;&nbsp;[PCB](#io)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 
 # <a name="intro"/>Introduction
 
-The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the AutomationShield project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple single-input single-output (SISO) feedback loop. In place of the usual extrusion nozzle supplying the melted plastic filament is a steel screw connecting the heating block to a thermal insulator that prevents heat damage to the printed circuit board (PCB). The maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator. The HeatShield also features an optional transparent safety enclosure.
+The HeatShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. This particular low-cost shield demonstrates the thermal control of a 3D printer heating block implementing a resistive heating cartridge as the actuator and a negative temperature coefficient (NTC) resistor as the sensor, which creates a simple single-input single-output (SISO) feedback loop. In place of the usual extrusion nozzle supplying the melted plastic filament is a steel screw connecting the heating block to a thermal insulator that prevents heat damage to the printed circuit board (PCB). The maximal temperature of the heating block is limited at ~80°C by an adjustable linear voltage regulator. The HeatShield also features an optional transparent safety enclosure.
 
 <!-- [Heat](https://user-images.githubusercontent.com/18485913/55647718-ae4aba80-57de-11e9-9ba4-b93ec63d62b5.png)-->
 ![Heat2](https://user-images.githubusercontent.com/18485913/55653082-afcfaf00-57ed-11e9-9187-0f1797fd71b2.png)
@@ -53,11 +53,11 @@ which will convert the percentage value to an 8-bit number driving the pulse-wid
 
 ### Output
 
-The thermistor in the heating block is accessed by calling the
+The thermistor in the heating block is accessed by calling the method
 
 `y = HeatShield.sensorRead();`
 
-method, which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
+which returns the block temperature in degrees Celsius to the variable `y` as a floating point number.
 This function first calls the `getThermistorVoltage()` method, which returns the output potential at the voltage divider. Based on the known input reference voltage
 <img src="http://latex.codecogs.com/gif.latex?V_{\mathrm{r}}" border="0"/>
 , the known reference resistance
@@ -153,7 +153,7 @@ The same feedback control loop can be built even easier using the Simulink API. 
 
 ![SimulinkPID](https://user-images.githubusercontent.com/18485913/55687600-23e59080-596f-11e9-9b0f-59e6b01eea39.png)
 
-After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a Scope.
+After selecting the External running mode the block scheme is re-interpreted to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. Communication is possible between the block scheme and the hardware. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
 
 ![ScopeShot](https://user-images.githubusercontent.com/18485913/55687610-3e1f6e80-596f-11e9-8fbf-2fc43436dc15.png)
 
