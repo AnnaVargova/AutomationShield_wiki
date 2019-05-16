@@ -23,7 +23,7 @@ BOBShield or Ball on beam shield is didactical device for education feedback con
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and functions for PID controller and feedback control device. All functionality associated with the BOBShield is included in the BOBShield.h header.
 The following subsections describe the methods used for manage microservo motor, sensor and PID controller.
 The function which declaring PIN and initializing sensor is `BOBClass::begin()` .
-* <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions
+* <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions<br/>
 Function for start of the servo motor is:
 `BOBClass::calibration()`
 In this operation
