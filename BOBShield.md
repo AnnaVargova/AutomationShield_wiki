@@ -2,8 +2,8 @@
 
 [Introduction](#introduction-1)<br/>
 [Arduino library](#arduino-library-1)<br/>
-&nbsp;&nbsp;&nbsp;servo motor and sensor<br/>
-&nbsp;&nbsp;&nbsp;PID control<br/>
+&nbsp;&nbsp;&nbsp;[Servo motor and sensor functions](#servo-motor-and-sensor-1)<br/>
+&nbsp;&nbsp;&nbsp;[PID control functions](#PID-1)<br/>
 [3D sketch](#3d-sketch-1)<br/>
 [Circuit design](#circuit-design-1)<br/>
 [Components](#components-1)<br/>
@@ -23,10 +23,12 @@ BOBShield or Ball on beam shield is didactical device for education feedback con
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and functions for PID controller and feedback control device. All functionality associated with the BOBShield is included in the BOBShield.h header.
 The following subsections describe the methods used for manage microservo motor, sensor and PID controller.
 The function which declaring PIN and initializing sensor is `BOBClass::begin()` .
-* Servo motor and sensor functions
+* <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions
 Function for start of the servo motor is:
 `BOBClass::calibration()`
 In this operation
+
+* <a name="PID-1"/>PID control functions
 
 # <a name="3d-skecth-1"/>3D sketch
 The whole model was designed in CAD software and forwarded to 3D print service. There are five parts to be printed, a motor holder, ball bearing holder in which one side of the tube holder is insert, tube holder, sensor holder and simple closure. Other assembly parts, a sensor, Arduino microcontroller, potentiometer and servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
