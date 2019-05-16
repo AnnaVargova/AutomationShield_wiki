@@ -25,7 +25,7 @@
 [bibtex]: https://github.com/gergelytakacs/AutomationShield/wiki/BibTeX
 
 [commonArduino]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
-[MATLABAPI]:  https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[MATLABAPI]:  https://github.com/gergelytakacs/AutomationShield/wiki/MATLAB-API
 [SimulinkAPI]: https://github.com/gergelytakacs/AutomationShield/wiki/Simulink-API
 
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
