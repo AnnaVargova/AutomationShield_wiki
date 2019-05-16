@@ -7,12 +7,9 @@
 * [FloatShield][float]
 
 ## Library and API
-### Arduino
-* [Introduction][commonArduino]
-### MATLAB
-* [Introduction][introMATLAB]
-### Simulink
-* [Introduction][introSimulink]
+* [Arduino IDE][commonArduino]
+* [MATLAB][MATLABAPI]
+* [Simulink][SimulinkAPI]
 
 ## Publications
 * [Publications][publications]
@@ -28,8 +25,8 @@
 [bibtex]: https://github.com/gergelytakacs/AutomationShield/wiki/BibTeX
 
 [commonArduino]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
-[introMatlab]:  https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
-[introSimulink]: https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[MATLABAPI]:  https://github.com/gergelytakacs/AutomationShield/wiki/Common-functions
+[SimulinkAPI]: https://github.com/gergelytakacs/AutomationShield/wiki/Simulink-API
 
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
 [heat]: https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield
