@@ -61,8 +61,7 @@ To make an BOBShield either on a PCB or on a breadboard you will need the follow
 |          |       Stackable Header       |  [474-PRT-11417](https://www.mouser.sk/ProductDetail/SparkFun/PRT-11417?qs=sGAEpiMZZMuWWq7rhECaKREdwluNxBetc4EOoXderyo%3D)  | SparkFun Accessories Arduino Stackable Header Kit - R3 |   1  |
 |          |         FFC 7W cable         |    [25001-0706](https://www.mouser.sk/ProductDetail/Molex/25001-0706?qs=%2Fha2pyFadugZmsfhHu5zKysic76yyPDnAtsFMVzXfdw%3D)   | FFC / FPC Jumper Cables STD. CABLE JUMPER |   1  |
 |          |    FFC 7W connector to PCB   |    [5-520314-7](https://www.mouser.sk/ProductDetail/TE-Connectivity-AMP/5-520314-7?qs=%2Fha2pyFadugNrkwlo5BkC5EJBJfGK4mrwxpJfvEWOpo%3D)   | FFC & FPC Connectors 100X100 REC 1X07P |   1  |
-|          | FFC 7W connector to breakout |   [67013-007LF](https://www.mouser.sk/ProductDetail/Amphenol-FCI/67013-007LF?qs=%2Fha2pyFaduiSCRu%252BHsRKk0mUg9V%252BraZZnrjJDL1VIyTIiluBEDAwSA%3D%3D)   | 
-FFC & FPC Connectors DUFLEX HSNG SR |   1  |
+|          | FFC 7W connector to breakout |   [67013-007LF](https://www.mouser.sk/ProductDetail/Amphenol-FCI/67013-007LF?qs=%2Fha2pyFaduiSCRu%252BHsRKk0mUg9V%252BraZZnrjJDL1VIyTIiluBEDAwSA%3D%3D)   | FFC & FPC Connectors DUFLEX HSNG SR |   1  |
 | ARDUINO1 |       Arduino Uno Rev3       |                 |  1  |
 |          |              PCB             |                 |  1  |
 |   POT1   |         Potentiometer        |                 |  1  |
