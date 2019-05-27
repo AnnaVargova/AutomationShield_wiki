@@ -12,6 +12,7 @@ The publication status of the shields is as follows:
 | MotoShield    	|         	|            	| ✅      	|
 | OptoShield    	|         	| ✅          	| ✅      	|
 | TugShield    	        |         	|          	| ✅      	|
+| BOBShield    	        |         	|          	|        	|
 
 ## Conference articles
 
