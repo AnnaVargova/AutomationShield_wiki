@@ -11,6 +11,8 @@ The publication status of the shields is as follows:
 | MagnetoShield 	|         	|            	| ✅      	|
 | MotoShield    	|         	|            	| ✅      	|
 | OptoShield    	|         	| ✅          	| ✅      	|
+| TugShield    	        |         	|          	| ✅      	|
+| BOBShield    	        |         	|          	|        	|
 
 ## Conference articles
 
@@ -24,3 +26,8 @@ The publication status of the shields is as follows:
 1. Tibor Konkoly: [Experimentálne moduly pre výučbu automatizácie (Experimental Modules for Automation Education, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Konkoly2018.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2018. Supervisor: Gergely Takács. Thesis ID: SjF-13432-81384
 
 2. Jakub Mihalík: [Miniaturizácia experimentu "magnetická levitácia" (Miniaturizing the "Magnetic Levitation" Experiment, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2018. Supervisor: Gergely Takács. Thesis ID: SjF-13432-81742
+
+3. Anna Vargová: [Maticové operácie na programovateľných mikroovládačoch architektúry AVR (Maticové operácie na programovateľných mikroovládačoch architektúry AVR, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaA2019.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2019. Supervisor: Gergely Takács. Thesis ID: SjF-13432-87787
+
+4. Eva Vargová: [Experimentálne zariadenie na riadenie statickej deformácie votknutého nosníka (Experimental system to control the static deformation of a cantilever beam, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaE2019.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2019. Supervisor: Gergely Takács. Thesis ID: SjF-13432-87733
+
