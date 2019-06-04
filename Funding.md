@@ -8,12 +8,12 @@ The AutomationShield project gratefully acknowledges the funding received from t
 
 The authors of the AutomationShield project gratefully acknowledge the funding received from the [Slovak Research and Development Agency](https://www.apvv.sk/?lang=en) (APVV) within the framework of the grant project no. APVV-18-0023. 
 <p align="center">
-  <img src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/APVV.png" />
+  <img src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/apvv.png" />
 </p>
 
 # Past funding
 
 The authors of the AutomationShield project gratefully acknowledge the funding received from the [Slovak Research and Development Agency](https://www.apvv.sk/?lang=en) (APVV) within the framework of the grant project no. APVV-14-0399 provided between 2017-2019.
 <p align="center">
-  <img src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/APVV.png" />
+  <img src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/apvv.png" />
 </p>
