@@ -34,22 +34,22 @@ It reads value of potentiometer and then calculate the angle on servo motor..<br
 This variables are for TOF sensor, they enable to control and receive signal from the ball position. <br/>
 
 # <a name="3d-skecth-1"/>3D sketch
-The whole model was designed in CAD software and forwarded to 3D print service. There are five parts to be printed, a motor holder, ball bearing holder in which one side of the tube holder is insert, tube holder, sensor holder and simple closure. Other assembly parts, a sensor, Arduino microcontroller, potentiometer and servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
+The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: a motor holder, a ball bearing holder in which one side of the tube holder is embedded, the tube holder, the sensor holder and the simple closure. Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
 ![Picture1](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_1.jpg)
 ![Picture2](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_2.jpg)
 ![Picture3](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_3.jpg)
 
 # <a name="circuit-design-1"/>Circuit design
-The circuit schematics has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
+The circuit diagram has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
 
 ![Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Circuit.png)
 
-Power for circuit is coming from pin 5V. This pin powering microservo motor SM, capacitor C1 and diode D1. From the pin with 3.3V is powered Time Of Flight sensor J and potentiometer POT1. Everything is connect to the pin GND ground. The digital pin 9 is connect to microservo motor from which comes signal for angular position of the servo motor. Analog signal A0 is connected potentiometer POT1, through which the servo motor position is controlled. Also analog pins A4/SDA and A5/SCL are connected to Time Of Flight sensor J and these connctions are used for detection signal of TOF sensor and feedback signal of TOF sensor J. 
+The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
 
 
 # <a name="components-1"/>Components
-To make an BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+To make the BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 |   Part   |             Name             |  Stock number  | Value | PCS |
 |:--------:|:-----------------------------|:----------------|-------|-----|
@@ -72,22 +72,21 @@ To make an BOBShield either on a PCB or on a breadboard you will need the follow
 
 # <a name="pcb-layout-1"/>PCB Layout
 
-The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version.  The PCB has two layers and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
+The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. The PCB has two layers and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
 
 ![The upper part of the PCB](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Upper_part_of_the_PCB.png)
 
-On the picture of the upper layout can be seen black line is starting from digital pin 9 and going to the pin where micro servo motor has connector, it is signal for micro servo motor. Power for black line come from 3.3V pin and go to pin AREF. Analogue REFerence it allows to feed the Arduino a reference voltage from an external power supply. It would be feed with 3.3V into the AREF pin – perhaps from a voltage regulator IC. From 5V pin exit red line which is  power for resistor and diode and continuous to the ServoPinout. Blue line is ground for SensorPinout diode resistor and ServoPinout.
+In the picture of the upper layout a black line can be seen which is starting from digital pin 9 and continues to the pin where micro servo motor has a connector, it is the signal for the micro servo motor. The power for the black line comes from the 3.3V pin and goes to the pin AREF. Analogue REFerence allows to feed the Arduino reference voltage from an external power supply. It would be fed with 3.3V into the AREF pin – perhaps from a voltage regulator IC. The resistor and diode are powered by the red line which outputs from the 5V pin and continues to the ServoPinout. The blue line is ground for the SensorPinout diode resistor and the ServoPinout.
 
 ![Bottom part of the PCB](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Bottom_part_of_the_PCB.png)
 
-On the bottom layout can be seen black line starting from power of 3.3V going to + of SensorPinout then continue to USB. Blue line is ground. The other two black lines starting from pins Serial Clock Line (SCL) and Serial Data Line (SDA) and going to SCL and SDA on SensorPinOut. I2C uses only two bidirectional open collector or open drain lines for SDA and SCL pulled up with resistors. Typical voltages used are +5 V or +3.3 V.
+At the bottom layout the black line can be seen starting from power of 3.3V going to + of SensorPinout, then continues to the USB. The blue line is ground. The other two black lines start from the pins Serial Clock Line (SCL) and the Serial Data Line (SDA) and continue the SCL and the SDA on the SensorPinOut. I2C uses only two bidirectional open collector or open drain lines for the SDA and the SCL pulled up with resistors. Typical voltages used are +5 V or +3.3 V.
 # <a name="gallery"/>Gallery
 
 
 
 # <a name="about-1"/>About
-The shield was developed as a semester project for subject of Microcomputers and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics in 2018/2019. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
-
+The shield was developed as a semester project for subject of Microcomputer and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics in 2018/2019. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
 # <a name="authors-1"/>Authors
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
