@@ -16,8 +16,8 @@ The publication status of the shields is as follows:
 
 ## Conference articles
 
-1. Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kováč, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, UAE. pp. 374-383, ISBN: 978-1-5386-9506-7, DOI: . ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
-2. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. pp. 1001-1006 ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b_Presentation.pdf))
+1. Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kováč, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, UAE. pp. 374-383, ISBN: 978-1-5386-9506-7. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
+2. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. pp. 1001-1006, ISBN: 978-4-88898-301-3[Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b_Presentation.pdf))
 
 ## Thesis works
 
