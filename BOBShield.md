@@ -25,7 +25,7 @@ The following subsections describe the methods used to manage microservo motor, 
  `void BOBClass::initialize()`<br/>
 This function check if sensor is available and if the function find sensor, then the next function come is calibration.<br/>
 `void BOBClass::calibration()`<br/>
-This operation start calibrating the sensor, tilt beam go to the minimum to -30 degrees so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 secund. Then tilt beam go to the maximum to 30 degrees, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 secund. And save both minimum and maximum values after each ending of measurements.<br/>
+This operation start calibrating the sensor, tilt beam go to the minimum to -30 degrees so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 second. Then tilt beam go to the maximum to 30 degrees, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 second. And save both minimum and maximum values after each ending of measurements.<br/>
 `void BOBClass::actuatorWrite(float fdeg)`<br/>
 This function write to actuator some parameters as predefined boundary for servo range, mapping inputs defined by user in degrees (-30/30) in to values understandable for servo (65/125) degrees.<br/>
 `float BOBClass::sensorRead()`<br/>
