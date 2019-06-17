@@ -22,16 +22,12 @@ BOBShield or Ball on beam shield is a didactical device for education feedback c
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and functions for PID controller and feedback control device. All functionality associated with the BOBShield is included in the BOBShield.h header. 
 The following subsections describe the methods used to manage microservo motor, sensor and PID controller. The function which declares PIN and initializes the sensor is `BOBClass::begin()` .
 * <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions<br/>
-Function for start of the servo motor is:
-`BOBClass::calibration()`
-This operation checks the angle of the servo motor which is between 130 and 70 deg. It also checks delay time and also sensor detection.<br/>
-`BOBClass::referenceRead()`
-Reads values from the potentiometer.<br/> 
-`BOBClass::actuatorWrite(float degree)`
-It reads value of potentiometer and then calculate the angle on servo motor..<br/>
-`BOBClass::sensorReadPerc()` and
-`BOBClass::sensorRead()`
-This variables are for TOF sensor, they enable to control and receive signal from the ball position. <br/>
+ `void BOBClass::initialize()`<br/>
+This function check if sensor is available and if the function find sensor, then the next function come is calibration.<br/>
+`void BOBClass::calibration()`<br/>
+This operation start calibrating the sensor, tilt beam go to the minimum to -30 deg so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 sec. Then tilt beam go to the maximum to 30 deg, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 sec. And save both minimum and maximum values after each ending of measurements.<br/>
+`void BOBClass::actuatorWrite(float fdeg)`<br/>
+This function write
 
 # <a name="3d-skecth-1"/>3D sketch
 The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: a motor holder, a ball bearing holder in which one side of the tube holder is embedded, the tube holder, the sensor holder and the simple closure. Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
