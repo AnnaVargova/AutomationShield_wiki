@@ -25,12 +25,14 @@ The following subsections describe the methods used to manage microservo motor, 
  `void BOBClass::initialize()`<br/>
 This function check if sensor is available and if the function find sensor, then the next function come is calibration.<br/>
 `void BOBClass::calibration()`<br/>
-This operation start calibrating the sensor, tilt beam go to the minimum to -30 deg so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 sec. Then tilt beam go to the maximum to 30 deg, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 sec. And save both minimum and maximum values after each ending of measurements.<br/>
+This operation start calibrating the sensor, tilt beam go to the minimum to -30 degrees so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 secund. Then tilt beam go to the maximum to 30 degrees, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 secund. And save both minimum and maximum values after each ending of measurements.<br/>
 `void BOBClass::actuatorWrite(float fdeg)`<br/>
-This function write
+This function write to actuator some parameters as predefined boundary for servo range, mapping inputs defined by user in degrees (-30/30) in to values understandable for servo (65/125) degrees.<br/>
+`float BOBClass::sensorRead()`<br/>
+SensorRead function return the corrected value of sensor and set actual position to position — calibrated minimum also set actual position to position — predefined value.<br/>
 
 # <a name="3d-skecth-1"/>3D sketch
-The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: a motor holder, a ball bearing holder in which one side of the tube holder is embedded, the tube holder, the sensor holder and the simple closure. Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from GrabCAD database. Printed circuit board is rendered from DIPTrace software.
+The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: stand with servo, stand without servo, the tube holder, the sensor case and the simple closure or blinding. You may download 3D printed parts from here. The entire assembly you may download from here. Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from [GrabCAD database](https://grabcad.com/library). Printed circuit board is rendered from DIPTrace software.
 ![Picture1](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_1.jpg)
 ![Picture2](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_2.jpg)
 ![Picture3](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_3.jpg)
