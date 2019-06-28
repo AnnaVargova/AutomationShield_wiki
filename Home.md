@@ -2,13 +2,13 @@
 
 AutomationShield is an open-source hardware and software project focused on tools for control engineering and mechatronics education.
 
-The core of the project are extension boards to the popular Arduino microcontroller prototyping boards implementing feedback control experiments to teach control systems engineering. These hardware extensions—known in the Arduino world as shields—are then in essence experimental systems on a single printed circuit board (PCB). 
+The core of the project are extension modules for the popular Arduino microcontroller prototyping boards, which are  implementing feedback control experiments to teach control systems engineering and mechatronics. These hardware extensions—known in the Arduino world as shields—are then in essence experimental systems on a single printed circuit board (PCB). 
 
 [[/fig/AS_Illustration.jpg|AutomationShield devices.]]
 
 The didactic process for teaching control engineering is often overly focused on theory and lacks practical implementation and hands on experience. In numerous universities the didactic tools and lab equipment for control engineering and mechatronics is simply not available, since a single laboratory tool for feedback control costs in the order of tens of thousands of dollars. Even if the tools are available in the laboratory, students cannot take these home and complete assignments or experiment outside of the academic environment.
 
-Our aim is to design feedback control experimental devices that can fit on an Arduino shield and provide an application programmer's interface (API) and examples for students and educators.
+Our aim is to design feedback control experimental devices that can fit on an Arduino shield and provide an application programmer's interface (API) and examples for students, educators and researchers.
 
 # About the Shields
 
