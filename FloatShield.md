@@ -213,6 +213,6 @@ The board was developed within the framework of semester project at the Institut
 ## Authors
 
 * 3D-model design: Marcel Vdoleček
-* Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba 
+* Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
 * Software design: Gábor Penzinger, Jakub Kulhánek
 * Wiki documentation: Martin Lučan, Dávid Šroba, Miloš Podbielančík
