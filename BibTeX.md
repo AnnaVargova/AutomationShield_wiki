@@ -25,7 +25,7 @@ address={Dubai, United Arab Emirates},
 note={},
 }
 ```
-Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. doi: TBD. Preprint submitted for review.
+Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), pp. 1001-1006, June 9-12, 2019, Kitakyusu-shi, Japan. ISBN: 978-4-88898-300-6.
 
 ```
 @INPROCEEDINGS{Takacs2019b,
