@@ -14,17 +14,18 @@ title={{H}eat{S}hield: a low-cost didactic device for control education simulati
 year={2019},
 volume={},
 number={},
-pages={385--394},
+pages={374--383},
 keywords={educational aids, education, teaching,  microcomputer-based control, microcontroller, low-cost, Arduino, Simulink, optical, mechatronics},
-doi={},
+doi={10.1109/EDUCON.2019.8725201},
 ISBN={978-1-5386-9506-7},
-month={Apr},
+ISSN={2165-9567},
+month={April},
 date={9--11},
 address={Dubai, United Arab Emirates},
 note={},
 }
 ```
-Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. doi: TBD. Preprint submitted for review.
+Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), pp. 1001-1006, June 9-12, 2019, Kitakyusu-shi, Japan. ISBN: 978-4-88898-300-6.
 
 ```
 @INPROCEEDINGS{Takacs2019b,
@@ -34,13 +35,13 @@ title={OptoShield: A Low-Cost Tool for Control and Mechatronics Education},
 year={2019},
 volume={},
 number={},
-pages={1--6},
+pages={1001--1006},
 keywords={educational aids, education, teaching,  microcomputer-based control, microcontroller, low-cost, Arduino, Simulink, optical, mechatronics},
-doi={TBD},
-ISSN={TBD},
+doi={},
+ISBN={978-4-88898-300-6},
 month={Jun},
 date={9--12},
-address={Kitakyushu, Japan},
-note={Preprint submitted for review.},
+address={Kitakyushu-shi, Japan},
+note={},
 }
 ```
