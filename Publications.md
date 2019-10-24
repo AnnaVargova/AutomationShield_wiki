@@ -6,9 +6,9 @@ The publication status of the shields is as follows:
 
 |               	| Journal 	| Conference 	| Thesis 	| Video     |
 |---------------	|---------	|------------	|--------	| ----------|
-| FloatShield   	|         	|            	|        	|           |
-| HeatShield    	|         	| ✅          	|        	| ✅       |
-| MagnetoShield 	|         	|            	| ✅      	|           |
+| FloatShield   	|         	| ✅          	|        	| ✅        |
+| HeatShield    	|         	| ✅          	|        	| ✅        |
+| MagnetoShield 	|         	|            	| ✅      	|            |
 | MotoShield    	|         	|            	| ✅      	|           |
 | OptoShield    	|         	| ✅          	| ✅      	| ✅       |
 | TugShield    	        |         	|          	| ✅      	|           |
