@@ -14,6 +14,9 @@ The publication status of the shields is as follows:
 | TugShield    	        |         	|          	| ✅      	|           |
 | BOBShield    	        |         	|          	|        	|           |
 
+## Under review
+1. Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. 
+
 ## Conference articles
 
 1. Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kováč, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, UAE. pp. 374-383, ISBN: 978-1-5386-9506-7. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
