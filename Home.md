@@ -39,7 +39,7 @@ The current status of the library is as follows:
 |               | Release | Beta | Arduino  | MATLAB | Simulink |
 |---------------|---------|------|----------|--------|----------|
 | BOBShield   |         | ✅    | ✅        |        |          |
-| FloatShield   |         | ✅    | ✅        |        |          |
+| FloatShield   | ✅      |     | ✅        | ✅       | ✅         |
 | HeatShield    | ✅       |      | ✅        | ✅      | ✅        |
 | MagnetoShield |         | ✅    | ✅        |        |          |
 | MotoShield    |         | ✅    | ✅        |        |          |
