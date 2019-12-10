@@ -19,7 +19,7 @@ Currently these shields are available:
 * [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system feedback experiment
 * [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation feedback  experiment
 
-We are in the process of developing new types of shields. We are currently working on more than 4 new experimental devices to add to this portfolio by the end of 2019 or early 2020, namely
+We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020, namely
 * TugShield - an elastic structural deformation feedback experiment
 * LinkShield - a rotational link feedback experiment
 * BoBShield - the classical ball-on-beam (seesaw) control experiment
