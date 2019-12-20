@@ -21,6 +21,8 @@ FloatShield is a didactic tool based on the Arduino platform. This project has b
 The basic design of FloatShield consists of a potentiometer, a distance sensor, a translucent vertical tunnel containing a ball (reference item) that is floating inside and a computer fan attached to our own-design PCB. A transparent tube and a distance sensor is mounted by 3D printed parts.
 The function principle is based on controlling the distance of the reference item using the PID feedback controller. Manual control is operated by power regulation of the fan through a potentiometer, which is scaled to a pulse width modulated signal (PWM).
 
+![FloatShield](https://user-images.githubusercontent.com/18485913/71251380-824a7780-2322-11ea-8a50-6978c4935d60.png)
+
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
@@ -51,9 +53,9 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![float_pcb](https://user-images.githubusercontent.com/18485913/71244839-b4081200-2313-11ea-8cb3-41aff3b5493e.png)
 
-The fan and the TOF sensor are only represented by their connectors, **J1** and **J2**, respectively, while we assume that 12 V external power is drawn through the VIN pin of the Arduino (a).
+The fan and the TOF sensor are only represented by their connectors, while we assume that 12 V external power is drawn through the VIN pin of the Arduino (a).
 
-The fan is powered by an N-channel MOSFET **C1** (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor **R1** (m). Floating states are handled by a 10 kΩ pull-down resistor **R2** (n), while a diode **D1** (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals **J2**. Since the fan requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device.
+The fan is powered by an N-channel MOSFET **C1** (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor **R1** (m). Floating states are handled by a 10 kΩ pull-down resistor **R2** (n), while a diode **D1** (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals. Since the fan requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device.
 
 The TOF sensor is integrated to a convenient open-source breakout board, thus it can be effortlessly connected (q) to the I2C bus of the Arduino (SDA,SCL).
 
