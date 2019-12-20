@@ -42,32 +42,32 @@
 ## <a name="parts"/>Parts
 To make an FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-| Symbol    	| Part               	| Type/Value/Note                                                     	| PCS 	|
+| Part    	| Name               	| Type/Value/Note                                                     	| PCS 	|
 |-----------	|--------------------	|-----------------------------------------------------------------	|-------|
-| (b)       	| PCB                	| FR4, 2 layer, 1.6 mm thick                                      	| 1    	|
-| (c)       	| Fan                	| Axial, 12 V,  40X40 mm,   24.0 CFM; e.g. Sunon PMD1204PQB1      	| 1    	|
-| (d)       	| Tube clamp         	| 3D printed, 16 g filament, print time 2:24                      	| 1    	|
-| (e)       	| Tube               	| Clear, dia 35.5 mm, wall approx. 0.6 mm, 0.4 m; e.g. no. 113816 	| 0.4  	|
-| (f)       	| Ball               	| Cork, dia 30 mm; e.g. no. 108269                                	| 1    	|
-| (g)       	| Tube flange        	| 3D printed, 5.8 g filament, print time 57min                    	| 1    	|
-| (h)       	| Sensor holder      	| 3D printed, 4 g filament, print time 43min                      	| 1    	|
+| (b)       	| PCB                	| FR4, 2 layer, 1.6mm thick                                      	| 1    	|
+| (c)       	| Fan                	| Axial, 12 V, 40X40 mm, 24.0 CFM; e.g. Sunon PMD1204PQB1       	| 1    	|
+| (d)       	| Tube clamp         	| 3D printed, 16g filament, print time 2:24h                      	| 1    	|
+| (e)       	| Tube               	| Clear, Ø35.5 mm, wall approx. 0.6mm, 0.4m; e.g. no. 113816 	        | 0.4  	|
+| (f)       	| Ball               	| Cork, Ø30 mm; e.g. no. 108269                                 	| 1    	|
+| (g)       	| Tube flange        	| 3D printed, 5.8g filament, print time 57min                    	| 1    	|
+| (h)       	| Sensor holder      	| 3D printed, 4g filament, print time 43min                      	| 1    	|
 | (i)       	| Sensor             	| ST Microelectronics VL5310X TOF sensor on a breakout board      	| 1    	|
-| (j)       	| Wire               	| 1m, 4 lead, 0.15 mm2,multi-conductor ribbon; e.g. VFL 4x0,14    	| 1    	|
-| (k)       	| Cable shaft        	| U-shape, 8x330 mm, ASA polymer; e.g.  11796                     	| 1    	|
+| (j)       	| Wire               	| 1m, 4 lead, 0.15mm2, multi-conductor ribbon; e.g. VFL 4x0,14    	| 1    	|
+| (k)       	| Cable shaft        	| U-shape, 8x330mm, ASA polymer; e.g. 11796                     	| 1    	|
 | (l),C1    	| MOSFET             	| IRF520, TO-220AB, e.g. IRF520NPBF                               	| 1    	|
-| (m),R1   	| Resistor           	| 1 k, 2.5x6.8mm, THT                                             	| 1    	|
-| (n),R2   	| Resistor           	| 10 k, 2.5x6.8mm, THT                                            	| 1    	|
+| (m),R1   	| Resistor           	| 1kΩ, 2.5x6.8mm, THT                                             	| 1    	|
+| (n),R2   	| Resistor           	| 10kΩ, 2.5x6.8mm, THT                                            	| 1    	|
 | (o),D1   	| Diode              	| 1N4001, e.g 1N4001-DCO                                          	| 1    	|
-| (p)       	| Connector (fan)    	| 2x1pin, 0.1" pitch; e.g. e.g. TE Connectivity 280358            	| 1    	|
-| (p),J2   	| Jumper (fan)       	| 2x1pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	|
-| (q)       	| Connector (sensor) 	| 6x1pin, 0.1" pitch; e.g. TE Connectivity 280360                 	| 1    	|
+| (p)       	| Connector (fan)    	| 2x1 pin, 0.1" pitch; e.g. TE Connectivity 280358               	| 1    	|
+| (p),J2   	| Jumper (fan)       	| 2x1 pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	|
+| (q)       	| Connector (sensor) 	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280360                 	| 1    	|
 | (q),J1   	| Jumper (sensor)    	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280372-2              	| 1    	|
-| (q),(p)   	| Connector pins     	| e.g.  TE Connectivity   182206-2                                	| 14   	|
+| (q),(p)   	| Connector pins     	| e.g. TE Connectivity 182206-2                                 	| 14   	|
 | (r)       	| Turning knob       	| 5x18.7mm; e.g. ACP 14187-NE                                     	| 1    	|
-| (r),POT1 	| Potentiometer      	| 10 k                                                            	| 1    	|
-| (s)       	| Header             	| 10x1 pin, female, long / stackable, 0.1" pitch                  	| 1    	|
-| (s)       	| Header             	| 8x1 pin, female, long / stackable, 0.1" pitch                   	| 2    	|
-| (s)       	| Header             	| 6x1 pin, female, long / stackable, 0.1" pitch                   	| 1    	|
+| (r),POT1 	| Potentiometer      	| 10kΩ                                                            	| 1    	|
+| (s)       	| Header             	| 10x1 pin, female, long, stackable, 0.1" pitch                  	| 1    	|
+| (s)       	| Header             	| 8x1 pin, female, long, stackable, 0.1" pitch                   	| 2    	|
+| (s)       	| Header             	| 6x1 pin, female, long, stackable, 0.1" pitch                   	| 1    	|
 | -         	| Bolts              	| DIN 912 M3x40                                                 	| 4    	|
 | -         	| Bolts              	| DIN 912 M3x16                                                 	| 2    	|
 | -         	| Nuts               	| DIN 934 M3                                                      	| 6    	|
