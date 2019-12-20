@@ -41,7 +41,7 @@ The FloatShield is an open hardware product, you are free to make your own devic
 ## <a name="circuit"/>Circuit design
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/files/1934584/Float_scheme.zip).
 
-![Schematic](https://user-images.githubusercontent.com/18485913/71244218-545d3700-2312-11ea-9070-60564d4a1fbe.png)
+![float_pcb](https://user-images.githubusercontent.com/18485913/71244839-b4081200-2313-11ea-8cb3-41aff3b5493e.png)
 
 <img width="1800" alt="floatshield_schemepng" src="https://user-images.githubusercontent.com/37963774/38952961-91a10444-434d-11e8-9ab2-7707e9070782.png">
 
