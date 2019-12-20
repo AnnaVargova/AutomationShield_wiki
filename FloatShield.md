@@ -38,12 +38,16 @@
 # <a name="hardware"/>Detailed hardware description
 The FloatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
+One may also download the entire [3D assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) -- designed in CAD software and subsequently used for 3D print. In total, there are three parts to be printed --- a tube clamp, a tube lid and a sensor holder. One may also use a honeycomb tube insert to make the turbulent air flow relatively laminar. Feel free to download the ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). Other, purchased assembly parts --- a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) --- are downloadable from the GrabCAD database.
+
+<img width="600" alt="FloatShield_parts" src="https://user-images.githubusercontent.com/37963774/39174444-154dc80a-47a8-11e8-9d1e-c78b2c2862db.jpg">
+
 ## <a name="circuit"/>Circuit design
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/files/1934584/Float_scheme.zip).
 
 ![float_pcb](https://user-images.githubusercontent.com/18485913/71244839-b4081200-2313-11ea-8cb3-41aff3b5493e.png)
 
-The fan and the TOF sensor are only represented by their connectors, **J1** and **J2**, respectively, while we assume that 12 V external power is drawn through the VIN pin of the Arduino.
+The fan and the TOF sensor are only represented by their connectors, **J1** and **J2**, respectively, while we assume that 12 V external power is drawn through the VIN pin of the Arduino (a).
 
 The fan is powered by an N-channel MOSFET **C1** (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor **R1** (m). Floating states are handled by a 10 kΩ pull-down resistor **R2** (n), while a diode **D1** (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals **J2**. Since the fan requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device.
 
@@ -244,14 +248,3 @@ void Step (void)
 }
 
 ```
- 
-## 3D assembly
-
-Firstly, the whole [assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. One might use a honeycomb tube insert to modify turbulent air flow to be way more laminar. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). Other assembly parts, a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) are downloadable from GrabCAD database.
-
-<img width="600" alt="FloatShield_parts" src="https://user-images.githubusercontent.com/37963774/39174444-154dc80a-47a8-11e8-9d1e-c78b2c2862db.jpg">
-
-
-
-
-
