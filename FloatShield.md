@@ -213,11 +213,11 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 # About
 
-The board was developed within the framework of semester project at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. 
+This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018.
 
 ## Authors
 
 * 3D-model design: Marcel Vdoleček
 * Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
 * Software design: Gábor Penzinger, Jakub Kulhánek
-* Wiki documentation: Martin Lučan, Dávid Šroba, Miloš Podbielančík
+* Wiki documentation: Martin Gulan
