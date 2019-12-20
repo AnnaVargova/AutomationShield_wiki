@@ -50,10 +50,21 @@ The position of the ball is read by
 
 `y=FloatShield.sensorRead();`
 
-returning the scaled distance inside the tube as a floating point value from within the range of 0–100 (%). Alternatively, `sensorReadDistance()` reports the distance between the sensor and the ball in millimeters, while `sensorReadAltitude()` gives its altitude relative to
-ground.
+returning the scaled distance inside the tube as a floating point value from within the range of 0–100 (%). Alternatively, `sensorReadDistance()` reports the distance between the sensor and the ball in millimeters, while `sensorReadAltitude()` gives its altitude relative to ground.
 
 ### Output
+By supplying the input power `u` in the range of 0–100 (%) to the
+
+`FloatShield.actuatorWrite(u);`
+
+method, the user can set the power sent to the fan through the power circuitry. This method checks for constraints to
+avoid overflow, maps the input to 8-bit PWM integers, then sends it to the *D3* pin of the Arduino.
+
+Finally, user reference from the potentiometer is acquired by calling
+
+`r=FloatShield.referenceRead();`
+
+returning the position of the potentiometer runner as a floating point scaled to 0–100 (%).
 
 ## <a name="matlab"/>MATLAB API
 
