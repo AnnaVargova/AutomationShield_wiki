@@ -33,7 +33,7 @@ The summary of basic functions and the illustration below should get you started
 * Output (sensor): `FloatShield.sensorRead();` 
 * Input  (actuator): `FloatShield.actuatorWrite();`
 
-![float_actsens](https://user-images.githubusercontent.com/18485913/71261187-04e03080-233d-11ea-8cb1-762a8b980714.png)
+![float_actsens](https://user-images.githubusercontent.com/18485913/71261297-4ffa4380-233d-11ea-8851-bfe41c69413b.png)
 
 The following subsections describe the methods used to access the input and output of the FloatShield. Note that before you begin an experiment you must initialize the hardware by calling
 
