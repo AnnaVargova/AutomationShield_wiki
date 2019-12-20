@@ -6,7 +6,7 @@
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
-&nbsp;&nbsp;&nbsp;[Temperature control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
@@ -40,6 +40,42 @@
 ## <a name="circuit"/>Circuit design
 
 ## <a name="parts"/>Parts
+To make an FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+
+| Symbol    	| Part               	| Description                                                     	| Qty. 	| UP    	| Price 	|
+|-----------	|--------------------	|-----------------------------------------------------------------	|------	|-------	|-------	|
+| (b)       	| PCB                	| FR4, 2 layer, 1.6 mm thick                                      	| 1    	| 0.45  	| 0.45  	|
+| (c)       	| Fan                	| Axial, 12 V,  40X40 mm,   24.0 CFM; e.g. Sunon PMD1204PQB1      	| 1    	| 12.61 	| 12.61 	|
+| (d)       	| Tube clamp         	| 3D printed, 16 g filament, print time 2:24                      	| 1    	| 0.30  	| 0.30  	|
+| (e)       	| Tube               	| Clear, dia 35.5 mm, wall approx. 0.6 mm, 0.4 m; e.g. no. 113816 	| 0.4  	| 10.92 	| 4.37  	|
+| (f)       	| Ball               	| Cork, dia 30 mm; e.g. no. 108269                                	| 1    	| 0.63  	| 0.63  	|
+| (g)       	| Tube flange        	| 3D printed, 5.8 g filament, print time 57min                    	| 1    	| 0.11  	| 0.11  	|
+| (h)       	| Sensor holder      	| 3D printed, 4 g filament, print time 43min                      	| 1    	| 0.08  	| 0.08  	|
+| (i)       	| Sensor             	| ST Microelectronics VL5310X TOF sensor on a breakout board      	| 1    	| 5.47  	| 5.47  	|
+| (j)       	| Wire               	| 1m, 4 lead, 0.15 mm2,multi-conductor ribbon; e.g. VFL 4x0,14    	| 1    	| 0.28  	| 0.28  	|
+| (k)       	| Cable shaft        	| U-shape, 8x330 mm, ASA polymer; e.g.  11796                     	| 1    	| 1.55  	| 1.55  	|
+| (l),C1    	| MOSFET             	| IRF520, TO-220AB, e.g. IRF520NPBF                               	| 1    	| 0.41  	| 0.41  	|
+| (m), R1   	| Resistor           	| 1 k, 2.5x6.8mm, THT                                             	| 1    	| 0.01  	| 0.01  	|
+| (n), R2   	| Resistor           	| 10 k, 2.5x6.8mm, THT                                            	| 1    	| 0.01  	| 0.01  	|
+| (o), D1   	| Diode              	| 1N4001, e.g 1N4001-DCO                                          	| 1    	| 0.03  	| 0.03  	|
+| (p)       	| Connector (fan)    	| 2x1pin, 0.1" pitch; e.g. e.g. TE Connectivity 280358            	| 1    	| 0.04  	| 0.04  	|
+| (p), J2   	| Jumper (fan)       	| 2x1pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	| 0.16  	| 0.16  	|
+| (q)       	| Connector (sensor) 	| 6x1pin, 0.1" pitch; e.g. TE Connectivity 280360                 	| 1    	| 0.07  	| 0.07  	|
+| (q), J1   	| Jumper (sensor)    	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280372-2              	| 1    	| 0.36  	| 0.36  	|
+| (q),(p)   	| Connector pins     	| e.g.  TE Connectivity   182206-2                                	| 14   	| 0.06  	| 0.90  	|
+| (r)       	| Turning knob       	| 5x18.7mm; e.g. ACP 14187-NE                                     	| 1    	| 0.09  	| 0.09  	|
+| (r), POT1 	| Potentiometer      	| 10 k                                                            	| 1    	| 0.28  	| 0.28  	|
+| (s)       	| Header             	| 10x1 pin, female, long / stackable, 0.1" pitch                  	| 1    	| 0.06  	| 0.06  	|
+| (s)       	| Header             	| 8x1 pin, female, long / stackable, 0.1" pitch                   	| 2    	| 0.09  	| 0.18  	|
+| (s)       	| Header             	| 6x1 pin, female, long / stackable, 0.1" pitch                   	| 1    	| 0.09  	| 0.09  	|
+| -         	| Bolts              	| DIN 912 M3 x 40                                                 	| 4    	| 0.10  	| 0.41  	|
+| -         	| Bolts              	| DIN 912 M3 x 16                                                 	| 2    	| 0.04  	| 0.08  	|
+| -         	| Nuts               	| DIN 934 M3                                                      	| 6    	| 0.03  	| 0.16  	|
+| -         	| Screws             	| DIN 7981F 2.9 x 9.5                                             	| 2    	| 0.03  	| 0.05  	|
+| -         	| Washers            	| DIN125 A 3.2 x 7 x 0.5 Polyamide washers                        	| 4    	| 0.01  	| 0.03  	|
+| -         	| Standoffs          	| TFM-M3/10                                                       	| 4    	| 0.12  	| 0.46  	|
+|    Total: 	|                    	|                                                                 	|      	|       	| 29.72 	|
+
 
 ## <a name="pcb"/>PCB
 
@@ -209,39 +245,6 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 
 ## Components
 
-| Symbol    	| Part               	| Description                                                     	| Qty. 	| UP    	| Price 	|
-|-----------	|--------------------	|-----------------------------------------------------------------	|------	|-------	|-------	|
-| (b)       	| PCB                	| FR4, 2 layer, 1.6 mm thick                                      	| 1    	| 0.45  	| 0.45  	|
-| (c)       	| Fan                	| Axial, 12 V,  40X40 mm,   24.0 CFM; e.g. Sunon PMD1204PQB1      	| 1    	| 12.61 	| 12.61 	|
-| (d)       	| Tube clamp         	| 3D printed, 16 g filament, print time 2:24                      	| 1    	| 0.30  	| 0.30  	|
-| (e)       	| Tube               	| Clear, dia 35.5 mm, wall approx. 0.6 mm, 0.4 m; e.g. no. 113816 	| 0.4  	| 10.92 	| 4.37  	|
-| (f)       	| Ball               	| Cork, dia 30 mm; e.g. no. 108269                                	| 1    	| 0.63  	| 0.63  	|
-| (g)       	| Tube flange        	| 3D printed, 5.8 g filament, print time 57min                    	| 1    	| 0.11  	| 0.11  	|
-| (h)       	| Sensor holder      	| 3D printed, 4 g filament, print time 43min                      	| 1    	| 0.08  	| 0.08  	|
-| (i)       	| Sensor             	| ST Microelectronics VL5310X TOF sensor on a breakout board      	| 1    	| 5.47  	| 5.47  	|
-| (j)       	| Wire               	| 1m, 4 lead, 0.15 mm2,multi-conductor ribbon; e.g. VFL 4x0,14    	| 1    	| 0.28  	| 0.28  	|
-| (k)       	| Cable shaft        	| U-shape, 8x330 mm, ASA polymer; e.g.  11796                     	| 1    	| 1.55  	| 1.55  	|
-| (l),C1    	| MOSFET             	| IRF520, TO-220AB, e.g. IRF520NPBF                               	| 1    	| 0.41  	| 0.41  	|
-| (m), R1   	| Resistor           	| 1 k, 2.5x6.8mm, THT                                             	| 1    	| 0.01  	| 0.01  	|
-| (n), R2   	| Resistor           	| 10 k, 2.5x6.8mm, THT                                            	| 1    	| 0.01  	| 0.01  	|
-| (o), D1   	| Diode              	| 1N4001, e.g 1N4001-DCO                                          	| 1    	| 0.03  	| 0.03  	|
-| (p)       	| Connector (fan)    	| 2x1pin, 0.1" pitch; e.g. e.g. TE Connectivity 280358            	| 1    	| 0.04  	| 0.04  	|
-| (p), J2   	| Jumper (fan)       	| 2x1pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	| 0.16  	| 0.16  	|
-| (q)       	| Connector (sensor) 	| 6x1pin, 0.1" pitch; e.g. TE Connectivity 280360                 	| 1    	| 0.07  	| 0.07  	|
-| (q), J1   	| Jumper (sensor)    	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280372-2              	| 1    	| 0.36  	| 0.36  	|
-| (q),(p)   	| Connector pins     	| e.g.  TE Connectivity   182206-2                                	| 14   	| 0.06  	| 0.90  	|
-| (r)       	| Turning knob       	| 5x18.7mm; e.g. ACP 14187-NE                                     	| 1    	| 0.09  	| 0.09  	|
-| (r), POT1 	| Potentiometer      	| 10 k                                                            	| 1    	| 0.28  	| 0.28  	|
-| (s)       	| Header             	| 10x1 pin, female, long / stackable, 0.1" pitch                  	| 1    	| 0.06  	| 0.06  	|
-| (s)       	| Header             	| 8x1 pin, female, long / stackable, 0.1" pitch                   	| 2    	| 0.09  	| 0.18  	|
-| (s)       	| Header             	| 6x1 pin, female, long / stackable, 0.1" pitch                   	| 1    	| 0.09  	| 0.09  	|
-| -         	| Bolts              	| DIN 912 M3 x 40                                                 	| 4    	| 0.10  	| 0.41  	|
-| -         	| Bolts              	| DIN 912 M3 x 16                                                 	| 2    	| 0.04  	| 0.08  	|
-| -         	| Nuts               	| DIN 934 M3                                                      	| 6    	| 0.03  	| 0.16  	|
-| -         	| Screws             	| DIN 7981F 2.9 x 9.5                                             	| 2    	| 0.03  	| 0.05  	|
-| -         	| Washers            	| DIN125 A 3.2 x 7 x 0.5 Polyamide washers                        	| 4    	| 0.01  	| 0.03  	|
-| -         	| Standoffs          	| TFM-M3/10                                                       	| 4    	| 0.12  	| 0.46  	|
-|    Total: 	|                    	|                                                                 	|      	|       	| 29.72 	|
 
 
 ## PCB layout
