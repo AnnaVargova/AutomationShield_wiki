@@ -84,14 +84,18 @@ Using MATLAB with Arduino does not compile m-script to hardware, thus invoking
 `HeatShield.begin();`
 
 will simply load a server code to the microcontroller, unless it is not already present. This means that the closed-loop
-control by the API in MATLAB is not real-time in the strictest sense, since commands are transferred through
-the serial link between the board and the computer and may be affected by transfer speed or operating system behavior. However, being able to use the high-level MATLAB script allows one to run live experiments under this already
-familiar software platform and, most importantly, to create and test more advanced control frameworks with minimal
+control by the API in MATLAB is not quasi real-time, since commands are transferred through the serial link between the board and the computer and may be affected by transfer speed or operating system behavior. However, being able to use the high-level MATLAB script allows you to run live experiments under this already familiar software platform and, most importantly, to create and test more advanced control frameworks with minimal
 effort.
 
 The operation of the MATLAB API is otherwise completely identical to the aforementioned Arduino version. Therefore methods such as `calibrate()`, `sensorRead()`, `actuatorWrite()` and `referenceRead()` are all implemented for the FloatShield in MATLAB.
 
 ## <a name="simulink"/>Simulink API
+Running a script installs the Simulink API similarly to the previously discussed MATLAB module. An installation of
+the Simulink Support Package for Arduino Hardware is required. The collection of the algorithmic blocks will be
+then available for use through the Simulink Library (see figure below) and may be combined with all the other available blocks to create feedback control applications. The FloatShield unit retains the naming convention and features for individual input and output blocks (`Actuator Write`, `Sensor Read` and `Reference Read`) and a comprehensive block representing the entire device is also available (`FloatShield`).
+
+The Simulink API offers the following algorithmic blocks:
+[FloatBlocks.pdf](https://github.com/RWTH-EBC/AixLib/files/3989101/FloatBlocks.pdf)
 
 # <a name="examples"/>Examples
 
