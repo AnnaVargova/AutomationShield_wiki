@@ -43,9 +43,13 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![float_pcb](https://user-images.githubusercontent.com/18485913/71244839-b4081200-2313-11ea-8cb3-41aff3b5493e.png)
 
-The electronic schematics of the FloatShield are shown in Fig. X, while some parts are visible on the photograph in Fig. X as well.
+The fan and the TOF sensor are only represented by their connectors, **J1** and **J2**, respectively, while we assume that 12 V external power is drawn through the VIN pin of the Arduino.
 
-The TOF sensor and the fan are only represented by their connectors, while we assume that 12 V external power is drawn through the VIN pin of the Arduino. The fan is powered by an N-channel MOSFET (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor (m). Floating states are handled by 10 kΩ pull-down resistor (n), while a diode (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals. Since the fan requires 12 V and more current than the USB powered Arduino can handle, a separate wall adapter power supply is required to operate the device. Since the TOF sensor is integrated to a convenient open-source breakout board, it can be effortlessly connected (q) to the I2C bus of the Arduino (SDA,SCL). Finally, the potentiometer (r) runner is attached to the A0 ADC capable pin of the board.
+The fan is powered by an N-channel MOSFET **C1** (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor **R1** (m). Floating states are handled by a 10 kΩ pull-down resistor **R2** (n), while a diode **D1** (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals **J2**. Since the fan requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device.
+
+The TOF sensor is integrated to a convenient open-source breakout board, thus it can be effortlessly connected (q) to the I2C bus of the Arduino (SDA,SCL).
+
+Finally, the potentiometer **POT1** (r) runner is attached to the A0 ADC capable pin of the board.
 
 ## <a name="parts"/>Parts
 To make an FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
