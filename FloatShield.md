@@ -33,7 +33,7 @@ The following subsections describe the methods used to access the input and outp
 
 `FloatShield.begin();`
 
-which launches the I2C interface and starting the TOF sensor itself.
+which launches the I2C interface and starting the time of flight (TOF) sensor itself.
 
 Although the sensor provides distance readings directly in millimeters, the outputs should be scaled to the range of 0–
 100% in order to use the Serial Plotter functionality, where all outputs are scaled to the same axis. The calibration
@@ -43,14 +43,15 @@ procedure is called by
 
 finding the minimal and maximal distance readings and map these values to percentages. Later on, one may check
 whether the calibration procedure was invoked or not by the `wasCalibrated()` method and access the minimal
-and maximal distance of the ball from the sensor by `returnMinDistance()` and `returnMaxDistance()`.
+and maximal distance of the ball from the sensor by executing `returnMinDistance()` and `returnMaxDistance()`.
 
 ### Input
-Assuming the power supplied to the heating cartridge is stored in the variable `u` as a floating point number in the range of 0-100 (%), the actuator is supplied by the input signal after calling the method
+The position of the ball is read by
 
-`HeatShield.actuatorWrite(u);`
+`y=FloatShield.sensorRead();`
 
-which will convert the percentage value to an 8-bit number driving the pulse-width modulation (PWM) output of the microcontroller.
+returning the scaled distance inside the tube as a floating point value from within the range of 0–100 (%). Alternatively, `sensorReadDistance()` reports the distance between the sensor and the ball in millimeters, while `sensorReadAltitude()` gives its altitude relative to
+ground.
 
 ### Output
 
