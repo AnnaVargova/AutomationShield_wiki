@@ -23,6 +23,10 @@ The function principle is based on controlling the distance of the reference ite
 
 ![FloatShield](https://user-images.githubusercontent.com/18485913/71251627-26342300-2323-11ea-9496-1c5d9f2872e3.png)
 
+For a better visualization the entire assembly was 3D-modeled using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip). Note that there are three parts to be 3D printed—a tube clamp, a tube lid and a sensor holder. One may also use a honeycomb tube insert to make the turbulent air flow relatively laminar. Feel free to download the ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). The remaining, purchased assembly parts—the [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino Uno](https://grabcad.com/library/arduino-uno-r3-4)—are downloadable from the GrabCAD database.
+
+![float_assembly](https://user-images.githubusercontent.com/18485913/71249052-a5722880-231c-11ea-9ffb-a4f2b7242047.png)
+
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
@@ -43,10 +47,6 @@ The function principle is based on controlling the distance of the reference ite
 
 # <a name="hardware"/>Detailed hardware description
 The FloatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
-
-One may also download the entire [3D assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) (see the figure below), designed in CAD software and subsequently used for 3D print. In total, there are three parts to be printed—a tube clamp, a tube lid and a sensor holder. One may also use a honeycomb tube insert to make the turbulent air flow relatively laminar. Feel free to download the ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). The remaining, purchased assembly parts—the [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4)—are downloadable from the GrabCAD database.
-
-![float_assembly](https://user-images.githubusercontent.com/18485913/71249052-a5722880-231c-11ea-9ffb-a4f2b7242047.png)
 
 ## <a name="circuit"/>Circuit design
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/files/1934584/Float_scheme.zip).
