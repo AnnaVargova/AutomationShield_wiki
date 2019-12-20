@@ -92,7 +92,7 @@ The operation of the MATLAB API is otherwise completely identical to the aforeme
 ## <a name="simulink"/>Simulink API
 An even more intuitive to create control loops and perform live experiments is the Simulink API for the HeatShield. It utilizes the [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality.
 
-The collection of the algorithmic blocks will be then available for use through the Simulink Library (see figure below) and may be combined with all the other available blocks to create feedback control applications. The Simulink API retains the naming convention and features for individual input and output blocks ('Actuator Write', 'Sensor Read' and 'Reference Read') and a comprehensive block representing the entire device is also available ('FloatShield').
+The collection of the algorithmic blocks will be then available for use through the [Simulink Library](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/FloatLibrary.slx) (see figure below) and may be combined with all the other available blocks to create feedback control applications. The Simulink API retains the naming convention and features for individual input and output blocks ('Actuator Write', 'Sensor Read' and 'Reference Read') and a comprehensive block representing the entire device is also available ('FloatShield').
 
 ![float_blocks](https://user-images.githubusercontent.com/18485913/71268008-3c0a0e00-234c-11ea-9bea-8acd2670d89a.png)
 
@@ -107,7 +107,7 @@ The implementation of PID control in C/C++ is demonstrated by a [worked example]
 
 ![float_pid](https://user-images.githubusercontent.com/18485913/71278045-cce5e700-2356-11ea-9525-90e0965ba885.png)
 
-The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_PID.m). Sampling and computing the control decision is performed by the PC, while the Arduino only acts as an I/O interface. The response shown in the figure below demonstrates that a consistent closed-loop behavior is expected even when resorting to MATLAB script. Moreover, this also means that students or researchers may make use of the immense power and high-level design possibilities of MATLAB.
+The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_PID.m). Sampling and computing the control decision is performed by the PC, while the Arduino only acts as an I/O interface. The response shown in the figure below demonstrates that a consistent closed-loop behavior is expected even when resorting to MATLAB script.
 
 ![float_pid2](https://user-images.githubusercontent.com/18485913/71279257-0d466480-2359-11ea-815a-5cce8adc5786.png)
 
@@ -118,6 +118,8 @@ The same feedback control loop can be built even easier using the Simulink API. 
 After selecting the External mode the block scheme is transcribed to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. The application runs stand-alone on the MCU while providing basic interaction with the host PC. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
 
 ![float_scope](https://user-images.githubusercontent.com/18485913/71280128-ab86fa00-235a-11ea-8f4a-45a9198b9a3a.png)
+
+Note that the provided MATLAB and Simulink APIs enable to exploit full high-level mathematic power of MATLAB in order to create and test more complex estimation and control algorithms. 
 
 ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
