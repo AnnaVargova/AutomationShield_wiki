@@ -5,8 +5,8 @@
 &nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
 &nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
 [Examples](#examples)<br/>
-&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
@@ -100,16 +100,23 @@ In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Si
 
 # <a name="examples"/>Examples
 
+## <a name="control"/>Feedback control
+For a start you may want to experiment with a closed-loop control of the levitating ball's position by the proportional–integral–derivative controller (PID) algorithm.
+
+The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_PID/FloatShield_PID.ino), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID methods with integral windup handling by clamping. The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB. Note that reference tracking is fairly accurate for the complex dynamics, while comparing inputs to the outputs exposes the nonlinearity of the system.
+
+![float_pid](https://user-images.githubusercontent.com/18485913/71277978-99a35800-2356-11ea-8fc4-87e05d5650c0.png)
+
+The results of the PID controlled temperature response of the printer head are shown below. The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/HeatShield/HeatShield_PID.m).
+
 ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
 
-After you gather enough data sufficient for system identification, you may try to fit a model to the experimental response. The MATLAB API for the proposed device contains a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_Ident_Greybox.m) for grey-box system identification. The example offers various first-principle model formulations—a nonlinear state-space model (based on an [ordinary differential equation (ODE)](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_ODE.m)), a linear(ized) state-space model and a transfer function. It takes the experimental data and searches for the unknown parameters of the specified model. First, an initial guess of the system model is created based on assumed parameter values and model structure. The unknown parameters are then found by a grey-box estimation procedure using an appropriate search method implemented in MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html). The resulting models provide a very good match to the measured input-output data (from 77% to 85%) as indicated in the figure below.
+After you gather enough data sufficient for system identification, you may try to fit a model to the experimental response. The MATLAB API for the proposed device contains a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_Ident_Greybox.m) for grey-box system identification. The example offers various first-principle model formulations—a nonlinear state-space model (based on an [ordinary differential equation (ODE)](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_ODE.m)), a linear(ized) state-space model and a transfer function. Once the model is specified, it takes the experimental data and searches for the unknown parameters of the specified model. First, an initial guess of the system model is created based on assumed parameter values and model structure. The unknown parameters are then found by a grey-box estimation procedure using an appropriate search method implemented in MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html). The resulting models provide a very good match to the measured input-output data (from 77% to 85%) as indicated in the figure below.
 
 ![float_ident](https://user-images.githubusercontent.com/18485913/71270338-9eb1d880-2351-11ea-8645-bdbc60a11197.png)
 
 More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf).
-
-## <a name="control"/>Feedback control
 
 # <a name="hardware"/>Detailed hardware description
 The FloatShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
