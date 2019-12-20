@@ -73,6 +73,23 @@ Finally, user reference from the potentiometer is acquired by calling
 returning the position of the potentiometer runner as a floating point scaled to 0–100 (%).
 
 ## <a name="matlab"/>MATLAB API
+If you cannot program in C/C++ just yet, you may want to try out the MATLAB API for the FloatShield that enables to access the hardware through the [MATLAB](https://www.mathworks.com/downloads/) command line and scripts. It utilizes the [The MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/47522-matlab-support-package-for-arduino-hardware) which enables communication between the Arduino prototyping platform and the development computer.
+
+To prevent confusion between the C/C++ and the MATLAB API, the two interfaces are as similar as possible. The MATLAB API is written in object-oriented script and the user must first create an instance from the class:
+
+`FloatShield=FloatShield;`
+
+Using MATLAB with Arduino does not compile m-script to hardware, thus invoking
+
+`HeatShield.begin();`
+
+will simply load a server code to the microcontroller, unless it is not already present. This means that the closed-loop
+control by the API in MATLAB is not real-time in the strictest sense, since commands are transferred through
+the serial link between the board and the computer and may be affected by transfer speed or operating system behavior. However, being able to use the high-level MATLAB script allows one to run live experiments under this already
+familiar software platform and, most importantly, to create and test more advanced control frameworks with minimal
+effort.
+
+The operation of the MATLAB API is otherwise completely identical to the aforementioned Arduino version. Therefore methods such as `calibrate()`, `sensorRead()`, `actuatorWrite()` and `referenceRead()` are all implemented for the FloatShield in MATLAB.
 
 ## <a name="simulink"/>Simulink API
 
