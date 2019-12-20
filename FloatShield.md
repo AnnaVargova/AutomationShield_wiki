@@ -29,6 +29,10 @@ For a better visualization the entire assembly was 3D-modeled (see the illustrat
 ## <a name="io"/>C/C++ API
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the FloatShield is included in the `FloatShield.h` header, which contains the `FloatClass` class that is constructed by default as the `FloatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
+The summary of basic functions and the illustration below should get you started quickly:
+* Output (sensor): `FloatShield.sensorRead();` 
+* Input  (actuator): `FloatShield.actuatorWrite();` 
+
 The following subsections describe the methods used to access the input and output of the FloatShield. Note that before you begin an experiment you must initialize the hardware by calling
 
 `FloatShield.begin();`
@@ -58,7 +62,7 @@ By supplying the input power `u` in the range of 0–100 (%) to the
 `FloatShield.actuatorWrite(u);`
 
 method, the user can set the power sent to the fan through the power circuitry. This method checks for constraints to
-avoid overflow, maps the input to 8-bit PWM integers, then sends it to the *D3* pin of the Arduino.
+avoid overflow, maps the input to 8-bit PWM integers, then sends it to the D3 pin of the Arduino.
 
 Finally, user reference from the potentiometer is acquired by calling
 
