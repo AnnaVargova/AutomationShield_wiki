@@ -109,7 +109,7 @@ The implementation of PID control in C/C++ is demonstrated by a [worked example]
 
 The same experiment can be conveniently launched from the MATLAB API as well, see the [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_PID.m). Sampling and computing the control decision is performed by the PC, while the Arduino only acts as an I/O interface. The response shown in the figure below demonstrates that a consistent closed-loop behavior is expected even when resorting to MATLAB script. Moreover, this also means that students or researchers may make use of the immense power and high-level design possibilities of MATLAB.
 
-![float_pid2](https://user-images.githubusercontent.com/18485913/71278515-200c6980-2358-11ea-8a1e-7e10d7684524.png)
+![float_pid2](https://user-images.githubusercontent.com/18485913/71278598-4e8a4480-2358-11ea-8da6-4e5f87984c99.png)
 
 ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
