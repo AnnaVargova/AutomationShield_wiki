@@ -115,6 +115,10 @@ The same feedback control loop can be built even easier using the Simulink API. 
 
 ![float_scheme](https://user-images.githubusercontent.com/18485913/71279700-b8efb480-2359-11ea-9d8b-cdec066660e6.png)
 
+After selecting the External mode the block scheme is transcribed to C/C++ code, which is then compiled to AVR-specific machine code and downloaded to the MCU. The application runs stand-alone on the MCU while providing basic interaction with the host PC. You may use switches, sliders and knobs to select reference levels and inspect the response live using a 'Scope'.
+
+![float_scope](https://user-images.githubusercontent.com/18485913/71280128-ab86fa00-235a-11ea-8f4a-45a9198b9a3a.png)
+
 ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
 
