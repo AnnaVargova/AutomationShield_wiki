@@ -31,7 +31,9 @@ The basic application programming interface (API) serving the device is written 
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `FloatShield.sensorRead();` 
-* Input  (actuator): `FloatShield.actuatorWrite();` 
+* Input  (actuator): `FloatShield.actuatorWrite();`
+
+![float_actsens](https://user-images.githubusercontent.com/18485913/71260994-88e5e880-233c-11ea-8201-1f5ded208c3f.png)
 
 The following subsections describe the methods used to access the input and output of the FloatShield. Note that before you begin an experiment you must initialize the hardware by calling
 
