@@ -38,6 +38,9 @@
 # <a name="hardware"/>Detailed hardware description
 
 ## <a name="circuit"/>Circuit design
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/files/1934584/Float_scheme.zip).
+
+<img width="1800" alt="floatshield_schemepng" src="https://user-images.githubusercontent.com/37963774/38952961-91a10444-434d-11e8-9ab2-7707e9070782.png">
 
 ## <a name="parts"/>Parts
 To make an FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
@@ -231,21 +234,13 @@ void Step (void)
 
 ```
  
-# Hardware insight 
-
-The Float Shield is an open-source hardware product, dedicated to be widely spread among a control engineering community. Feel free to use any part of it for your own experiments. If you come up with improvements, please let us know so we can improve our design as well. A documentation posted below might help you while working on improvised experimental prototype on breadboard or perforated board. 
-
 ## 3D assembly
 
 Firstly, the whole [assembly](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip) was designed in CAD software and forwarded to 3D print service afterwards. Overall, there are three parts to be printed, a tube clamp, a tube lid and a sensor holder. One might use a honeycomb tube insert to modify turbulent air flow to be way more laminar. Feel free to download ready-to-print [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). Other assembly parts, a [fan](https://grabcad.com/library/fan-40-x-40-x-28-1) and [Arduino microcontroller](https://grabcad.com/library/arduino-uno-r3-4) are downloadable from GrabCAD database.
 
 <img width="600" alt="FloatShield_parts" src="https://user-images.githubusercontent.com/37963774/39174444-154dc80a-47a8-11e8-9d1e-c78b2c2862db.jpg">
 
-## Circuit design
 
-The circuit schematics has been designed in the Freeware version of the DIPTrace CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/files/1934584/Float_scheme.zip).
-
-<img width="1800" alt="floatshield_schemepng" src="https://user-images.githubusercontent.com/37963774/38952961-91a10444-434d-11e8-9ab2-7707e9070782.png">
 
 
 
