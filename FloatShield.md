@@ -47,24 +47,24 @@ To make an FloatShield either on a PCB or on a breadboard you will need the foll
 | (b)       	| PCB                	| FR4, 2 layer, 1.6mm thick                                      	| 1    	|
 | (c)       	| Fan                	| Axial, 12 V, 40X40 mm, 24.0 CFM; e.g. Sunon PMD1204PQB1       	| 1    	|
 | (d)       	| Tube clamp         	| 3D printed, 16g filament, print time 2:24h                      	| 1    	|
-| (e)       	| Tube               	| Clear, Ø35.5 mm, wall approx. 0.6mm, 0.4m; e.g. no. 113816 	        | 0.4  	|
+| (e)       	| Tube               	| Clear, Ø35.5 mm, wall approx. 0.6mm, 0.4m; e.g. no. 113816 	        | 0.4m 	|
 | (f)       	| Ball               	| Cork, Ø30 mm; e.g. no. 108269                                 	| 1    	|
 | (g)       	| Tube flange        	| 3D printed, 5.8g filament, print time 57min                    	| 1    	|
 | (h)       	| Sensor holder      	| 3D printed, 4g filament, print time 43min                      	| 1    	|
 | (i)       	| Sensor             	| ST Microelectronics VL5310X TOF sensor on a breakout board      	| 1    	|
 | (j)       	| Wire               	| 1m, 4 lead, 0.15mm2, multi-conductor ribbon; e.g. VFL 4x0,14    	| 1    	|
 | (k)       	| Cable shaft        	| U-shape, 8x330mm, ASA polymer; e.g. 11796                     	| 1    	|
-| (l),C1    	| MOSFET             	| IRF520, TO-220AB, e.g. IRF520NPBF                               	| 1    	|
-| (m),R1   	| Resistor           	| 1kΩ, 2.5x6.8mm, THT                                             	| 1    	|
-| (n),R2   	| Resistor           	| 10kΩ, 2.5x6.8mm, THT                                            	| 1    	|
-| (o),D1   	| Diode              	| 1N4001, e.g 1N4001-DCO                                          	| 1    	|
+| (l), C1    	| MOSFET             	| IRF520, TO-220AB, e.g. IRF520NPBF                               	| 1    	|
+| (m), R1   	| Resistor           	| 1kΩ, 2.5x6.8mm, THT                                             	| 1    	|
+| (n), R2   	| Resistor           	| 10kΩ, 2.5x6.8mm, THT                                            	| 1    	|
+| (o), D1   	| Diode              	| 1N4001, e.g 1N4001-DCO                                          	| 1    	|
 | (p)       	| Connector (fan)    	| 2x1 pin, 0.1" pitch; e.g. TE Connectivity 280358               	| 1    	|
-| (p),J2   	| Jumper (fan)       	| 2x1 pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	|
+| (p), J2   	| Jumper (fan)       	| 2x1 pin, 0.1" pitch; e.g. TE Connectivity 280370-2               	| 1    	|
 | (q)       	| Connector (sensor) 	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280360                 	| 1    	|
-| (q),J1   	| Jumper (sensor)    	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280372-2              	| 1    	|
+| (q), J1   	| Jumper (sensor)    	| 6x1 pin, 0.1" pitch; e.g. TE Connectivity 280372-2              	| 1    	|
 | (q),(p)   	| Connector pins     	| e.g. TE Connectivity 182206-2                                 	| 14   	|
 | (r)       	| Turning knob       	| 5x18.7mm; e.g. ACP 14187-NE                                     	| 1    	|
-| (r),POT1 	| Potentiometer      	| 10kΩ                                                            	| 1    	|
+| (r), POT1 	| Potentiometer      	| 10kΩ                                                            	| 1    	|
 | (s)       	| Header             	| 10x1 pin, female, long, stackable, 0.1" pitch                  	| 1    	|
 | (s)       	| Header             	| 8x1 pin, female, long, stackable, 0.1" pitch                   	| 2    	|
 | (s)       	| Header             	| 6x1 pin, female, long, stackable, 0.1" pitch                   	| 1    	|
@@ -77,8 +77,11 @@ To make an FloatShield either on a PCB or on a breadboard you will need the foll
 
 Note that the total cost of the above components and thus of the entire FloatShield is no more than $30 excluding labor and postage.
 
-
 ## <a name="pcb"/>PCB
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/files/1916198/FloatShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/files/1916200/FloatShield_Gerber.zip).
+
+<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39986438-ef45542e-5761-11e8-8869-8ff14c35a95a.png">
+<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39986439-ef812314-5761-11e8-88a9-eab1ce675225.png">
 
 # <a name="about"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018.
@@ -244,25 +247,5 @@ The circuit schematics has been designed in the Freeware version of the DIPTrace
 
 <img width="1800" alt="floatshield_schemepng" src="https://user-images.githubusercontent.com/37963774/38952961-91a10444-434d-11e8-9ab2-7707e9070782.png">
 
-## Components
 
 
-
-## PCB layout
-
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/files/1916198/FloatShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/files/1916200/FloatShield_Gerber.zip).
-
-<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39986438-ef45542e-5761-11e8-8869-8ff14c35a95a.png">
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39986439-ef812314-5761-11e8-88a9-eab1ce675225.png">
-
-# Photogallery
-
-<img width="500" alt="pcbfront" src="https://user-images.githubusercontent.com/37963774/39666628-d2997bb4-50a6-11e8-922f-b6e33f5e90ac.jpg"/> 
-
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39666630-d528035a-50a6-11e8-9020-083c3e945547.jpg"/>
-
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39859055-d32716b4-5438-11e8-82a1-a2bf6ed928e7.JPG">
-
-<img width="400" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39856510-8a0526cc-5430-11e8-8727-c349480db9a3.jpg">
-
-<img width="500" alt="pcbback" src="https://user-images.githubusercontent.com/37963774/39859319-cf669b98-5439-11e8-9d2e-31fc22400bc5.JPG">
