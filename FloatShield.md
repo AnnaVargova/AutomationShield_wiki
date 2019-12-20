@@ -111,6 +111,10 @@ The same experiment can be conveniently launched from the MATLAB API as well, se
 
 ![float_pid2](https://user-images.githubusercontent.com/18485913/71279257-0d466480-2359-11ea-815a-5cce8adc5786.png)
 
+The same feedback control loop can be built even easier using the Simulink API. Shown below is the full [block scheme](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/examples/FloatShield/FloatShield_PID.slx) for discrete saturated PID control of the process. You need only to select the 'FloatShield' block from the API library to implement the input/output of the hardware. Other blocks, such as the 'Discrete PID Controller', can be readily selected from the Simulink's default library.
+
+![float_scheme](https://user-images.githubusercontent.com/18485913/71279700-b8efb480-2359-11ea-9d8b-cdec066660e6.png)
+
 ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
 
