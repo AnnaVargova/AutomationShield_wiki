@@ -29,7 +29,28 @@ For a better visualization the entire assembly was 3D-modeled (see the illustrat
 ## <a name="io"/>C/C++ API
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the FloatShield is included in the `FloatShield.h` header, which contains the `FloatClass` class that is constructed by default as the `FloatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
+The following subsections describe the methods used to access the input and output of the FloatShield. Note that before you begin an experiment you must initialize the hardware by calling
+
+`FloatShield.begin();`
+
+which launches the I2C interface and starting the TOF sensor itself.
+
+Although the sensor provides distance readings directly in millimeters, the outputs should be scaled to the range of 0–
+100% in order to use the Serial Plotter functionality, where all outputs are scaled to the same axis. The calibration
+procedure is called by
+
+`FloatShield.calibrate();`
+
+finding the minimal and maximal distance readings and map these values to percentages. Later on, one may check
+whether the calibration procedure was invoked or not by the `wasCalibrated()` method and access the minimal
+and maximal distance of the ball from the sensor by `returnMinDistance()` and `returnMaxDistance()`.
+
 ### Input
+Assuming the power supplied to the heating cartridge is stored in the variable `u` as a floating point number in the range of 0-100 (%), the actuator is supplied by the input signal after calling the method
+
+`HeatShield.actuatorWrite(u);`
+
+which will convert the percentage value to an 8-bit number driving the pulse-width modulation (PWM) output of the microcontroller.
 
 ### Output
 
