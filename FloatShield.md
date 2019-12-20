@@ -27,6 +27,7 @@ For a better visualization the entire assembly was 3D-modeled (see the illustrat
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the FloatShield is included in the `FloatShield.h` header, which contains the `FloatClass` class that is constructed by default as the `FloatShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 ### Input
 
@@ -153,91 +154,3 @@ This function will return current distance between the sensor and the ball in mi
 This function is recommended to be called during setup. It will run an algorithm, which will adjust minimum and maximum distatnce between the sensor and the ball, so that it corrensponds to 0 and 100% when read.
 
 ` void calibrate();`
-
-
-# Example
-
-## Open-loop control
-```
-#include <AutomationShield.h>
-#include <FloatShield.h>
-
-int dist;
-
-
-void setup() {
-  // FloatShield.debug();     will print out in monitor sensor debug data
-  Serial.begin(115200);  //start serial communication
-  FloatShield.initialize(); //FloatShield initialization
-  FloatShield.calibrate(); //FloatShield calibration for more accurate measurements
-}
-
-void loop() {
-  FloatShield.manualControl(); //Calling this function will switch floatshield into manual
-                               //control mode. By adjusting the potentiometer ventilator power
-                               //will adjust accordingly.
-  dist = FloatShield.positionMillimeter(); // read sensor 
-  Serial.print("Distance (mm): ");
-  Serial.println(dist);
-}
-
-```
-## PID control
-```
-#include <AutomationShield.h>
-#include <FloatShield.h>
-
-int dist;
-unsigned long int Ts = 100; //sampling time in ms
-bool enable = false; //flag 
-int y;  //output
-float u; //input
-int r; //reference
-float Ti,Td,Kp; // PID constants
-float error; //error
-void setup() {
-  Serial.begin(115200); //start serial communication
-  FloatShield.initialize(); //FloatShield initialization
-  FloatShield.calibrate(); //FloatShield calibration for more accurate measurements
-  Sampling.interruptInitialize(Ts*1000); //Sampling initialization in microseconds
-  Sampling.setInterruptCallback(StepEnable); // seting the interrupt functon
-  //Setting the PID constants
-  PIDAbs.setKp(0.86);
-  PIDAbs.setKi(1.729);
-  PIDAbs.setKd(0.1081);
-  //Getting constants needed for calculating PID in absolute form
-  Ti = PIDAbs.getTi(); // integral time constant
-  Td = PIDAbs.getTd(); // derivative time constant
-  Kp = PIDAbs.getKp(); 
-}
-
-void loop() 
-{
-  if(enable)
-  {
-    Step();
-    enable = false; //enable flag becomes false after the execution of the Step() function
-  }
-}
-
-void StepEnable(void) // interrupt function
-{
-  enable = true; // when the interrupt function is called, the enable is true
-}
-
-void Step (void)
-{
-  y = FloatShield.positionPercent(); //reading the  sensor value
-  r = FloatShield.referencePercent(); //reading the reference value
-
-  error = r - y; 
-  u = PIDAbs.compute(error,25,55,0,100); // absolute PID function with anti-wind up and saturation
-  FloatShield.ventInPercent(u);
-  Serial.print(r);
-  Serial.print(", ");
-  Serial.print(u);
-  Serial.print(", ");
-  Serial.println(y);
-}
-
-```
