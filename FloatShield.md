@@ -21,7 +21,7 @@ FloatShield is a didactic tool based on the Arduino platform. This project has b
 The basic design of FloatShield consists of a potentiometer, a distance sensor, a translucent vertical tunnel containing a ball (reference item) that is floating inside and a computer fan attached to our own-design PCB. A transparent tube and a distance sensor is mounted by 3D printed parts.
 The function principle is based on controlling the distance of the reference item using the PID feedback controller. Manual control is operated by power regulation of the fan through a potentiometer, which is scaled to a pulse width modulated signal (PWM).
 
-![FloatShield](https://user-images.githubusercontent.com/18485913/71251380-824a7780-2322-11ea-8a50-6978c4935d60.png)
+![FloatShield](https://user-images.githubusercontent.com/18485913/71251627-26342300-2323-11ea-9496-1c5d9f2872e3.png)
 
 # <a name="api"/>Application programming interface
 
