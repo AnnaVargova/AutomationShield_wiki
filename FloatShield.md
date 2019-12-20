@@ -101,6 +101,7 @@ In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Si
 # <a name="examples"/>Examples
 
 ## <a name="ident"/>System identification
+Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
 
 ## <a name="control"/>Feedback control
 
@@ -174,44 +175,3 @@ This shield was designed and created as a term project at the Institute of Autom
 * Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
 * Software design: Gábor Penzinger, Jakub Kulhánek
 * Wiki documentation: Martin Gulan, Gergely Takács
-
-
-# Library functions
-
-This function needs to be called during setup. It will initiate the sensor.
-
-` void initialize(); `
-
-This function has to be called during setup before initialize. It will print out debug data for the sensor if necessary.
-
-` void debug(); `
-
-
-This function will return current potentiometer position in percent.
-
-` int referencePercent(); ` 
-
-
-This function will return current position of the ball as read by the sensor in percent.
-
-` int positionPercent();  ` 
-
-
-This function will drive the ventilator. Argument of this function is in percent from 0 to 100 - full power.
-
-` void ventInPercent(int value); ` 
-
-
-Calling this function will switch floatshield into manual control mode. By adjusting the potentiometer ventilator power will adjust accordingly. 
-
-` float manualControl(); `  
-
-
-This function will return current distance between the sensor and the ball in millimeters.
-
-` int  positionMillimeter(); ` 
-
-
-This function is recommended to be called during setup. It will run an algorithm, which will adjust minimum and maximum distatnce between the sensor and the ball, so that it corrensponds to 0 and 100% when read.
-
-` void calibrate();`
