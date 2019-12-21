@@ -42,21 +42,25 @@
 To make a MagnetoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 
-| Part      | Name            | Type/Value/Note                                                       | PCS |
-|-----------|-----------------|-----------------------------------------------------------------------|-----|
-| —   	    | 3D Print        | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
-| C1,C3     | Capacitor       | 0805, ceramic, 0.1µF                                                  | 2   |
-| (h),C2    | Capacitor       | 0805, tantalum, 10µF                                                  | 2   |
-| —   	    | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
-| (m),U4    | Current sensor  | INA149                                                                | 1   |
-| (b),U3    | DAC             | PCF8591T                                                              | 1   |
-| (i),D1    | Diode           | DO214AC                                                               | 1   |
-| (j),U2    | Hall sensor     | A1302KUA                                                              | 1   |
-| —   	    | Header          | 6x1, female, 2.54mm pitch                                             | 1   |
-| —   	    | Header          | 8x1, female, 2.54 mm pitch                                            | 1   |
-| —   	    | Header          | 10x1, female, 2.54mm pitch                                            | 1   |
-| (q),D2    | LED             | 0805, red                                                             | 1   |
-| —   	    | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
+| Part             | Name            | Type/Value/Note                                                       | PCS |
+|------------------|-----------------|-----------------------------------------------------------------------|-----|
+| —   	           | 3D Print        | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
+| C1,C3            | Capacitor       | 0805, ceramic, 0.1µF                                                  | 2   |
+| (h),C2           | Capacitor       | 0805, tantalum, 10µF                                                  | 1   |
+| —   	           | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
+| (m),U4           | Current sensor  | INA149                                                                | 1   |
+| (b),U3           | DAC             | PCF8591T                                                              | 1   |
+| (i),D1           | Diode           | DO214AC                                                               | 1   |
+| (j),U2           | Hall sensor     | A1302KUA                                                              | 1   |
+| —   	           | Header          | 6x1, female, 2.54mm pitch                                             | 1   |
+| —   	           | Header          | 8x1, female, 2.54 mm pitch                                            | 2   |
+| —   	           | Header          | 10x1, female, 2.54mm pitch                                            | 1   |
+| (q),D2           | LED             | 0805, red                                                             | 1   |
+| —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
+| (e),Q2           | MOSFET          | IRF520                                                                | 1   |
+| —   	           | PCB             | 2 layer, FR4, 1.6mm thick                                             | 1   |
+| (o),<br/>POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
+| (c),(f),R1,R2,R4 | Resistor        | 10kΩ, 0805                                                            | 3   |
 
 
 |Part              | Name             | Value | PCS  | Note                       |
@@ -65,22 +69,6 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | Hall effect sensor            | A1302ELHLT-T            |  -    |  1   |  [URL](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/)|
 | Mosfet            | IRF520  |  -    |  1   |      -                     |
 | DA convertor             | PCF8591T    |  -   | 1    |  [URL](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)|
-| R1                | Resistor         | 10 k?    |   1   |   -   |
-| R2               | Resistor         | 10 k?  | 1    |      SMD  0805          |
-| R5               | Resistor         | 270 ?  | 1    |      SMD  0805          |
-| R6               | Resistor         | 1.2 k?  | 1    |      SMD  0805          |
-| C1               | Capacitor         | 0.1 ?F  | 1    |      SMD  0805          |
-| D1               | LED         |   |  1  |      SMD 0805 color-red         |
-| D2               | LED         |   |  1  |      SMD 0805 color-green          |
-|                  | Header           | 10 pin| 1    | long, stackable            |
-|                  | Header           | 8 pin | 2    | long, stackable            |
-|                  | Header           | 6 pin | 1    | long, stackable            |
-|                  | Aluminium plate  | 50x20x2 mm  |   1   |     -        |
-|                  | Spacer bolt  | 35 mm  |   4   |  thread M5         |
-|                  | Plastic screw  |  -  |   4   |  thread M5       |
-|                  | rubber ?O? ring  |  inside diameter 12 mm  |   1   |   -   |
-|                  | transparent tube  |  height 9 mm; 10x12 mm  |   1   |   -   |
-|                  |                  |       |      |                            |
 
 Note that the total cost of the above components and thus of the entire MagnetoShield is no more than $9 excluding labor and postage.
 
