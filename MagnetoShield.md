@@ -1,3 +1,56 @@
+#### Contents 
+[Introduction](#intro)<br/>
+[Application programming interface](#api)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
+&nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
+&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+[Examples](#examples)<br/>
+&nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+[Detailed hardware description](#hardware)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
+[About](#about)<br/>
+&nbsp;&nbsp;[Authors](#authors)<br/>
+
+# <a name="intro"/>Introduction
+
+# <a name="api"/>Application programming interface
+
+## <a name="io"/>C/C++ API
+
+### Input
+
+### Output
+
+## <a name="matlab"/>MATLAB API
+
+## <a name="simulink"/>Simulink API
+
+# <a name="examples"/>Examples
+
+## <a name="control"/>Feedback control
+
+## <a name="ident"/>System identification
+
+# <a name="hardware"/>Detailed hardware description
+
+## <a name="circuit"/>Circuit design
+
+## <a name="parts"/>Parts
+
+## <a name="pcb"/>PCB
+
+# <a name="about"/>About
+This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
+
+## <a name="authors"/>Authors
+* Hardware design: Jakub MihalÃ­k, Gergely TakÃ¡cs
+* Software design: Jakub MihalÃ­k
+* Wiki: Martin Gulan, Gergely TakÃ¡cs
+
+
 # Introduction
 
 The MagnetoShield is a device designed for educational purposes of automatic control and is another product of an [AutomationShield](https://www.automationshield.com) project. This device is able to lift up and control position of a permanent magnet.   Thanks to these possibilities we are able to build up closed-loop regulation program (for instance PID regulator) and create levitation effect of the magnet. Device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The position of the magnet is controlled by a Hall effect sensor. Because of a fast dynamic and complexity of the system device is great tool for learning and testing regulation algorithms.
@@ -153,7 +206,7 @@ The circuit schematics were designed in the Freeware version of the [DIPTrace](h
 
 [[/fig/Magneto/Magneto_schema.jpg|MagnetoShield circuit.]]
 
-Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins “+” and “-” in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet. 
+Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins Â“+Â” and Â“-Â” in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet. 
 
 
 ## Components
@@ -189,14 +242,3 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 [[/fig/Magneto/PCB1.jpg|MagnetoShield PCB from the front.]]
 [[/fig/Magneto/PCB2.jpg|MagnetoShield PCB from the back.]]
- 
-
-# About
-
-The board was developed within the framework of a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2017/2018.You may download the resulting thesis [here](https://github.com/gergelytakacs/AutomationShield/wiki/Publications).
-
-## Authors
-
-* Hardware design: Jakub Mihalík, Gergely Takács
-* Software design: Jakub Mihalík
-* Wiki: Jakub Mihalík
