@@ -42,9 +42,12 @@
 To make a MagnetoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 
-| Part    	| Name               	| Type/Value/Note                                                  | PCS   |
-|-----------	|--------------------	|------------------------------------------------------------------|-------|
-| —     	| 3D Print             	| 5.7 g Ø1.75 mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1     |
+| Part      | Name               | Type/Value/Note                                                       | PCS |
+|-----------|--------------------|-----------------------------------------------------------------------|-----|
+| —   	    | 3D Print           | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
+| C1,C3     | Capacitor          | 0805, ceramic, 0.1µF                                                  | 2   |
+| (h),C2    | Capacitor          | 0805, tantalum, 10µF                                                  | 2   |
+
 
 
 |Part              | Name             | Value | PCS  | Note                       |
