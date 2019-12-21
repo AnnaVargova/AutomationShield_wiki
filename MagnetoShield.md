@@ -38,7 +38,7 @@ The MagnetoShield belongs to the family of control engineering education devices
 
 ## <a name="ident"/>System identification
 
-![magneto_freq](https://user-images.githubusercontent.com/18485913/71310429-5c9d9b00-2414-11ea-81f4-13c1d61dfee9.png)
+![magneto_freq](https://user-images.githubusercontent.com/18485913/71310446-8b1b7600-2414-11ea-8804-9b654ec3f61f.png)
 
 # <a name="hardware"/>Detailed hardware description
 The MagnetoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
