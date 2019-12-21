@@ -41,7 +41,8 @@ The MagnetoShield is an open hardware product, you are free to make your own dev
 
 The schematic representation of the MagnetoShield is shown in the figure below. The position of a disc-shaped levitating permanent magnet (a) is sensed indirectly by a Hall-effect sensor (b). The analog voltage signal from the sensor is passed through an analog-to-digital converter (ADC) (c) to the microcontroller (d). Inputs computed in the microcontroller are turned to an analog voltage signal through a digital-to-analog converter (DAC) (e) then passed to an amplification circuit (f) to the solenoid (g). A current sensor (h) is employed to gain extra insight to dynamic processes, mainly for system identification purposes.
 
-![MagnetoShield](https://user-images.githubusercontent.com/18485913/71310143-c9af3180-2410-11ea-8413-c0d3a361304c.png)
+
+![magneto_scheme](https://user-images.githubusercontent.com/18485913/71310211-b2bd0f00-2411-11ea-9b1a-097a5ad89420.png)
 
 ## <a name="circuit"/>Circuit design
 The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
