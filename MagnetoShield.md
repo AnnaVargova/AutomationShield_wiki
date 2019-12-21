@@ -39,6 +39,14 @@
 ## <a name="circuit"/>Circuit design
 
 ## <a name="parts"/>Parts
+To make a MagnetoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+
+
+| Part    	| Name               	| Type/Value/Note                                                  | PCS   |
+|-----------	|--------------------	|------------------------------------------------------------------|-------|
+| —     	| 3D Print             	| 5.7 g Ø1.75 mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1     |
+
+
 |Part              | Name             | Value | PCS  | Note                       |
 |------------------|------------------|-------|------|----------------------------|
 | Electromagnet      | P20/15   | -    | 1    |  [URL](https://www.ebay.com/itm/322722704471)|
@@ -61,6 +69,8 @@
 |                  | rubber ?O? ring  |  inside diameter 12 mm  |   1   |   -   |
 |                  | transparent tube  |  height 9 mm; 10x12 mm  |   1   |   -   |
 |                  |                  |       |      |                            |
+
+Note that the total cost of the above components and thus of the entire MagnetoShield is no more than $9 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_gerber.zip).
