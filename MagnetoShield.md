@@ -25,10 +25,10 @@ The basic application programming interface (API) serving the device is written 
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `MagnetoShield.sensorRead();`
-* Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
+* Output (auxiliary sensor): `MagnetoShield.auxReadCurrent();`
 * Input (actuator): `MagnetoShield.actuatorWrite();`
 
-![magneto_actsens](https://user-images.githubusercontent.com/18485913/71313089-21ab5f80-2434-11ea-9eab-b52384d68522.png)
+![magneto_actsens](https://user-images.githubusercontent.com/18485913/71313099-60d9b080-2434-11ea-8a43-2326924940c9.png)
 
 ## <a name="init"/>Initialization and calibration
 The following subsections describe the methods used to access the input and output of the MagnetoShield. Note that before you begin an experiment you must initialize the hardware by calling the
