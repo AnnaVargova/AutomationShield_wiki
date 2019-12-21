@@ -54,9 +54,16 @@ The calibration routine thus performs a two-point calibration searching for cons
 <img src="http://latex.codecogs.com/gif.latex?p_1" border="0"/>
 and
 <img src="http://latex.codecogs.com/gif.latex?p_2" border="0"/>
-based on this idea. In case the user does not run the calibration routine, default values are given as well.
+based on this idea. In case you don't run the calibration routine, default values are given as well.
 
 ## <a name="input"/>Input
+For general feedback control experiments, it does not actually matter what units we used to power the solenoid: it may be percentage of full power, voltage, current, etc. However, if we wish to use first-principle models or model-based control, the input to the solenoid shall be
+
+`MagnetoShield.actuatorWrite(u);`
+
+which applies the input voltage
+<img src="http://latex.codecogs.com/gif.latex?u(k)" border="0"/>
+ranging from 0 to 12V at the given sample.<br/>The method uses the results of an offline multi-point calibration procedure described [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). Alternatively, input to the solenoid can be also sent by employing the `actuatorWritePercents()` method.
 
 ## <a name="output"/>Output
 
