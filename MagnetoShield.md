@@ -32,6 +32,16 @@ method, which sets the analog reference to external. This way the 3.3V rail conn
 maximum for the 10-bit built-in ADC ensuring compatibility with non-AVR boards. In addition to this, the method calls
 the Wire library for the I<sup>2</sup>C bus functionality required for the DAC chip.
 
+It is recommended to start the applications by selfcalibrating the device, by calling the
+
+`MagnetoShield.calibration();`
+
+method, which measures the output of the Hall effect sensor with the magnet off and on full power. The calibrated ADC
+levels can be accessed by the 'getMinCalibrated()' and 'getMaxCalibrated()' methods. Direct distance measurement is not available on this device and it is not even needed for simple feedback control, but first-principle models require
+a distance signal. The distance of the permanent magnet from the solenoid is known at the two extremes; e.g. when it rests
+on the surface of the PCB directly over the sensor and when it hits the roof of the enclosure. Let us assume that there is a power relationship between the magnetic flux B(k) measured on the Hall sensor and the distance h(k) at time t = kTs, so
+that
+
 ## <a name="input"/>Input
 
 ## <a name="output"/>Output
