@@ -37,6 +37,11 @@
 # <a name="hardware"/>Detailed hardware description
 
 ## <a name="circuit"/>Circuit design
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
+
+[[/fig/Magneto/Magneto_schema.jpg|MagnetoShield circuit.]]
+
+Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins + and - in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet.
 
 ## <a name="parts"/>Parts
 To make a MagnetoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
@@ -44,7 +49,7 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 
 | Part             | Name            | Type/Value/Note                                                       | PCS |
 |------------------|-----------------|-----------------------------------------------------------------------|-----|
-| —   	           | 3D Print        | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) |  1  |
+| —   	           | 3D Print        | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
 | C1,C3            | Capacitor       | 0805, ceramic, 0.1µF                                                  | 2   |
 | (h),C2           | Capacitor       | 0805, tantalum, 10µF                                                  | 1   |
 | —   	           | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
@@ -70,7 +75,7 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
 | (g),L1           | Solenoid        | 220Ω, 0805                                                            | 1   |
 | —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, φ10mm (inner), φ12mm (outer)              | 1   |
-| (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          |  3  |
+| (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 3   |
 
 Note that the total cost of the above components and thus of the entire MagnetoShield is no more than $9 excluding labor and postage.
 
@@ -146,89 +151,6 @@ This function makes a difference between desired position of flying and current 
 ```
 MagnetoShield.error();
 ``` 
-
-# Example
-## PID control of levitation
-```
-#include <AutomationShield.h>
-
-
-float input, error, Setpoint, output;          //declaration of global vriables for .ino program
-int Minimum;
-int Maximum;
-
-unsigned long Ts=688;                         //time of samplings in microseconds
-/* 
- * 1) for flying without serial comunication = 688 microseconds
- * 2) flying with comunication = 1536 microseconds
- * 3) flying with comunication and converting to % = 1476 microseconds
- * there is possibility to use 1) sampling for all types but some data can be lost - doesn't have big influance 
- */
- 
-bool next=false;                              //variable which enable step() function
-
-void setup() {
-  Serial.begin(230400);                       //speed of serial comunication in bauds [bits/s]
-  
-   MagnetoShield.begin();
-   MagnetoShield.calibration();
-   Setpoint = MagnetoShield.setHeight(50.00); //returns hidden global value inside the function, so for flying without serial comunication, 
-                                              //variable Setpoint not needed, function can be written like void function
-   
-
-   Minimum=MagnetoShield.getMin();            //getting borders for flying
-   Maximum=MagnetoShield.getMax();
-   
-   Sampling.interruptInitialize(Ts);          //periaod of sampling
-   Sampling.setInterruptCallback(stepEnable); //what happens when interrupt is called
-
-   PIDAbs.setKp(12);                         //setting PID constants 
-   PIDAbs.setTi(1.5);
-   PIDAbs.setTd(0.02);
-
-}
-
-void loop() {                                 //execute program step() if next=true
-   if(next){  
-   step();
-   next=false;
-   }
-}
-
-void stepEnable(){                            //execute interrupt function -> enable step()
-  next=true;
-}
-
-void step(){
-// 1) Flying without Serial comunication - smoothiest regulation
-    error = MagnetoShield.error();                           //diference between desired and real position of flying
-    input=PIDAbs.compute(error,155,255,-65000,65000);        //PID regulation - values 155 and 255 depends on used MOSFET and his "permeability"
-                                                             //possibility use 0 and 255 if these numbers are unknown
-    MagnetoShield.setVoltage(input);                         //writes input into the system
-
-// 2) Serial comunication shows inputs and outputs with theirs real values 
-/*    output = MagnetoShield.readHeight();                    //output fom system - position of magnet  
-    error = Setpoint-output;                                //diference between desired and real position of flying
-    input=PIDAbs.compute(error,155,255,-65000,65000);       //create input into the system
-    MagnetoShield.setVoltage(input);                        //writes input into the system
-    Serial.print(output);                                   //shows inputs and outputs in Serial windows
-    Serial.print(" ");
-    Serial.println(input);
-*/
-// 3) Serial comunication shows inputs and outputs in %  
-/*    output = MagnetoShield.readHeight();                                              //output fom system - position of magnet
-    error = Setpoint-output;                                                          //diference between desired and real position of flying
-    input=PIDAbs.compute(error,155,255,-65000,65000);                                 //create input into the system
-    MagnetoShield.setVoltage(input);                                                  //writes input into the system
-    float outputPer = AutomationShield.mapFloat(output,Minimum,Maximum,0.00,100.00);  //converts output into %
-    float inputPer = AutomationShield.mapFloat(input,155.00,255.00,0.00,100.00);      //converts input into %
-    Serial.print(outputPer);                                                          //shows inputs and outputs in Serial windows as %
-    Serial.print(" ");
-    Serial.println(inputPer);
-*/    
-}
-```
-
 # Hardware description
 
 An area of levitation is surrounded by transparent tube enclosed on the top. These borders prevent the magnet from drawing up to electromagnet under the influence magnetic field of the permanent magnet and disable oscillations of the magnet in horizontal plane.  Parameters of the tube and the gate where is electromagnet located depend on used permanent magnet. In my case I used a neodymium disc with diameter 8 mm and 2 mm thick. By me used parameters you can see on the picture below.
@@ -237,10 +159,3 @@ An area of levitation is surrounded by transparent tube enclosed on the top. The
 
 The MagnetoShield is a part of open-source project the AutoamtionShield. In the text below are circuit schematics, PCB layout and are described all components of the MagnetoShield. If you have ideas how to make hardware or software better please let us know, any other improvements are welcome.
 
-## Circuit
-
-The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the OptoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
-
-[[/fig/Magneto/Magneto_schema.jpg|MagnetoShield circuit.]]
-
-Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins + and - in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet.
