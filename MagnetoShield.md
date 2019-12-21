@@ -23,6 +23,11 @@ The MagnetoShield belongs to the family of control engineering education devices
 # <a name="api"/>Application programming interface
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the MagnetoShield is included in the `MagnetoShield.h` header, which contains the `MagnetoClass` class that is constructed by default as the `MagnetoShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
+The summary of basic functions and the illustration below should get you started quickly:
+* Output (sensor): `MagnetoShield.sensorRead();`
+** Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
+* Input (actuator): `MagnetoShield.actuatorWrite();`
+
 ## <a name="init"/>Initialization and calibration
 The following subsections describe the methods used to access the input and output of the MagnetoShield. Note that before you begin an experiment you must initialize the hardware by calling the
 
