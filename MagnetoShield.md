@@ -106,17 +106,19 @@ The above figure shows a typical and robustly repeatable closed-loop experiment.
 
 ## <a name="ident"/>System identification
 
-Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
+Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. The system is open-loop unstable, therefore experimental data have to be obtained in a closed loop using a feedback controller. A [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/MagnetoShield/MagnetoShield_Identification/MagnetoShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library. A pre-tuned PID controller is used to follow a reference output sequence, each setpoint for a thousand samples. In order to create a rich probe signal, the inputs computed by the controller are superimposed by a 1.5V pseudorandom signal generated in the device. The resulting input and corresponding output are logged.
 
 After you gather enough data sufficient for system identification, you may try to fit a model to the experimental response. The MATLAB API for the proposed device contains a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_Ident_Greybox.m) for grey-box system identification. The example offers various first-principle model formulations—a nonlinear state-space model (based on an [ordinary differential equation (ODE)](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_ODE.m)), a linear(ized) state-space model and a transfer function.<br/>Once the model is specified, it takes the experimental data and searches for the unknown parameters of the specified model. First, an initial guess of the system model is created based on assumed parameter values and model structure. The unknown parameters are then found by a grey-box estimation procedure using an appropriate search method implemented in MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html). The resulting models provide a very good match to the measured input-output data (from 77% to 85%) as indicated in the figure below.
 
-More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf).
+
 
 ![magneto_ident](https://user-images.githubusercontent.com/18485913/71310643-aa1b0780-2416-11ea-981a-23a7d3a929e4.png)
 
 ![magneto_ident2](https://user-images.githubusercontent.com/18485913/71310644-ab4c3480-2416-11ea-870e-d2198fb51ffd.png)
 
 ![magneto_freq](https://user-images.githubusercontent.com/18485913/71310468-cddd4e00-2414-11ea-882f-96d9a90e1c4d.png)
+
+More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf).
 
 # <a name="hardware"/>Detailed hardware description
 The MagnetoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
