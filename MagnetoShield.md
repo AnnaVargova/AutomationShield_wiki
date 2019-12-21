@@ -117,7 +117,7 @@ Accuracy of the identified model can be verified in a closed-loop simulation of 
 ![magneto_ident2](https://user-images.githubusercontent.com/18485913/71310644-ab4c3480-2416-11ea-870e-d2198fb51ffd.png)
 
 Another [worked MATLAB example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/MagnetoShield/MagnetoShield_ID_GreyBox_SS.m) in turn assumes a linearized state-space model parametrized with five
-unknown parameters, initialized same as in the previous example. The only difference here is, that the current sensor is used to gather dynamic current measurements at each sample, as current represents one of three dynamic states of the system. The following figure shows the comparison of the model outputs with experimental measurements in the frequency-domain. The model fit to measurement is 82% for the position measurement and 87% for the current signal, suggesting an adequate model that is suited for simulation, estimator and observer design, and model-based control.
+unknown parameters, initialized same as in the previous example. The only difference here is, that the current sensor is used to gather dynamic current measurements at each sample, as current represents one of three dynamic states of the system.<br/>The following figure shows the comparison of the model outputs with experimental measurements in the frequency-domain. The model fit to measurement is 82% for the position measurement and 87% for the current signal, suggesting an adequate model that is suited for simulation, estimator and observer design, and model-based control.
 
 ![magneto_freq](https://user-images.githubusercontent.com/18485913/71310468-cddd4e00-2414-11ea-882f-96d9a90e1c4d.png)
 
