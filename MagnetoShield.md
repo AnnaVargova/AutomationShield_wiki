@@ -38,7 +38,7 @@ The MagnetoShield belongs to the family of control engineering education devices
 
 ## <a name="ident"/>System identification
 
-![magneto_ident](https://user-images.githubusercontent.com/18485913/71310588-1ba68600-2416-11ea-868d-8cf3eac94849.png)
+![magneto_ident](https://user-images.githubusercontent.com/18485913/71310601-3e389f00-2416-11ea-84ee-14208953c59d.png)
 
 ![magneto_freq](https://user-images.githubusercontent.com/18485913/71310468-cddd4e00-2414-11ea-882f-96d9a90e1c4d.png)
 
