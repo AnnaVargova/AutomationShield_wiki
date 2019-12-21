@@ -38,7 +38,7 @@
 ## <a name="circuit"/>Circuit design
 The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
 
-[[/fig/Magneto/Magneto_schema.jpg|MagnetoShield circuit.]]
+![magneto_circuit](https://user-images.githubusercontent.com/18485913/71308765-c14efa80-2400-11ea-88d3-fbe9317e9040.png)
 
 Electromagnet is supplied by 12 V from pin Vin on the Arduino board. Schematic sign of electromagnet is not in the circuit schematics. Electromagnet is connected to the pins + and - in the right bottom corner of the schema. Supply voltage of the electromagnet is regulated by MOSFET type IRF520. Gate of the MOSFET is connected to the DA convertor PCF8591. Advantage of the DA convertor over a PWM signal is that DA convertor creates a real analog value of the voltage in range 0 to 5 V. The DA convertor is supplied by 5 V from the Arduino board and is controlled through I2C communication protocol.  For the I2C communication are used pins SDA and SCL. On these pins are connected two pull-up resistors too. Values of resistors are 10 k?. On the DA convertor supply pin and the output pin are connected two LED diodes too. There are also two resistors. The first one with value 270 ? is before LED diode connected to supply voltage. The second one is before LED diode connected to the output from the DA convertor and has value 1.2 k?. These diodes signalize that device is working. There is also bipolar hall sensor for controlling the position of the magnet.
 
