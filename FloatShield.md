@@ -149,7 +149,7 @@ The TOF sensor is integrated to a convenient open-source breakout board, thus it
 Finally, the potentiometer **POT1** (r) runner is attached to the A0 ADC capable pin of the board.
 
 ## <a name="parts"/>Parts
-To make an FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+To make a FloatShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 | Part    	| Name               	| Type/Value/Note                                                     	| PCS 	|
 |-----------	|--------------------	|-----------------------------------------------------------------	|-------|
