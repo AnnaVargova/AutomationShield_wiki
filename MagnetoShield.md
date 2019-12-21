@@ -16,6 +16,9 @@
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 # <a name="intro"/>Introduction
+The MagnetoShield is a device designed for educational purposes of automatic control and is another product of an [AutomationShield](https://www.automationshield.com) project. This device is able to lift up and control position of a permanent magnet.   Thanks to these possibilities we are able to build up closed-loop regulation program (for instance PID regulator) and create levitation effect of the magnet. Device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The position of the magnet is controlled by a Hall effect sensor. Because of a fast dynamic and complexity of the system device is great tool for learning and testing regulation algorithms.
+
+[[/fig/Magneto/Magneto.png|Isometric photograph of the MagnetoShield.]]
 
 # <a name="api"/>Application programming interface
 
@@ -34,6 +37,7 @@
 ## <a name="ident"/>System identification
 
 # <a name="hardware"/>Detailed hardware description
+The MagnetoShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
 ## <a name="circuit"/>Circuit design
 The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
@@ -42,7 +46,7 @@ The circuit schematics were designed in the Freeware version of the [DIPTrace](h
 
 Let us start with the input signal path. The microcontroller ((a),**U1**)—for example an atMega 328P in case of an Arduino Uno—is connected to an NXP Semiconductors PCF8591T external 8-bit DAC chip ((b),**U3**) via the I2C bus, pulled up to 5V ((c),**R1**,**R2**). Although some actuators, such as motors, can be conveniently supplied by a pulse width modulated (PWM) signal, tests have shown that the fast dynamic response of the levitation process is affected by this type of input significantly. The 12V supply voltage (d) to the electromagnet is pulled from the common VIN pin of the Arduino layout. This means, that the barrel jack connector on the Arduino can be used to power the electromagnet by a wall-plug adapter. The input voltage from the DAC chip is then fed to an IRF520 N-channel MOSFET ((e),**Q2**) in a low-side configuration. The analog out of the pin is protected in transients by a small-value series resistor, while open floating states are prevented with a parallel resistor ((f),**R3**,**R4**). The solenoid ((g),**L1**) goes to the high-side of this configuration, thus when there is gate-source voltage on the MOSFET, the channel starts to conduct and the electromagnet is energized. Transient effects are filtered by a capacitor ((h),**C2**), while the MOSFET and voltage source is protected from back-EMF by a diode ((i),**D1**).
 
-Let us continue with the output path. MagnetoShield utilizes indirect distance sensing by an Allegro MicroSystems A1302KUA linear Hall-effect sensor ((j),**U2**). Since the magnetic levitation experiment is designed to be compatible with ARM Cortex M-series boards as well, a 3.3V Zener diode is used to protect analog inputs from overvoltage. The hall sensor is bipolar and is supplied from the 5V rail, therefore an incidental swap of the magnet polarities could result in an overvoltage on these devices. Other sensing circuits use the same type of Zener clippers ((k),**D3**–**D5**) as well. The output of the Hall sensor is connected directly to the Arduino, which contains built-in ADC peripheries.<br/>Although a non-essential functionality, sensing the current passing through the electromagnet may aid the mathematical modeling of the system, providing data for estimation and system identification tasks. The electromagnet is powered through a precise shunt resistor with a known resistance ((l),**R8**). This differential input signal is then amplified using a Texas Instruments INA169 high-side measurement current shunt monitor ((m),**U4**) with a gain configured by a precise resistor ((n),**R9**). The output of this amplifier is then fed to the ADC of the Arduino, which is also protected by the aforementioned Zener clamp.
+Let us continue with the output path. MagnetoShield utilizes indirect distance sensing by an Allegro MicroSystems A1302KUA linear Hall-effect sensor ((j),**U2**). Since the magnetic levitation experiment is designed to be compatible with ARM Cortex M-series boards as well, a 3.3V Zener diode is used to protect analog inputs from overvoltage. The hall sensor is bipolar and is supplied from the 5V rail, therefore an incidental swap of the magnet polarities could result in an overvoltage on these devices. Other sensing circuits use the same type of Zener clippers ((k),**D3**–**D5**) as well. The output of the Hall sensor is connected directly to the Arduino, which contains built-in ADC peripheries.<br/>Although a non-essential functionality, sensing the current passing through the electromagnet may aid mathematical modeling of the system, providing data for estimation and system identification tasks. The electromagnet is powered through a precise shunt resistor with a known resistance ((l),**R8**). This differential input signal is then amplified using a Texas Instruments INA169 high-side measurement current shunt monitor ((m),**U4**) with a gain configured by a precise resistor ((n),**R9**). The output of this amplifier is then fed to the ADC of the Arduino, which is also protected by the aforementioned Zener clamp.
 
 Note that there are also simple auxiliary circuits extending the functionality of the MagnetoShield. A potentiometer ((o),**POT1**) can be programmed to perform a number of roles, most notably it may supply a manually adjusted reference trajectory for position. There is a voltage divider circuit ((p),**R6**,**R7**) that monitors supply voltage, and finally, a LED signals power to the board ((q),**D6**).
 
@@ -94,14 +98,6 @@ This shield was designed and created within a Bachelor's thesis at the Institute
 * Hardware design: Jakub Mihalík, Gergely Takács
 * Software design: Jakub Mihalík
 * Wiki: Martin Gulan, Gergely Takács
-
-
-# Introduction
-
-The MagnetoShield is a device designed for educational purposes of automatic control and is another product of an [AutomationShield](https://www.automationshield.com) project. This device is able to lift up and control position of a permanent magnet.   Thanks to these possibilities we are able to build up closed-loop regulation program (for instance PID regulator) and create levitation effect of the magnet. Device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The position of the magnet is controlled by a Hall effect sensor. Because of a fast dynamic and complexity of the system device is great tool for learning and testing regulation algorithms.
-
-[[/fig/Magneto/Magneto.png|Isometric photograph of the MagnetoShield.]]
-
 
 # Hardware description
 
