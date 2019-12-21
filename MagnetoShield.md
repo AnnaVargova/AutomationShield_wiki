@@ -25,7 +25,7 @@ The basic application programming interface (API) serving the device is written 
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `MagnetoShield.sensorRead();`
-** Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
+⋅* Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
 * Input (actuator): `MagnetoShield.actuatorWrite();`
 
 ## <a name="init"/>Initialization and calibration
