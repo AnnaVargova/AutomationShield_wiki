@@ -90,14 +90,14 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 
 Note that the total cost of the above components and thus of the entire MagnetoShield is no more than $9 excluding labor and postage.
 
+The assembled MagnetoShield is shown in the figure below. The circuit board contains long stacking headers (I), which connect the device to a compatible Arduino. The magnet is held in place by a 3D printed superstructure (II). The 12V rail for the magnet is powered through the barrel connector of the development board underneath, while the USB programming port of an Arduino Uno is also shown here. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
+
+![magneto_assembly](https://user-images.githubusercontent.com/18485913/71309268-4c7ebf00-2406-11ea-8256-d6bbc3e7d2ec.png)
+
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_gerber.zip).
 
 ![magneto_pcb](https://user-images.githubusercontent.com/18485913/71308119-abd5d280-23f8-11ea-9ded-0aa222dbafd0.png)
-
-The assembled MagnetoShield is shown in the figure below. The circuit board contains long stacking headers (I), which connect the device to a compatible Arduino. The magnet is held in place by a 3D printed superstructure (II). The 12V rail for the magnet is powered through the barrel connector of the development board underneath, while the USB programming port of an Arduino Uno is also shown here. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
-
-![magneto_assembly](https://user-images.githubusercontent.com/18485913/71309268-4c7ebf00-2406-11ea-8256-d6bbc3e7d2ec.png)
 
 # <a name="about"/>About
 This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
@@ -106,10 +106,3 @@ This shield was designed and created within a Bachelor's thesis at the Institute
 * Hardware design: Jakub Mihalík, Gergely Takács
 * Software design: Jakub Mihalík
 * Wiki: Martin Gulan, Gergely Takács
-
-# Hardware description
-
-An area of levitation is surrounded by transparent tube enclosed on the top. These borders prevent the magnet from drawing up to electromagnet under the influence magnetic field of the permanent magnet and disable oscillations of the magnet in horizontal plane.  Parameters of the tube and the gate where is electromagnet located depend on used permanent magnet. In my case I used a neodymium disc with diameter 8 mm and 2 mm thick. By me used parameters you can see on the picture below.
-
-[[/fig/Magneto/Branicka.png| Parameters of the transparent tube and the height of the electromagnet.]]
-
