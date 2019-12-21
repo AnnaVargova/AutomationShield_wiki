@@ -75,6 +75,23 @@ method that returns the distance
 in millimeters as a floating point number. The method reads the ADC levels from the Hall sensor and calls `adcToGauss()`, converting the levels to voltage related to the 3.3V reference, removing the 2.5V bias for zero magnetic flux and multiplying by the manufacturer given sensitivity of 1.3mV/G. The magnetic flux is then recalculated by the above-mentioned two-point calibration implemented in the `gaussToDistance()` method. Sensor readings can be acquired in percents, by employing the `sensorReadPercents()` methods as well.
 
 ## <a name="aux"/>Auxiliary functions
+In addition, there are some non-essential auxiliary functions provided in the device API. First of these is the method reading the current sensor that is useful when one considers a first-principle model of the process. The current sensor is accessed by
+
+`i=MagnetoShield.auxReadCurrent();`
+
+which returns the current reading
+<img src="http://latex.codecogs.com/gif.latex?y(k)=i(k)" border="0"/>
+in milliamperes. The method polls for ADC levels, which are converted to voltage and this in turn to current by a proportional gain defined by the current sensor chip.
+
+The external reference potentiometer is read by
+
+`r=MagnetoShield.referenceRead();`
+
+which returns a floating point number in the range of 0–100 (%). Finally, calling
+
+`vin=MagnetoShield.auxReadVoltage();`
+
+will return the supply voltage of the 12V rail, being mainly useful for self-diagnostics.
 
 # <a name="examples"/>Examples
 
