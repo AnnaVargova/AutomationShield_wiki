@@ -48,6 +48,14 @@ at time
 , so
 that
 
+<img src="http://latex.codecogs.com/gif.latex?h(k) = p_1B(k)^{p_2}." border="0"/>
+
+The calibration routine thus performs a two-point calibration searching for constants
+<img src="http://latex.codecogs.com/gif.latex?p_1" border="0"/>
+and
+<img src="http://latex.codecogs.com/gif.latex?p_2" border="0"/>
+based on this idea. In case the user does not run the calibration routine, default values are given as well.
+
 ## <a name="input"/>Input
 
 ## <a name="output"/>Output
