@@ -87,7 +87,7 @@ The external reference potentiometer is read by
 
 `r=MagnetoShield.referenceRead();`
 
-which returns a floating point number in the range of 0–100 (%). Finally, calling
+which returns a floating point number in the range of 0–100 (%).<br/>Finally, calling
 
 `vin=MagnetoShield.auxReadVoltage();`
 
@@ -96,6 +96,9 @@ will return the supply voltage of the 12V rail, being mainly useful for self-dia
 # <a name="examples"/>Examples
 
 ## <a name="control"/>Feedback control
+For a start you may want to experiment with a closed-loop control of the levitating ball's position by the proportional–integral–derivative controller (PID) algorithm.
+
+The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/MagnetoShield/MagnetoShield_PID/MagnetoShield_PID.ino), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID method with integral windup handling by clamping. You may select wheter the reference is given by the potentiometer or you want to test a predetermined reference trajectory. The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB.
 
 ![magneto_pid](https://user-images.githubusercontent.com/18485913/71310428-5b6c6e00-2414-11ea-8a73-8d1cd230f326.png)
 
@@ -150,7 +153,7 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | (o),POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
 | (c),(f),R1,R2,R4 | Resistor        | 10kΩ, 0805                                                            | 3   |
 | (n),(p),R6,R9    | Resistor        | 3kΩ, 0805, 0.1%                                                       | 2   |
-| (p,q),R7         | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
+| (p),R7           | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
 | (f),R3           | Resistor        | 220Ω, 0805                                                            | 1   |
 | —   	           | O-Ring          | rubber, M12, h=1mm, e.g. Ø18mm (outer)                                | 1   |
 | —   	           | Screws          | polyamid, M3x8                                                        | 2   |
