@@ -42,12 +42,21 @@
 To make a MagnetoShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 
-| Part      | Name               | Type/Value/Note                                                       | PCS |
-|-----------|--------------------|-----------------------------------------------------------------------|-----|
-| —   	    | 3D Print           | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
-| C1,C3     | Capacitor          | 0805, ceramic, 0.1µF                                                  | 2   |
-| (h),C2    | Capacitor          | 0805, tantalum, 10µF                                                  | 2   |
-
+| Part      | Name            | Type/Value/Note                                                       | PCS |
+|-----------|-----------------|-----------------------------------------------------------------------|-----|
+| —   	    | 3D Print        | 5.7g Ø1.75mm PETG filament, bright green, at 240&deg;C (90&deg;C bed) | 1   |
+| C1,C3     | Capacitor       | 0805, ceramic, 0.1µF                                                  | 2   |
+| (h),C2    | Capacitor       | 0805, tantalum, 10µF                                                  | 2   |
+| —   	    | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
+| (m),U4    | Current sensor  | INA149                                                                | 1   |
+| (b),U3    | DAC             | PCF8591T                                                              | 1   |
+| (i),D1    | Diode           | DO214AC                                                               | 1   |
+| (j),U2    | Hall sensor     | A1302KUA                                                              | 1   |
+| —   	    | Header          | 6x1, female, 2.54mm pitch                                             | 1   |
+| —   	    | Header          | 8x1, female, 2.54 mm pitch                                            | 1   |
+| —   	    | Header          | 10x1, female, 2.54mm pitch                                            | 1   |
+| (q),D2    | LED             | 0805, red                                                             | 1   |
+| —   	    | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
 
 
 |Part              | Name             | Value | PCS  | Note                       |
