@@ -34,6 +34,8 @@ The MagnetoShield belongs to the family of control engineering education devices
 
 ## <a name="control"/>Feedback control
 
+![magneto_pid](https://user-images.githubusercontent.com/18485913/71310286-9c638300-2412-11ea-920a-f1e87860e1ad.png)
+
 ## <a name="ident"/>System identification
 
 # <a name="hardware"/>Detailed hardware description
