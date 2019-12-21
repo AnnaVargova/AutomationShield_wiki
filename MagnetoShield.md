@@ -21,8 +21,16 @@ The MagnetoShield belongs to the family of control engineering education devices
 ![MagnetoShield](https://user-images.githubusercontent.com/18485913/71310232-f0219c80-2411-11ea-80da-4b75a69a5a9e.png)
 
 # <a name="api"/>Application programming interface
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the MagnetoShield is included in the `MagnetoShield.h` header, which contains the `MagnetoClass` class that is constructed by default as the `MagnetoShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 ## <a name="init"/>Initialization and calibration
+The following subsections describe the methods used to access the input and output of the MagnetoShield. Note that before you begin an experiment you must initialize the hardware by calling the
+
+`MagnetoShield.begin();`
+
+method, which sets the analog reference to external. This way the 3.3V rail connected to the reference pin acts as the
+maximum for the 10-bit built-in ADC ensuring compatibility with non-AVR boards. In addition to this, the method calls
+the Wire library for the I2C bus functionality required for the DAC chip.
 
 ## <a name="input"/>Input
 
