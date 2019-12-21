@@ -16,9 +16,9 @@
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 # <a name="intro"/>Introduction
-The MagnetoShield is a device designed for educational purposes of automatic control and is another product of an [AutomationShield](https://www.automationshield.com) project. This device is able to lift up and control position of a permanent magnet.   Thanks to these possibilities we are able to build up closed-loop regulation program (for instance PID regulator) and create levitation effect of the magnet. Device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The position of the magnet is controlled by a Hall effect sensor. Because of a fast dynamic and complexity of the system device is great tool for learning and testing regulation algorithms.
+The MagnetoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost miniature magnetic levitation experiment. The device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The goal is to control the position of the levitating magnet indirectly measured by a Hall effect sensor, which creates a simple single-input single-output (SISO) feedback loop. Due to its complexity and fast dynamics, MagnetoShield is great tool for learning and implementation of feedback control algorithms. The hardware is low-cost and small, making it ideal for take-home experiments or long-term student projects.
 
-[[/fig/Magneto/Magneto.png|Isometric photograph of the MagnetoShield.]]
+![MagnetoShield](https://user-images.githubusercontent.com/18485913/71309544-39b9b980-2409-11ea-8d64-e49334617bd6.png)
 
 # <a name="api"/>Application programming interface
 
@@ -93,6 +93,8 @@ Note that the total cost of the above components and thus of the entire MagnetoS
 The assembled MagnetoShield is shown in the figure below. The circuit board contains long stacking headers (I), which connect the device to a compatible Arduino. The magnet is held in place by a 3D printed superstructure (II). The 12V rail for the magnet is powered through the barrel connector of the development board underneath, while the USB programming port of an Arduino Uno is also shown here. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
 ![magneto_assembly](https://user-images.githubusercontent.com/18485913/71309268-4c7ebf00-2406-11ea-8256-d6bbc3e7d2ec.png)
+
+The structure for holding the solenoid was designed in Autodesk Fusion 360 and printed by a Prusa I2 MK3/S 3D printer using PETG filament in 80 minutes time. 
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_gerber.zip).
