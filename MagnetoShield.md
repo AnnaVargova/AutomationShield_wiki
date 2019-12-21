@@ -16,7 +16,7 @@
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
 # <a name="intro"/>Introduction
-The MagnetoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost miniature magnetic levitation experiment. The device uses an electromagnet to generate a magnetic force which lifts up the permanent magnet. The goal is to control the position of the levitating magnet indirectly measured by a Hall effect sensor, which creates a simple single-input single-output (SISO) feedback loop. Due to its complexity and fast dynamics, MagnetoShield is great tool for learning and implementation of feedback control algorithms. The hardware is low-cost and small, making it ideal for take-home experiments or long-term student projects.
+The MagnetoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost miniature magnetic levitation experiment. The device uses an solenoid electromagnet to generate a magnetic force which lifts up the permanent magnet. The goal is to control the position of the levitating magnet indirectly measured by a Hall effect sensor, which creates a simple single-input single-output (SISO) feedback loop. Due to its complexity and fast dynamics, MagnetoShield is great tool for learning and implementation of feedback control algorithms. The hardware is low-cost and small, making it ideal for take-home experiments or long-term student projects.
 
 ![MagnetoShield](https://user-images.githubusercontent.com/18485913/71312225-a3958b80-2428-11ea-875e-c30a73e13c76.png)
 
@@ -106,6 +106,12 @@ The above figure shows a typical and robustly repeatable closed-loop experiment.
 
 ## <a name="ident"/>System identification
 
+Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
+
+After you gather enough data sufficient for system identification, you may try to fit a model to the experimental response. The MATLAB API for the proposed device contains a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_Ident_Greybox.m) for grey-box system identification. The example offers various first-principle model formulations—a nonlinear state-space model (based on an [ordinary differential equation (ODE)](https://github.com/gergelytakacs/AutomationShield/blob/master/matlab/examples/FloatShield/FloatShield_ODE.m)), a linear(ized) state-space model and a transfer function.<br/>Once the model is specified, it takes the experimental data and searches for the unknown parameters of the specified model. First, an initial guess of the system model is created based on assumed parameter values and model structure. The unknown parameters are then found by a grey-box estimation procedure using an appropriate search method implemented in MATLAB's [System Identification Toolbox](https://www.mathworks.com/products/sysid.html). The resulting models provide a very good match to the measured input-output data (from 77% to 85%) as indicated in the figure below.
+
+More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf).
+
 ![magneto_ident](https://user-images.githubusercontent.com/18485913/71310643-aa1b0780-2416-11ea-981a-23a7d3a929e4.png)
 
 ![magneto_ident2](https://user-images.githubusercontent.com/18485913/71310644-ab4c3480-2416-11ea-870e-d2198fb51ffd.png)
@@ -149,7 +155,7 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | —   	           | Header          | 8x1, female, 2.54 mm pitch                                            | 2   |
 | —   	           | Header          | 10x1, female, 2.54mm pitch                                            | 1   |
 | (q),D2           | LED             | 0805, red                                                             | 1   |
-| —   	           | [Magnet](https://www.ebay.com/itm/322722704471)          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
+| —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
 | (e),Q2           | MOSFET          | IRF520                                                                | 1   |
 | —   	           | PCB             | 2 layer, FR4, 1.6mm thick                                             | 1   |
 | (o),POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
@@ -161,7 +167,7 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | —   	           | Screws          | polyamid, M3x8                                                        | 2   |
 | —   	           | Shaft           | ACP CA9MA9005                                                         | 1   |
 | (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
-| (g),L1           | Solenoid        | 220Ω, 0805                                                            | 1   |
+| (g),L1           | [Solenoid](https://www.ebay.com/itm/322722704471)        | 220Ω, 0805                                                            | 1   |
 | —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, φ10mm (inner), φ12mm (outer)              | 1   |
 | (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 3   |
 
