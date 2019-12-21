@@ -112,6 +112,8 @@ After you gather enough data sufficient for system identification, you may try t
 
 ![magneto_ident](https://user-images.githubusercontent.com/18485913/71310643-aa1b0780-2416-11ea-981a-23a7d3a929e4.png)
 
+Reliability of the identified model can be verified in a closed-loop simulation of the model response in the time domain. As it is evident, the linear model over-values the random noise in the probe signal, which in reality is much less stated.
+
 ![magneto_ident2](https://user-images.githubusercontent.com/18485913/71310644-ab4c3480-2416-11ea-870e-d2198fb51ffd.png)
 
 ![magneto_freq](https://user-images.githubusercontent.com/18485913/71310468-cddd4e00-2414-11ea-882f-96d9a90e1c4d.png)
