@@ -18,15 +18,17 @@
 # <a name="intro"/>Introduction
 The MagnetoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost miniature magnetic levitation experiment. The device uses a solenoid electromagnet to generate a magnetic force which lifts up the permanent magnet. The goal is to control the position of the levitating magnet indirectly measured by a Hall effect sensor, which creates a simple single-input single-output (SISO) feedback loop. Due to its complexity and fast dynamics, MagnetoShield is great tool for learning and implementation of feedback control algorithms. The hardware is low-cost and small, making it ideal for take-home experiments or long-term student projects.
 
-![MagnetoShield](https://user-images.githubusercontent.com/18485913/71312225-a3958b80-2428-11ea-875e-c30a73e13c76.png)
+![MagnetoShield](https://user-images.githubusercontent.com/18485913/71313088-2112c900-2434-11ea-90dc-818339cc13a1.png)
 
 # <a name="api"/>Application programming interface
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the MagnetoShield is included in the `MagnetoShield.h` header, which contains the `MagnetoClass` class that is constructed by default as the `MagnetoShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `MagnetoShield.sensorRead();`
-⋅* Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
+* Auxiliary output (sensor): `MagnetoShield.auxReadCurrent();`
 * Input (actuator): `MagnetoShield.actuatorWrite();`
+
+![magneto_actsens](https://user-images.githubusercontent.com/18485913/71313089-21ab5f80-2434-11ea-9eab-b52384d68522.png)
 
 ## <a name="init"/>Initialization and calibration
 The following subsections describe the methods used to access the input and output of the MagnetoShield. Note that before you begin an experiment you must initialize the hardware by calling the
