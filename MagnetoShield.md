@@ -41,7 +41,7 @@ The MagnetoShield is an open hardware product, you are free to make your own dev
 
 The schematic representation of the MagnetoShield is shown in the figure below. The position of a disc-shaped levitating permanent magnet (a) is sensed indirectly by a Hall-effect sensor (b). The analog voltage signal from the sensor is passed through an analog-to-digital converter (ADC) (c) to the microcontroller (d). Inputs computed in the microcontroller are turned to an analog voltage signal through a digital-to-analog converter (DAC) (e) then passed to an amplification circuit (f) to the solenoid (g). A current sensor (h) is employed to gain extra insight to dynamic processes, mainly for system identification purposes.
 
-![magneto_scheme](https://user-images.githubusercontent.com/18485913/71309187-4a683080-2405-11ea-8b22-519d46e0e884.png)
+![magneto_scheme](https://user-images.githubusercontent.com/18485913/71309201-771c4800-2405-11ea-94c7-847af70b5a4a.png)
 
 ## <a name="circuit"/>Circuit design
 The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
@@ -94,6 +94,10 @@ Note that the total cost of the above components and thus of the entire MagnetoS
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_gerber.zip).
 
 ![magneto_pcb](https://user-images.githubusercontent.com/18485913/71308119-abd5d280-23f8-11ea-9ded-0aa222dbafd0.png)
+
+The assembled MagnetoShield is shown in the figure below. The circuit board contains long stacking headers (I), which connect the device to a compatible Arduino. The magnet is held in place by a 3D printed superstructure (II). The 12V rail for the magnet is powered through the barrel connector of the development board underneath, while the USB programming port of an Arduino Uno is also shown here. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
+
+![magneto_assembly](https://user-images.githubusercontent.com/18485913/71309268-4c7ebf00-2406-11ea-8256-d6bbc3e7d2ec.png)
 
 # <a name="about"/>About
 This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
