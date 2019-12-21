@@ -30,7 +30,7 @@ The following subsections describe the methods used to access the input and outp
 
 method, which sets the analog reference to external. This way the 3.3V rail connected to the reference pin acts as the
 maximum for the 10-bit built-in ADC ensuring compatibility with non-AVR boards. In addition to this, the method calls
-the Wire library for the I2C bus functionality required for the DAC chip.
+the Wire library for the I<sup>2</sup>C bus functionality required for the DAC chip.
 
 ## <a name="input"/>Input
 
