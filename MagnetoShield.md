@@ -1,9 +1,10 @@
 #### Contents 
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
-&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
-&nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
-&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+&nbsp;&nbsp;&nbsp;[Initialization and calibration](#init)<br/>
+&nbsp;&nbsp;&nbsp;[Input](#input)<br/>
+&nbsp;&nbsp;&nbsp;[Output](#output)<br/>
+&nbsp;&nbsp;&nbsp;[Auxiliary functions](#aux)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
@@ -18,15 +19,13 @@
 
 # <a name="api"/>Application programming interface
 
-## <a name="io"/>C/C++ API
+## <a name="init"/>Initialization and calibration
 
-### Input
+## <a name="input"/>Input
 
-### Output
+## <a name="output"/>Output
 
-## <a name="matlab"/>MATLAB API
-
-## <a name="simulink"/>Simulink API
+## <a name="aux"/>Auxiliary functions
 
 # <a name="examples"/>Examples
 
