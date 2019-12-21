@@ -102,6 +102,8 @@ The implementation of PID control in C/C++ is demonstrated by a [worked example]
 
 ![magneto_pid](https://user-images.githubusercontent.com/18485913/71310428-5b6c6e00-2414-11ea-8a73-8d1cd230f326.png)
 
+The above figure shows a typical and robustly repeatable closed-loop experiment. At the beginning of the experiment, the permanent magnet laying at rest is quickly pulled up close to the level of the solenoid, then settles on the first reference level r=14mm with some overshoot (upper graph). Other reference levels are followed closely. The levitation including the reference changes are obvious and visually engaging. The lower graph shows the corresponding input signal. The nonlinear nature of its closed-loop dynamics can be hypothetically further improved by better—possibly natively nonlinear—control methods.
+
 ## <a name="ident"/>System identification
 
 ![magneto_ident](https://user-images.githubusercontent.com/18485913/71310643-aa1b0780-2416-11ea-981a-23a7d3a929e4.png)
