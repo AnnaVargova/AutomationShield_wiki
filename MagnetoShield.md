@@ -63,9 +63,16 @@ For general feedback control experiments, it does not actually matter what units
 
 which applies the input voltage
 <img src="http://latex.codecogs.com/gif.latex?u(k)" border="0"/>
-ranging from 0 to 12V at the given sample.<br/>The method uses the results of an offline multi-point calibration procedure described [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). Alternatively, input to the solenoid can be also sent by employing the `actuatorWritePercents()` method.
+ranging from 0 to 12V at the given sample.<br/>The method uses the results of an offline multi-point calibration procedure described in [this paper](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). Alternatively, input to the solenoid can be also sent by employing the `actuatorWritePercents()` method.
 
 ## <a name="output"/>Output
+The distance of the permanent magnet from the solenoid can be determined by calling
+
+`y=MagnetoShield.sensorRead()`
+
+method that returns the distance
+<img src="http://latex.codecogs.com/gif.latex?y(k)=h(k)" border="0"/>
+in millimeters as a floating point number. The method reads the ADC levels from the Hall sensor and calls `adcToGauss()`, converting the levels to voltage related to the 3.3V reference, removing the 2.5V bias for zero magnetic flux and multiplying by the manufacturer given sensitivity of 1.3mV/G. The magnetic flux is then recalculated by the above-mentioned two-point calibration implemented in the `gaussToDistance()` method. Sensor readings can be acquired in percents, by employing the `sensorReadPercents()` methods as well.
 
 ## <a name="aux"/>Auxiliary functions
 
