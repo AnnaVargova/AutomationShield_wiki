@@ -59,9 +59,18 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
 | (e),Q2           | MOSFET          | IRF520                                                                | 1   |
 | —   	           | PCB             | 2 layer, FR4, 1.6mm thick                                             | 1   |
-| (o),<br/>POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
+| (o),POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
 | (c),(f),R1,R2,R4 | Resistor        | 10kΩ, 0805                                                            | 3   |
-
+| (n),(p),R6,R9    | Resistor        | 3kΩ, 0805, 0.1%                                                       | 2   |
+| (p,q),R7         | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
+| (f),R3           | Resistor        | 220Ω, 0805                                                            | 1   |
+| —   	           | O-Ring          | rubber, M12, h=1mm, e.g. Ø18mm (outer)                                | 1   |
+| —   	           | Screws          | polyamid, M3x8                                                        | 2   |
+| —   	           | Shaft           | ACP CA9MA9005                                                         | 1   |
+| (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
+| (g),L1           | Solenoid        | 220Ω, 0805                                                            | 1   |
+| —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, φ10mm (inner), φ12mm (outer)              | 1   |
+| (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 1   |
 
 |Part              | Name             | Value | PCS  | Note                       |
 |------------------|------------------|-------|------|----------------------------|
