@@ -8,7 +8,7 @@ The publication status of the shields is as follows:
 |---------------	|---------	|------------	|--------	| ----------|
 | FloatShield   	|         	| ✅          	|        	| ✅        |
 | HeatShield    	|         	| ✅          	|        	| ✅        |
-| MagnetoShield 	|         	|            	| ✅      	|            |
+| MagnetoShield 	|         	| ✅          	| ✅      	|           |
 | MotoShield    	|         	|            	| ✅      	|           |
 | OptoShield    	|         	| ✅          	| ✅      	| ✅       |
 | TugShield    	        |         	|          	| ✅      	|           |
