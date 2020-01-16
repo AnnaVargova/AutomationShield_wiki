@@ -1,0 +1,1 @@
+# Please hold on for the LinkShield documentation page
