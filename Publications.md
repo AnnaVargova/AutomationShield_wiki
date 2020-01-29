@@ -16,7 +16,11 @@ The publication status of the shields is as follows:
 
 ## Under review
 1. Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. 
-2. Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1-8, ISBN: TBD.
+
+## Under review
+1. Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1-8, ISBN: TBD. Accepted for publication.
+
+
 
 ## Conference articles
 
