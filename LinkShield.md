@@ -34,7 +34,7 @@ To make a LinkShield either on a PCB or on a breadboard you will need the follow
 
 | Part             | Name            | Type/Value/Note                                                       | PCS |
 |------------------|-----------------|-----------------------------------------------------------------------|-----|
-| (d),M1   	   | Servo           | digital, high-speed metal gear micro-servo,  e.g. [Savox SH-0257MG](https://www.savox-servo.com/Servos/Brushed-Motor/Savox-Servo-SH-0257MG-Digital-DC-Motor-Metal-Gear/) | 1   |
+| (d),M1   	   | Servo           | digital, high-speed metal gear micro-servo,<br/>e.g. [Savox SH-0257MG](https://www.savox-servo.com/Servos/Brushed-Motor/Savox-Servo-SH-0257MG-Digital-DC-Motor-Metal-Gear/) | 1   |
 | (v),U2           | Accelerometer   | [Analog Devices ADXL345](https://www.analog.com/en/products/adxl345.html#product-overview)                          | 1   |
 | (h),J1,J2        | Connector       | 0.5mm pitch, 4-lead FFC/FPC, e.g. [Molex 52745-0497](https://www.tme.eu/sk/details/mx-52745-0497/konektory-ffc-fpc-raster-0-5mm/molex/52745-0497/)    | 2   |
 | (i),POT1         | Potentiometer   | 250 mW, e.g. [ACP CA14NV12,5-10KA2020](https://www.tme.eu/sk/en/details/ca14v-10k/single-turn-tht-trimmers/acp/ca14nv12-5-10ka2020/)            | 1   |
