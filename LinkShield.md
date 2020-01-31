@@ -42,6 +42,22 @@ To make a LinkShield either on a PCB or on a breadboard you will need the follow
 | (f),C1           | Capacitor       | 0805, tantalum, 4.7µF, e.g. [AVX TAJP475K016RNJ](https://www.tme.eu/en/details/tajp475k016rnj/smd-tantalum-capacitors/avx/) | 1   |
 | (u),C2           | Capacitor       | 1206, tantalum, 10µF, e.g. [KEMET T491A106M016AT](https://www.tme.eu/en/details/t491a106m016at/smd-tantalum-capacitors/kemet/)       | 1   |
 | (t),C3           | Capacitor       | 0805, ceramic, 100nF, e.g. [KEMET C0805C104M5RACTU](https://www.tme.eu/en/details/c0805c104m5rac/0805-mlcc-smd-capacitors/kemet/c0805c104m5ractu/)     | 1   |
+| (e),D1           | Diode           | DO214AC, e.g. [Vishay BYG20J](https://www.tme.eu/sk/en/details/byg20j-e3_tr/smd-universal-diodes/vishay/), 1.5A, 600V)                       |  1   |
+| (r)              | Cable           | 0.5mm pitch, 4-lead FFC                         |  1   |
+| (a)              | PCB (shield)    | 2 layer, FR4, 1.6mm thick, green mask           |  1   |
+| (s)              | PCB (breakout)  | 1 layer, FR4, 0.6mm thick (or less), green mask |  1   |
+| (o)              | Screw           | M2×8, steel                                     |  1   |
+| (p)              | Nut             | M2, steel                                       |  1   |
+| (k)              | Spacer          | hexagonal, polyamide, M2, 10mm                  |  2   |
+| (l)              | Screw           | M2×5, Phillips, polyamide                       |  2   |
+| (m)              | Nut             | M2, polyamide                                   |  2   |
+| (j)              | Shaft           | Potentiometer shaft, e.g. [ACP CA9MA9005](https://www.tme.eu/sk/en/details/ca9ma5-b/knobs-for-trimmers/acp/ca9ma-9005-black/#)  |  1   |
+| (c)              | Header          | 6x1, female, 2.54mm pitch                       |  1   |
+| (c)              | Header          | 8x1, female, 2.54mm pitch                       |  2   |
+| (c)              | Header          | 10x1, female, 2.54mm pitch                      |  1   |
+| (n)              | Hub             | 1.1g green PETG filament, 21m to print, 0.07kWh electricity   |  1   |
+| —                | Magnets         | φ9x2mm, N50, ∼13N, e.g. [Omo Magnets N50D00960020](http://www.omomagnets.com/index.php?controller=omoproduct&id_product=1193)            |  3   |
+| (q)              | Beam            | 85x10x0.3mm, φ2mm hole, 5mm from edge, AISI 301 |  1   |
 
 # <a name="about"/>About
 This shield is currently designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018.
