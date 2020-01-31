@@ -163,9 +163,9 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | (b),U3           | [DAC](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)             | PCF8591T                                                              | 1   |
 | (i),D1           | Diode           | DO214AC                                                               | 1   |
 | (j),U2           | [Hall sensor](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/)     | A1302KUA                                                              | 1   |
-| —   	           | Header          | 6x1, female, 2.54mm pitch                                             | 1   |
-| —   	           | Header          | 8x1, female, 2.54 mm pitch                                            | 2   |
-| —   	           | Header          | 10x1, female, 2.54mm pitch                                            | 1   |
+| —   	           | Header          | 6×1, female, 2.54mm pitch                                             | 1   |
+| —   	           | Header          | 8×1, female, 2.54 mm pitch                                            | 2   |
+| —   	           | Header          | 10×1, female, 2.54mm pitch                                            | 1   |
 | (q),D2           | LED             | 0805, red                                                             | 1   |
 | —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
 | (e),Q2           | MOSFET          | IRF520                                                                | 1   |
@@ -176,11 +176,11 @@ To make a MagnetoShield either on a PCB or on a breadboard you will need the fol
 | (p),R7           | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
 | (f),R3           | Resistor        | 220Ω, 0805                                                            | 1   |
 | —   	           | O-Ring          | rubber, M12, h=1mm, e.g. Ø18mm (outer)                                | 1   |
-| —   	           | Screws          | polyamid, M3x8                                                        | 2   |
+| —   	           | Screws          | polyamid, M3×8                                                        | 2   |
 | —   	           | Shaft           | ACP CA9MA9005                                                         | 1   |
 | (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
 | (g),L1           | [Solenoid](https://www.ebay.com/itm/322722704471)        | 220Ω, 0805                                                            | 1   |
-| —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, φ10mm (inner), φ12mm (outer)              | 1   |
+| —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, Ø10mm (inner), φ12mm (outer)              | 1   |
 | (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 3   |
 
 Note that the total cost of the above components and thus of the entire MagnetoShield is no more than $9 excluding labor and postage.
