@@ -52,12 +52,12 @@ To make a LinkShield either on a PCB or on a breadboard you will need the follow
 | (l)              | Screw           | M2×5, Phillips, polyamide                       |  2   |
 | (m)              | Nut             | M2, polyamide                                   |  2   |
 | (j)              | Shaft           | Potentiometer shaft, e.g. [ACP CA9MA9005](https://www.tme.eu/sk/en/details/ca9ma5-b/knobs-for-trimmers/acp/ca9ma-9005-black/#)  |  1   |
-| (c)              | Header          | 6x1, female, 2.54mm pitch                       |  1   |
-| (c)              | Header          | 8x1, female, 2.54mm pitch                       |  2   |
-| (c)              | Header          | 10x1, female, 2.54mm pitch                      |  1   |
+| (c)              | Header          | 6×1, female, 2.54mm pitch                       |  1   |
+| (c)              | Header          | 8×1, female, 2.54mm pitch                       |  2   |
+| (c)              | Header          | 10×1, female, 2.54mm pitch                      |  1   |
 | (n)              | Hub             | 1.1g green PETG filament, 21m to print, 0.07kWh electricity   |  1   |
-| —                | Magnets         | φ9x2mm, N50, ∼13N, e.g. [Omo Magnets N50D00960020](http://www.omomagnets.com/index.php?controller=omoproduct&id_product=1193)            |  3   |
-| (q)              | Beam            | 85x10x0.3mm, φ2mm hole, 5mm from edge, AISI 301 |  1   |
+| —                | Magnets         | Ø9×2mm, N50, ∼13N, e.g. [Omo Magnets N50D00960020](http://www.omomagnets.com/index.php?controller=omoproduct&id_product=1193)            |  3   |
+| (q)              | Beam            | 85×10×0.3mm, Ø2mm hole, 5mm from edge, AISI 301 |  1   |
 
 # <a name="about"/>About
 This shield is currently designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018.
