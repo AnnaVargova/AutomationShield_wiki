@@ -197,7 +197,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 ![magneto_pcb](https://user-images.githubusercontent.com/18485913/71308119-abd5d280-23f8-11ea-9ded-0aa222dbafd0.png)
 
 # <a name="about"/>About
-This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
+This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI) in 2017/2018. The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
 
 ## <a name="authors"/>Authors
 * Hardware design: Jakub Mihalík, Gergely Takács
