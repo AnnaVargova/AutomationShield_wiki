@@ -36,7 +36,7 @@ which returns a floating-point number providing acceleration data
 <img src="http://latex.codecogs.com/gif.latex?y(k)=\ddot{q}(k)\,[\textrm{ms}^{-2}]" border="0"/>
 in
 <img src="http://latex.codecogs.com/gif.latex?y(k)=\textrm{ms}^{-2}" border="0"/>
-m·s−2.
+in ms<sup>−2</sup>C.
 
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
