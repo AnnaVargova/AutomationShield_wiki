@@ -34,7 +34,15 @@ The acceleration sensor can be read at any time instant by calling
 
 which returns a floating-point number providing acceleration data
 <img src="http://latex.codecogs.com/gif.latex?y(k)=\ddot{q}(k)" border="0"/>
-in ms<sup>−2</sup>C.
+in ms<sup>−2</sup>.
+
+The servo motor can be commanded to the internally kept position of
+<img src="http://latex.codecogs.com/gif.latex?u(k)" border="0"/>
+degrees by the
+
+`LinkShield.actuatorWrite(float u);`
+
+method. The board contains a programmable potentiometer as well, its state is returned in the range of 0–100% by the `referenceRead()` method.
 
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
