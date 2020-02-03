@@ -33,7 +33,7 @@ The acceleration sensor can be read at any time instant by calling
 `float y = LinkShield.sensorRead();`
 
 which returns a floating-point number providing acceleration data
-<img src="http://latex.codecogs.com/gif.latex?y(k)=\ddot{q}(k)" border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?y(k)=\ddot{q}(k)\,[\textrm{ms}^{-2}]" border="0"/>
 in
 <img src="http://latex.codecogs.com/gif.latex?y(k)=\textrm{ms}^{-2}" border="0"/>
 m·s−2.
