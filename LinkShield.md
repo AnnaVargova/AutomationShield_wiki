@@ -44,6 +44,8 @@ degrees by the
 
 method. The board contains a programmable potentiometer as well, its state is returned in the range of 0–100% by the `referenceRead()` method.
 
+We remark that APIs for Simulink and possibly MATLAB are subject to ongoing work.
+
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
 ## <a name="control"/>Feedback control
