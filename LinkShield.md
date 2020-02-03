@@ -28,7 +28,13 @@
 ## <a name="ident"/>System identification
 
 # <a name="hardware"/>Detailed hardware description
+The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
+
 ## <a name="circuit"/>Circuit design
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_Circuit.zip). 
+
+![PCB0](https://user-images.githubusercontent.com/18485913/73638815-66e5c280-466b-11ea-85e2-6ec545ccb175.png)
+
 ## <a name="parts"/>Parts
 To make a LinkShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
@@ -63,9 +69,7 @@ Note that the total cost of the above components and thus of the entireLinkShiel
 
 The assembled LinkShield is shown in the figure below. The servo is inserted into a prefabricated slot on the PCB and raised by 10mm using a pair of spacers (k), fixed with polyamide screws (l) from the top and nuts (m) from the bottom. The slotted cylindrical hub (n), which connects the servo shaft with the beam, was designed in Autodesk Fusion 360 and printed by a Prusa I2 MK3/S 3D printer using PETG filament in 21 minutes. The hub is held in place by a machine screw connecting the servo shaft that comes with most metal-geared servos
 as standard, while the slot holding the beam is tightened and fixed by a M2×8 machine screw (o) and corresponding nut (p). The flexible cantilever beam (q) measuring 85×10×0.3mm and with a Ø2mm mounting hole placed 5mm from the edge is laser-cut from stainless steel. The tip of the beam is equipped by the accelerometer unit (v), which is connected to the base board by a
-4-lead flexible flat cable (r).
-
-The accelerometer unit is based on a single layer 0.6mm thick PCB (s) glued firmly to the beam tip. Power to the accelerometer chip is filtered by a pair of 10µF (t) and 100nF (u) capacitors. The breakout PCB contains the Analog Devices ADXL345 3-axis configurable gain digital accelerometer unit (v). 
+4-lead flexible flat cable (r). The accelerometer unit is based on a single layer 0.6mm thick PCB (s) glued firmly to the beam tip. Power to the accelerometer chip is filtered by a pair of 10µF (t) and 100nF (u) capacitors. The breakout PCB contains the Analog Devices ADXL345 3-axis configurable gain digital accelerometer unit (v). 
 
 The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
