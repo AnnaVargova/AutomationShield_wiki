@@ -3,9 +3,6 @@
 #### Contents 
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
-&nbsp;&nbsp;&nbsp;[Initialization and calibration](#init)<br/>
-&nbsp;&nbsp;&nbsp;[Input](#input)<br/>
-&nbsp;&nbsp;&nbsp;[Output](#output)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
@@ -25,9 +22,12 @@ The summary of basic functions and the illustration below should get you started
 * Output (sensor): `LinkShield.sensorRead();`
 * Input (actuator): `LinkShield.actuatorWrite();`
 
-## <a name="init"/>Initialization and calibration
-## <a name="input"/>Input
-## <a name="output"/>Output
+Before you begin an experiment you must initialize the hardware by calling the
+
+`LinkShield.begin();`
+
+which initializes the default Arduino servo motor library and attaches the motor to the D9 pin. To maintain both 3.3V system compatibility and analog resolution, the reference is set to external. Finally, the ADXL345 accelerometer is initialized with a 8G range and 3200Hz data rate, producing a 1600Hz bandwidth. The sensor can be optionally calibrated by running the `calibrate()` method to remove sensor bias in the direction of interest.
+
 
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
