@@ -62,14 +62,14 @@ To make a LinkShield either on a PCB or on a breadboard you will need the follow
 Note that the total cost of the above components and thus of the entireLinkShield is no more than 22€ excluding labor and postage.
 
 The assembled LinkShield is shown in the figure below. The servo is inserted into a prefabricated slot on the PCB and raised by 10mm using a pair of spacers (k), fixed with polyamide screws (l) from the top and nuts (m) from the bottom. The slotted cylindrical hub (n), which connects the servo shaft with the beam, was designed in Autodesk Fusion 360 and printed by a Prusa I2 MK3/S 3D printer using PETG filament in 21 minutes. The hub is held in place by a machine screw connecting the servo shaft that comes with most metal-geared servos
-as standard, while the slot holding the beam is tightened and fixed by a M2×8 machine screw (o) and corresponding nut (p). The flexible cantilever beam (q) measuring 85×10×0.3mm and with a φ2mm mounting hole placed 5mm from the edge is laser-cut from stainless steel. The tip of the beam is equipped by the accelerometer unit (v), which is connected to the base board by a
-4-lead flexible flat cable with a 0.5 mm pitch (r). This cable transfers power and communication to the accelerometer by a connector identical to the one located on the base board.
+as standard, while the slot holding the beam is tightened and fixed by a M2×8 machine screw (o) and corresponding nut (p). The flexible cantilever beam (q) measuring 85×10×0.3mm and with a Ø2mm mounting hole placed 5mm from the edge is laser-cut from stainless steel. The tip of the beam is equipped by the accelerometer unit (v), which is connected to the base board by a
+4-lead flexible flat cable (r).
 
-The accelerometer unit is based on a single layer 0.6mm thick printed circuit board (s). The PCB is glued firmly to the tip by Suxun B-7000 adhesive. Power to the accelerometer chip is filtered by a pair of 10µF (t) and 100nF (u) capacitors. The breakout PCB contains the Analog Devices ADXL345 3-axis configurable gain digital accelerometer unit (v). 
+The accelerometer unit is based on a single layer 0.6mm thick PCB (s) glued firmly to the beam tip. Power to the accelerometer chip is filtered by a pair of 10µF (t) and 100nF (u) capacitors. The breakout PCB contains the Analog Devices ADXL345 3-axis configurable gain digital accelerometer unit (v). 
 
 The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
-![PCB2](https://user-images.githubusercontent.com/18485913/73637578-f473e300-4668-11ea-8645-fb1704566928.png)
+![PCB2](https://user-images.githubusercontent.com/18485913/73637914-a3182380-4669-11ea-8621-420e41d104a3.png)
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_gerber.zip).
