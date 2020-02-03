@@ -31,9 +31,11 @@
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
 ## <a name="circuit"/>Circuit design
-The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_Circuit.zip). 
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the LinkShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_Circuit.zip). 
 
 ![PCB0](https://user-images.githubusercontent.com/18485913/73638815-66e5c280-466b-11ea-85e2-6ec545ccb175.png)
+
+The mechanical base of the LinkShield is a standard two-layer 1.6 ňmm thick printed circuit board (a) that carries all electronic and mechanical components and acts as a foundation for the device. This is connected to an Arduino R3-layout compatible microcontroller prototyping board (b) by a set of stackingheader pins (c). A metal-geared high-speed digital micro servo motor (d) is driven by the **D9** PWM capable pin of Arduino. Its power supply is drawn directly from the board, as the current consumption remains well below the allowable maximum. A diode (e) protects the microcontroller from reverse currents caused by possible back electromotive force, while transient effects on the servo supply are filtered by a capacitor (f). To minimize the size of the accelerometer unit, we have included the I2C pull-up resistors (g) on thebase board. A miniature connector (h) mounted to the shield supplies power to the acceleration sensor unit, which is connected to the I2C bus of the MCU by the **SCL** and **SDA** pins. The last component located on the base is a potentiometer (i) connected to the A0 analog pin, including a shaft (j), that allows the user to program this input for any purpose, such as providing reference to the feedback control loop.
 
 ## <a name="parts"/>Parts
 To make a LinkShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
