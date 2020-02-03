@@ -73,12 +73,12 @@ as standard, while the slot holding the beam is tightened and fixed by a M2×8 m
 
 The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
-![PCB2](https://user-images.githubusercontent.com/18485913/73637914-a3182380-4669-11ea-8621-420e41d104a3.png)
+![PCB2](https://user-images.githubusercontent.com/18485913/73640253-38b5b200-466e-11ea-963d-d1decbc7f1c3.png)
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_gerber.zip).
 
-![PCB](https://user-images.githubusercontent.com/18485913/73541789-9c07d000-4433-11ea-9ced-fe0cbd83b94b.png)
+![PCB](https://user-images.githubusercontent.com/18485913/73640210-25a2e200-466e-11ea-8d7f-955bedabe0df.png)
 
 # <a name="about"/>About
 This shield is currently designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI). The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava in 2017/2018.
