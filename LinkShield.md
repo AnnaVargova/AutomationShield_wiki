@@ -69,7 +69,7 @@ The accelerometer unit is based on a single layer 0.6mm thick printed circuit bo
 
 The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
-![PCB2](https://user-images.githubusercontent.com/18485913/73637533-d73f1480-4668-11ea-80d4-60674ddfba36.png)
+![PCB2](https://user-images.githubusercontent.com/18485913/73637578-f473e300-4668-11ea-8645-fb1704566928.png)
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Link/LinkShield_gerber.zip).
