@@ -86,7 +86,11 @@ smaller. The PFF controller is then transformed to
 
 <img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=-g\omega_{\mathrm{c}}^2q(t)," border="0"/>
 
+which is effectively a negative acceleration feedback (NAF) controller. Let us not forget, that besides the orientation of the feedback, the scaling of the acceleration signal is eventually combined with the tunable gain
+<img src="http://latex.codecogs.com/gif.latex?g" border="0"/>
+, thus is ultimately lost in the digital realization. The transfer function of the controller is
 
+<img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=-g\omega_{\mathrm{c}}^2q(t)," border="0"/>
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
