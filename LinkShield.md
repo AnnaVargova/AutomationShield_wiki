@@ -97,14 +97,18 @@ which after selecting
 rad.s<sup>−1</sup>,
 <img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}=0.04" border="0"/>
 [-]
-and the gain
+, the gain
 <img src="http://latex.codecogs.com/gif.latex?g=2" border="0"/>
-&deg;.m<sup>−1</sup>
-results in the
-<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.005" border="0"/>
-s sampling discrete-time transfer function
+deg.m<sup>−1</sup>
+and the sampling period of
+<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.005 s" border="0"/>
+results in the following discrete-time transfer function:
 
 <img src="http://latex.codecogs.com/gif.latex?G(z)=-2\,\frac{0.1218z+0.1202}{z^2-1.719z+0.9606}." border="0"/>
+
+The computation of the NAF/PPF controller, based on the identified single-mode vibration model, is listed in a [worked MATLAB example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/matlab/examples/LinkShield/LinkShield_PPF.m), while the digital realization of the discrete-time transfer function is listed in a [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/matlab/examples/LinkShield/LinkShield_PPF.m) that is a part of the API.
+
+A representative experiment is shown in the figure below, where an open-loop response is compared to the closed-loop response obtained with the NAF/PPF controller presented above. As one may observe from the experimental data, the controller damps the tip vibrations very effectively whilst ultimately converging to the desired servo angle.
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
