@@ -110,7 +110,7 @@ The computation of the NAF/PPF controller, based on the identified single-mode v
 
 A representative experiment is shown in the figure below, where an open-loop response is compared to the closed-loop response obtained with the NAF/PPF controller presented above. As one may observe from the experimental data, the controller damps the tip vibrations very effectively whilst ultimately converging to the desired servo angle.
 
-![link_ctrlres](https://user-images.githubusercontent.com/18485913/73745955-77be3300-4754-11ea-9ae3-788b4276e024.png)
+![link_ctrlres](https://user-images.githubusercontent.com/18485913/73746055-ab00c200-4754-11ea-89c7-caced811c81c.png)
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
