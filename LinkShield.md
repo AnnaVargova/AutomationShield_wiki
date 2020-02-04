@@ -55,7 +55,7 @@ For a start you may want to experiment with a feedback control of the beam tip, 
 
 The manipulation angle is maintained by a feedback loop inside the servo motor to
 <img src="http://latex.codecogs.com/gif.latex?r(t)" border="0"/>
-[&deg]. This reference can be then modified by an appropriated control input
+[&deg;]. This reference can be then modified by an appropriated control input
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
 , so that the resulting overall angle is
 <img src="http://latex.codecogs.com/gif.latex?u_{\mathrm{r}}(t)=r(t)+u(t)" border="0"/>
@@ -65,7 +65,7 @@ control (PPF) of the dominant structural mode, where
 [m]
 is the position signal and
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
-[ &deg ] is the
+[&deg;] is the
 resulting servo angle. The PPF controller is given in the time domain by 
 
 # <a name="hardware"/>Detailed hardware description
