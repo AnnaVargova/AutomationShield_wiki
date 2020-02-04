@@ -22,7 +22,7 @@ The summary of basic functions and the illustration below should get you started
 * Output (sensor): `LinkShield.sensorRead();`
 * Input (actuator): `LinkShield.actuatorWrite();`
 
-![link_actsens](https://user-images.githubusercontent.com/18485913/73727578-0ec5c380-4732-11ea-9c5c-2a7af8e7f399.png)
+![link_actsens](https://user-images.githubusercontent.com/18485913/73727688-4896ca00-4732-11ea-8a58-4d80a5b1a463.png)
 
 Before you begin an experiment you must initialize the hardware by calling
 
