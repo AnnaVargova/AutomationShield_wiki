@@ -65,7 +65,7 @@ control (PPF) of the dominant structural mode, where
 [m]
 is the position signal and
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
-[&deg] is the
+[ &deg ] is the
 resulting servo angle. The PPF controller is given in the time domain by 
 
 # <a name="hardware"/>Detailed hardware description
