@@ -36,7 +36,7 @@ The acceleration sensor can be read at any time instant by calling
 
 which returns a floating-point number providing acceleration data
 <img src="http://latex.codecogs.com/gif.latex?y(k)=\ddot{q}(k)" border="0"/>
-in ms<sup>−2</sup>.
+in m.s<sup>−2</sup>.
 
 The servo motor can be commanded to the internally kept position of
 <img src="http://latex.codecogs.com/gif.latex?u(k)" border="0"/>
@@ -51,6 +51,17 @@ We remark that APIs for Simulink and possibly MATLAB are subject to ongoing work
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
 ## <a name="control"/>Feedback control
+For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
+
+The manipulation angle is maintained by a feedback loop inside the servo motor to
+<img src="http://latex.codecogs.com/gif.latex?r(t)" border="0"/>
+(deg). This reference can be then modified by an appropriated control input
+<img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
+, so that the resulting overall angle is
+
+ur(t) = r(t) + u(t). Let us the consider positive position feedback
+control (PPF) of the dominant structural mode, where q(t) (m) is the position signal and u(t) (deg) is the
+resulting servo angle. The PPF controller is given in the time domain by 
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
