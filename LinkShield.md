@@ -84,8 +84,8 @@ rad.s<sup>−1</sup> (16 Hz) and the damping ratio is
 <img src="http://latex.codecogs.com/gif.latex?\zeta = 0.0027" border="0"/>
 . Remember that the numerator assumes an acceleration signal, thus, by modeling simple harmonic motion we may safely consider the position signal to be out of-phase with acceleration and scaled down by
 <img src="http://latex.codecogs.com/gif.latex?\omega^2" border="0"/>
-. The resulting actuator constant is then
-<img src="http://latex.codecogs.com/gif.latex?c =-9.2718E-4" border="0"/>
+. The actuator constant is then
+<img src="http://latex.codecogs.com/gif.latex?c =-9.2718\mathrm{E}-4" border="0"/>
 m.deg<sup>−1</sup>. The comparison of the identified transfer function to test data is shown in the figure below, assuming we
 model the acceleration signal.
 
