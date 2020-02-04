@@ -75,8 +75,8 @@ is the force acting on the system. We may represent this force by assuming
 One shall not forget that we may only measure an acceleration signal
 <img src="http://latex.codecogs.com/gif.latex?y(t)=\ddot{q}(t)" border="0"/>
 , however, may still use the same model structure for grey-box identification, then compensate for the discrepancy later. The servo angle was changed 90 deg while sampling the acceleration signal at a
-<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.003 s" border="0"/>
-period. The identification experiment loaded to the MCU is available in a [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/examples/LinkShield/LinkShield_Identification/LinkShield_Identification.ino).
+<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.003" border="0"/>
+s period. The identification experiment loaded to the MCU is available in a [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/examples/LinkShield/LinkShield_Identification/LinkShield_Identification.ino).
 
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
@@ -129,8 +129,8 @@ rad.s<sup>−1</sup>,
 <img src="http://latex.codecogs.com/gif.latex?g=2" border="0"/>
 deg.m<sup>−1</sup>
 and the sampling period of
-<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.005 s" border="0"/>
-results in the following discrete-time transfer function:
+<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.005" border="0"/>
+s results in the following discrete-time transfer function:
 
 <img src="http://latex.codecogs.com/gif.latex?G(z)=-2\,\frac{0.1218z+0.1202}{z^2-1.719z+0.9606}." border="0"/>
 
