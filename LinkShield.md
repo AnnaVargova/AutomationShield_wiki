@@ -50,6 +50,12 @@ We remark that APIs for Simulink and possibly MATLAB are subject to ongoing work
 
 # <a name="examples"/>Examples
 ## <a name="ident"/>System identification
+Before proceeding to controller design, one shall first try to identify a simple dynamic model of the tip position
+<img src="http://latex.codecogs.com/gif.latex?q(t)" border="0"/>
+(m) in dependence of the servo angle
+<img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
+(&deg;). Furthermore, let us assume that the load carried by the end-effector consists of three stacked magnets weighing 2.84 g (∼0.95 g each).
+
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
 
@@ -62,10 +68,10 @@ The manipulation angle is maintained by a feedback loop inside the servo motor t
 . In the following example we will consider positive position feedback
 control (PPF) of the dominant structural mode, where
 <img src="http://latex.codecogs.com/gif.latex?q(t)" border="0"/>
-[m]
+(m)
 is the position signal and
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
-[&deg;] is the
+(&deg;) is the
 resulting servo angle. The PPF controller is given in the time domain by
 
 <img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=gq(t)," border="0"/>
@@ -74,10 +80,10 @@ where
 <img src="http://latex.codecogs.com/gif.latex?\omega_{\mathrm{c}}" border="0"/>
 [deg.m<sup>−1</sup>] is the tunable controller gain,
 <img src="http://latex.codecogs.com/gif.latex?g" border="0"/>
-[rad.s<sup>−1</sup>]
+(rad.s<sup>−1</sup>)
 is the angular frequency of the controller that usually equals to the angular natural frequency of the controlled mode and
 <img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}" border="0"/>
-[-] is the tunable controller damping ratio affecting the “sharpness” of the controller response.
+(-) is the tunable controller damping ratio affecting the “sharpness” of the controller response.
 
 As we are controlling a single dominant mode with a prevalent harmonic response, we may assume
 that the acceleration signal recorded by the system is out-of-phase to the position with an amplitude that is
@@ -96,7 +102,7 @@ which after selecting
 <img src="http://latex.codecogs.com/gif.latex?\omega_{\mathrm{c}}=\omega=100.4" border="0"/>
 rad.s<sup>−1</sup>,
 <img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}=0.04" border="0"/>
-[-]
+(-)
 , the gain
 <img src="http://latex.codecogs.com/gif.latex?g=2" border="0"/>
 deg.m<sup>−1</sup>
