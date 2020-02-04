@@ -88,7 +88,7 @@ rad.s<sup>−1</sup> (16 Hz) and the damping ratio is
 <img src="http://latex.codecogs.com/gif.latex?c =-9.2718\mathrm{E}-4" border="0"/>
 m.deg<sup>−1</sup>. The comparison of the identified transfer function to test data is shown in the figure below, assuming we model the acceleration signal.
 
-![link_identres](https://user-images.githubusercontent.com/18485913/73782040-a3abd980-4791-11ea-84a3-65528a0947c4.png)
+![link_identres](https://user-images.githubusercontent.com/18485913/73782175-eec5ec80-4791-11ea-9f5a-663645f6343b.png)
 
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
