@@ -78,6 +78,17 @@ One shall not forget that we may only measure an acceleration signal
 <img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.003" border="0"/>
 s period. The identification experiment loaded to the MCU is available in a [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/examples/LinkShield/LinkShield_Identification/LinkShield_Identification.ino).
 
+Identification of the above transfer function can be performed as in the [worked MATLAB example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/matlab/examples/LinkShield/LinkShield_Identification_TF.m). First, a data section with free vibration has been selected, then a continuous two-pole and no zero transfer function has been obtained with a ∼92% fit to the estimation data. According to this, the angular natural frequency of the system with the given load is
+<img src="http://latex.codecogs.com/gif.latex?\omega = 100.4" border="0"/>
+rad·s−1 (16 Hz) and the damping ratio is
+<img src="http://latex.codecogs.com/gif.latex?\zeta = 0.0027" border="0"/>
+. Remember that the numerator assumes an acceleration signal, thus, by modelling simple harmonic motion we may safely consider the position signal to be out of-phase with acceleration and scaled down by
+<img src="http://latex.codecogs.com/gif.latex?\omega^2" border="0"/>
+. The resulting actuator constant is then
+<img src="http://latex.codecogs.com/gif.latex?c =-9.2718E-4" border="0"/>
+m·deg−1. The comparison of the identified transfer function to test data is shown in the figure below, assuming we
+model the acceleration signal.
+
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
 
