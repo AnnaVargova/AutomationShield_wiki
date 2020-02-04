@@ -66,7 +66,9 @@ control (PPF) of the dominant structural mode, where
 is the position signal and
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
 [&deg;] is the
-resulting servo angle. The PPF controller is given in the time domain by 
+resulting servo angle. The PPF controller is given in the time domain by
+
+<img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=gq(t)," border="0"/>
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
