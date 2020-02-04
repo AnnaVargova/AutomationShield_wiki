@@ -54,14 +54,29 @@ Before proceeding to controller design, one shall first try to identify a simple
 <img src="http://latex.codecogs.com/gif.latex?q(t)" border="0"/>
 (m) in dependence of the servo angle
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
-(&deg;). Furthermore, let us assume that the load carried by the end-effector consists of three stacked magnets weighing 2.84 g (∼0.95 g each).
+(deg). Let us assume that the load carried by the end-effector consists of three stacked magnets weighing 2.84 g (∼0.95 g each). Assuming the manipulated load and the beam can be represented by a single dominant resonant mode, we obtain
+
+<img src="http://latex.codecogs.com/gif.latex?\ddot{q}(t)+2\zeta\omega\dot{q}(t)+\omega^2q(t)=f(t)," border="0"/>
+
+where
+<img src="http://latex.codecogs.com/gif.latex?\omega" border="0"/>
+(rad.s<sup>−1</sup>) is natural angular frequency,
+<img src="http://latex.codecogs.com/gif.latex?\zeta" border="0"/>
+(-) is the damping ratio and
+<img src="http://latex.codecogs.com/gif.latex?f(t)" border="0"/>
+is the force acting on the system. We may represent this force by assuming
+<img src="http://latex.codecogs.com/gif.latex?f(t)=c\omega^2u(t)" border="0"/>
+, where
+<img src="http://latex.codecogs.com/gif.latex?c" border="0"/>
+(m.deg<sup>−1</sup>) is the actuator constant. After performing a Laplace transform, we arrive at the well-known transfer function
+
 
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
 
 The manipulation angle is maintained by a feedback loop inside the servo motor to
 <img src="http://latex.codecogs.com/gif.latex?r(t)" border="0"/>
-[&deg;]. This reference can be then modified by an appropriated control input
+(deg). This reference can be then modified by an appropriated control input
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
 , so that the resulting overall angle is
 <img src="http://latex.codecogs.com/gif.latex?u_{\mathrm{r}}(t)=r(t)+u(t)" border="0"/>
@@ -71,7 +86,7 @@ control (PPF) of the dominant structural mode, where
 (m)
 is the position signal and
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
-(&deg;) is the
+(deg) is the
 resulting servo angle. The PPF controller is given in the time domain by
 
 <img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=gq(t)," border="0"/>
