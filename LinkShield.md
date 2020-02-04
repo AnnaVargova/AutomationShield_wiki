@@ -70,6 +70,16 @@ resulting servo angle. The PPF controller is given in the time domain by
 
 <img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=gq(t)," border="0"/>
 
+where
+<img src="http://latex.codecogs.com/gif.latex?\omega_{\mathrm{c}}" border="0"/>
+[deg.m<sup>−1</sup>] is the tunable controller gain,
+<img src="http://latex.codecogs.com/gif.latex?g" border="0"/>
+[rad.s<sup>−1</sup>)
+is the angular frequency of the controller that usually equals to the angular natural frequency of the controlled mode and
+<img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}" border="0"/>
+[-] is the tunable
+controller damping ratio affecting the “sharpness” of the controller response.
+
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
