@@ -70,7 +70,7 @@ is the force acting on the system. We may represent this force by assuming
 <img src="http://latex.codecogs.com/gif.latex?c" border="0"/>
 (m.deg<sup>−1</sup>) is the actuator constant. After performing a Laplace transform, we arrive at the well-known transfer function
 
-<img src="http://latex.codecogs.com/gif.latex?P(s)=\frac{Q(s)}{U(s)}=\frac{c\omega^2}{s^2+2\zeta\omega s+\omega^2}." border="0"/>
+<img src="http://latex.codecogs.com/gif.latex?P(s)=\frac{Q(s)}{U(s)}" border="0"/>
 
 One shall not forget that we may only measure an acceleration signal
 <img src="http://latex.codecogs.com/gif.latex?y(t)=\ddot{q}(t)" border="0"/>
