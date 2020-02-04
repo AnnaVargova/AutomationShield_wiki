@@ -82,12 +82,13 @@ Identification of the above transfer function can be performed as in the [worked
 <img src="http://latex.codecogs.com/gif.latex?\omega = 100.4" border="0"/>
 rad.s<sup>−1</sup> (16 Hz) and the damping ratio is
 <img src="http://latex.codecogs.com/gif.latex?\zeta = 0.0027" border="0"/>
-. Remember that the numerator assumes an acceleration signal, thus, by modeling simple harmonic motion we may safely consider the position signal to be out of-phase with acceleration and scaled down by
+. Remember that the numerator assumes an acceleration signal, thus, by modeling simple harmonic motion we may safely consider the position signal to be out-of-phase with acceleration and scaled down by
 <img src="http://latex.codecogs.com/gif.latex?\omega^2" border="0"/>
 . The actuator constant is then
 <img src="http://latex.codecogs.com/gif.latex?c =-9.2718\mathrm{E}-4" border="0"/>
-m.deg<sup>−1</sup>. The comparison of the identified transfer function to test data is shown in the figure below, assuming we
-model the acceleration signal.
+m.deg<sup>−1</sup>. The comparison of the identified transfer function to test data is shown in the figure below, assuming we model the acceleration signal.
+
+![link_identres](https://user-images.githubusercontent.com/18485913/73779793-97be1880-478d-11ea-90f6-4c57ffde0d79.png)
 
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
