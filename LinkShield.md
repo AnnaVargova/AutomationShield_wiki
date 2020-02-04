@@ -70,6 +70,13 @@ is the force acting on the system. We may represent this force by assuming
 <img src="http://latex.codecogs.com/gif.latex?c" border="0"/>
 (m.deg<sup>−1</sup>) is the actuator constant. After performing a Laplace transform, we arrive at the well-known transfer function
 
+<img src="http://latex.codecogs.com/gif.latex?P(s)=\frac{Q(s)}{U(s)}=\frac{c\omega^2}{s^2+2\zeta\omega s+\omega^2}." border="0"/>
+
+One shall not forget that we may only measure an acceleration signal
+<img src="http://latex.codecogs.com/gif.latex?y(t)=\ddot{q}(t)" border="0"/>
+, however, may still use the same model structure for grey-box identification, then compensate for the discrepancy later. The servo angle was changed 90 deg while sampling the acceleration signal at a
+<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.003 s" border="0"/>
+period. The identification experiment loaded to the MCU is available in a [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/LinkShield/examples/LinkShield/LinkShield_Identification/LinkShield_Identification.ino).
 
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a feedback control of the beam tip, or in other words, the stabilization of the end effector of the simulated robotic arm.
