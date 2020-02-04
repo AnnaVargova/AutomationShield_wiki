@@ -79,6 +79,15 @@ is the angular frequency of the controller that usually equals to the angular na
 <img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}" border="0"/>
 [-] is the tunable controller damping ratio affecting the “sharpness” of the controller response.
 
+As we are controlling a single dominant mode with a prevalent harmonic response, we may assume
+that the acceleration signal recorded by the system is out-of-phase to the position with an amplitude that is
+<img src="http://latex.codecogs.com/gif.latex?\omega^2=\omega^2_{\mathrm{c}}" border="0"/>
+smaller. The PFF controller is then transformed to
+
+<img src="http://latex.codecogs.com/gif.latex?\ddot{u}(t)+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}\dot{u}(t)+\omega_{\mathrm{c}}^2u(t)=-g\omega_{\mathrm{c}}^2q(t)," border="0"/>
+
+
+
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
