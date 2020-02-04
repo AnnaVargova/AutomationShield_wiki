@@ -58,9 +58,14 @@ The manipulation angle is maintained by a feedback loop inside the servo motor t
 (deg). This reference can be then modified by an appropriated control input
 <img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
 , so that the resulting overall angle is
-
-ur(t) = r(t) + u(t). Let us the consider positive position feedback
-control (PPF) of the dominant structural mode, where q(t) (m) is the position signal and u(t) (deg) is the
+<img src="http://latex.codecogs.com/gif.latex?u_{\mathrm{r}}(t)=r(t)+u(t)" border="0"/>
+. In the following example we will consider positive position feedback
+control (PPF) of the dominant structural mode, where
+<img src="http://latex.codecogs.com/gif.latex?q(t)" border="0"/>
+(m)
+is the position signal and
+<img src="http://latex.codecogs.com/gif.latex?u(t)" border="0"/>
+(deg) is the
 resulting servo angle. The PPF controller is given in the time domain by 
 
 # <a name="hardware"/>Detailed hardware description
