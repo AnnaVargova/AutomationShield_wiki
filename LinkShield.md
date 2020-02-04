@@ -93,15 +93,16 @@ which is effectively a negative acceleration feedback (NAF) controller. Let us n
 <img src="http://latex.codecogs.com/gif.latex?G(s)=\frac{U(s)}{Q(s)}=-{g\,\omega_{\mathrm{c}}^2\,}\frac{1}{s^2+2\zeta_{\mathrm{c}}\omega_{\mathrm{c}}+\omega_{\mathrm{c}}^2}," border="0"/>
 
 which after selecting
-<img src="http://latex.codecogs.com/gif.latex?\omega_{\mathrm{c}}=\omega=100.4$ rad$\cdot$s$^{-1}" border="0"/>
-,
+<img src="http://latex.codecogs.com/gif.latex?\omega_{\mathrm{c}}=\omega=100.4" border="0"/>
+rad.s<sup>−1</sup>,
 <img src="http://latex.codecogs.com/gif.latex?\zeta_{\mathrm{c}}=0.04" border="0"/>
 [-]
 and the gain
-$g=2$ deg$\cdot$m$^{-1}$
+<img src="http://latex.codecogs.com/gif.latex?g=2" border="0"/>
+[&deg;.m<sup>−1</sup>]
 results in the
-$T_{\mathrm{s}}=0.005$
-s sampling discrete-time transfer function
+<img src="http://latex.codecogs.com/gif.latex?T_{\mathrm{s}}=0.005" border="0"/>
+s sampling discrete-time transfer function.
 
 # <a name="hardware"/>Detailed hardware description
 The LinkShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
