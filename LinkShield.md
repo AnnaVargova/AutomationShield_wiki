@@ -1,5 +1,3 @@
-# This site is currently under maintenance. Please hold on.
-
 #### Contents 
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
