@@ -17,7 +17,7 @@ The LinkShield belongs to the family of control engineering education devices fo
 ![LinkShield](https://user-images.githubusercontent.com/18485913/73826463-1ce11600-47fe-11ea-9179-85e396f9c581.png)
 
 # <a name="api"/>Application programming interface
-The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the MagnetoShield is included in the `LinkShield.h` header, which contains the `LinkClass` class that is constructed by default as the `LinkShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the LinkShield is included in the `LinkShield.h` header, which contains the `LinkClass` class that is constructed by default as the `LinkShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (sensor): `LinkShield.sensorRead();`
