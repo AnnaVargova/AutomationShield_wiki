@@ -16,6 +16,8 @@
 # <a name="intro"/>Introduction
 The LinkShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of LinkShield consists of a vertically placed servo motor connected to a horizontal flexible cantilever beam to simulate the vibration response of dynamic systems in motion—such as high-speed slender flexible robotic manipulator arms. The goal is to attenuate the vibrations of the beam measured by an accelerometer unit attached to its free end, thus creating a simple single-input single-output (SISO) feedback loop. The user may also set the reference angle of the servo manually—using a potentiometer.
 
+![LinkShield](https://user-images.githubusercontent.com/18485913/73826463-1ce11600-47fe-11ea-9179-85e396f9c581.png)
+
 # <a name="api"/>Application programming interface
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the MagnetoShield is included in the `LinkShield.h` header, which contains the `LinkClass` class that is constructed by default as the `LinkShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
