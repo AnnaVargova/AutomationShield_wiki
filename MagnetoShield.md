@@ -15,6 +15,9 @@
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
+#### Legacy documentation
+[Release 1: (MagnetoShield R1)](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield/993435cb0fb3cee840e43e1a2bc32eabbdb5bf99)
+
 # <a name="intro"/>Introduction
 The MagnetoShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost miniature magnetic levitation experiment. The device uses a solenoid electromagnet to generate a magnetic force which lifts up the permanent magnet. The goal is to control the position of the levitating magnet indirectly measured by a Hall effect sensor, which creates a simple single-input single-output (SISO) feedback loop. Due to its complexity and fast dynamics, MagnetoShield is great tool for learning and implementation of feedback control algorithms. The hardware is low-cost and small, making it ideal for take-home experiments or long-term student projects.
 
