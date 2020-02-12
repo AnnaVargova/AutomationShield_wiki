@@ -200,6 +200,6 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 This shield was designed and created within a Bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics (IAMAI) in 2017/2018. The Institute belongs to the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava. The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2018.pdf).
 
 ## <a name="authors"/>Authors
-* Hardware design: Jakub Mihalík, Gergely Takács
-* Software design: Jakub Mihalík
+* Hardware design: Gergely Takács, Jakub Mihalík
+* Software design: Gergely Takács, Jakub Mihalík
 * Wiki: Martin Gulan, Gergely Takács
