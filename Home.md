@@ -21,7 +21,7 @@ Currently these shields are available:
 
 We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020, namely
 * TugShield - an elastic structural deformation feedback experiment
-* LinkShield - a rotational link feedback experiment
+* [LinkShield](https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield) - a rotational link feedback experiment
 * BoBShield - the classical ball-on-beam (seesaw) control experiment
 
 ## Where can I buy an AutomationShield Device?
