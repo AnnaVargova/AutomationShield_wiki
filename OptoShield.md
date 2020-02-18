@@ -169,7 +169,7 @@ Note that the total cost of the above components, including the PCB, and thus of
 
 ## <a name="pcb"/>PCB
 
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_PCB.zip), while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/OptoShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Opto/OptoShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Opto/OptoShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Opto/OptoShield_Gerber.zip).
 
 ![PCBtop](https://user-images.githubusercontent.com/18485913/57757206-3cc32d80-76f5-11e9-98f9-5817f5af3eb1.png)
 ![PCBbottom](https://user-images.githubusercontent.com/18485913/57757207-3df45a80-76f5-11e9-8446-6a6815e3f356.png)
