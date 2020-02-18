@@ -207,7 +207,7 @@ To make an HeatShield either on a PCB or on a breadboard you will need the follo
 Note that the total cost of the above components and thus of the entire HeatShield is no more than $5 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip) and [here](https://github.com/richardsalini/HeatShield/files/1968264/HeatShield_PCB.zip), respectively, while the ready-to-manufacture Gerber files are available from [here](https://github.com/richardsalini/HeatShield/files/1968257/HeatShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Heat/HeatShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Heat/HeatShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Heat/HeatShield_Gerber.zip).
 
 ![pcb](https://user-images.githubusercontent.com/38358320/39538111-fd3f2502-4e3b-11e8-8d28-1c011d404a38.png)
 ![pcb2](https://user-images.githubusercontent.com/38358320/39538175-3adf2240-4e3c-11e8-878c-773351e0a618.png)
