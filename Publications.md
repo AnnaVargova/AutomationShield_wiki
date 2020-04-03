@@ -17,12 +17,15 @@ The publication status of the shields is as follows:
 
 
 ## Under review
-1. Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. 
 
-2. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020c.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2020, Prague, Czech Republic. pp. 1-8, ISBN: TBD. 
+There are no articles under review at the moment.
 
 ## Accepted for publication
 1. Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1-8, ISBN: TBD. Accepted for publication.
+
+2. Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. 
+
+3. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020c.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2020, Prague, Czech Republic. pp. 1-8, ISBN: TBD. 
 
 
 
