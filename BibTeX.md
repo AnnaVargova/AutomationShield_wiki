@@ -1,6 +1,6 @@
 # BibTeX references
 
-Here you can find BibTeX database entries to reference the material presented on these pages. You may copy and paste the database entries or download the entire BibTeX database file associated with the AutomationShield project.
+Here you can find BibTeX database entries to reference the material presented on these pages. You may copy and paste the database entries or download [the entire BibTeX database file](https://github.com/gergelytakacs/AutomationShield/wiki/bib/automationshield_publications.bib) associated with the AutomationShield project.
 
 ## Individual database entires
 
