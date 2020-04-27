@@ -4,6 +4,26 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
+Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education. In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1516-1525, ISBN: 978-1-7281-0930-5. Accepted for publication. (Presentation file.)
+```
+@INPROCEEDINGS{Takacs2019a,
+author={Gergely  Tak\'{a}cs,  Jakub Mihal\'{i}k, Erik Mikul\'{a}\v{s},  Martin Gulan  },
+booktitle={Proceedings of the 2020 IEEE Global Engineering Education Conference (EDUCON)},
+title={{M}agneto{S}hield: {P}rototype of a Low-Cost Magnetic Levitation Device for Control Education},
+year={2012},
+volume={},
+number={},
+pages={1516--1525},
+keywords={educational aids, education, teaching,  microcomputer-based control, microcontroller, low-cost, Arduino, Simulink, magnetic, levitation, magnetism, mechatronics},
+doi={--},
+ISBN={978-1-7281-0930-5},,
+month={April},
+date={27--30},
+address={Porto, Portugal},
+note={},
+}
+```
+
 Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kovác, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, pp. 385-394 UAE. ISBN: 978-1-5386-9506-7. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
 
 ```
