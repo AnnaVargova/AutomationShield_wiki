@@ -6,7 +6,7 @@ Here you can find BibTeX database entries to reference the material presented on
 
 Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1516-1525, ISBN: 978-1-7281-0930-5. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=c4Z2vtgTjtg))  
 ```
-@INPROCEEDINGS{Takacs2019a,
+@INPROCEEDINGS{Takacs2020a,
 author={Gergely  Tak\'{a}cs,  Jakub Mihal\'{i}k, Erik Mikul\'{a}\v{s},  Martin Gulan  },
 booktitle={Proceedings of the 2020 IEEE Global Engineering Education Conference (EDUCON)},
 title={{M}agneto{S}hield: {P}rototype of a Low-Cost Magnetic Levitation Device for Control Education},
