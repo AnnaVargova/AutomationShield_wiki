@@ -10,7 +10,7 @@ Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield
 author={Gergely  Tak\'{a}cs and  Jakub Mihal\'{i}k and Erik Mikul\'{a}\v{s} and  Martin Gulan},
 booktitle={Proceedings of the 2020 IEEE Global Engineering Education Conference (EDUCON)},
 title={{M}agneto{S}hield: {P}rototype of a Low-Cost Magnetic Levitation Device for Control Education},
-year={2012},
+year={2020},
 volume={},
 number={},
 pages={1516--1525},
