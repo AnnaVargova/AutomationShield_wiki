@@ -1,4 +1,4 @@
-# Publications
+# Publications on the AutomationShield devices and software
 
 ## Overview
 
@@ -48,3 +48,10 @@ There are no articles under review at the moment.
 
 ## Others
 1. Gergely Takács: [Nízkonákladové miniatúrne didaktické prostriedky pre pedagogický proces a výskum automatického riadenia na štandardizovaných mikroradičových platformách (Low-cost miniature didactic devices for teaching and researching automatic control on standardized microcontroller platforms, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c.pdf). Spektrum STU, Bratislava, 2019, ISBN: 978-80-227-4943-5. Edition of qualification works: theses for the professorial inauguration lecture. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c_Presentation.pdf))
+
+# Publications using AutomationShield devices for research
+
+## Under review
+
+1. Gergely Takács, Erik Mikuláš, Martin Vríčan and Martin Gulan: [Current-saving sampling for the embedded implementation
+of positive position feedback](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020d.pdf). In Proceedings of the 49th International Congress and Exposition on Noise Control Engineering (Inter-Noise): Advances in Noise and Vibration Control Technology, August 23-26, 2020, Seoul, South Korea. pp. 1-11, ISBN: TBD. 
