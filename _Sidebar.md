@@ -5,6 +5,7 @@
 * [BoBShield][bob]
 * [MotoShield][moto]
 * [FloatShield][float]
+* [BlowShield][blow]
 
 ## Library and API
 * [Arduino IDE][commonArduino]
@@ -34,6 +35,7 @@
 [moto]: https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield
 [opto]: https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield
 [bob]: https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield
+[blow]: https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield
 [publications]: https://github.com/gergelytakacs/AutomationShield/wiki/Publications
 [license]: https://creativecommons.org/licenses/by-nc/4.0/
 [acknowledgement]: https://github.com/gergelytakacs/AutomationShield/wiki/Funding
