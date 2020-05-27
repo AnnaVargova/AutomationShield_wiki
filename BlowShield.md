@@ -4,13 +4,13 @@
 &nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
-&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+<!--&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/> -->
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
 [About](#about)<br/>
-&nbsp;&nbsp;[Authors](#authors)<br/>
+<!--&nbsp;&nbsp;[Authors](#authors)<br/> -->
 
 
 # <a name="intro"/>Introduction
@@ -98,29 +98,28 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 ![float_pcb](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Schematics.jpg)
 
-_The fan and the TOF sensor are only represented by their connectors, while we assume that 12 V external power is drawn through the VIN pin of the Arduino (a).
+The pressure sensor is only represented by its connectors, which are connected to I2C communication pins of the Arduino and 3,3V power source and GND. 
 
-The fan is powered by an N-channel MOSFET **C1** (l), and driven by the D3 PWM capable microcontroller pin through an 1 kΩ current limiting resistor **R1** (m). Floating states are handled by a 10 kΩ pull-down resistor **R2** (n), while a diode **D1** (o) ensures back electromotive-force (EMF) protection. A connector (p) finally leads to the fan terminals. Since the fan requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device.
+The pump is powered by an N-channel MOSFET **Q1 (l)**, and driven by the D11 PWM capable microcontroller pin through an 150 Ω current limiting resistor **R1 (m)**. Floating states are handled by a 10 kΩ pull-down resistor **R2 (n)**. A diode **D1 (o)** protects the microcontroller from reverse currents caused by possible back electromotive force (EMF), while transient effects on the servo supply are filtered by a capacitor (p).
 
-The TOF sensor is integrated to a convenient open-source breakout board, thus it can be effortlessly connected (q) to the I2C bus of the Arduino (SDA,SCL).
+Finally, the potentiometer **POT1 (r)** runner is attached to the A0 ADC capable pin of the board, that allows the user to program this input for any purpose, such as providing reference to the feedback control loop.
 
-Finally, the potentiometer **POT1** (r) runner is attached to the A0 ADC capable pin of the board._
 
 ## <a name="parts"/>Parts
 To make a BlowShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-| Part    	| Name               	| Type/Value/Note                                                     	| PCS 	|
-|-----------	|--------------------	|-----------------------------------------------------------------	|-------|
-| (b)       	| PCB                	| FR4, 2 layer, 1.6mm thick                                      	| 1    	|
-| (c)       	| [Pump](https://www.gme.sk/vakuove-mikro-cerpadlo-20kpa#product-detail)                	| 3 V       	| 1    	|
-| (d)       	| [Pressure Sensor](https://www.gme.sk/i2c-senzor-tlaku-a-teploty-bmp280-3-3v)         	|                 	| 1    	|
-| (e)       	| [N-Mosfet](https://www.tme.eu/sk/details/irf3710pbf/tranzistory-s-kanalom-n-tht/infineon-irf/)               	| 	        | 1 	|
-| (f)       	| [Capacitor](https://www.tme.eu/sk/details/t491a106m016at/tantalove-kondenzatory-smd/kemet/)               	|           | 1    	|
-| (g)       	| [Diode](https://www.tme.eu/sk/details/rs1d-e3_61t/univerzalne-diody-smd/vishay/)        	|                | 1    	|
-| (h)       	| [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)      	|   	| 1    	|
-| (i)       	| [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)             	|   	| 1    	|
-| (j)       	| [Potentiometer](https://www.tme.eu/sk/details/ca9ma5-b/gombiky-pre-montazne-potenciometre/acp/ca9ma-9005-black/)               	|    	| 1    	|
-| (k)       	| [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)       	| 10kΩ                     	| 1    	|
+| Part | Name                                                                                                             | Type/Value/Note                         | PCS |
+|------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----|
+| (b)  | PCB                                                                                                              | FR4, 2 layer, 1.6mm thick               | 1   |
+| (c)  | [Pump](https://www.gme.sk/vakuove-mikro-cerpadlo-20kpa#product-detail)                                           | Miniature vacuum pump: 3V, 160mA, 30kPa | 1   |
+| (d)  | [Pressure Sensor](https://www.gme.sk/i2c-senzor-tlaku-a-teploty-bmp280-3-3v)                                     | BMP280, I2C, pressure sensore module    | 1   |
+| (e)  | [N-Mosfet](https://www.tme.eu/sk/details/irf3710pbf/tranzistory-s-kanalom-n-tht/infineon-irf/)                   | IRF 3710, TO-220, e.g. IRF3710PBF       | 1   |
+| (f)  | [Capacitor](https://www.tme.eu/sk/details/t491a106m016at/tantalove-kondenzatory-smd/kemet/)                      | Tantalum, SMD, 10uF                     | 1   |
+| (g)  | [Diode](https://www.tme.eu/sk/details/rs1d-e3_61t/univerzalne-diody-smd/vishay/)                                 | DO-214AC(SMA)                           | 1   |
+| (h)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)                        | SMD 10kΩ                                | 1   |
+| (i)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)                        | SMD 150kΩ                               | 1   |
+| (j)  | [Potentiometer](https://www.tme.eu/sk/details/ca9ma5-b/gombiky-pre-montazne-potenciometre/acp/ca9ma-9005-black/) |                                         | 1   |
+| (k)  | [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)              | 10kΩ                                    | 1   |
 
 Note that the total cost of the above components and thus of the entire FloatShield is no more than $30 excluding labor and postage.
 
@@ -135,8 +134,8 @@ The assembled shield is fixed mechanically and electrically to the Arduino board
 # <a name="about"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
 
-## <a name="authors"/>Authors
+<!--## <a name="authors"/>Authors
 * 3D-model design: Marcel Vdoleček
 * Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
 * Software design: Gábor Penzinger, Jakub Kulhánek
-* Wiki documentation: Martin Gulan, Gergely Takács
+* Wiki documentation: Martin Gulan, Gergely Takács -->
