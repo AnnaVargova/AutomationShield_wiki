@@ -3,8 +3,7 @@
 [Application programming interface](#api)<br/>
 &nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 [Examples](#examples)<br/>
-&nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
-<!--&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/> -->
+&nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/> <!--&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/> -->
 [Detailed hardware description](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
@@ -79,7 +78,7 @@ The implementation of PID control in C/C++ is demonstrated by a [worked example]
 
 ![blow_pid](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_PID.png)
 
-## <a name="ident"/>System identification
+<!-- ## <a name="ident"/>System identification
 Input-output experiments for data gathering can be easily launched, displayed and logged using the Arduino IDE. For example, one [worked C/C++ example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/FloatShield/FloatShield_Identification/FloatShield_Identification.ino) initializes the sampling and PID control subsystems from the AutomationShield library and allows user to select whether to use PRBS (PseudoRandom Binary Sequence) or APRBS (Amplitude-modulated PRBS) signal for making small changes in input value. The example stabilizes the ball at selected position using PID control and then uses selected signal to induce small changes in the stabilized input, with the goal of monitoring system's response while avoiding saturated positions of the ball.
 
 ![float_io](https://user-images.githubusercontent.com/18485913/71281001-1cc7ac80-235d-11ea-984a-b82790777312.png)
@@ -88,7 +87,7 @@ After you gather enough data sufficient for system identification, you may try t
 
 ![float_ident](https://user-images.githubusercontent.com/18485913/71270338-9eb1d880-2351-11ea-8645-bdbc60a11197.png)
 
-More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf).
+More details on the identification procedure can be found [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). -->
 
 # <a name="hardware"/>Detailed hardware description
 The BlowShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
