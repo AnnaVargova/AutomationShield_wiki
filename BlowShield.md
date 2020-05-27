@@ -108,25 +108,29 @@ Finally, the potentiometer **POT1 (r)** runner is attached to the A0 ADC capable
 ## <a name="parts"/>Parts
 To make a BlowShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
-| Part | Name                                                                                                             | Type/Value/Note                         | PCS |
-|------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----|
-| (b)  | PCB                                                                                                              | FR4, 2 layer, 1.6mm thick               | 1   |
-| (c)  | [Pump](https://www.gme.sk/vakuove-mikro-cerpadlo-20kpa#product-detail)                                           | Miniature vacuum pump: 3V, 160mA, 30kPa | 1   |
-| (d)  | [Pressure Sensor](https://www.gme.sk/i2c-senzor-tlaku-a-teploty-bmp280-3-3v)                                     | BMP280, I2C, pressure sensore module    | 1   |
-| (e)  | [N-Mosfet](https://www.tme.eu/sk/details/irf3710pbf/tranzistory-s-kanalom-n-tht/infineon-irf/)                   | IRF 3710, TO-220, e.g. IRF3710PBF       | 1   |
-| (f)  | [Capacitor](https://www.tme.eu/sk/details/t491a106m016at/tantalove-kondenzatory-smd/kemet/)                      | Tantalum, SMD, 10uF                     | 1   |
-| (g)  | [Diode](https://www.tme.eu/sk/details/rs1d-e3_61t/univerzalne-diody-smd/vishay/)                                 | DO-214AC(SMA)                           | 1   |
-| (h)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)                        | SMD 10kΩ                                | 1   |
-| (i)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)                        | SMD 150kΩ                               | 1   |
-| (j)  | [Potentiometer](https://www.tme.eu/sk/details/ca9ma5-b/gombiky-pre-montazne-potenciometre/acp/ca9ma-9005-black/) |                                         | 1   |
-| (k)  | [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)              | 10kΩ                                    | 1   |
+| Part | Name                                                                                                             | Type/Value/Note                               | PCS |
+|------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----|
+| (b)  | PCB                                                                                                              | FR4, 2 layer, 1.6mm thick                     | 1   |
+| (c)  | [Pump](https://www.gme.sk/vakuove-mikro-cerpadlo-20kpa#product-detail)                                           | Miniature vacuum pump: 3V, 160mA, 30kPa       | 1   |
+| (d)  | [Pressure Sensor](https://www.gme.sk/i2c-senzor-tlaku-a-teploty-bmp280-3-3v)                                     | BMP280, I2C, pressure sensore module          | 1   |
+| (e)  | [N-Mosfet](https://www.tme.eu/sk/details/irf3710pbf/tranzistory-s-kanalom-n-tht/infineon-irf/)                   | IRF 3710, TO-220, e.g. IRF3710PBF             | 1   |
+| (f)  | [Capacitor](https://www.tme.eu/sk/details/t491a106m016at/tantalove-kondenzatory-smd/kemet/)                      | Tantalum, SMD, 10uF                           | 1   |
+| (g)  | [Diode](https://www.tme.eu/sk/details/rs1d-e3_61t/univerzalne-diody-smd/vishay/)                                 | DO-214AC(SMA)                                 | 1   |
+| (h)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)                        | SMD 10kΩ                                      | 1   |
+| (i)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)                        | SMD 150kΩ                                     | 1   |
+| (j)  | [Potentiometer](https://www.tme.eu/sk/details/ca9ma5-b/gombiky-pre-montazne-potenciometre/acp/ca9ma-9005-black/) |                                               | 1   |
+| (k)  | [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)              | 10kΩ                                          | 1   |
+| (s)  | Header                                                                                                           | 10x1 pin, female, long, stackable, 0.1" pitch | 1   |
+| (s)  | Header                                                                                                           | 8x1 pin, female, long, stackable, 0.1" pitch  | 2   |
+| (s)  | Header                                                                                                           | 6x1 pin, female, long, stackable, 0.1" pitch  | 1   |
+
 
 Note that the total cost of the above components and thus of the entire FloatShield is no more than $30 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Circuit.zip), respectively, <span style="color:red">while the ready-to-manufacture Gerber files with the NC drilling instructions are available from</span> [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Float/FloatShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Gerber.zip).
 
-The assembled shield is fixed mechanically and electrically to the Arduino board through stackable header pins. The location of the components is also illustrated in the PCB layout below. <span style="color:red">The axial fan is mounted to the board on standoffs and a hole cut at the manufacturing stage of the PCB increases the air intake capacity.</span>
+The assembled shield is fixed mechanically and electrically to the Arduino board through stackable header pins. The location of the components is also illustrated in the PCB layout below. <!-- The axial fan is mounted to the board on standoffs and a hole cut at the manufacturing stage of the PCB increases the air intake capacity. -->
 
 <img width="500" alt="pcbfront" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Front.jpg">
 <img width="500" alt="pcbback" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Bottom.jpg">
