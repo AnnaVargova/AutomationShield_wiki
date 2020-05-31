@@ -40,7 +40,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 
 The exact component specification and required quantities are given next.
 
-![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_circuit_v2.bmp "Electric schematic layout") 
+![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_circuit_v2.jpg "Electric schematic layout") 
 
 
 ### List of components
