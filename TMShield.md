@@ -1,6 +1,5 @@
-# Documentation
 
-### Contents
+#### Contents
 [About ThermoMetric Shield](#about-the-thermo-shield)<br/>
 [3D shield casing](#3d-shield-casing)<br/>
 [Printed circuit board](#printed-circuit-board)<br/>
