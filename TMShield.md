@@ -18,15 +18,15 @@ The ThermoMetris Shield belongs to the family of control engineering education d
 ## Hardware
 
 ### 3D shield casing 
-We designed a 3D visualization of our thermo-shield using the [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) cloud-based 3D CAD/CAM software. It si a Freeware software. Our specialized team produced model for our arduino shield project. The dimensions of this particular prototype are: ..x..x.. The process of homogenization is achieved through pair of vents that make a circulation and flow of hot air created by Peltier cooling module mainly focused on installed sensors and supported by an inner radiator. The air flows through sophicticated air channel at the bottom of the wall between the vents and the sensors. The air with appropriate temperature is distributed to chamber so that every sensor has equal conditions. All of the componets are packed to lightweight materials to secure transferability as well as maneuverability. This was the demanded property. Several additional changes were made to protect both the PCB and the componets of the external energy sources. The last but not least was the issue of maintanance that expected the whole product to be easy to repair if necessary. Our specialist took lead of this approach and came up with the following design. Can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/Complet-assemblery-v11.rar)
+We designed a 3D visualization of our thermo-shield using the [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) cloud-based 3D CAD/CAM software. It si a Freeware software. Our specialized team produced model for our arduino shield project. The dimensions of this particular prototype are: ..x..x.. The process of homogenization is achieved through pair of vents that make a circulation and flow of hot air created by Peltier cooling module mainly focused on installed sensors and supported by an inner radiator. The air flows through sophicticated air channel at the bottom of the wall between the vents and the sensors. The air with appropriate temperature is distributed to chamber so that every sensor has equal conditions. All of the componets are packed to lightweight materials to secure transferability as well as maneuverability. This was the demanded property. Several additional changes were made to protect both the PCB and the componets of the external energy sources. The last but not least was the issue of maintanance that expected the whole product to be easy to repair if necessary. Our specialist took lead of this approach and came up with the following design. F3Z format can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/Complet-assemblery_v12.rar) or STEP format [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/Complet-3D_model_ThermoShield_assemblery_v12.rar)
 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_model_ThermoMetricShield.png "3D model") 
 
 ### Printed circuit board
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_PCB2.1.rar).
 
-![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/pcb_top_Thermoshield.png "PCB") 
-![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/pcb_bottom_thermoshield.png "PCB") 
+![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Top_PCB.png "PCB") 
+![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Bottom_PCB.png "PCB") 
 
 ### Circuit design
 The circuit schematics has been designed in the DIPTrace CAD software. You may download the circuit schematics for ThermoMetric shield the  from link below. Circuit schematics to download [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_Circuit_v2.rar).
@@ -38,7 +38,7 @@ Normal temperatures used to melt plastics in 3D printing are over 200°C and may
 Temperature feedback is based on a negative temperature coefficient (NTC) thermistor BT2 connected to the A0 analog input pin of the MCU in a voltage divider circuit paired with a resistor R1.
 
 
-![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_circuit_v2.jpg "Electric schematic layout") 
+![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_circuit_v2.bmp "Electric schematic layout") 
 
 
 ### List of components
