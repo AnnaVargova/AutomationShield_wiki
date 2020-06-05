@@ -60,7 +60,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Resistor ROYAL OHM 0805S8J0103T5E](https://www.tme.eu/sk/details/smd0805-10k/rezistory-smd-0805/royal-ohm/0805s8j0103t5e/) | 0.0014€ | 7x |
 | [Resistor ERA8AEB1650V](https://cz.farnell.com/panasonic/era8aeb1650v/res-165r-0-1-0-25w-1206-thin-film/dp/2094951) | 0.12€ | 3x |
 | PCB | 0.10€ | 1x |
-| [Capacitor 0.1 uF](https://www.sparkfun.com/products/8375) | 0.02€ | 2x |
+| [Capacitor 0.1 uF](https://www.sparkfun.com/products/8375) | 0.02€ | 1x |
 | [Capacitor 1 uF](https://sk.farnell.com/panasonic/ecqv1h105jl/capacitor-film-50v-1uf/dp/1744833) | 0.05€ | 1x |
 | [PJ-002A Jack](https://www.mouser.sk/ProductDetail/CUI-Devices/PJ-002A?qs=WyjlAZoYn51CKfAix9Mngw==) | 0.22€ | 1x |
 | [Thermocouple MAX6675](https://www.ebay.com/itm/MAX6675-Module-K-Type-Thermocouple-Temperature-Sensor-for-Arduino-AL-/400798924042) | 7.80€ | 1x |
@@ -68,7 +68,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Diode ES3D 3A](https://www.tme.eu/sk/details/es3d-yan/univerzalne-diody-smd/yangjie-technology/es3d/?fbclid=IwAR3-66EtcFbKoM1b2Qv_UP4_X5Gvzgy_3Sf7rleeNVvX5_a2I9k7n0CJaVE) | 0.14€ | 1x |
 | [Thermistor NTC B57164K0101](https://www.gme.sk/termistor-ntc-b57164k0101) | 0.51€ | 1x |
 | [Fuse Holder Littelfuse 65600001029](https://www.mouser.sk/ProductDetail/Littelfuse/65600001029?qs=Vv6sT79n3zSxfay18w9fWw==) | 1€ | 1x |
-| **Total amount:** | **88.33€** | 
+| **Total amount:** | **88.31€** | 
 
 ## Software
 ### Installation:
