@@ -65,9 +65,10 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [PJ-002A Jack](https://www.mouser.sk/ProductDetail/CUI-Devices/PJ-002A?qs=WyjlAZoYn51CKfAix9Mngw==) | 0.22€ | 1x |
 | [Thermocouple MAX6675](https://www.ebay.com/itm/MAX6675-Module-K-Type-Thermocouple-Temperature-Sensor-for-Arduino-AL-/400798924042) | 7.80€ | 1x |
 | [Diode ES1D 1A](https://www.gme.sk/dioda-es1d) | 0.11€ | 5x |
+| [Diode ES3D 3A](https://www.tme.eu/sk/details/es3d-yan/univerzalne-diody-smd/yangjie-technology/es3d/?fbclid=IwAR3-66EtcFbKoM1b2Qv_UP4_X5Gvzgy_3Sf7rleeNVvX5_a2I9k7n0CJaVE) | 0.14€ | 5x |
 | [Thermistor NTC B57164K0101](https://www.gme.sk/termistor-ntc-b57164k0101) | 0.51€ | 1x |
 | [Fuse Holder Littelfuse 65600001029](https://www.mouser.sk/ProductDetail/Littelfuse/65600001029?qs=Vv6sT79n3zSxfay18w9fWw==) | 1€ | 1x |
-| **Total amount:** | **88.30€** | 
+| **Total amount:** | **88.44€** | 
 
 ## Software
 ### Installation:
