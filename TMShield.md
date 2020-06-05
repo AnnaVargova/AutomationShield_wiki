@@ -1,6 +1,6 @@
 
 #### Contents
-[Introduction](#intro)<br/>
+[Introduction](#introduction)<br/>
 [Hardware](#hardware)<br/>
 &nbsp;&nbsp;&nbsp;[3D shield casing](#3d-shield-casing)<br/>
 &nbsp;&nbsp;&nbsp;[Printed circuit board](#printed-circuit-board)<br/>
