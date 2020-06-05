@@ -67,7 +67,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Diode ES1D 1A](https://www.gme.sk/dioda-es1d) | 0.11€ | 5x |
 | [Thermistor NTC B57164K0101](https://www.gme.sk/termistor-ntc-b57164k0101) | 0.51€ | 1x |
 | [Fuse Holder Littelfuse 65600001029](https://www.mouser.sk/ProductDetail/Littelfuse/65600001029?qs=Vv6sT79n3zSxfay18w9fWw==) | 1€ | 1x |
-| **Total amount** | **88.30€** | 
+| **Total amount:** | **88.30€** | 
 
 ## Software
 ### Installation:
