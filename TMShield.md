@@ -53,7 +53,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Heater TF70 12V/20W](https://www.hudiny.sk/12v-20w-mini-ploche-vyhrevne-teleso-26x38mm.html) | 14.99€ | 1x |
 | [Power supply 12V 2500mA](https://www.gme.sk/napajeci-adapter-sitovy-12v-2500ma-5-5-2-1mm-b-vigan) | 9.80€ | 1x |
 | [HITFET BTS117](https://www.gme.sk/unipolarni-tranzistor-bts117-to220) | 2.21€ | 3x |
-| [Tube fuse GL1.2,5A/E](https://www.gme.sk/pojistka-trubickova-gl1-2-5a-e?fbclid=IwAR26pUEECM1JgIv6eXmfsC3xKBfPMm5lMTgnZXRuTRgRJyvqPDXqCdsb1Dk) | 0.11€ | 1x |
+| [POLYSWITCH MINISMDC260F/12-2](https://www.gme.sk/data/attachments/dsh.971-104.1.pdf?fbclid=IwAR2XCeQMRJ6E1nTB-POiPNjpQH9O5dZrGphu8UEnzKhEDBMe8AqhbxEkYu4) | 0.35€ | 1x |
 | [DS18B20 - Digital Thermometer](https://www.gme.sk/ds18b20) | 1.61€ | 1x |
 | [Digital Temperature Sensor MCP9808-E/MS](https://www.distrelec.sk/sk/snimac-teploty-microchip-mcp9808-ms/p/17336047) | 1.09€ | 1x |
 | [TMP36GT9Z - Temperature Sensor (Analog)](https://www.gme.sk/tmp36gt9z) | 1.38€ | 1x |
@@ -68,7 +68,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Diode ES3D 3A](https://www.tme.eu/sk/details/es3d-yan/univerzalne-diody-smd/yangjie-technology/es3d/?fbclid=IwAR3-66EtcFbKoM1b2Qv_UP4_X5Gvzgy_3Sf7rleeNVvX5_a2I9k7n0CJaVE) | 0.14€ | 1x |
 | [Thermistor NTC B57164K0101](https://www.gme.sk/termistor-ntc-b57164k0101) | 0.51€ | 1x |
 | [Fuse Holder Littelfuse 65600001029](https://www.mouser.sk/ProductDetail/Littelfuse/65600001029?qs=Vv6sT79n3zSxfay18w9fWw==) | 1€ | 1x |
-| **Total amount:** | **88.31€** | 
+| **Total amount:** | **88.55€** | 
 
 ## Software
 ### Installation:
