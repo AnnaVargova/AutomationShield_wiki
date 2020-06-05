@@ -13,23 +13,23 @@
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
 
-## Introduction
+# Introduction
 The ThermoMetriC Shield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://github.com/gergelytakacs/AutomationShield/wiki) project. The Thermo-Shield for arduino allows a board to acquire environmental data collected by an array of sensors. These sensors consist of thermocouple, IR sensor, digital thermometer, analog temperature sensor and resistance temperature detector. This shield relies on the MAX6675 thermocouple digital interface and allows a board to acquire temperatures from a thermocouple of type K and a DS18B20 digital one wire sensor.
 
-## Hardware
+# Hardware
 
-### 3D shield casing 
+## 3D shield casing 
 We designed a 3D visualization of our thermo-shield using the [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) cloud-based 3D CAD/CAM software. It is a freeware software. The process of homogenization is achieved through pair of vents that make a circulation and flow of hot air created by Peltier cooling module mainly focused on installed sensors and supported by an inner radiator. The air flows through air channel at the bottom of the wall between the vents and the sensors. The air with appropriate temperature is distributed to chamber so that every sensor has equal conditions. This was the demanded property. Several additional changes were made to protect both the PCB and the componets of the external energy sources. The last but not least was the issue of maintanance that expected the whole product to be easy to repair if necessary. Fusion 360 design in F3Z format can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/Complet-assemblery_v12.rar) and STEP format [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/Complet-3D_model_ThermoShield_assemblery_v12.rar).
 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_model_ThermoMetricShield.png "3D model") 
 
-### Printed circuit board
+## Printed circuit board
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100x100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_PCB2.1.rar).
 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Top_PCB.png "PCB") 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Bottom_PCB.png "PCB") 
 
-### Circuit design
+## Circuit design
 The circuit schematics has been designed in the DIPTrace CAD software. You may download the circuit schematics for ThermoMetric shield the  from link below. Circuit schematics to download [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_Circuit_v2.rar).
 
 The power circuitry is powered by a metal-oxide semiconductor field-effect transistor (MOSFET) BTS117 connected to the PWM capable D3 pin of the Arduino. A parrarel resistor R5 protects the Peltier plate - thermoelectric sink (TES1-XXXXXX) in transients, while a resistor R6 parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
@@ -42,7 +42,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_circuit_v2.bmp "Electric schematic layout") 
 
 
-### List of components
+# List of components
 
 | Component     | Price         | Quantity | 
 | ------------- |:-------------:| :-----:|    
@@ -76,7 +76,7 @@ git clone https://github.com/TermoShield
 ```
 or download the zip.
 
-## Credits
+# Credits
 ### List personnel
 **Hardware design:** Marek Horník, Michal Masaryk, Michal Vico, Marek Noga, Martin Žlnay
 
