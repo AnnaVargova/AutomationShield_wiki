@@ -13,7 +13,7 @@
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") 
 
-### Introduction
+## Introduction
 The ThermoMetriC Shield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://github.com/gergelytakacs/AutomationShield/wiki) project. The Thermo-Shield for arduino allows a board to acquire environmental data collected by an array of sensors. These sensors consist of thermocouple, IR sensor, digital thermometer, analog temperature sensor and resistance temperature detector. This shield relies on the MAX6675 thermocouple digital interface and allows a board to acquire temperatures from a thermocouple of type K and a DS18B20 digital one wire sensor.
 
 ## Hardware
