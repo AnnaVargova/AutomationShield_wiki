@@ -1,9 +1,10 @@
 
 #### Contents
 [About ThermoMetric Shield](#about-the-thermo-shield)<br/>
-[3D shield casing](#3d-shield-casing)<br/>
-[Printed circuit board](#printed-circuit-board)<br/>
-[Circuit design](#circuit-design)<br/>
+[Hardware](#hardware)<br/>
+&nbsp;&nbsp;&nbsp;[3D shield casing](#3d-shield-casing)<br/>
+&nbsp;&nbsp;&nbsp;[Printed circuit board](#printed-circuit-board)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit-design)<br/>
 [List of components](#list-of-components)<br/>
 [Credits](#credits)<br/>
 
