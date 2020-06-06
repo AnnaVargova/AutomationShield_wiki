@@ -58,7 +58,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Digital Temperature Sensor MCP9808-E/MS](https://www.distrelec.sk/sk/snimac-teploty-microchip-mcp9808-ms/p/17336047) | 1.09€ | 1x |
 | [TMP36GT9Z - Temperature Sensor (Analog)](https://www.gme.sk/tmp36gt9z) | 1.38€ | 1x |
 | [Resistor ROYAL OHM 0805S8J0103T5E](https://www.tme.eu/sk/details/smd0805-10k/rezistory-smd-0805/royal-ohm/0805s8j0103t5e/) | 0.0014€ | 7x |
-| [Resistor 0805S8J0151T5E ROYAL OHM](https://www.tme.eu/en/details/smd0805-150r/0805-smd-resistors/royal-ohm/0805s8j0151t5e/?fbclid=IwAR10SZLhT9_DlJ-FDn4JOFtryoGDHu_RrzwjALbh3AtT8X8smtctU_kHhfg) | 0.12€ | 1x |
+| [Resistor 0805S8J0151T5E ROYAL OHM](https://www.tme.eu/en/details/smd0805-150r/0805-smd-resistors/royal-ohm/0805s8j0151t5e/?fbclid=IwAR10SZLhT9_DlJ-FDn4JOFtryoGDHu_RrzwjALbh3AtT8X8smtctU_kHhfg) | 0.12€ | 3x |
 | PCB | 0.10€ | 1x |
 | [Capacitor 0.1 uF](https://www.sparkfun.com/products/8375) | 0.02€ | 1x |
 | [Capacitor 1 uF](https://sk.farnell.com/panasonic/ecqv1h105jl/capacitor-film-50v-1uf/dp/1744833) | 0.05€ | 1x |
@@ -67,7 +67,7 @@ Temperature feedback is based on a negative temperature coefficient (NTC) thermi
 | [Diode ES1D 1A](https://www.gme.sk/dioda-es1d) | 0.11€ | 4x |
 | [Diode ES3D 3A](https://www.tme.eu/sk/details/es3d-yan/univerzalne-diody-smd/yangjie-technology/es3d/?fbclid=IwAR3-66EtcFbKoM1b2Qv_UP4_X5Gvzgy_3Sf7rleeNVvX5_a2I9k7n0CJaVE) | 0.14€ | 1x |
 | [Thermistor NTC B57164K0101](https://www.gme.sk/termistor-ntc-b57164k0101) | 0.51€ | 1x |
-| **Total amount:** | **87.55€** | 
+| **Total amount:** | **87.79€** | 
 
 ## Software
 ### Installation:
