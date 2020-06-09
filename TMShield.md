@@ -30,7 +30,7 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Bottom_PCB.png "PCB") 
 
 ## Circuit design
-The circuit schematics has been designed in the DIPTrace CAD software. You may download the circuit schematics for ThermoMetric shield the  from the following link. Circuit schematics to download [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_Circuit_v2.rar).
+The circuit schematics has been designed in the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for ThermoMetric shield the  from the following link. Circuit schematics to download [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_Circuit_v2.rar).
 
 The power circuitry is powered by a metal-oxide semiconductor field-effect transistor (MOSFET) BTS117 connected to the PWM capable D3 pin of the Arduino. A parrarel resistor R5 protects the Peltier plate - thermoelectric sink (TES1-XXXXXX) in transients, while a resistor R6 parallel to ground ensures that floating electrical states do not cause the heater to turn off accidentally.
 
