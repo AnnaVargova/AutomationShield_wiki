@@ -32,7 +32,7 @@ Last but not least, as for the issue of future maintenance, the modular construc
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_model_ThermoMetricShield.png "3D model") 
 
 ## Printed circuit board
-The printed circuit board (PCB)  has been designed in the freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is a two-layer design and it fits within the common 100x100 mm dimensions limit of most PCB  manufacturers.  The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_PCB2.1.rar).
+The printed circuit board (PCB)  has been designed in the freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is a two-layer design and it fits within the common 100x100 mm dimensions limit of most PCB  manufacturers.  The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_PCB2.3.rar).
 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Top_PCB.png "PCB") 
 ![alt text](https://github.com/gergelytakacs/AutomationShield/wiki/fig/ThermoShield_Bottom_PCB.png "PCB") 
