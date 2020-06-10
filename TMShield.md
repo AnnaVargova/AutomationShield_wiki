@@ -41,7 +41,9 @@ The printed circuit board (PCB)  has been designed in the freeware version of th
 The circuit schematics has been designed in the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for ThermoMetric Shield from the following link - [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Thermo/ThermoShield_Circuit_v2.rar).
 
 The power circuitry is controlled by BTS117 metal-oxide semiconductor field-effect transistor (MOSFET) which is connected to the PWM-capable D3 pin of the Arduino MCU. A parallel connected resistor (R5) protects the Peltier cell while a resistor parallel to the ground (R6) prevents the heater from accidentally switching off due to electrical floating state in case of a malfunction.
+
 Common temperatures used to melt plastics in 3D printing process are about 200°C and may reach as high as 245°C for polycarbonate filaments. To make the experiment safer for general classroom use the maximal temperature of the TF70 heating block is limited to safe levels by an adjustable voltage regulator which uses the external 12V input through PJ002A jack.
+
 Temperature feedback is received from a negative temperature coefficient (NTC) BT2 thermistor connected to the A0 analog input pin of the Arduino MCU in a voltage divider circuit paired with a resistor (R1).
 
 
