@@ -13,16 +13,20 @@ Our aim is to design feedback control experimental devices that can fit on an Ar
 # About the Shields
 
 Currently these shields are available:
-* [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
-* [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a floating ball feedback experiment
-* [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
-* [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system feedback experiment
 * [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation feedback  experiment
-
-We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020, namely
-* TugShield - an elastic structural deformation feedback experiment
+* [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a floating ball feedback experiment
+* [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system feedback experiment
+* [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
+* [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [LinkShield](https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield) - a rotational link feedback experiment
-* BoBShield - the classical ball-on-beam (seesaw) control experiment
+
+
+We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020-2021, namely
+
+* [BoBShield](https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield) - the classical ball-on-beam (seesaw) control experiment
+* [BlowShield](https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield) - a pressure control experiment
+* [TempShield](https://github.com/gergelytakacs/AutomationShield/wiki/TMShield) - a device to teach temperature metrology concepts
+* TugShield - an elastic structural deformation feedback experiment
 
 ## Where can I buy an AutomationShield Device?
 
@@ -47,7 +51,7 @@ The current status of the library is as follows:
 | OptoShield    | ✅       |      | ✅        |        | ✅        |
 | TempShield    |        |      |         |        |         |
 | BlowShield    |        |✅      | ✅        |        |         |
-| TugShield    |        |✅      |         |        |         |
+| TugShield    |        |✅      | ✅         |        |         |
 
 ## How to Get the Library
 
