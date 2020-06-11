@@ -6,6 +6,7 @@
 * [MotoShield][moto]
 * [FloatShield][float]
 * [BlowShield][blow]
+* [TempShield][temp]
 
 ## Library and API
 * [Arduino IDE][commonArduino]
@@ -29,6 +30,7 @@
 [MATLABAPI]:  https://github.com/gergelytakacs/AutomationShield/wiki/MATLAB-API
 [SimulinkAPI]: https://github.com/gergelytakacs/AutomationShield/wiki/Simulink-API
 
+[temp]: https://github.com/gergelytakacs/AutomationShield/wiki/TMShield
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
 [heat]: https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield
 [magneto]: https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield
