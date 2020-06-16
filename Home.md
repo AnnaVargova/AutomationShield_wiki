@@ -1,8 +1,8 @@
 [[/fig/header.gif|AutomationShield logo and site header.]]
 
-AutomationShield is an open-source hardware and software project focused on tools for control engineering and mechatronics education.
+AutomationShield is an open-source hardware and software initiative focused on creating tools for control engineering and mechatronics education.
 
-The core of the project are extension modules for the popular Arduino microcontroller prototyping boards, which are  implementing feedback control experiments to teach control systems engineering and mechatronics. These hardware extensions—known in the Arduino world as shields—are then in essence experimental systems on a single printed circuit board (PCB). 
+The core of the project are reference designs of extension modules for the popular Arduino microcontroller prototyping boards, which are implementing feedback control experiments to teach control systems engineering and mechatronics. These hardware extensions—known in the Arduino world as shields—are then in essence experimental systems on a single printed circuit board (PCB). 
 
 [[/fig/AS_Illustration.jpg|AutomationShield devices.]]
 
@@ -12,14 +12,13 @@ Our aim is to design feedback control experimental devices that can fit on an Ar
 
 # About the Shields
 
-Currently these shields are available:
+Currently the reference designs of these shields are available:
 * [MagnetoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield)  - a magnetic levitation feedback  experiment
 * [FloatShield](https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield) - a floating ball feedback experiment
 * [HeatShield](https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield)  - a thermal system feedback experiment
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
 * [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [LinkShield](https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield) - a rotational link feedback experiment
-
 
 We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020-2021, namely
 
@@ -30,12 +29,12 @@ We are in the process of developing new types of shields. We are currently worki
 
 ## Where can I buy an AutomationShield Device?
 
-Unfortunately we lack the infrastructure to manufacture and sell the shields. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempted to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
+Unfortunately we lack the infrastructure to manufacture and sell the shields, also, this is a non-commercial initiative. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempt to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
 
 # About the Library [![Build Status](https://travis-ci.org/gergelytakacs/AutomationShield.svg?branch=master)](https://travis-ci.org/gergelytakacs/AutomationShield) [![CodeFactor](https://www.codefactor.io/repository/github/gergelytakacs/automationshield/badge)](https://www.codefactor.io/repository/github/gergelytakacs/automationshield) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bae54207cca24ef2929c38b87e279764)](https://app.codacy.com/app/gergelytakacs/AutomationShield?utm_source=github.com&utm_medium=referral&utm_content=gergelytakacs/AutomationShield&utm_campaign=Badge_Grade_Dashboard) [![DOI](https://zenodo.org/badge/126338636.svg)](https://zenodo.org/badge/latestdoi/126338636)
 
 
-The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In other words, the library is an application programming interface (API), so that students and educators can focus on feedback control design, instead of programming low-level hardware drivers. In addition to this the AutomationShield library aims to provide complete routines for implementing precise timing for control. The library contains numerous examples that implement examples in system identification an feedback control. The library contains examples written for the Arduino IDE, Matlab and Simulink. Those who do not wish to complete the hardware may still benefit from the library, as there are numerous experimental measurement that can be used for system identification tasks, and feedback control simulations based on the physical hardware.
+The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In other words, the library is an application programming interface (API), so that students and educators can focus on feedback control design, instead of programming low-level hardware drivers. In addition to this, the AutomationShield library aims to provide complete routines for implementing precise timing for control. The library contains numerous examples that implement examples in system identification an feedback control. The library contains examples written for the Arduino IDE, MATLAB and Simulink. Those who do not wish to complete the hardware may still benefit from the library, as there are numerous experimental measurements that can be used for system identification tasks and feedback control simulations based on the physical hardware.
 
 ## Supported Shields and Software
 The current status of the library is as follows:
