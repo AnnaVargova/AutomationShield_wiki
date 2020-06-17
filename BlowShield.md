@@ -9,15 +9,17 @@
 &nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
 &nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
 [About](#about)<br/>
-<!--&nbsp;&nbsp;[Authors](#authors)<br/> -->
+&nbsp;&nbsp;[Authors](#authors)<br/>
 
 
 # <a name="intro"/>Introduction
-The BlowShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of BlowShield consists of a vessel with integrated pressure sensor that is mapping pressure in the vessel and a pump. The goal is to obtain and keep the required value of pressure in the vessel despite its leakage. The value can be set by the user using the potenciometer. The power of the pump can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating airflow.The pump is an actuator and with the sensor it creates a simple single-input single-output (SISO) feedback loop that can be used in control engineering experiments.
+The BlowShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of BlowShield consists of a vessel with integrated pressure sensor that is mapping pressure in the vessel and a pump. The goal is to obtain and keep the required value of pressure in the vessel despite its leakage. The value can be set by the user using the potenciometer. The power of the pump can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating airflow. The pump is an actuator and with the sensor it creates a simple single-input single-output (SISO) feedback loop that can be used in control engineering experiments.
 
-_Before you proceed, you may also want to watch a short video tutorial_ [here](https://www.youtube.com/watch?v=RHkqxbUVUrw).
+<img width="500" alt="blow_photo" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_photo.jpg">
 
-_For a better visualization the entire assembly was 3D-modeled (see the illustration below) using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from_ [here](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip). Note that there are two parts to be 3D printed—a pump holder and a vessel. _One may also use a honeycomb tube insert to make the turbulent air flow relatively laminar. Feel free to download the ready-to-print_ [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). The remaining, purchased assembly part— [Arduino Uno](https://grabcad.com/library/arduino-uno-r3-4)—are downloadable from the GrabCAD database.
+<!--Before you proceed, you may also want to watch a short video tutorial_ [here](https://www.youtube.com/watch?v=RHkqxbUVUrw).-->
+
+_For a better visualization the entire assembly was 3D-modeled (see the illustration below) using the CAD software CATIA V5R20 (Student Edition) and can be downloaded from_ [here](https://github.com/gergelytakacs/AutomationShield/files/1942312/assembly.zip). Note that there are two parts to be 3D printed—a pump holder and a vessel. One may also use a spiral fill structure and support parts for hollow objects. _Feel free to download the ready-to-print_ [parts](https://github.com/gergelytakacs/AutomationShield/files/1977698/parts.zip). The remaining, purchased assembly part— [Arduino Uno](https://grabcad.com/library/arduino-uno-r3-4)—are downloadable from the GrabCAD database.
 
 ![blow_assembly](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_assembly.png)
 
@@ -26,11 +28,9 @@ _For a better visualization the entire assembly was 3D-modeled (see the illustra
 ## <a name="io"/>C/C++ API
 The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the BlowShield is included in the `BlowShield.h` header, which contains the `BlowClass` class that is constructed by default as the `BlowShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
-The summary of basic functions (`add photo and the illustration below`) should get you started quickly:
+The summary of basic functions should get you started quickly:
 * Output (sensor): `BlowShield.sensorRead();` 
 * Input  (actuator): `BlowShield.actuatorWrite();`
-
-<!-- ![float_actsens](https://user-images.githubusercontent.com/18485913/71261365-78823d80-233d-11ea-8258-1c32df398e05.png) -->
 
 The following subsections describe the methods used to access the input and output of the BlowShield. Note that before you begin an experiment you must initialize the hardware by calling
 
@@ -99,7 +99,7 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 The pressure sensor is only represented by its connectors, which are connected to I2C communication pins of the Arduino and 3,3V power source and GND. 
 
-The pump is powered by an N-channel MOSFET **Q1 (l)**, and driven by the D11 PWM capable microcontroller pin through an 150 Ω current limiting resistor **R1 (m)**. Floating states are handled by a 10 kΩ pull-down resistor **R2 (n)**. A diode **D1 (o)** protects the microcontroller from reverse currents caused by possible back electromotive force (EMF), while transient effects on the servo supply are filtered by a capacitor (p).
+The pump is powered by an N-channel MOSFET **Q1 (l)**, and driven by the D11 PWM capable microcontroller pin through an 150 Ω current limiting resistor **R1 (m)**. Floating states are handled by a 10 kΩ pull-down resistor **R2 (n)**. A diode **D1 (o)** protects the microcontroller from reverse current caused by possible back electromotive force (EMF), while transient effects on the servo supply are filtered by a capacitor (p).
 
 Finally, the potentiometer **POT1 (r)** runner is attached to the A0 ADC capable pin of the board, that allows the user to program this input for any purpose, such as providing reference to the feedback control loop.
 
@@ -122,6 +122,17 @@ To make a BlowShield either on a PCB or on a breadboard you will need the follow
 | (s)  | Header                                                                                                           | 10x1 pin, female, long, stackable, 0.1" pitch | 1   |
 | (s)  | Header                                                                                                           | 8x1 pin, female, long, stackable, 0.1" pitch  | 2   |
 | (s)  | Header                                                                                                           | 6x1 pin, female, long, stackable, 0.1" pitch  | 1   |
+| (l) | Vessel             | 3D printed | 1 |
+| (m) | Backplate          | 3D printed | 1 |
+| (n) | Pump holder        | 3D printed | 1 |
+| (o) | Pump cap           | 3D printed | 1 |
+| (p) | Screw              | M3x16      | 4 |
+| (q) | Nut                | M3         | 4 |
+| (r) | Self-tapping screw | M3x8       | 4 |
+| (t) | Tube               | 4x110mm    | 1 |
+| (u) | Cable              | 70mm       | 2 |
+| (v) | gasket             |            | 1 |
+
 
 
 Note that the total cost of the above components and thus of the entire FloatShield is no more than $30 excluding labor and postage.
@@ -137,8 +148,11 @@ The assembled shield is fixed mechanically and electrically to the Arduino board
 # <a name="about"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
 
-<!--## <a name="authors"/>Authors
-* 3D-model design: Marcel Vdoleček
-* Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
-* Software design: Gábor Penzinger, Jakub Kulhánek
-* Wiki documentation: Martin Gulan, Gergely Takács -->
+## <a name="authors"/>Authors
+* 3D-model design: Tomáš Varga
+* Hardware design: Martin Staroň, Martin Vríčan, Lukáš Kavoň
+* Software design: Eva Vargová
+* Wiki documentation: Vladimír Kmeť
+* Managenemt: Anna Vargová
+* Postman: Matúš Leginus
+* Support: Radoslav Gago
