@@ -130,8 +130,8 @@ The printed circuit board has been designed in the Freeware version of the [DIPT
 
 The assembled shield is fixed mechanically and electrically to the Arduino board through stackable header pins. The location of the each component is illustrated in the PCB layout below. The pump is mounted to the board on holder and covered by cap. The sensor is situated in the vessel. Backplate under the PCB board is also used for reinforcement the structure. Due to small space between the vessel and the pump, the suction pipe of the pump must be shortened (at least half of the original length). The connection of the tube with the vessel needs to be sealed up, one may use superglue or epoxy glue.
 
-<img width="500" alt="pcbfront" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Front.bmp">
-<img width="500" alt="pcbback" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Bottom.bmp">
+<img width="500" alt="pcbfront" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Front.png">
+<img width="500" alt="pcbback" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Board_Bottom.png">
 
 # <a name="about"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
