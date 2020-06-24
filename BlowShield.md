@@ -99,7 +99,7 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 The pressure sensor is only represented by its connectors, which are connected to I2C communication pins of the Arduino and 3,3V power source and GND. 
 
-The pump is powered by an N-channel MOSFET **Q1 (l)**, and driven by the D11 PWM capable microcontroller pin through an 150 Ω current limiting resistor **R1 (m)**. Floating states are handled by a 10 kΩ pull-down resistor **R2 (n)**. A diode **D1 (o)** protects the microcontroller from reverse current caused by possible back electromotive force (EMF), while transient effects on the servo supply are filtered by a capacitor (p).
+The pump is powered by an N-channel MOSFET **Q1 (l)**, and driven by the D11 PWM capable microcontroller pin through an 150 Ω current limiting resistor **R1 (m)**. Floating states are handled by a 10 kΩ pull-down resistor **R2 (n)**. A diode **D1 (o)** protects the microcontroller from reverse current caused by possible back electromotive force (EMF), while transient effects on the servo supply are filtered by a capacitor (p).
 
 Finally, the potentiometer **POT1 (r)** runner is attached to the A0 ADC capable pin of the board, that allows the user to program this input for any purpose, such as providing reference to the feedback control loop.
 
@@ -115,10 +115,10 @@ To make a BlowShield either on a PCB or on a breadboard you will need the follow
 | (e)  | [N-Mosfet](https://www.tme.eu/sk/details/irf3710pbf/tranzistory-s-kanalom-n-tht/infineon-irf/)                   | IRF 3710, TO-220, e.g. IRF3710PBF             | 1   |
 | (f)  | [Capacitor](https://www.tme.eu/sk/details/t491a106m016at/tantalove-kondenzatory-smd/kemet/)                      | Tantalum, SMD, 10uF                           | 1   |
 | (g)  | [Diode](https://www.tme.eu/sk/details/rs1d-e3_61t/univerzalne-diody-smd/vishay/)                                 | DO-214AC(SMA)                                 | 1   |
-| (h)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)                        | SMD 10kΩ                                      | 1   |
-| (i)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)                        | SMD 150kΩ                                     | 1   |
+| (h)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0103t5e/0805-smd-resistors/royal-ohm/)                        | SMD 10kΩ                                      | 1   |
+| (i)  | [Resistor](https://www.tme.eu/sk/en/details/0805s8j0151t5e/0805-smd-resistors/royal-ohm/)                        | SMD 150kΩ                                     | 1   |
 | (j)  | [Potentiometer](https://www.tme.eu/sk/details/ca9ma5-b/gombiky-pre-montazne-potenciometre/acp/ca9ma-9005-black/) |                                               | 1   |
-| (k)  | [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)              | 10kΩ                                          | 1   |
+| (k)  | [Potentiometer](https://www.tme.eu/sk/en/details/ca9mv-10k/single-turn-tht-trimmers/acp/ca9mv-10k/)              | 10kΩ                                          | 1   |
 | (s)  | Header                                                                                                           | 10x1 pin, female, long, stackable, 0.1" pitch | 1   |
 | (s)  | Header                                                                                                           | 8x1 pin, female, long, stackable, 0.1" pitch  | 2   |
 | (s)  | Header                                                                                                           | 6x1 pin, female, long, stackable, 0.1" pitch  | 1   |
@@ -155,4 +155,4 @@ This shield was designed and created as a term project at the Institute of Autom
 * Wiki documentation: Vladimír Kmeť
 * Managenemt: Anna Vargová
 * Postman: Matúš Leginus
-* Support: Radoslav Gago
+* Support: Radoslav Gago 
