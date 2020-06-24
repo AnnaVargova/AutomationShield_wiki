@@ -19,7 +19,7 @@ The BlowShield belongs to the family of control engineering education devices fo
 
 <!--Before you proceed, you may also want to watch a short video tutorial_ [here](https://www.youtube.com/watch?v=RHkqxbUVUrw).-->
 
-For a better visualization the entire assembly was 3D-modeled (see the illustration below) using the [DIPTrace](https://diptrace.com/) CAD software and can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_assembly.zip). Note that there are four parts to be 3D printed—a pump holder, a pump cap, a vessel and a backplate. One may also use a spiral fill structure and support parts for hollow objects. Feel free to download the [parts](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_3D_Parts.zip). The remaining, purchased assembly parts— [Arduino Uno](https://grabcad.com/library/arduino-uno-r3-4)—are downloadable from the GrabCAD database.
+For a better visualization the entire assembly was 3D-modeled (see the illustration below) using the [DIPTrace](https://diptrace.com/) CAD software and can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_assembly.zip). Note that there are four parts to be 3D printed—a pump holder, a pump cap, a vessel and a backplate. One may also use a spiral fill structure and support parts for hollow objects. Feel free to download the [parts](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_3D_Parts.zip). 
 
 ![blow_assembly](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_assembly.png)
 
@@ -81,9 +81,9 @@ which makes use of the interrupt-driven sampling subsystem of the AutomationShie
 The BlowShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
 
 ## <a name="circuit"/>Circuit design
-The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Circuit.zip).
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the BlowShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Circuit.zip).
 
-![float_pcb](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Schematics.bmp)
+![blow_pcb](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_Schematics.bmp)
 
 The pressure sensor is only represented by its connectors, which are connected to I2C communication pins of the Arduino and 3,3V power source and GND. 
 
@@ -123,7 +123,7 @@ To make a BlowShield either on a PCB or on a breadboard you will need the follow
 
 
 
-Note that the total cost of the above components and thus of the entire FloatShield is no more than $30 excluding labor and postage.
+Note that the total cost of the above components and thus of the entire BlowShield is no more than $30 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Blow/BlowShield_Gerber.zip).
@@ -142,4 +142,4 @@ This shield was designed and created as a term project at the Institute of Autom
 * Software design: Anna Vargová, Eva Vargová
 * Wiki documentation: Vladimír Kmeť
 * Postman: Matúš Ľeginus
-* Support: Radoslav Gago
+* Technical support: Radoslav Gago
