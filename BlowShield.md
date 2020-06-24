@@ -72,7 +72,7 @@ returning the position of the potentiometer runner as a floating point scaled to
 ## <a name="control"/>Feedback control
 For a start you may want to experiment with a closed-loop control of the pressure in the vessel by the proportional–integral–derivative controller (PID) algorithm.
 
-The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BlowShield/BlowShield_PID/BlowShield_PID.ino). 
+The implementation of PID control in C/C++ is demonstrated by a [worked example](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BlowShield/BlowShield_PIDAuto/BlowShield_PIDAuto.ino), 
 which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID method with integral windup handling by clamping. The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE. 
 
 ![blow_pid](https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_PID.png)
