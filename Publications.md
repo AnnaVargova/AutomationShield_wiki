@@ -14,7 +14,8 @@ The publication status of the shields is as follows:
 | TugShield    	        |         	|          	| ✅      	|           |
 | BOBShield    	        |         	|          	|        	|           |
 | LinkShield  	        |         	| ✅         	| ✅          	|           |
-
+| BlowShield  	        |         	|         	|           	|           |
+| TempShield  	        |         	|         	|           	|           |
 
 ## Under review
 
