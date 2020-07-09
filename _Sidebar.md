@@ -1,10 +1,10 @@
 ## Shields
+* [MagnetoShield][magneto]
+* [FloatShield][float]
 * [HeatShield][heat]
 * [OptoShield][opto]
-* [MagnetoShield][magneto]
 * [BoBShield][bob]
 * [MotoShield][moto]
-* [FloatShield][float]
 * [BlowShield][blow]
 * [TempShield][temp]
 * [TugShield][tug]
