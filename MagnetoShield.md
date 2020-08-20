@@ -142,7 +142,7 @@ The schematic representation of the MagnetoShield is shown in the figure below. 
 ![magneto_scheme](https://user-images.githubusercontent.com/18485913/71310211-b2bd0f00-2411-11ea-9b1a-097a5ad89420.png)
 
 ## <a name="circuit"/>Circuit design
-The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MotoShield_Circuit.zip). 
+The circuit schematics were designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics for the MagnetoShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Circuit.zip). 
 
 ![magneto_circuit](https://user-images.githubusercontent.com/18485913/71308765-c14efa80-2400-11ea-88d3-fbe9317e9040.png)
 
