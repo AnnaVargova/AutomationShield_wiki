@@ -56,6 +56,9 @@ There are no articles under review at the moment.
 ## Others
 1. Gergely Takács: [Nízkonákladové miniatúrne didaktické prostriedky pre pedagogický proces a výskum automatického riadenia na štandardizovaných mikroradičových platformách (Low-cost miniature didactic devices for teaching and researching automatic control on standardized microcontroller platforms, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c.pdf). Spektrum STU, Bratislava, 2019, ISBN: 978-80-227-4943-5. Edition of qualification works: theses for the professorial inauguration lecture. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c_Presentation.pdf))
 
+2. Micha Obergfell: Linking Research Fields with Benchmark Systems – opportunities through the
+Aerodynamic Floating experiment. A joint discussion with members of Slovak University of Technology in Bratislava (STU), University of Duisburg-Essen, Germany (UDE), and others. Presentation slides. October 2020. Automatic Control and Complex Systems, University of Duisburg-Essen.
+
 # Publications using AutomationShield devices for research
 
 ## Conference papers
