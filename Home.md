@@ -39,18 +39,18 @@ The main role of the software part of the AutomationShield project is to provide
 ## Supported Shields and Software
 The current status of the library is as follows:
 
-|               | Release | Beta | Arduino  | MATLAB | Simulink |
-|---------------|---------|------|----------|--------|----------|
-| BOBShield   |         | ✅    | ✅        |        |          |
-| FloatShield   | ✅      |     | ✅        | ✅       | ✅         |
-| HeatShield    | ✅       |      | ✅        | ✅      | ✅        |
-| LinkShield    | ✅       |      | ✅        |        | ✅        |
-| MagnetoShield | ✅        |     | ✅        |  ✅      | ✅         |
-| MotoShield    |         | ✅    | ✅        |        |          |
-| OptoShield    | ✅       |      | ✅        |        | ✅        |
-| TempShield    |        |      |         |        |         |
-| BlowShield    |        |✅      | ✅        |        |         |
-| TugShield    |        |✅      | ✅         |        |         |
+|               | Release | Beta | Arduino  | MATLAB | Simulink | CircuitPython |
+|---------------|---------|------|----------|--------|----------| --------------|
+| BOBShield   |         | ✅    | ✅        |        |          ||
+| FloatShield   | ✅      |     | ✅        | ✅       | ✅         ||
+| HeatShield    | ✅       |      | ✅        | ✅      | ✅        ||
+| LinkShield    | ✅       |      | ✅        |        | ✅        |✅|
+| MagnetoShield | ✅        |     | ✅        |  ✅      | ✅         ||
+| MotoShield    |         | ✅    | ✅        |        |          ||
+| OptoShield    | ✅       |      | ✅        |        | ✅        ||
+| TempShield    |        |      |         |        |         ||
+| BlowShield    |        |✅      | ✅        |        |         ||
+| TugShield    |        |✅      | ✅         |        |         ||
 
 ## How to Get the Library
 
