@@ -44,13 +44,15 @@ The current status of the library is as follows:
 | BOBShield   |         | ✅    | ✅        |        |          ||
 | FloatShield   | ✅      |     | ✅        | ✅       | ✅         ||
 | HeatShield    | ✅       |      | ✅        | ✅      | ✅        ||
-| LinkShield    | ✅       |      | ✅        |        | ✅        |✅|
-| MagnetoShield | ✅        |     | ✅        |  ✅      | ✅         ||
+| LinkShield    | ✅       |      | ✅        |        | ✅        ||
+| MagnetoShield | ✅        |     | ✅        |  ❌     | ✅         |✅|
 | MotoShield    |         | ✅    | ✅        |        |          ||
 | OptoShield    | ✅       |      | ✅        |        | ✅        ||
 | TempShield    |        |      |         |        |         ||
 | BlowShield    |        |✅      | ✅        |        |         ||
 | TugShield    |        |✅      | ✅         |        |         ||
+
+❌ - Can not be realized for technical reasons, usually fast sampling speeds.
 
 ## How to Get the Library
 
