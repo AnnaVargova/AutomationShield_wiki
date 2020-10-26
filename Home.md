@@ -44,10 +44,10 @@ The current status of the library is as follows:
 | BOBShield   |         | ✅    | ✅        |        |          ||
 | FloatShield   | ✅      |     | ✅        | ✅       | ✅         ||
 | HeatShield    | ✅       |      | ✅        | ✅      | ✅        ||
-| LinkShield    | ✅       |      | ✅        |        | ✅        ||
+| LinkShield    | ✅       |      | ✅        |   ❌     | ✅        ||
 | MagnetoShield | ✅        |     | ✅        |  ❌     | ✅         |✅|
 | MotoShield    |         | ✅    | ✅        |        |          ||
-| OptoShield    | ✅       |      | ✅        |        | ✅        ||
+| OptoShield    | ✅       |      | ✅        |   ❌     | ✅        ||
 | TempShield    |        |      |         |        |         ||
 | BlowShield    |        |✅      | ✅        |        |         ||
 | TugShield    |        |✅      | ✅         |        |         ||
