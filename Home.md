@@ -39,22 +39,23 @@ The main role of the software part of the AutomationShield project is to provide
 ## Supported Shields and Software
 The current status of the library is as follows:
 
-|               | Release | Beta | Arduino  | MATLAB | Simulink | CircuitPython | LabView |
-|---------------|---------|------|----------|--------|----------| --------------| --------|
-| BOBShield   |         | ✅    | ✅        |        |          |||
-| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||
-| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||
-| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||
-| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|
-| MotoShield    |         | ✅    | ✅        |        |          |||
-| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||
-| PressureShield    |        |✅      | ✅        |        |         |||
-| TugShield    |        |✅      | ✅         |        |         |||
-| TempShield    |        |      |         |        |         |||
+|               | Release | Beta | Arduino  | MATLAB | Simulink | Python³ | LabView | Octave |
+|---------------|---------|------|----------|--------|----------| --------------| --------| ------|
+| BOBShield   |         | ✅    | ✅        |        |          ||||
+| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         ||||
+| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        ||||
+| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        ||||
+| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²| |
+| MotoShield    |         | ✅    | ✅        |        |          ||||
+| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        ||||
+| PressureShield    |        |✅      | ✅        |        |         ||||
+| TugShield    |        |✅      | ✅         |        |         ||||
+| TempShield    |        |      |         |        |         ||||
 
 - ❌ Can not be deployed for technical reasons.
 - ¹ Serial communication only, no deployment possible.
 - ² LabView LINX: lower end of loop speed is about 140 Hz (7 ms) for a LED toggle example. Tested with LabView 2020.
+- ³ CyrcuitPython
 
 ## How to Get the Library
 
