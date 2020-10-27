@@ -52,9 +52,9 @@ The current status of the library is as follows:
 | BlowShield    |        |✅      | ✅        |        |         |||
 | TugShield    |        |✅      | ✅         |        |         |||
 
-❌ - Can not be deployed for technical reasons.
-¹ - Serial communication only, no deployment possible.
-² - LabView Linx: lower end of loop speed is ~150 Hz (~ 7 ms) for a LED toggle example
+- ❌ Can not be deployed for technical reasons.
+- ¹ Serial communication only, no deployment possible.
+- ² LabView Linx: lower end of loop speed is about 150 Hz (7 ms) for a LED toggle example
 
 ## How to Get the Library
 
