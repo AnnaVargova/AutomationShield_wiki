@@ -48,13 +48,13 @@ The current status of the library is as follows:
 | MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|
 | MotoShield    |         | ✅    | ✅        |        |          |||
 | OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||
-| TempShield    |        |      |         |        |         |||
-| BlowShield    |        |✅      | ✅        |        |         |||
+| PressureShield    |        |✅      | ✅        |        |         |||
 | TugShield    |        |✅      | ✅         |        |         |||
+| TempShield    |        |      |         |        |         |||
 
 - ❌ Can not be deployed for technical reasons.
 - ¹ Serial communication only, no deployment possible.
-- ² LabView Linx: lower end of loop speed is about 150 Hz (7 ms) for a LED toggle example
+- ² LabView Linx: lower end of loop speed is about 150 Hz (7 ms) for a LED toggle example. Tested with LabView 2020.
 
 ## How to Get the Library
 
