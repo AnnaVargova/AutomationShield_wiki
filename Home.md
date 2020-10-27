@@ -39,20 +39,22 @@ The main role of the software part of the AutomationShield project is to provide
 ## Supported Shields and Software
 The current status of the library is as follows:
 
-|               | Release | Beta | Arduino  | MATLAB | Simulink | CircuitPython |
-|---------------|---------|------|----------|--------|----------| --------------|
-| BOBShield   |         | ✅    | ✅        |        |          ||
-| FloatShield   | ✅      |     | ✅        | ✅       | ✅         ||
-| HeatShield    | ✅       |      | ✅        | ✅      | ✅        ||
-| LinkShield    | ✅       |      | ✅        |   ❌     | ✅        ||
-| MagnetoShield | ✅        |     | ✅        |  ❌     | ✅         |✅|
-| MotoShield    |         | ✅    | ✅        |        |          ||
-| OptoShield    | ✅       |      | ✅        |   ❌     | ✅        ||
-| TempShield    |        |      |         |        |         ||
-| BlowShield    |        |✅      | ✅        |        |         ||
-| TugShield    |        |✅      | ✅         |        |         ||
+|               | Release | Beta | Arduino  | MATLAB | Simulink | CircuitPython | LabView |
+|---------------|---------|------|----------|--------|----------| --------------| --------|
+| BOBShield   |         | ✅    | ✅        |        |          |||
+| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||
+| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||
+| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||
+| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|
+| MotoShield    |         | ✅    | ✅        |        |          |||
+| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||
+| TempShield    |        |      |         |        |         |||
+| BlowShield    |        |✅      | ✅        |        |         |||
+| TugShield    |        |✅      | ✅         |        |         |||
 
-❌ - Can not be realized for technical reasons, usually fast sampling speeds.
+❌ - Can not be deployed for technical reasons.
+¹ - Serial communication only, no deployment possible.
+² - LabView Linx: lower end of loop speed is ~150 Hz (~ 7 ms) for a LED toggle example
 
 ## How to Get the Library
 
