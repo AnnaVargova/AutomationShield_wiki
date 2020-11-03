@@ -44,9 +44,9 @@ The current status of the library is as follows:
 | BOBShield   |         | ✅    | ✅        |        |          |||||
 | FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||||
 | HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||||
-| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
+| LinkShield    | ✅       |      | ✅        |   ❌¹     |         |||||
 | MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|❌|❌ |
-| MotoShield    |         | ✅    | ✅        |        |          |||||
+| MotoShield    |    ✅       |     | ✅        |    ✅      |  ✅          |||||
 | OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
 | PressureShield    |        |✅      | ✅        |        |         |||||
 | TugShield    |        |✅      | ✅         |        |         |||||
