@@ -39,18 +39,18 @@ The main role of the software part of the AutomationShield project is to provide
 ## Supported Shields and Software
 The current status of the library is as follows:
 
-|               | Release | Beta | Arduino  | MATLAB | Simulink | Python³ | LabView | Octave |
-|---------------|---------|------|----------|--------|----------| --------------| --------| ------|
-| BOBShield   |         | ✅    | ✅        |        |          ||||
-| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         ||||
-| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        ||||
-| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        ||||
-| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²| |
-| MotoShield    |         | ✅    | ✅        |        |          ||||
-| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        ||||
-| PressureShield    |        |✅      | ✅        |        |         ||||
-| TugShield    |        |✅      | ✅         |        |         ||||
-| TempShield    |        |      |         |        |         ||||
+|               | Release | Beta | Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
+|---------------|---------|------|----------|--------|----------| --------------| --------| ------| ------|
+| BOBShield   |         | ✅    | ✅        |        |          |||||
+| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||||
+| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||||
+| LinkShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
+| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|❌|❌ |
+| MotoShield    |         | ✅    | ✅        |        |          |||||
+| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
+| PressureShield    |        |✅      | ✅        |        |         |||||
+| TugShield    |        |✅      | ✅         |        |         |||||
+| TempShield    |        |      |         |        |         |||||
 
 - ❌ Can not be deployed for technical reasons.
 - ¹ Serial communication only, no deployment possible.
