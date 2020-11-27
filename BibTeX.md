@@ -4,6 +4,26 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
+Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: FloatShield: An Open Source Air Levitation Device for Control Engineering Education. In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. (Supplementary files: Presentation file., Annotated audio/video presentation.)
+
+```
+@INPROCEEDINGS{Takacs2020b,
+author={Gergely  Tak\'{a}cs and  Peter Chmur\v{c}iak and Martin Gulan and Erik Mikul\'{a}\v{s} and Jakub Kulh\'{a}nek and G\'{a}bor Penzinger and {Milo\v{s}} {Podbielan\v{c}\'{i}k} and Martin Lu\v{c}an and Peter \v{S}\'{a}lka and D\'{a}vid \v{S}roba},
+booktitle={Proceedings of the 2020 IFAC World Congress},
+title={{F}loat{S}hield: {A}n Open Source Air Levitation Device for Control Engineering Educationn},
+year={2020},
+volume={},
+number={},
+pages={1--8},
+doi={--},
+ISBN={},
+month={July},
+date={11-17},
+address={Berlin, Germany},
+note={(Preprints)},
+}
+```
+
 Gergely Takács, Jakub Mihalík, Erik Mikuláš and Martin Gulan: [MagnetoShield: Prototype of a Low-Cost Magnetic Levitation Device for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b.pdf). In Proceedings of the 2020 EDUCON IEEE Global Engineering Education Conference, April 27-30, 2020, Porto, Portugal. pp. 1516-1525, ISBN: 978-1-7281-0930-5. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020b_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=c4Z2vtgTjtg))  
 ```
 @INPROCEEDINGS{Takacs2020a,
