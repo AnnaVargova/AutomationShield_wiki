@@ -4,7 +4,7 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
-Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: FloatShield: An Open Source Air Levitation Device for Control Engineering Education. In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. (Supplementary files: Presentation file., Annotated audio/video presentation.)
+Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=gAduArWW5Tk))  
 
 ```
 @INPROCEEDINGS{Takacs2020b,
