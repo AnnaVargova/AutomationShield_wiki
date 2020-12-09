@@ -121,6 +121,39 @@ In progress.
 ## <a name="circuit"/>Circuit design
 
 ## <a name="parts"/>Parts
+To make a BoBShield you will need the following parts or their similar equivalents:
+
+| Part             | Name            | Type/Value/Note                                                         | PCS |
+|------------------|-----------------|-------------------------------------------------------------------------|-----|
+| (a)   	   | PCB             | 2-layer, FR4, 1.6mm thick (e.g. [JCLPCB](https://jlcpcb.com/))          | 1   |
+| (e<sub>1-5</sub>)| 3D print        | 18g, Ø1.75mm PETG filament, bright green, at 240°C (90°C bed), 3h 20min | 1   |
+| (h),C2           | Capacitor       | 0805, tantalum, 10µF                                                  | 1   |
+| —   	           | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
+| (m),U4           | Current sensor  | INA149                                                                | 1   |
+| (b),U3           | [DAC](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)             | PCF8591T                                                              | 1   |
+| (i),D1           | Diode           | DO214AC                                                               | 1   |
+| (j),U2           | [Hall sensor](https://uk.rs-online.com/web/p/hall-effect-sensor-ics/6807119/)     | A1302KUA                                                              | 1   |
+| —   	           | Header          | 6×1, female, 2.54mm pitch                                             | 1   |
+| —   	           | Header          | 8×1, female, 2.54 mm pitch                                            | 2   |
+| —   	           | Header          | 10×1, female, 2.54mm pitch                                            | 1   |
+| (q),D2           | LED             | 0805, red                                                             | 1   |
+| —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
+| (e),Q2           | MOSFET          | IRF520                                                                | 1   |
+| —   	           | PCB             | 2 layer, FR4, 1.6mm thick                                             | 1   |
+| (o),POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
+| (c),(f),R1,R2,R4 | Resistor        | 10kΩ, 0805                                                            | 3   |
+| (n),(p),R6,R9    | Resistor        | 3kΩ, 0805, 0.1%                                                       | 2   |
+| (p),R7           | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
+| (f),R3           | Resistor        | 220Ω, 0805                                                            | 1   |
+| —   	           | O-Ring          | rubber, M12, h=1mm, e.g. Ø18mm (outer)                                | 1   |
+| —   	           | Screws          | polyamid, M3×8                                                        | 2   |
+| —   	           | Shaft           | ACP CA9MA9005                                                         | 1   |
+| (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
+| (g),L1           | [Solenoid](https://www.ebay.com/itm/322722704471)        | 220Ω, 0805                                                            | 1   |
+| —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, Ø10mm (inner), φ12mm (outer)              | 1   |
+| (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 3   |
+
+Note that the total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
 
