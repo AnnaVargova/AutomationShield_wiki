@@ -57,30 +57,6 @@ The circuit diagram has been designed in the CAD software [DIPTrace](https://dip
 
 The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
-
-
-# <a name="components-1"/>Components
-To make the BOBShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
-
-|   Part   |             Name             |  Stock number  | Value | PCS |
-|:--------:|:-----------------------------|:----------------|-------|-----|
-|     J    |       Adafruit VL6180x       |     [485-3316](https://www.mouser.sk/ProductDetail/Adafruit/3316?qs=sGAEpiMZZMuYaq4aOfOV%252BNGpcmpxct%252BzTY0qY%2FO75Rw%3D)    | Optical Sensor, Time of Flight Dist. Ranging SNSR |   1  |
-|    D1    |             Diode            |   [625-RGF1D-E3](https://www.mouser.sk/ProductDetail/Vishay-Semiconductors/RGF1D-E3-67A?qs=sGAEpiMZZMtoHjESLttvktgFZl1w4a%2F%2F3p6qGDZZc4o%3D)  | Power Switching 1 Amp 200 Volt 150ns 30 Amp IFSM |   1  |
-|    C1    |   Capacitor  | [581-F980J107MSA](https://www.mouser.sk/ProductDetail/AVX/F980J107MSA?qs=sGAEpiMZZMukHu%252BjC5l7YXOgdEVzCIlfrJV01KbJCe0%3D) | Tantalum Capacitors - Solid SMD 100uF 6.3V 20% 0805, 2x1.25x0.9mm |   1  |
-|     M    |   Metal Geared Micro Servo   |   [426-SER0039](https://www.mouser.sk/ProductDetail/DFRobot/SER0039?qs=sGAEpiMZZMuYaq4aOfOV%252BLexKvAPmd2jLf6dNsIPlOo%3D)   | Metal Geared 9g Micro Servo |   1  |
-|          |       Stackable Header       |  [474-PRT-11417](https://www.mouser.sk/ProductDetail/SparkFun/PRT-11417?qs=sGAEpiMZZMuWWq7rhECaKREdwluNxBetc4EOoXderyo%3D)  | SparkFun Accessories Arduino - R3 |   1  |
-|          |         FFC 7W cable         |    [25001-0706](https://www.mouser.sk/ProductDetail/Molex/25001-0706?qs=%2Fha2pyFadugZmsfhHu5zKysic76yyPDnAtsFMVzXfdw%3D)   | Jumper Cables STD. CABLE JUMPER |   1  |
-|          |    FFC 7W connector to PCB   |    [5-520314-7](https://www.mouser.sk/ProductDetail/TE-Connectivity-AMP/5-520314-7?qs=%2Fha2pyFadugNrkwlo5BkC5EJBJfGK4mrwxpJfvEWOpo%3D)   | 100X100 REC 1X07P |   1  |
-|          | FFC 7W connector to breakout |   [67013-007LF](https://www.mouser.sk/ProductDetail/Amphenol-FCI/67013-007LF?qs=%2Fha2pyFaduiSCRu%252BHsRKk0mUg9V%252BraZZnrjJDL1VIyTIiluBEDAwSA%3D%3D)   | DUFLEX HSNG SR |   1  |
-| ARDUINO1 |       Arduino Uno Rev3       |                 |       |  1  |
-|          |              PCB             |                 |       |  1  |
-|   POT1   |         Potentiometer        |                 |       |  1  |
-|          |            Screws            |                 |       |     |
-|          |             Nuts             |                 |       |     |
-|          |       3D printed parts       |                 |       |  5  |
-|          |             Tube             |                 |       |  1  |
-|          |         Ball-bearing         |                 |       |  1  |
-
 # <a name="pcb-layout-1"/>PCB Layout
 
 The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. The PCB has two layers and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
