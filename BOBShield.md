@@ -1,9 +1,8 @@
 #### Contents 
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
-&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
-&nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
-&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#c)<br/>
+&nbsp;&nbsp;&nbsp;[Other APIs](#other)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
 &nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
