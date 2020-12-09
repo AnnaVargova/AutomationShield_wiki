@@ -116,6 +116,13 @@ Expansion of the current API to MATLAB, Simulink and Python is currently in prog
 ## <a name="ident"/>System identification
 In progress.
 
+# <a name="hardware"/>Detailed hardware description
+
+## <a name="circuit"/>Circuit design
+
+## <a name="parts"/>Parts
+
+## <a name="pcb"/>PCB
 
 # <a name="about-1"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
