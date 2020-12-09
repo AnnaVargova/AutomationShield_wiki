@@ -133,9 +133,9 @@ To make a BoBShield you will need the following parts or their similar equivalen
 | (g<sub>1</sub>)  | Screws          | M3×8 DIN963A                                                            | 4   |
 | (g<sub>2</sub>)  | Nuts            | M3 DIN439B                                                              | 4   |
 | (b<sub>3</sub>)  | Header          | 10×1, female, stackable, 0.1'' pitch  (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 1   |
-| —   	           | Header          | 6×1, female, 2.54mm pitch                                             | 1   |
-| —   	           | Header          | 8×1, female, 2.54 mm pitch                                            | 2   |
-| —   	           | Header          | 10×1, female, 2.54mm pitch                                            | 1   |
+| (p)	           | Pot shaft       | For ``POT1'', (e.g. [ACP CA9MA9005](https://www.tme.eu/gb/details/ca9ma5-b/knobs-for-trimmers/acp/ca9ma-9005-black/#))                                         | 1   |
+| (b<sub>1</sub>)  | Header          | 8×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 2   |
+| (b<sub>2</sub>)  | Header          | 6×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 1   |
 | (q),D2           | LED             | 0805, red                                                             | 1   |
 | —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
 | (e),Q2           | MOSFET          | IRF520                                                                | 1   |
