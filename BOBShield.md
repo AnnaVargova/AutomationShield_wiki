@@ -147,6 +147,9 @@ To make a BoBShield you will need the following parts or their similar equivalen
 The total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Gerber.zip).
+
+![BOB_PCB_Top.pdf](https://github.com/RWTH-EBC/AixLib/files/5664612/BOB_PCB_Top.pdf)
 
 # <a name="about-1"/>About
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
