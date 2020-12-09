@@ -1,4 +1,18 @@
-**Content:**
+#### Contents 
+[Introduction](#intro)<br/>
+[Application programming interface](#api)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
+&nbsp;&nbsp;&nbsp;[MATLAB API](#matlab)<br/>
+&nbsp;&nbsp;&nbsp;[Simulink API](#simulink)<br/>
+[Examples](#examples)<br/>
+&nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
+&nbsp;&nbsp;&nbsp;[System identification](#ident)<br/>
+[Detailed hardware description](#hardware)<br/>
+&nbsp;&nbsp;&nbsp;[Circuit design](#circuit)<br/>
+&nbsp;&nbsp;&nbsp;[Parts](#parts)<br/>
+&nbsp;&nbsp;&nbsp;[PCB](#pcb)<br/>
+[About](#about)<br/>
+&nbsp;&nbsp;[Authors](#authors)<br/>
 
 [Introduction](#introduction-1)<br/>
 [Arduino library](#arduino-library-1)<br/>
@@ -84,12 +98,12 @@ At the bottom layout the black line can be seen starting from power of 3.3V goin
 
 
 # <a name="about-1"/>About
-The shield was developed as a semester project for subject of Microcomputer and Microprocessor Technology at the Institute of Automation, Measurement and Applied Informatics in 2018/2019. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava.
+This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
 # <a name="authors-1"/>Authors
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Samuel Mladý
-* **Wiki documentation:** Rastislav Haška, Marek Krippel      
+* **Wiki documentation:** Martin Gulan, Rastislav Haška, Marek Krippel      
 
 
 
