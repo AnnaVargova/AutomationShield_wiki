@@ -18,11 +18,6 @@
 &nbsp;&nbsp;&nbsp;[Servo motor and sensor functions](#servo-motor-and-sensor-1)<br/>
 [3D sketch](#3d-sketch-1)<br/>
 [Circuit design](#circuit-design-1)<br/>
-[Components](#components-1)<br/>
-[PCB layout](#pcb-layout-1)<br/>
-[Gallery](#gallery-1)<br/>
-[About](#about-1)<br/>
-[Authors](#authors-1)<br/>
 
 # <a name="introduction-1"/>Introduction
 
@@ -56,19 +51,6 @@ The circuit diagram has been designed in the CAD software [DIPTrace](https://dip
 ![Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Circuit.png)
 
 The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
-
-# <a name="pcb-layout-1"/>PCB Layout
-
-The printed circuit board (PCB) has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. The PCB has two layers and fits within the customary 100x100 mm limit of most board manufacturers. The DIPTrace PCB layout of the BOBShield can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and the BOBShield Production files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
-
-![The upper part of the PCB](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Upper_part_of_the_PCB.png)
-
-In the picture of the upper layout a black line can be seen which is starting from digital pin 9 and continues to the pin where micro servo motor has a connector, it is the signal for the micro servo motor. The power for the black line comes from the 3.3V pin and goes to the pin AREF. Analogue REFerence allows to feed the Arduino reference voltage from an external power supply. It would be fed with 3.3V into the AREF pin – perhaps from a voltage regulator IC. The resistor and diode are powered by the red line which outputs from the 5V pin and continues to the ServoPinout. The blue line is ground for the SensorPinout diode resistor and the ServoPinout.
-
-![Bottom part of the PCB](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Bottom_part_of_the_PCB.png)
-
-At the bottom layout the black line can be seen starting from power of 3.3V going to + of SensorPinout, then continues to the USB. The blue line is ground. The other two black lines start from the pins Serial Clock Line (SCL) and the Serial Data Line (SDA) and continue the SCL and the SDA on the SensorPinOut. I2C uses only two bidirectional open collector or open drain lines for the SDA and the SCL pulled up with resistors. Typical voltages used are +5 V or +3.3 V.
-
 
 # <a name="intro"/>Introduction
 ...
@@ -123,13 +105,15 @@ To make a BoBShield you will need the following parts or their similar equivalen
 The total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100 x 100 mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_PCB.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Circuit.zip), respectively, while the ready-to-manufacture Gerber files with the NC drilling instructions are available from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Gerber.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/Magneto/MagnetoShield_Circuit.zip) and the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
 
 ![BOB_pcb](https://user-images.githubusercontent.com/18485913/101608410-f6839c80-3a05-11eb-9cbf-c662d25bd580.png)
 
-# <a name="about-1"/>About
+# <a name="about"/>About
+
 This shield was designed and created as a term project at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2019/2020.
-# <a name="authors-1"/>Authors
+
+# <a name="authors"/>Authors
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Samuel Mladý
