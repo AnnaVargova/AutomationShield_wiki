@@ -92,8 +92,29 @@ In the picture of the upper layout a black line can be seen which is starting fr
 ![Bottom part of the PCB](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Bottom_part_of_the_PCB.png)
 
 At the bottom layout the black line can be seen starting from power of 3.3V going to + of SensorPinout, then continues to the USB. The blue line is ground. The other two black lines start from the pins Serial Clock Line (SCL) and the Serial Data Line (SDA) and continue the SCL and the SDA on the SensorPinOut. I2C uses only two bidirectional open collector or open drain lines for the SDA and the SCL pulled up with resistors. Typical voltages used are +5 V or +3.3 V.
-# <a name="gallery"/>Gallery
 
+
+# <a name="intro"/>Introduction
+...
+# <a name="api"/>Application programming interface
+
+## <a name="io"/>C/C++ API
+
+### Input
+
+### Output
+
+## <a name="other"/>Other APIs
+Expansion of the current API to MATLAB, Simulink and Python is currently in progress.
+
+## <a name="simulink"/>Simulink API
+
+# <a name="examples"/>Examples
+
+## <a name="control"/>Feedback control
+
+## <a name="ident"/>System identification
+In progress.
 
 
 # <a name="about-1"/>About
