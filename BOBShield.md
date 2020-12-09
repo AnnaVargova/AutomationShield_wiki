@@ -128,7 +128,7 @@ To make a BoBShield you will need the following parts or their similar equivalen
 | (a)   	   | PCB             | 2-layer, FR4, 1.6mm thick (e.g. [JCLPCB](https://jlcpcb.com/))          | 1   |
 | (e<sub>1-5</sub>)| 3D print        | 18g, Ø1.75mm PETG filament, bright green, at 240°C (90°C bed), 3h 20min | 1   |
 | (o),POT1         | Trimmer         | 10kΩ, 250mW, single turn THT trimmer (e.g. [ACP CA14NV12,5-10KA2020](https://www.tme.eu/gb/details/ca14v-10k/single-turn-tht-trimmers/acp/ca14nv12-5-10ka2020/)) | 1   |
-| —   	           | Enclosure top   | clear acrylic; e.g. h=2 mm, stamped to the outer diameter of the tube | 1   |
+| (h)   	   | Screw           | DIN 7971C 2.2$\times$6.5                                                | 1   |
 | (m),U4           | Current sensor  | INA149                                                                | 1   |
 | (b),U3           | [DAC](http://sk.farnell.com/nxp/pcf8591t-2-518/adc-single-8bit-11-1ksps-soic/dp/2400442RL?st=PCF8591)             | PCF8591T                                                              | 1   |
 | (i),D1           | Diode           | DO214AC                                                               | 1   |
