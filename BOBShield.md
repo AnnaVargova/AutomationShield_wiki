@@ -129,29 +129,20 @@ To make a BoBShield you will need the following parts or their similar equivalen
 | (e<sub>1-5</sub>)| 3D print        | 18g, Ø1.75mm PETG filament, bright green, at 240°C (90°C bed), 3h 20min | 1   |
 | (o),POT1         | Trimmer         | 10kΩ, 250mW, single turn THT trimmer (e.g. [ACP CA14NV12,5-10KA2020](https://www.tme.eu/gb/details/ca14v-10k/single-turn-tht-trimmers/acp/ca14nv12-5-10ka2020/)) | 1   |
 | (h)   	   | Screw           | DIN 7971C 2.2×6.5                                                       | 1   |
-| (l),D1           | Diode           | generic diode, DO214AC (e.g. [Vishay Semiconductor BYG20J](https://www.tme.eu/gb/details/byg20j-e3_tr/smd-universal-diodes/vishay/))                              | 1   |
+| (l),D1           | Diode           | Generic diode, DO214AC (e.g. [Vishay Semiconductor BYG20J](https://www.tme.eu/gb/details/byg20j-e3_tr/smd-universal-diodes/vishay/))                              | 1   |
 | (g<sub>1</sub>)  | Screws          | M3×8 DIN963A                                                            | 4   |
 | (g<sub>2</sub>)  | Nuts            | M3 DIN439B                                                              | 4   |
 | (b<sub>3</sub>)  | Header          | 10×1, female, stackable, 0.1'' pitch  (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 1   |
 | (p)	           | Pot shaft       | For ``POT1'', (e.g. [ACP CA9MA9005](https://www.tme.eu/gb/details/ca9ma5-b/knobs-for-trimmers/acp/ca9ma-9005-black/#))                                         | 1   |
 | (b<sub>1</sub>)  | Header          | 8×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 2   |
 | (b<sub>2</sub>)  | Header          | 6×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 1   |
-| (q),D2           | LED             | 0805, red                                                             | 1   |
-| —   	           | Magnet          | NdFeB, disc, Ø8mm, h=2mm, N38                                         | 1   |
-| (e),Q2           | MOSFET          | IRF520                                                                | 1   |
-| —   	           | PCB             | 2 layer, FR4, 1.6mm thick                                             | 1   |
-| (o),POT1         | Potentiometer   | 10kΩ                                                                  | 1   |
-| (c),(f),R1,R2,R4 | Resistor        | 10kΩ, 0805                                                            | 3   |
-| (n),(p),R6,R9    | Resistor        | 3kΩ, 0805, 0.1%                                                       | 2   |
-| (p),R7           | Resistor        | 1kΩ, 0805, 0.1%                                                       | 1   |
-| (f),R3           | Resistor        | 220Ω, 0805                                                            | 1   |
-| —   	           | O-Ring          | rubber, M12, h=1mm, e.g. Ø18mm (outer)                                | 1   |
-| —   	           | Screws          | polyamid, M3×8                                                        | 2   |
-| —   	           | Shaft           | ACP CA9MA9005                                                         | 1   |
-| (l),R8           | Shunt           | 10Ω, 0805, 0.1%                                                       | 1   |
-| (g),L1           | [Solenoid](https://www.ebay.com/itm/322722704471)        | 220Ω, 0805                                                            | 1   |
-| —   	           | Enclosure tube  | clear, Plexiglas XT, h=8mm, Ø10mm (inner), φ12mm (outer)              | 1   |
-| (k),D3–D5        | Zener diode     | 3.3V, SOD323                                                          | 3   |
+| (c)              | Tube            | transparent, plexiglass (PMMA), L=100mm, 12/10mm                      | 1   |
+| (m),J            | Sensor          | [VL53L1X breakout](https://www.st.com/en/evaluation-tools/vl53l1x-satel.html), time of flight ranging SNSR                         | 1   |
+| (i),M            | Motor           | Metal geared 9g, 5V micro servo                                       | 1   |
+| (k),C1           | Capacitor       | 100uF, 6.3V, 20, 0805, tantalum                                       | 1   |
+| (d)              | Ball            | Steel ball, diameter 8mm                                              | 1   |
+| (f)              | Bearing         | Miniature ball bearing, 3×6×2mm, (e.g. [MR-63-ZZ](https://www.nbr.eu/en/products/bearings/deep-groove-ball-bearing/mr-63-zz/))                                          | 1   |
+| (n)              | Cable           | Ribbon cable, 4-7 wires, cca. 0.2m (e.g. EL-2468)                     | 1   |
 
 The total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
 
