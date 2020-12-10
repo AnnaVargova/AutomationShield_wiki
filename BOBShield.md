@@ -76,7 +76,7 @@ The BOBShield is an open hardware product, you are free to make your own device.
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
 
-![BOB_scheme](https://user-images.githubusercontent.com/18485913/101783040-0ed4e380-3afa-11eb-97eb-a1a927708008.png)
+![BOB_scheme](https://user-images.githubusercontent.com/18485913/101787945-eea82300-3aff-11eb-89ce-b75912a0529f.png)
 
 The inclination of the tube and, ultimately, the position of the ball, is manipulated by a standard micro RC Servo motor **M** (i) with analog feedback. The total rotation range of the motor utilized in this application is only ±30°. The motor is connected to the D9 pin of the standard Arduino R3 layout, since this equivalent MCU pin handles interrupts and timing on the Uno as well as other prototyping devices. The current consumption of the servo motor is low enough to be directly powered from the 5V supply of the Arduino board without the need of an external wall-plug adapter. We added a capacitor **C1** (k) parallel to the motor to smooth out possible transients affecting the board supply and a diode **D1** (l) to prevent possible back-EMF damaging the circuitry.
 
@@ -110,9 +110,13 @@ To make a BoBShield you will need the following parts or their similar equivalen
 
 The total cost of the above components and thus of the entire BOBShield is no more than $10 excluding labor and postage.
 
-The assembled BOBShield is shown in the figure below. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
+The assembled BOBShield is shown below. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
 
-![BOB_assembled](https://user-images.githubusercontent.com/18485913/101787647-983ae480-3aff-11eb-85b0-f52a599b0c42.png)
+![BOB_assembled](https://user-images.githubusercontent.com/18485913/101788033-fff12f80-3aff-11eb-81f0-d3c6711bc2eb.png)
+
+One end of the tube is closed by a 3D printed cap (e<sub>1</sub>$), while the other end is terminated by another 3D printed part (e<sub>2</sub>) designed to hold the distance measurement unit. The tube is fixed at its middle by a 3D printed circular clamp (e<sub>3</sub>$) that permits the inclination of the tube. The clamp is held in place at both sides by L-shaped 3D printed brackets, one (e<sub>4</sub>$) containing a miniature ball bearing (f) to facilitate smooth movement and the other (e<sub>5</sub>$) fixed to the clamp through the shaft of the actuator. The figure below shows all of the 3D printed components (e<sub>1-5</sub>). They were printed on an original Prusa i3 MK3/S 3D printer using a total of 18g filament under 3.5h time.
+
+![BOB_CAD](https://user-images.githubusercontent.com/18485913/101789569-befa1a80-3b01-11eb-9613-1c79321c14e6.png)
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar), respectively, while the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
@@ -127,4 +131,4 @@ This shield was designed and created as a term project at the Institute of Autom
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Samuel Mladý
-* **Wiki documentation:** Martin Gulan, Rastislav Haška, Marek Krippel
+* **Wiki documentation:** Martin Gulan, Gergely Takács
