@@ -110,6 +110,10 @@ To make a BoBShield you will need the following parts or their similar equivalen
 
 The total cost of the above components and thus of the entire BOBShield is no more than $10 excluding labor and postage.
 
+The assembled BOBShield is shown in the figure below. The equivalents of the circuit components described above for the schematics are marked on the assembled device with the same letters.
+
+![BOB_assembled](https://user-images.githubusercontent.com/18485913/101787647-983ae480-3aff-11eb-85b0-f52a599b0c42.png)
+
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar), respectively, while the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
 
