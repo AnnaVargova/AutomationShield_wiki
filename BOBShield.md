@@ -61,10 +61,7 @@ Expansion of the current API to MATLAB, Simulink and Python is currently in prog
 
 # <a name="examples"/>Examples
 
-In addition to the API, the AutomationShield library contains demonstration examples for each device. Currently, there are four examples offered for the BOBShield Arduino API. The file 'BOBShield_SelfTest.ino' implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then,
-the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values. The project file BOBShield_Identification.ino performs an open-loop test by supplying a range of actuator settings, while BOBShield_Identification_aprbs.
-ino does the same but applies an amplitude-modulated pseudo-random signal. Finally, BOBShield_PID.ino demonstrates the
-proportional-integral-derivative (PID) position control of the steel ball. 
+Currently, there are four examples offered for the BOBShield Arduino API. The file `BOBShield_SelfTest.ino` implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then, the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values. The project file BOBShield_Identification.ino performs an open-loop test by supplying a range of actuator settings, while BOBShield_Identification_aprbs.ino does the same but applies an amplitude-modulated pseudo-random signal. Finally, BOBShield_PID.ino demonstrates the proportional-integral-derivative (PID) position control of the steel ball. 
 
 ## <a name="control"/>Feedback control
 
