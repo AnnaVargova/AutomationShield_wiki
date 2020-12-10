@@ -27,6 +27,8 @@ The summary of basic functions and the illustration below should get you started
 * Output (sensor): `BOBShield.sensorRead();` 
 * Input  (actuator): `BOBShield.actuatorWrite();`
 
+![BOB_actsens](https://user-images.githubusercontent.com/18485913/101806761-a47d6c80-3b14-11eb-983d-e14279129370.png)
+
 The following subsections describe the methods used to access the input and output of the BOBShield. Note that before you begin an experiment you must initialize the hardware by calling
 
 `BOBShield.begin();`
