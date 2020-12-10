@@ -17,6 +17,8 @@
 
 The BOBShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project and presents a low-cost ball-on-beam (BOB) control experiment. The device uses a micro servo motor to adjust the position of a steel ball inside a tilting plastic transparent tube, measured by a time-of-flight distance sensor. The goal is to control the inclination of the tube such that the ball tracks a desired reference trajectory, which creates a simple single-input single-output feedback loop. This underactuated, fast, nonlinear system is an excellent tool to test and teach concepts of control theory, modeling, identification, microcontroller technology and signal processing. The hardware is exceptionally low-cost and small, making it ideal for take-home experiments or long-term student projects.
 
+![BOBShield](https://user-images.githubusercontent.com/18485913/101817321-81f25000-3b22-11eb-9061-f72967957225.png)
+
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
