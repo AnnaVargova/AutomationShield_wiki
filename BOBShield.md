@@ -70,13 +70,17 @@ In progress.
 
 # <a name="hardware"/>Detailed hardware description
 
+The BOBShield is an open hardware product, you are free to make your own device. If you come up with improvements, please let us know so we can improve our design as well. The discussion below should help you to improvise a similar setup for experimentation on a breadboard or perforation board. You may even order a professionally made PCB by a PCB fabrication service.
+
 ## <a name="circuit"/>Circuit design
 
 The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
 
 ![BOB_scheme](https://user-images.githubusercontent.com/18485913/101783040-0ed4e380-3afa-11eb-97eb-a1a927708008.png)
 
-The inclination of the tube and, ultimately, the position of the ball, is manipulated by a standard micro RC Servo motor **M** (i) with analog feedback. The total rotation range of the motor utilized in this application is only ±30°. The motor is connected to the D9 pin of the standard Arduino R3 layout (j), since this equivalent MCU pin handles interrupts and timing on the Uno as well as other prototyping devices. The current consumption of the servo motor is low enough to be directly powered from the 5V supply of the Arduino board without the need of an external wall-plug adapter. We added a capacitor **C1** (k) parallel to the motor to smooth out possible transients affecting the board supply and a diode **D1** (l) to prevent possible back-electromagnetic force damaging the circuitry.
+The inclination of the tube and, ultimately, the position of the ball, is manipulated by a standard micro RC Servo motor **M** (i) with analog feedback. The total rotation range of the motor utilized in this application is only ±30°. The motor is connected to the D9 pin of the standard Arduino R3 layout, since this equivalent MCU pin handles interrupts and timing on the Uno as well as other prototyping devices. The current consumption of the servo motor is low enough to be directly powered from the 5V supply of the Arduino board without the need of an external wall-plug adapter. We added a capacitor **C1** (k) parallel to the motor to smooth out possible transients affecting the board supply and a diode **D1** (l) to prevent possible back-electromagnetic force damaging the circuitry.
+
+The absolute distance of the ball from the reference located at one end of the tube is measured by the ST Microelectronics VL6180X time-of-flight (TOF) sensor (m). We have decided to utilize a widely available breakout board implementing the VL6180X for hobbyist use. This breakout may be purchased as an end-product and implements the sensor on a small-outline PCB with standard 0.1'' pitch. The sensor communicates through the I2C protocol and we have utilized the standard SCA and SCL pins of the layout. The breakout connects to the base board via a flexible 4-wire ribbon cable (n). A flat flexible cable (FFC) would have been a better choice, unfortunately the sensor module would need to be custom-made for this.
 
 The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
@@ -104,7 +108,7 @@ To make a BoBShield you will need the following parts or their similar equivalen
 | (f)              | Bearing         | Miniature ball bearing, 3×6×2mm, (e.g. [MR-63-ZZ](https://www.nbr.eu/en/products/bearings/deep-groove-ball-bearing/mr-63-zz/))                                          | 1   |
 | (n)              | Cable           | Ribbon cable, 4-7 wires, cca. 0.2m (e.g. EL-2468)                     | 1   |
 
-The total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
+The total cost of the above components and thus of the entire BOBShield is no more than $10 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
 The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar), respectively, while the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
@@ -119,9 +123,4 @@ This shield was designed and created as a term project at the Institute of Autom
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Samuel Mladý
-* **Wiki documentation:** Martin Gulan, Rastislav Haška, Marek Krippel      
-
-
-
-
-
+* **Wiki documentation:** Martin Gulan, Rastislav Haška, Marek Krippel
