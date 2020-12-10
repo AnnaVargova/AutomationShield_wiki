@@ -16,7 +16,6 @@
 [Introduction](#introduction-1)<br/>
 [Arduino library](#arduino-library-1)<br/>
 &nbsp;&nbsp;&nbsp;[Servo motor and sensor functions](#servo-motor-and-sensor-1)<br/>
-[3D sketch](#3d-sketch-1)<br/>
 
 # <a name="introduction-1"/>Introduction
 
@@ -69,11 +68,11 @@ Besides the engaging visual action of the hardware, results are also printed to 
 
 The PID demonstration example is sampled with a <em>T</em>=10 ms period, and a pre-set reference vector of [30 50 8 65 15 40]<sup>T</sup> mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <em>K</em><sub>P</sub>=0.3 (mm/°), <em>T</em><sub>I</sub>=600 and <em>T</em><sub>D</sub>=0.22 constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <em>u</em>=30 (°).
 
-The results of this experiment are illustrated in the figure below, where reference position <em>r</em> is compared to achieved output <em>y</em> on the top and the corresponding servo input <em>u</em> is presented at the bottom.
+The results of this experiment, processed in [MATLAB](https://www.mathworks.com/downloads/), are illustrated in the figure below, where reference position <em>r</em> is compared to achieved output <em>y</em> on the top and the corresponding servo input <em>u</em> is presented at the bottom.
 
 ![BOB_PID](https://user-images.githubusercontent.com/18485913/101798625-94ad5a80-3b0b-11eb-8fc9-ce43df9aea97.png)
 
-The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor. We believe this is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
+The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor. We believe that this is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
 
 ## <a name="ident"/>System identification
 In progress.
