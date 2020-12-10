@@ -38,9 +38,6 @@ This function write to actuator some parameters as predefined boundary for servo
 `float BOBClass::sensorRead()`<br/>
 SensorRead function return the corrected value of sensor and set actual position to position — calibrated minimum also set actual position to position — predefined value.<br/>
 
-# <a name="3d-skecth-1"/>3D sketch
-The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: stand with servo, stand without servo, the tube holder, the sensor case and the simple closure or blinding. You may download 3D printed parts from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_3D_printed_parts.rar). The entire assembly you may download from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_final_assembly.rar). Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from [GrabCAD database](https://grabcad.com/library). Printed circuit board is rendered from DIPTrace software.
-
 # <a name="intro"/>Introduction
 ...
 # <a name="api"/>Application programming interface
@@ -70,7 +67,7 @@ Besides the engaging visual action of the hardware, results are also printed to 
 
 ![BOB_screenshot](https://user-images.githubusercontent.com/18485913/101794273-00d98f80-3b07-11eb-8f66-8b5ef6b9419a.png)
 
-The PID demonstration example is sampled with a <img src="https://latex.codecogs.com/gif.latex?T=10" border="0"/>ms period, and a pre-set reference vector of <img src="https://latex.codecogs.com/gif.latex?{\left[30,50,8,65,15,40\right]}^{\mathrm{T}}" border="0"/>mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <img src="https://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.3" border="0"/> (mm/°), <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=600" border="0"/> and <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.22" border="0"/> constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <img src="https://latex.codecogs.com/gif.latex?u=30" border="0"/> (°).
+The PID demonstration example is sampled with a <em>T<em>=10 <img src="https://latex.codecogs.com/gif.latex?T=10" border="0"/>ms period, and a pre-set reference vector of <img src="https://latex.codecogs.com/gif.latex?{\left[30,50,8,65,15,40\right]}^{\mathrm{T}}" border="0"/>mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <img src="https://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.3" border="0"/> (mm/°), <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=600" border="0"/> and <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.22" border="0"/> constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <img src="https://latex.codecogs.com/gif.latex?u=30" border="0"/> (°).
 
 The results of this experiment are illustrated in the figure below, where reference position <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> is compared to achieved output <img src="https://latex.codecogs.com/gif.latex?y" height="5"/> on the top and the corresponding servo input <img src="https://latex.codecogs.com/gif.latex?u" border="0"/> is presented at the bottom.
 
@@ -123,7 +120,9 @@ The assembled BOBShield is shown below. The equivalents of the circuit component
 
 ![BOB_assembled](https://user-images.githubusercontent.com/18485913/101788033-fff12f80-3aff-11eb-81f0-d3c6711bc2eb.png)
 
-One end of the tube is closed by a 3D printed cap (e<sub>1</sub>), while the other end is terminated by another 3D printed part (e<sub>2</sub>) designed to hold the distance measurement unit. The tube is fixed at its middle by a 3D printed circular clamp (e<sub>3</sub>) that permits the inclination of the tube. The clamp is held in place at both sides by L-shaped 3D printed brackets, one (e<sub>4</sub>) containing a miniature ball bearing (f) to facilitate smooth movement and the other (e<sub>5</sub>) fixed to the clamp through the shaft of the actuator. The figure below shows all of the 3D printed components (e<sub>1-5</sub>). They were printed on an original Prusa i3 MK3/S 3D printer using a total of 18g filament under 3.5h time.
+One end of the tube is closed by a 3D printed cap (e<sub>1</sub>), while the other end is terminated by another 3D printed part (e<sub>2</sub>) designed to hold the distance measurement unit. The tube is fixed at its middle by a 3D printed circular clamp (e<sub>3</sub>) that permits the inclination of the tube. The clamp is held in place at both sides by L-shaped 3D printed brackets, one (e<sub>4</sub>) containing a miniature ball bearing (f) to facilitate smooth movement and the other (e<sub>5</sub>) fixed to the clamp through the shaft of the actuator. The figure below shows all of the 3D printed components (e<sub>1-5</sub>), for which we provide downloadable [CAD files](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_3D_printed_parts.rar). They were printed on an original Prusa i3 MK3/S 3D printer using a total of 18g filament under 3.5h time.
+
+A 3D CAD sketch of the entire assembly may also be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_final_assembly.rar).
 
 ![BOB_CAD](https://user-images.githubusercontent.com/18485913/101789752-f2d54000-3b01-11eb-98f8-c32053e2fbf7.png)
 
