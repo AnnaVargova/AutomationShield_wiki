@@ -40,11 +40,6 @@ SensorRead function return the corrected value of sensor and set actual position
 
 # <a name="3d-skecth-1"/>3D sketch
 The whole model was designed in CAD software and forwarded to the 3D print service. There are five parts to be printed: stand with servo, stand without servo, the tube holder, the sensor case and the simple closure or blinding. You may download 3D printed parts from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_3D_printed_parts.rar). The entire assembly you may download from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_final_assembly.rar). Other assembly parts: a sensor, a Arduino microcontroller, a potentiometer and a servo motor are downloadable from [GrabCAD database](https://grabcad.com/library). Printed circuit board is rendered from DIPTrace software.
-![Picture1](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_1.jpg)
-![Picture2](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_2.jpg)
-![Picture3](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_3.jpg)
-
-
 
 # <a name="intro"/>Introduction
 ...
@@ -71,7 +66,11 @@ The project file [`BOBShield_Identification.ino`](https://github.com/gergelytaka
 
 Finally, [`BOBShield_PID.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_PID/BOBShield_PID.ino) demonstrates the proportional-integral-derivative (PID) position control of the steel ball.
 
-Besides the engaging visual action of the hardware, results are also printed to the serial line. The figure below demonstrates a step change of the reference, where the process variables <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> (blue), y (red) and u (green) may be followed in the oscilloscope-like rolling window of the Arduino IDE Serial Plotter. Similar to the open-loop case, any other terminal program is suitable for monitoring and data logging.
+Besides the engaging visual action of the hardware, results are also printed to the serial line. The figure below demonstrates a step change of the reference, where the process variables <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> (blue), <img src="https://latex.codecogs.com/gif.latex?y" border="0"/> (red) and <img src="https://latex.codecogs.com/gif.latex?u" border="0"/> (green) may be followed in the oscilloscope-like rolling window of the Arduino IDE Serial Plotter. Similar to the open-loop case, any other terminal program is suitable for monitoring and data logging.
+
+![BOB_screenshot](https://user-images.githubusercontent.com/18485913/101794273-00d98f80-3b07-11eb-8f66-8b5ef6b9419a.png)
+
+
 
 ## <a name="ident"/>System identification
 In progress.
