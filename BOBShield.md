@@ -13,32 +13,10 @@
 [About](#about)<br/>
 &nbsp;&nbsp;[Authors](#authors)<br/>
 
-[Introduction](#introduction-1)<br/>
-[Arduino library](#arduino-library-1)<br/>
-&nbsp;&nbsp;&nbsp;[Servo motor and sensor functions](#servo-motor-and-sensor-1)<br/>
-
-# <a name="introduction-1"/>Introduction
+# <a name="intro"/>Introduction
 
 BOBShield or Ball on beam shield is a didactical device for education feedback control principles and is a part of the AutomationShield project. The project BOBShield is a device which consists of the microservo motor, the plastic transparent tube, the ball, the Time of Flight distance sensor and the potentiometer with which PID control is achieved. Components such as the microservo motor, distance sensor and potentiometer are controlled by the Arduino. These components can be controlled by Arduino Zero, Uno or Due. Arduino is powered by USB. The average power of a USB port is about 5 volts. The main goal of the device is to stabilize the ball in the centre of the tube. The length of the tube is 100 mm and the diameter is 10 mm. The ball diameter is 8 mm and can be made from various materials, such as glass, plastic, wood, cork or metal. A metal ball turned out to be the best solution. The tube is placed in the centre of tube holder, one side of the holder is connected to the microservo motor and the other side of the tube holder is attached to a ball bearing, which is embedded in the plastic holder. The microservo motor is also inserted in a plastic holder and fixed with steel screws. The plastic holders are fixed with steel screws to the printed circuit board. The microservo motor tilts the tube in the clockwise and the counter-clockwise directions. A ToF distance sensor Adafruit VL6180X is marking the position of the ball, the sensor contains a tiny laser source, and a matching sensor. It can handle about 5 mm to 100 mm of range distance. The sensor is put in the holder on the end of the tube. On the other side of the tube there is a simple closure. PID controller controls the position of the tube and is placed on the printed circuit board. This device is inexpensive and mechanically simple for the construction.
 
-# <a name="arduino-library-1"/>Arduino library
-
-**C/C++ API**
-
-The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and functions for PID controller and feedback control device. All functionality associated with the BOBShield is included in the BOBShield.h header. 
-The following subsections describe the methods used to manage microservo motor, sensor and PID controller. The function which declares PIN and initializes the sensor is `BOBClass::begin()` .
-* <a name="servo-motor-and-sensor-1"/>Servo motor and sensor functions<br/>
- `void BOBClass::initialize()`<br/>
-This function check if sensor is available and if the function find sensor, then the next function come is calibration.<br/>
-`void BOBClass::calibration()`<br/>
-This operation start calibrating the sensor, tilt beam go to the minimum to -30 degrees so the ball fall toward a simple closure and then sensor perform 100 measurements in 1 second. Then tilt beam go to the maximum to 30 degrees, the ball fall toward the sensor and again the sensor perform 100 measurements in 1 second. And save both minimum and maximum values after each ending of measurements.<br/>
-`void BOBClass::actuatorWrite(float fdeg)`<br/>
-This function write to actuator some parameters as predefined boundary for servo range, mapping inputs defined by user in degrees (-30/30) in to values understandable for servo (65/125) in degrees.<br/>
-`float BOBClass::sensorRead()`<br/>
-SensorRead function return the corrected value of sensor and set actual position to position — calibrated minimum also set actual position to position — predefined value.<br/>
-
-# <a name="intro"/>Introduction
-...
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
@@ -72,7 +50,7 @@ The results of this experiment, processed in [MATLAB](https://www.mathworks.com/
 
 ![BOB_PID](https://user-images.githubusercontent.com/18485913/101798625-94ad5a80-3b0b-11eb-8fc9-ce43df9aea97.png)
 
-The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor, which we believe is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
+The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor. We believe this is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
 
 ## <a name="ident"/>System identification
 In progress.
