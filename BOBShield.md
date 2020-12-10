@@ -67,9 +67,9 @@ Besides the engaging visual action of the hardware, results are also printed to 
 
 ![BOB_screenshot](https://user-images.githubusercontent.com/18485913/101794273-00d98f80-3b07-11eb-8f66-8b5ef6b9419a.png)
 
-The PID demonstration example is sampled with a <em>T</em>=10 ms <img src="https://latex.codecogs.com/gif.latex?T=10" border="0"/>ms period, and a pre-set reference vector of <img src="https://latex.codecogs.com/gif.latex?{\left[30,50,8,65,15,40\right]}^{\mathrm{T}}" border="0"/>mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <img src="https://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.3" border="0"/> (mm/°), <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=600" border="0"/> and <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.22" border="0"/> constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <img src="https://latex.codecogs.com/gif.latex?u=30" border="0"/> (°).
+The PID demonstration example is sampled with a <em>T</em>=10 ms <img src="https://latex.codecogs.com/gif.latex?T=10" border="0"/>ms period, and a pre-set reference vector of [30,50,8,65,15,40]<sup>T</sup> mm <img src="https://latex.codecogs.com/gif.latex?{\left[30,50,8,65,15,40\right]}^{\mathrm{T}}" border="0"/>mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <img src="https://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.3" border="0"/> (mm/°), <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=600" border="0"/> and <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.22" border="0"/> constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <img src="https://latex.codecogs.com/gif.latex?u=30" border="0"/> (°).
 
-The results of this experiment are illustrated in the figure below, where reference position <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> is compared to achieved output <img src="https://latex.codecogs.com/gif.latex?y" height="5"/> on the top and the corresponding servo input <img src="https://latex.codecogs.com/gif.latex?u" border="0"/> is presented at the bottom.
+The results of this experiment are illustrated in the figure below, where reference position <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> is compared to achieved output <img src="https://latex.codecogs.com/gif.latex?y" border="0"/> on the top and the corresponding servo input <img src="https://latex.codecogs.com/gif.latex?u" border="0"/> is presented at the bottom.
 
 ## <a name="ident"/>System identification
 In progress.
@@ -137,6 +137,6 @@ This shield was designed and created as a term project at the Institute of Autom
 
 # <a name="authors"/>Authors
 
-* **Hardware and 3D model design:** Tibor Konkoly, Patrik Kvasný, Marko Michal, Marek Krippel 
+* **Hardware and 3D model design:** Tibor Konkoly, Patrik Šíma, Marko Michal, Marek Krippel 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Samuel Mladý
 * **Wiki documentation:** Martin Gulan, Gergely Takács
