@@ -45,12 +45,7 @@ The whole model was designed in CAD software and forwarded to the 3D print servi
 ![Picture2](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_2.jpg)
 ![Picture3](https://github.com/gergelytakacs/AutomationShield/wiki/fig/3D_Model_BOBShield_3.jpg)
 
-# <a name="circuit-design-1"/>Circuit design
-The circuit diagram has been designed in the CAD software [DIPTrace](https://diptrace.com/), Freeware version. You may download the circuit schematics for the BOBShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
 
-![Circuit design](https://github.com/gergelytakacs/AutomationShield/wiki/fig/BOBShield_Circuit.png)
-
-The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
 # <a name="intro"/>Introduction
 ...
@@ -77,6 +72,8 @@ In progress.
 # <a name="hardware"/>Detailed hardware description
 
 ## <a name="circuit"/>Circuit design
+
+The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
 ## <a name="parts"/>Parts
 To make a BoBShield you will need the following parts or their similar equivalents:
@@ -105,7 +102,7 @@ To make a BoBShield you will need the following parts or their similar equivalen
 The total cost of the above components and thus of the entire BoBShield is no more than $10 excluding labor and postage.
 
 ## <a name="pcb"/>PCB
-The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
+The printed circuit board has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. The PCB is two-layer and fits within the customary 100×100mm limit of most board manufacturers. The DIPTrace PCB layout and circuit schematics can be downloaded [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_PCB_R1_Final.zip) and [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar), respectively, while the ready-to-manufacture Gerber files can be downloaded from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BoBShield_Gerber_Production_R1.zip).
 
 ![BOB_pcb](https://user-images.githubusercontent.com/18485913/101608410-f6839c80-3a05-11eb-9cbf-c662d25bd580.png)
 
