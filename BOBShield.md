@@ -72,7 +72,7 @@ The results of this experiment, processed in [MATLAB](https://www.mathworks.com/
 
 ![BOB_PID](https://user-images.githubusercontent.com/18485913/101798625-94ad5a80-3b0b-11eb-8fc9-ce43df9aea97.png)
 
-The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor. We believe that this is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
+The ball follows the reference position trajectory faithfully across a wide span of the working range. The tracking is worse when the ball is close to the sensor, which we believe is caused by sensor noise originating from unwanted reflections or other physical effects. Note that the response may be further improved by more advanced control and/or appropriate signal processing.
 
 ## <a name="ident"/>System identification
 In progress.
