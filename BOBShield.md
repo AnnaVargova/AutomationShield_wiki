@@ -63,15 +63,15 @@ Expansion of the current API to MATLAB, Simulink and Python is currently in prog
 
 Currently, there are four examples offered for the BOBShield Arduino API.
 
-The file [`BOBShield_SelfTest.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_Identification/BOBShield_Identification.ino) implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then, the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values.
+The file [`BOBShield_SelfTest.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_SelfTest/BOBShield_SelfTest.ino) implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then, the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values.
 
-The project file `BOBShield_Identification.ino` performs an open-loop test by supplying a range of actuator settings, while `BOBShield_Identification_aprbs.ino` does the same but applies an amplitude-modulated pseudo-random signal.
-
-Finally, `BOBShield_PID.ino` demonstrates the proportional-integral-derivative (PID) position control of the steel ball. 
+The project file [`BOBShield_Identification.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_Identification/BOBShield_Identification.ino) performs an open-loop test by supplying a range of actuator settings, while [`BOBShield_Identification_aprbs.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_Identification_aprbs/BOBShield_Identification_aprbs.ino) does the same but applies an amplitude-modulated pseudo-random signal.
 
 ## <a name="control"/>Feedback control
 
+Finally, [`BOBShield_PID.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_PID/BOBShield_PID.ino) demonstrates the proportional-integral-derivative (PID) position control of the steel ball.
 
+Besides the engaging visual action of the hardware, results are also printed to the serial line. The figure below demonstrates a step change of the reference, where the process variables <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> (blue), y (red) and u (green) may be followed in the oscilloscope-like rolling window of the Arduino IDE Serial Plotter. Similar to the open-loop case, any other terminal program is suitable for monitoring and data logging.
 
 ## <a name="ident"/>System identification
 In progress.
