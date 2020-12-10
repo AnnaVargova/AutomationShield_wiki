@@ -53,14 +53,14 @@ finding the minimal and maximal distance readings and map these values to percen
 whether the calibration procedure was invoked or not by the `wasCalibrated()` method and access the minimal
 and maximal distance of the ball from the sensor by executing `returnMinDistance()` and `returnMaxDistance()`.
 
-### Input
+### Output
 The position of the ball is read by
 
 `y=FloatShield.sensorRead();`
 
 returning the scaled distance inside the tube as a floating point value from within the range of 0–100 (%). Alternatively, `sensorReadDistance()` reports the distance between the sensor and the ball in millimeters, while `sensorReadAltitude()` gives its altitude relative to ground.
 
-### Output
+### Input
 By supplying the input power `u` in the range of 0–100 (%) to the
 
 `FloatShield.actuatorWrite(u);`
