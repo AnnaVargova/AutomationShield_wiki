@@ -73,6 +73,10 @@ In progress.
 
 ## <a name="circuit"/>Circuit design
 
+The circuit schematics has been designed in the Freeware version of the [DIPTrace](https://diptrace.com/) CAD software. You may download the circuit schematics of the FloatShield from [here](https://github.com/gergelytakacs/AutomationShield/wiki/file/BOBShield_Circuit.rar).
+
+![BOB_scheme](https://user-images.githubusercontent.com/18485913/101783040-0ed4e380-3afa-11eb-97eb-a1a927708008.png)
+
 The power for the circuit is coming from the pin 5V. This pin powers the microservo motor SM, the capacitor C1 and the diode D1. Time of Flight sensor J and the potentiometer POT1 are powered by the pin with 3.3V. Everything is connected to the pin GND ground. The digital pin 9 is connected to the microservo motor from which the signal comes for the angular position of the servo motor. The analog signal A0 is connected (to the) potentiometer POT1, through which the servo motor position is controlled. Also the analog pins A4/SDA and A5/SCL are connected to the Time of Flight sensor J and these connections are used for the detection signal of the ToF sensor and the feedback signal of the ToF sensor J.
 
 ## <a name="parts"/>Parts
