@@ -67,7 +67,7 @@ Besides the engaging visual action of the hardware, results are also printed to 
 
 ![BOB_screenshot](https://user-images.githubusercontent.com/18485913/101794273-00d98f80-3b07-11eb-8f66-8b5ef6b9419a.png)
 
-The PID demonstration example is sampled with a <em>T</em>=10 ms period, and a pre-set reference vector of [30,50,8,65,15,40]<sup>T</sup> mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <img src="https://latex.codecogs.com/gif.latex?K_{\mathrm{P}}=0.3" border="0"/> (mm/°), <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{I}}=600" border="0"/> and <img src="https://latex.codecogs.com/gif.latex?T_{\mathrm{D}}=0.22" border="0"/> constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <img src="https://latex.codecogs.com/gif.latex?u=30" border="0"/> (°).
+The PID demonstration example is sampled with a <em>T</em>=10 ms period, and a pre-set reference vector of [30 50 8 65 15 40]<sup>T</sup> mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <em>K</em><sub>P</sub>=0.3" border="0"/> (mm/°), <em>T</em><sub>I</sub>=600 and <em>T</em><sub>D</sub>=0.22 constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <em>u</em>=30 (°).
 
 The results of this experiment are illustrated in the figure below, where reference position <em>r</em> is compared to achieved output <em>y</em> on the top and the corresponding servo input <em>u</em> is presented at the bottom.
 
