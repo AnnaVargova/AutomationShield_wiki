@@ -21,6 +21,24 @@ BOBShield or Ball on beam shield is a didactical device for education feedback c
 
 ## <a name="io"/>C/C++ API
 
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the BOBShield is included in the `BOBShield.h` header, which contains the `BOBClass` class that is constructed by default as the `BOBShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+
+The summary of basic functions and the illustration below should get you started quickly:
+* Output (sensor): `BOBShield.sensorRead();` 
+* Input  (actuator): `BOBShield.actuatorWrite();`
+
+The following subsections describe the methods used to access the input and output of the BOBShield. Note that before you begin an experiment you must initialize the hardware by calling
+
+`BOBShield.begin();`
+
+which starts the servo motor functionality by assigning its hardware pin for later use.
+
+The sensor readings can be calibrated by using the
+
+`BOBShield.calibrate();`
+
+method, which tilts the beam towards ±30° and selects the maximal, respectively, the minimal distance readings. These calibrated readings are accessible to other methods.
+
 ### Input
 
 ### Output
