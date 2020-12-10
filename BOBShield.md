@@ -61,7 +61,13 @@ Expansion of the current API to MATLAB, Simulink and Python is currently in prog
 
 # <a name="examples"/>Examples
 
-Currently, there are four examples offered for the BOBShield Arduino API. The file `BOBShield_SelfTest.ino` implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then, the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values. The project file BOBShield_Identification.ino performs an open-loop test by supplying a range of actuator settings, while BOBShield_Identification_aprbs.ino does the same but applies an amplitude-modulated pseudo-random signal. Finally, BOBShield_PID.ino demonstrates the proportional-integral-derivative (PID) position control of the steel ball. 
+Currently, there are four examples offered for the BOBShield Arduino API.
+
+The file [`BOBShield_SelfTest.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_Identification/BOBShield_Identification.ino) implements a basic self-test routine, aiding the verification of the hardware functionality. First, the ToF sensor is initialized and, if the MCU cannot connect to the sensor chip, will report the failure. Then, the servo turns to each of its extreme operation points and the routine compares the distance readings with expected values.
+
+The project file `BOBShield_Identification.ino` performs an open-loop test by supplying a range of actuator settings, while `BOBShield_Identification_aprbs.ino` does the same but applies an amplitude-modulated pseudo-random signal.
+
+Finally, `BOBShield_PID.ino` demonstrates the proportional-integral-derivative (PID) position control of the steel ball. 
 
 ## <a name="control"/>Feedback control
 
@@ -82,7 +88,7 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 The inclination of the tube and, ultimately, the position of the ball, is manipulated by a standard micro RC Servo motor **M** (i) with analog feedback. The total rotation range of the motor utilized in this application is only ±30°. The motor is connected to the D9 pin of the standard Arduino R3 layout, since this equivalent MCU pin handles interrupts and timing on the Uno as well as other prototyping devices. The current consumption of the servo motor is low enough to be directly powered from the 5V supply of the Arduino board without the need of an external wall-plug adapter. We added a capacitor **C1** (k) parallel to the motor to smooth out possible transients affecting the board supply and a diode **D1** (l) to prevent possible back-EMF damaging the circuitry.
 
-The absolute distance of the ball from the reference located at one end of the tube is measured by the ST Microelectronics VL6180X time-of-flight (TOF) sensor **J** (m). We have decided to utilize a widely available breakout board implementing the VL6180X for hobbyist use. This breakout may be purchased as an end-product and implements the sensor on a small-outline PCB with standard 0.1'' pitch. The sensor communicates through the I2C protocol and we have utilized the standard A4/SDA and A5/SCL pins of the layout. The breakout connects to the base board via a flexible 4-wire ribbon cable (n). A flat flexible cable (FFC) would have been a better choice, unfortunately the sensor module would need to be custom-made for this.
+The absolute distance of the ball from the reference located at one end of the tube is measured by the ST Microelectronics VL6180X ToF sensor **J** (m). We have decided to utilize a widely available breakout board implementing the VL6180X for hobbyist use. This breakout may be purchased as an end-product and implements the sensor on a small-outline PCB with standard 0.1'' pitch. The sensor communicates through the I2C protocol and we have utilized the standard A4/SDA and A5/SCL pins of the layout. The breakout connects to the base board via a flexible 4-wire ribbon cable (n). A flat flexible cable (FFC) would have been a better choice, unfortunately the sensor module would need to be custom-made for this.
 
 Finally, there is a potentiometer **POT1** (o) with a small plastic shaft (p) allowing to manually input the desired reference signal. The potentiometer is fed by the 3.3V source for its maximal setting, so that the wiper connected to the A0 analog port does not damage other microcontroller boards, such as the Due or Zero, operating with CMOS logic levels. To maximize analog resolution, we have also connected the 3.3V source to the AREF pin and compensate for this change in code. The sensor board is also powered by the 3.3V source.
 
