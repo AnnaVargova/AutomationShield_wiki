@@ -1,7 +1,7 @@
 #### Contents 
 [Introduction](#intro)<br/>
 [Application programming interface](#api)<br/>
-&nbsp;&nbsp;&nbsp;[C/C++ API](#c)<br/>
+&nbsp;&nbsp;&nbsp;[C/C++ API](#io)<br/>
 &nbsp;&nbsp;&nbsp;[Other APIs](#other)<br/>
 [Examples](#examples)<br/>
 &nbsp;&nbsp;&nbsp;[Feedback control](#control)<br/>
@@ -39,9 +39,23 @@ The sensor readings can be calibrated by using the
 
 method, which tilts the beam towards ±30° and selects the maximal, respectively, the minimal distance readings. These calibrated readings are accessible to other methods.
 
-### Input
+Using
 
-### Output
+`y = BOBShield.sensorRead();`
+
+will output the absolute position of the ball <em>y</em> (mm) as a floating-point number by polling the ToF sensor. Similarly, the percentual position based on calibration may be accessed by the `sensorReadPerc()` method.
+
+The manual reference from the potentiometer is read by the
+
+`r = BOBShield.referenceRead();`
+
+method, returning the reference <em>r</em> as a floating-point number.
+
+Finally, the desired angle <em>u</em> (°) is sent to the servo motor by
+
+`BOBShield.actuatorWrite(u);`
+
+where the input parameter is a floating-point number.
 
 ## <a name="other"/>Other APIs
 Expansion of the current API to MATLAB, Simulink and Python is currently in progress.
