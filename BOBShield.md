@@ -63,11 +63,11 @@ The project file [`BOBShield_Identification.ino`](https://github.com/gergelytaka
 
 Finally, [`BOBShield_PID.ino`](https://github.com/gergelytakacs/AutomationShield/blob/master/examples/BOBShield/BOBShield_PID/BOBShield_PID.ino) demonstrates the proportional-integral-derivative (PID) position control of the steel ball.
 
-Besides the engaging visual action of the hardware, results are also printed to the serial line. The figure below demonstrates a step change of the reference, where the process variables <img src="https://latex.codecogs.com/gif.latex?r" border="0"/> (blue), <img src="https://latex.codecogs.com/gif.latex?y" border="0"/> (red) and <img src="https://latex.codecogs.com/gif.latex?u" border="0"/> (green) may be followed in the oscilloscope-like rolling window of the Arduino IDE Serial Plotter. Similar to the open-loop case, any other terminal program is suitable for monitoring and data logging.
+Besides the engaging visual action of the hardware, results are also printed to the serial line. The figure below demonstrates a step change of the reference, where the process variables <em>r</em> (blue), <em>y</em> (red) and <em>u</em> (green) may be followed in the oscilloscope-like rolling window of the Arduino IDE Serial Plotter. Similar to the open-loop case, any other terminal program is suitable for monitoring and data logging.
 
 ![BOB_screenshot](https://user-images.githubusercontent.com/18485913/101794273-00d98f80-3b07-11eb-8f66-8b5ef6b9419a.png)
 
-The PID demonstration example is sampled with a <em>T</em>=10 ms period, and a pre-set reference vector of [30 50 8 65 15 40]<sup>T</sup> mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <em>K</em><sub>P</sub>=0.3" border="0"/> (mm/°), <em>T</em><sub>I</sub>=600 and <em>T</em><sub>D</sub>=0.22 constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <em>u</em>=30 (°).
+The PID demonstration example is sampled with a <em>T</em>=10 ms period, and a pre-set reference vector of [30 50 8 65 15 40]<sup>T</sup> mm is requested for 1000 samples (10 seconds) providing sufficient time for transients. The PID controller is manually tuned to the <em>K</em><sub>P</sub>=0.3" (mm/°), <em>T</em><sub>I</sub>=600 and <em>T</em><sub>D</sub>=0.22 constants. An integral windup clipping strategy is set to ±10 (°), while the input to the servo motor is saturated at <em>u</em>=30 (°).
 
 The results of this experiment are illustrated in the figure below, where reference position <em>r</em> is compared to achieved output <em>y</em> on the top and the corresponding servo input <em>u</em> is presented at the bottom.
 
