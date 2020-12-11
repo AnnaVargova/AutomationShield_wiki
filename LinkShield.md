@@ -214,6 +214,6 @@ This shield is currently designed and created within a Bachelor's thesis at the 
 <!-- The thesis is available [here](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/xxx.pdf). -->
 
 ## <a name="authors"/>Authors
-* Hardware design: Martin Vríčan, Erik Mikuláš 
-* Software design: Gergely Takács
+* Hardware design: Martin Vríčan, Erik Mikuláš, Gergely Takács 
+* Software design: Martin Vríčan, Gergely Takács
 * Wiki: Martin Gulan, Gergely Takács
