@@ -68,4 +68,4 @@ of positive position feedback](https://github.com/gergelytakacs/AutomationShield
 
 ## Thesis works
 
-1. Zuzana Képešiová: Inteligentné metódy diagnostiky a riadenia mechatronických systémov (Intelligent Diagnostic Methods and Control for Mechatronic Systems). Doctoral dissertation thesis. Institute of Automotive Mechatronics of the Faculty of Electrical Engineering and Information Technology, Slovak University of Technology in Bratislava, Bratislava, Slovakia. August 2020. Supervisor: Danica Rosinová. Thesis ID: FEI-100861-8785
+1. Zuzana Képešiová: [Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Kepesiova2020.pdf) (Intelligent Diagnostic Methods and Control for Mechatronic Systems). Doctoral dissertation thesis. Institute of Automotive Mechatronics of the Faculty of Electrical Engineering and Information Technology, Slovak University of Technology in Bratislava, Bratislava, Slovakia. August 2020. Supervisor: Danica Rosinová. Thesis ID: FEI-100861-8785
