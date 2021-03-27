@@ -6,5 +6,5 @@ If you would like to donate to the AutomationShield project, you may do so using
 
 Donate BitCoin to the following address
 
-```zpub6nGJdGKTUFWidS1tHCNN5SwKav3W3eheFJqe1za7ZUBPykSqavzjxyXqcqHrPbQ3zUpfHg32WTWDe7xd3Avo1xNwDfBG7EEroPDDjqM7FzU```
+```bc1qgq80lfuz979rdkta458xwrp2m6x2h58yt33n83```
 
