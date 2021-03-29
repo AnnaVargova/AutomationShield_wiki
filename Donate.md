@@ -8,7 +8,7 @@ If you would like to donate to the AutomationShield project, you may do so using
 
 [Link](https://www.paypal.com/donate?business=ENHSK5767AMXN&item_name=Donate+to+the+AutomationShield+project&currency_code=EUR)
 
-![Image of Yaktocat](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPDonate.png)
+![Donate image](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPDonate2.png)
 
 
 ## Bitcoin
