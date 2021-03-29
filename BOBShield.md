@@ -124,7 +124,7 @@ To make a BoBShield you will need the following parts or their similar equivalen
 | (b<sub>1</sub>)  | Header          | 8×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 2   |
 | (b<sub>2</sub>)  | Header          | 6×1, female, stackable, 0.1'' pitch (e.g. [SparkFun 474-PRT-10007](https://eu.mouser.com/ProductDetail/SparkFun/PRT-10007?qs=WyAARYrbSnYGf8RckgedYg==))      | 1   |
 | (c)              | Tube            | transparent, plexiglass (PMMA), L=100mm, 12/10mm                      | 1   |
-| (m),J            | Sensor          | [VL53L1X breakout](https://www.st.com/en/evaluation-tools/vl53l1x-satel.html), time of flight ranging SNSR                         | 1   |
+| (m),J            | Sensor          | [VL6180X breakout](https://www.adafruit.com/product/3316), time of flight ranging SNSR                         | 1   |
 | (i),M            | Motor           | Metal geared 9g, 5V micro servo                                       | 1   |
 | (k),C1           | Capacitor       | 100uF, 6.3V, 20, 0805, tantalum                                       | 1   |
 | (d)              | Ball            | Steel ball, diameter 8mm                                              | 1   |
