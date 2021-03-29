@@ -8,7 +8,7 @@ If you would like to donate to the AutomationShield project, you may do so using
 
 You may donate to the AutomationShield initiative using PayPal or a credit card by [clicking here.](https://www.paypal.com/donate?business=ENHSK5767AMXN&item_name=and+support+the+AutomationShield+initative.&currency_code=EUR) Alternatively you may donate from your PayPal account to the `automationshield@automationshield.com` address or scan the QR code below using your phone.
 
-[PayPal Donate QR](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPQR.png)
+![PayPal Donate QR](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPQR.png)
 
 
 
