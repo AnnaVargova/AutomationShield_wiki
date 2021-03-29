@@ -2,13 +2,13 @@
 
 If you would like to donate to the AutomationShield project, you may do so using the following channels:
 
-![Image of Yaktocat](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPDonate.png)
+
 
 ## PayPal
 
 [Link](https://www.paypal.com/donate?business=ENHSK5767AMXN&item_name=Donate+to+the+AutomationShield+project&currency_code=EUR)
 
-
+![Image of Yaktocat](https://github.com/gergelytakacs/AutomationShield/wiki/fig/PPDonate.png)
 
 
 ## Bitcoin
