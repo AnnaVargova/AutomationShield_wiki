@@ -2,6 +2,10 @@
 
 If you would like to donate to the AutomationShield project, you may do so using the following channels:
 
+## PayPal
+
+[Link](https://www.paypal.com/donate?business=ENHSK5767AMXN&item_name=Donate+to+the+AutomationShield+project&currency_code=EUR)
+
 ## Bitcoin
 
 Donate Bitcoin (BTC) to the following address
