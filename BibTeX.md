@@ -4,13 +4,33 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
+Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education. In Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference, April 21-23, 2021, Vienna, Austria. pp. TBD, ISBN: TBD.
+
+```
+@INPROCEEDINGS{Takacs2021a,
+author={Gergely  Tak\'{a}cs and  Erik Mikul\'{a}\v{s}  and Anna Vargov\'{a} and Tibor Konkoly and Patrik \v{S}\'{i}ma and Luk\'{a}\v{s} Vadovi\v{c} and Mat\'{u}\v{s} B\'{i}ro and Marko Michal and Matej \v{S}imovec and Martin Gulan},
+booktitle={Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference},
+title={{BOBS}hield: {A}n Open-source miniature “ball and beam” device for control engineering education},
+year={2021},
+volume={},
+number={},
+pages={1--7},
+doi={--},
+ISBN={},
+month={April},
+date={21-23},
+address={Vienna, Austria},
+note={(Preprints)},
+}
+```
+
 Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=gAduArWW5Tk))  
 
 ```
 @INPROCEEDINGS{Takacs2020b,
 author={Gergely  Tak\'{a}cs and  Peter Chmur\v{c}iak and Martin Gulan and Erik Mikul\'{a}\v{s} and Jakub Kulh\'{a}nek and G\'{a}bor Penzinger and {Milo\v{s}} {Podbielan\v{c}\'{i}k} and Martin Lu\v{c}an and Peter \v{S}\'{a}lka and D\'{a}vid \v{S}roba},
 booktitle={Proceedings of the 2020 IFAC World Congress},
-title={{F}loat{S}hield: {A}n Open Source Air Levitation Device for Control Engineering Educationn},
+title={{F}loat{S}hield: {A}n Open Source Air Levitation Device for Control Engineering Education},
 year={2020},
 volume={},
 number={},
