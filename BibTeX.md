@@ -4,6 +4,26 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
+Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: LinkShield: An early hardware prototype of a miniature low-cost flexible link experiment. In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD.
+```
+@INPROCEEDINGS{Takacs2021b,
+author={Gergely  Tak\'{a}cs and Martin Vr\'{i}\v{c}an and  Erik Mikul\'{a}\v{s}  and Martin Gulan},
+booktitle={Proceedings of the 27th International Congress on Sound and Vibration (ICSV)},
+title={{L}ink{S}hield: An early hardware prototype of a miniature low-cost flexible link experiment},
+year={2021},
+volume={},
+number={},
+pages={1--8},
+doi={--},
+ISBN={},
+month={July},
+date={12-16},
+address={Prague, Czech Republic},
+note={(Preprints)},
+}
+
+```
+
 Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education. In Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference, April 21-23, 2021, Vienna, Austria. pp. TBD, ISBN: TBD.
 
 ```
