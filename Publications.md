@@ -66,7 +66,7 @@ Aerodynamic Floating experiment](https://github.com/gergelytakacs/AutomationShie
 ## Conference papers
 
 1. Gergely Takács, Erik Mikuláš, Martin Vríčan and Martin Gulan: [Current-saving sampling for the embedded implementation
-of positive position feedback](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020d.pdf). In Proceedings of the 49th International Congress and Exposition on Noise Control Engineering (Inter-Noise): Advances in Noise and Vibration Control Technology, August 23-26, 2020, Seoul, South Korea. pp. 1-11, ISBN: TBD.
+of positive position feedback](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020d.pdf). In Proceedings of the 49th International Congress and Exposition on Noise Control Engineering (Inter-Noise): Advances in Noise and Vibration Control Technology, August 23-26, 2020, Seoul, South Korea. pp. 537-547, ISSN: 0736-2935.
 
 ## Thesis works
 
