@@ -12,9 +12,10 @@ The publication status of the shields is as follows:
 | MotoShield    	|         	|            	| ✅      	|           |
 | OptoShield    	|         	| ✅          	| ✅      	| ✅       |
 | TugShield    	        |         	|          	| ✅      	|           |
-| BOBShield    	        |         	|          	|        	|           |
+| BOBShield    	        |         	|          	| ✅       	|           |
 | LinkShield  	        |         	| ✅         	| ✅          	|           |
-| BlowShield  	        |         	|         	|           	|           |
+| PressureShield        |         	|         	| ✅         	|           |
+| TurboShield           |         	|         	|          	|           |
 | TempShield  	        |         	|         	|           	|           |
 
 ## Under review
