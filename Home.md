@@ -41,14 +41,15 @@ The current status of the library is as follows:
 
 |               | Release | Beta | Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
 |---------------|---------|------|----------|--------|----------| --------------| --------| ------| ------|
-| BOBShield   |         | ✅    | ✅        |        |          |||||
+| BOBShield   |  ✅        |    | ✅        | ✅        | ✅          |||||
 | FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||||
 | HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||||
 | LinkShield    | ✅       |      | ✅        |   ❌¹     |         |||||
 | MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|❌¹|❌¹ |
 | MotoShield    |    ✅       |     | ✅        |    ✅¹      |  ✅          |||||
 | OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
-| PressureShield    |        |✅      | ✅        |        |         |||||
+| PressureShield    | ✅       |      | ✅        |✅         | ✅         |||||
+| TurboShield    |        |✅      | ✅         |        |         |||||
 | TugShield    |        |✅      | ✅         |        |         |||||
 | TempShield    |        |      |         |        |         |||||
 
