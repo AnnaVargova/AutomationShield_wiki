@@ -43,6 +43,8 @@ There are no articles under review at the moment.
 
 2. Jakub Mihalík: [MagnetoShield: Experimentálny prístroj na magnetickú levitáciu objektov (MagnetoShield: An Experimental Device for Magnetic Levitation, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Mihalik2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. June 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-81742
 
+3. Eva Vargová: [TugShield: miniatúrny prístroj na riadenie statickej deformácie nosníka (TugShield: A Miniature Device to Control the Static Deformation of a Cantilever, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaE2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-87733
+
 ### Bachelor's theses
 
 1. Tibor Konkoly: [Experimentálne moduly pre výučbu automatizácie (Experimental Modules for Automation Education, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Konkoly2018.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2018. Supervisor: Gergely Takács. Thesis ID: SjF-13432-81384
