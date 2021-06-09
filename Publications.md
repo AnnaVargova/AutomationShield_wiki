@@ -46,6 +46,13 @@ There are no articles under review at the moment.
 
 3. Eva Vargová: [TugShield: miniatúrny prístroj na riadenie statickej deformácie nosníka (TugShield: A Miniature Device to Control the Static Deformation of a Cantilever, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaE2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-87733
 
+4. Anna Vargová: [BoBShield: a miniature ”ball on beam”
+experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaA2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-87787
+
+5. Martin Staroň: [PressureShield: miniatúrny prístroj na riadenie
+tlaku v nádobe (PressureShield: A miniature device to control the pressure in a vessel, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Staron2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-87740
+
+
 ### Bachelor's theses
 
 1. Tibor Konkoly: [Experimentálne moduly pre výučbu automatizácie (Experimental Modules for Automation Education, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Konkoly2018.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2018. Supervisor: Gergely Takács. Thesis ID: SjF-13432-81384
