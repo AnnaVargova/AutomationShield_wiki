@@ -37,21 +37,40 @@ Unfortunately we lack the infrastructure to manufacture and sell the shields, al
 The main role of the software part of the AutomationShield project is to provide C/C++ source code to manage inputs and outputs to the individual boards. In other words, the library is an application programming interface (API), so that students and educators can focus on feedback control design, instead of programming low-level hardware drivers. In addition to this, the AutomationShield library aims to provide complete routines for implementing precise timing for control. The library contains numerous examples that implement examples in system identification an feedback control. The library contains examples written for the Arduino IDE, MATLAB and Simulink. Those who do not wish to complete the hardware may still benefit from the library, as there are numerous experimental measurements that can be used for system identification tasks and feedback control simulations based on the physical hardware.
 
 ## Supported Shields and Software
-The current status of the library is as follows:
 
-|               | Release | Beta | Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
-|---------------|---------|------|----------|--------|----------| --------------| --------| ------| ------|
-| BOBShield   |  ✅        |    | ✅        | ✅        | ✅          |||||
-| FloatShield   | ✅      |     | ✅        | ✅¹       | ✅         |||||
-| HeatShield    | ✅       |      | ✅        | ✅¹      | ✅        |||||
-| LinkShield    | ✅       |      | ✅        |   ❌¹     |         |||||
-| MagnetoShield | ✅        |     | ✅        |  ❌¹     | ✅         |✅|❌¹⋅²|❌¹|❌¹ |
-| MotoShield    |    ✅       |     | ✅        |    ✅¹      |  ✅          |||||
-| OptoShield    | ✅       |      | ✅        |   ❌¹     | ✅        |||||
-| PressureShield    | ✅       |      | ✅        |✅         | ✅         |||||
-| TurboShield    |        |✅      | ✅         |        |         |||||
-| TugShield    |        |✅      | ✅         |        |         |||||
-| TempShield    |        |      |         |        |         |||||
+The library currently supports the following hardware in their respective release (R) versions:
+|                | Release | Beta | Hardware  | 
+|----------------|---------|-------|----------|
+| BOBShield      | ✅      |       | R2      |  
+| FloatShield    | ✅      |       | R4      | 
+| HeatShield     | ✅      |       | R1      | 
+| LinkShield     | ✅      |       | R1      | 
+| MagnetoShield  | ✅      |       | R4      | 
+| MotoShield     | ✅      |       | R1      |
+| OptoShield     | ✅      |       | R1      | 
+| PressureShield | ✅      |       | R2      | 
+| TurboShield    |         |        |❌¹     |        
+| TugShield      |         |✅     | R1      | 
+| TempShield     |         |❌²    | -³        | 
+- ¹ Under development
+- ² Not available
+- ³ Hardware has not been realized yet.
+
+The current status of the library for individual API is as follows:
+
+|                |  Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
+|----------------|-----------|--------|----------| --------------| --------| ------| ------|
+| BOBShield      | ✅        |        | ✅          |||||
+| FloatShield    | ✅        | ✅¹   | ✅          |||||
+| HeatShield     | ✅        | ✅¹   | ✅          |||||
+| LinkShield     | ✅        | ❌¹   |              |||||
+| MagnetoShield  | ✅        | ❌¹   | ✅         |✅|❌¹⋅²|❌¹|❌¹ |
+| MotoShield     | ✅        | ✅¹   |  ✅          |||||
+| OptoShield     | ✅        | ❌¹   | ✅          |||||
+| PressureShield | ✅        | ✅    | ✅          |||||
+| TurboShield    | ✅        |       |              |||||
+| TugShield      | ✅        | ✅    | ✅          |||||
+| TempShield     |            |       |              |||||
 
 - ❌ Can not be deployed for technical reasons.
 - ¹ Serial communication only, no deployment possible.
