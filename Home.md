@@ -38,17 +38,17 @@ The main role of the software part of the AutomationShield project is to provide
 
 ## Supported Shields and Software
 
-The library currently supports the following hardware in their respective release (R) versions:
+The library currently supports the following AutomationShield hardware in their respective release (R) versions:
 |                | Release | Beta | Hardware  | 
 |----------------|---------|-------|----------|
-| BOBShield      | ✅      |       | R2      |  
-| FloatShield    | ✅      |       | R4      | 
-| HeatShield     | ✅      |       | R1      | 
-| LinkShield     | ✅      |       | R1      | 
 | MagnetoShield  | ✅      |       | R4      | 
+| FloatShield    | ✅      |       | R4      | 
+| BOBShield      | ✅      |       | R2      |  
+| LinkShield     | ✅      |       | R1      | 
 | MotoShield     | ✅      |       | R1      |
-| OptoShield     | ✅      |       | R1      | 
 | PressureShield | ✅      |       | R2      | 
+| HeatShield     | ✅      |       | R1      | 
+| OptoShield     | ✅      |       | R1      | 
 | TurboShield    |         |        |❌¹     |        
 | TugShield      |         |✅     | R1      | 
 | TempShield     |         |❌²    | -³        | 
@@ -59,18 +59,18 @@ The library currently supports the following hardware in their respective releas
 The current status of the library for individual API is as follows:
 
 |                |  Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
-|----------------|-----------|--------|----------| --------------| --------| ------| ------|
-| BOBShield      | ✅        |        | ✅          |||||
+|----------------|-----------|--------|----------| --------| --------| -------| -------|
+| MagnetoShield  | ✅        | ❌¹   | ✅       |✅      |❌¹⋅²    |❌¹     |❌¹   |
 | FloatShield    | ✅        | ✅¹   | ✅          |||||
-| HeatShield     | ✅        | ✅¹   | ✅          |||||
+| BOBShield      | ✅        |        | ✅          |||||
 | LinkShield     | ✅        | ❌¹   |              |||||
-| MagnetoShield  | ✅        | ❌¹   | ✅         |✅|❌¹⋅²|❌¹|❌¹ |
-| MotoShield     | ✅        | ✅¹   |  ✅          |||||
-| OptoShield     | ✅        | ❌¹   | ✅          |||||
+| MotoShield     | ✅        | ✅¹   |  ✅         |||||
 | PressureShield | ✅        | ✅    | ✅          |||||
+| HeatShield     | ✅        | ✅¹   | ✅          |||||
+| OptoShield     | ✅        | ❌¹   | ✅          |||||
 | TurboShield    | ✅        |       |              |||||
 | TugShield      | ✅        | ✅    | ✅          |||||
-| TempShield     |            |       |              |||||
+| TempShield     |            |       |             |||||
 
 - ❌ Can not be deployed for technical reasons.
 - ¹ Serial communication only, no deployment possible.
