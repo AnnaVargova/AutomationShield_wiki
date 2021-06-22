@@ -77,6 +77,34 @@ The current status of the library for individual API is as follows:
 - ² LabView LINX: lower end of loop speed is about 140 Hz (7 ms) for a LED toggle example. Tested with LabView 2020.
 - ³ CyrcuitPython
 
+The library implements the following feedback control concepts in real-time hardware examples in at least one of the API for at least one supported prototyping board:
+
+|                | Model¹  | Identification² | PID³ |  LQ⁴  | MPC⁵  | PP⁶  |Kalman⁷ | Luenberger⁸ |
+|----------------|---------|-----------------|------|-------|-------|------|--------|-------------|
+| MagnetoShield  |✅       |✅              |✅    |✅    |✅    |✅    | ✅     | ✅         |
+| FloatShield    |✅       |✅              |✅    |✅    |✅    |      | ✅     |             |
+| BOBShield      |✅       |✅              |✅    |✅    |       |      |        |             |
+| LinkShield     |✅       |✅              |✅ᵝ   |       |      |       |        |             |
+| MotoShield     |✅       |✅              |✅    |       |      |       |        |             | 
+| PressureShield |          |✅              |✅    |✅ᵞ    |      |       |        |             |
+| HeatShield     | ✅      |✅              |✅    |       |      |       |        |             |
+| OptoShield     |          |✅             |✅    |       |      |       |        |             |
+| TurboShield    |          |                |       |       |      |       |        |             |             
+| TugShield      |       
+| TempShield     |          |                |       |       |      |       |        |             |    
+
+
+- ¹ Mathemaical-physical analysis of the system dynamics
+- ² Experimental system identification
+- ³ Proportional-Integral-Derivative (PID) control
+- ⁴ Linear Quadratic (LQ) control
+- ⁵ Model Predictive Control 
+- ⁶ Pole placement
+- ⁷ Kalman filtering
+- ⁸ Luenenberger observer
+- ᵝ According to the Positive Position/Velocity Feedback variant
+- ᵞ Contains bugs
+
 ## How to Get the Library
 
 If you are not familiar with Git, please download the latest release of the library from the [Releases](https://github.com/gergelytakacs/AutomationShield/releases) section, as the production code download does not include certain dependencies. Search for the `AutomationShield_vX.Y.tar` file in the Assets, where `vX.Y` is the major and minor version number of the release. Do not use the Source Code files in the Assets, since these lack the dependent code as well.
