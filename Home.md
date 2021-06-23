@@ -61,9 +61,9 @@ The current status of the library for individual API is as follows:
 |                |  Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
 |----------------|-----------|--------|----------| --------| --------| -------| -------|
 | MagnetoShield  | ✅        | ❌¹   | ✅       |✅      |❌¹⋅²    |❌¹     |❌¹   |
-| FloatShield    | ✅        | ✅¹   | ✅          |||||
-| BOBShield      | ✅        |        | ✅          |||||
-| LinkShield     | ✅        | ❌¹   |              |||||
+| FloatShield    | ✅        | ✅¹⋅⁴   | ✅      |||||
+| BOBShield      | ✅        |        | ✅       |||||
+| LinkShield     | ✅        | ❌¹   |            |||||
 | MotoShield     | ✅        | ✅¹   |  ✅         |||||
 | PressureShield | ✅        | ✅    | ✅          |||||
 | HeatShield     | ✅        | ✅¹   | ✅          |||||
@@ -76,6 +76,7 @@ The current status of the library for individual API is as follows:
 - ¹ Serial communication only, no deployment possible.
 - ² LabView LINX: lower end of loop speed is about 140 Hz (7 ms) for a LED toggle example. Tested with LabView 2020.
 - ³ CyrcuitPython
+- ⁴ Works for FloatShield R1-R3. Currently under development for R4 - it is likely to be implementable.
 
 The library implements the following feedback control concepts in real-time hardware examples in at least one of the API for at least one supported prototyping board:
 
