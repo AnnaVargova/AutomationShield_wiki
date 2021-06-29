@@ -24,23 +24,22 @@ note={(Preprints)},
 
 ```
 
-Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education. In Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference, April 21-23, 2021, Vienna, Austria. pp. TBD, ISBN: TBD.
+Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: [BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021a.pdf). In Proceedings of the 2021 IEEE Global Engineering Education Conference (EDUCON), April 21-23, 2021, Vienna, Austria. pp. 1155-1161, ISBN: 978-1-7281-8478-4, DOI 10.1109/EDUCON46332.2021.9454013. 
 
 ```
 @INPROCEEDINGS{Takacs2021a,
 author={Gergely  Tak\'{a}cs and  Erik Mikul\'{a}\v{s}  and Anna Vargov\'{a} and Tibor Konkoly and Patrik \v{S}\'{i}ma and Luk\'{a}\v{s} Vadovi\v{c} and Mat\'{u}\v{s} B\'{i}ro and Marko Michal and Matej \v{S}imovec and Martin Gulan},
-booktitle={Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference},
+booktitle={Proceedings of the 2021 IEEE Global Engineering Education Conference (EDUCON)},
 title={{BOBS}hield: {A}n Open-source miniature “ball and beam” device for control engineering education},
 year={2021},
 volume={},
 number={},
-pages={1--7},
-doi={--},
-ISBN={},
+pages={1155--1161},
+doi={10.1109/EDUCON46332.2021.9454013},
+ISBN={978-1-7281-8478-4},
 month={April},
 date={21-23},
 address={Vienna, Austria},
-note={(Preprints)},
 }
 ```
 
