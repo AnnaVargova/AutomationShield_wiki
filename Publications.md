@@ -25,7 +25,7 @@ There are no articles under review at the moment.
 ## Accepted for publication
 1. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020c.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. 
 
-2. Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education. In Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference, April 21-23, 2021, Vienna, Austria. pp. TBD, ISBN: TBD. 
+
 
 ## Conference papers
 1. Gergely Takács, Peter Chmurčiak, Martin Gulan, Erik Mikuláš, Jakub Kulhánek, Gábor Penzinger, Miloš Podbielančík, Martin Lučan, Peter Šálka and Dávid Šroba: [FloatShield: An Open Source Air Levitation Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a.pdf). In Proceedings of the 21st IFAC World Congress, July 12-17, 2020, Berlin, Germany. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020a_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=gAduArWW5Tk))  
@@ -35,6 +35,8 @@ There are no articles under review at the moment.
 3. Gergely Takács, Martin Gulan, Juraj Bavlna, Richard Köplinger, Michal Kováč, Erik Mikuláš, Sohaibullah Zarghoon and Richard Salíni: [HeatShield: a low-cost didactic device for control education simulating 3D printer heater blocks](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a.pdf). In Proceedings of the 2019 EDUCON IEEE Global Engineering Education Conference, April 9-11, 2019, Dubai, UAE. pp. 374-383, ISBN: 978-1-5386-9506-7. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019a_Presentation.pdf)) 
 
 4. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. pp. 1001-1006, ISBN: 978-4-88898-301-3 ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b_Presentation.pdf))
+
+5. Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: [BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021a.pdf). In Proceedings of the 2021 EDUCON IEEE Global Engineering Education Conference, April 21-23, 2021, Vienna, Austria. pp. 1155-1161, ISBN: 978-1-7281-8478-4, DOI 10.1109/EDUCON46332.2021.9454013. 
 
 ## Thesis works
 
