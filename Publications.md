@@ -23,7 +23,10 @@ The publication status of the shields is as follows:
 There are no articles under review at the moment.
 
 ## Accepted for publication
-1. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020c.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. 
+
+1. Gergely Takács, Ján Boldocký, Erik Mikuláš, Tibor Konkoly and Martin Gulan: MotoShield: Open Miniaturized DC Motor Hardware Prototype for Control Education. In Proceedings of the 2021 Frontiers in Education Conference, October 13-16, 2021, Lincoln, USA. pp. 1-10, ISBN: TBD. 
+
+2. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2020c.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. 
 
 
 
