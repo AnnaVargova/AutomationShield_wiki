@@ -9,10 +9,10 @@ The publication status of the shields is as follows:
 | FloatShield   	|         	| ✅          	| ✅           	| ✅        |
 | HeatShield    	|         	| ✅          	|        	| ✅        |
 | MagnetoShield 	|         	| ✅          	| ✅      	|           |
-| MotoShield    	|         	|            	| ✅      	|           |
+| MotoShield    	|         	| ✅          	| ✅      	|           |
 | OptoShield    	|         	| ✅          	| ✅      	| ✅       |
 | TugShield    	        |         	|          	| ✅      	|           |
-| BOBShield    	        |         	|          	| ✅       	|           |
+| BOBShield    	        |         	| ✅         	| ✅       	|           |
 | LinkShield  	        |         	| ✅         	| ✅          	|           |
 | PressureShield        |         	|         	| ✅         	|           |
 | TurboShield           |         	|         	|          	|           |
