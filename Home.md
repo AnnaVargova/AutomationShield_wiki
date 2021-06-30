@@ -111,3 +111,6 @@ The library implements the following feedback control concepts in real-time hard
 If you are not familiar with Git, please download the latest release of the library from the [Releases](https://github.com/gergelytakacs/AutomationShield/releases) section, as the production code download does not include certain dependencies. Search for the `AutomationShield_vX.Y.tar` file in the Assets, where `vX.Y` is the major and minor version number of the release. Do not use the Source Code files in the Assets, since these lack the dependent code as well.
 
 For those who wish to use Git, this repository contains submodules, therefore you should use `git clone --recursive git://github.com/gergelytakacs/AutomationShield.git` to get these as well. In case you have already cloned the repository, the submodule directories in `src/lib/` may be empty. In this case, you have to initialize it by calling `git submodule update --init --recursive`.
+
+### Arduino IDE Quick Start
+In case you have cloned the repository in Git, please create a Zip archive, then read the archive `Tools > Include Library > Add .ZIP Library`.
