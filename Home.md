@@ -113,4 +113,12 @@ If you are not familiar with Git, please download the latest release of the libr
 For those who wish to use Git, this repository contains submodules, therefore you should use `git clone --recursive git://github.com/gergelytakacs/AutomationShield.git` to get these as well. In case you have already cloned the repository, the submodule directories in `src/lib/` may be empty. In this case, you have to initialize it by calling `git submodule update --init --recursive`.
 
 ### Arduino IDE Quick Start
-In case you have cloned the repository in Git, please create a Zip archive, then read the archive `Tools > Include Library > Add .ZIP Library`.
+- In case you have cloned the repository in Git, please create a Zip archive, then open the Arduino IDE and read the archive `Tools > Include Library > Add .ZIP Library`.
+- You may browse for examples in `File > Examples > AutomationShield`
+
+### Simulink Quick Start
+- Download and install MATLAB / Simulink R2019a or newer. Be sure to install Simulink Coder and [Embedded Coder](https://www.mathworks.com/products/embedded-coder.html) and DSP System Toolbox features along with the base installation. In case your current installation does not support these features, go to  `Add-Ons > Get Add Ons` and find the missing packages.
+- Install [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware). On the `Home` tab find `Add-Ons > Get Hardware Support Packages` then find the Simulink Support Package for Arduino Hardware. Click `Install` and follow the usual installation procedure. Installing a support package requires a MathWorks account.
+
+Tips:
+- Should you run into the `rtiostream.h` missing error, follow [this](https://www.mathworks.com/matlabcentral/answers/343237-fatal-error-rtiostream_utils-h-no-such-file-or-directory) procedure.
