@@ -4,7 +4,7 @@ Here you can find BibTeX database entries to reference the material presented on
 
 ## Individual database entires
 
-Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: LinkShield: An early hardware prototype of a miniature low-cost flexible link experiment. In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD.
+Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b_Presentation.pdf), [Annotated audio/video presentation.](https://youtu.be/UZ5W5xjafzA))  
 ```
 @INPROCEEDINGS{Takacs2021b,
 author={Gergely  Tak\'{a}cs and Martin Vr\'{i}\v{c}an and  Erik Mikul\'{a}\v{s}  and Martin Gulan},
