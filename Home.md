@@ -58,7 +58,7 @@ The library currently supports the following AutomationShield hardware in their 
 
 The current status of the library for individual API is as follows:
 
-|                |  Arduino  | MATLAB | Simulink | Python³ | LabView | Octave | Scilab |
+|                |  Arduino  | MATLAB | Simulink⁵ | Python³ | LabView | Octave | Scilab |
 |----------------|-----------|--------|----------| --------| --------| -------| -------|
 | MagnetoShield  | ✅        | ❌¹   | ✅       |✅      |❌¹⋅²    |❌¹     |❌¹   |
 | FloatShield    | ✅        | ✅¹⋅⁴   | ✅      |||||
@@ -77,6 +77,7 @@ The current status of the library for individual API is as follows:
 - ² LabView LINX: lower end of loop speed is about 140 Hz (7 ms) for a LED toggle example. Tested with LabView 2020.
 - ³ CyrcuitPython
 - ⁴ Works for FloatShield R1-R3. Currently under development for R4 - it is likely to be implementable.
+- ⁵ An Arduino Mega2560 is recommended for the Simulink API. External mode and data logging is not guaranteed to work on the Arduino Uno for its limited memory.
 
 The library implements the following feedback control concepts in real-time hardware examples in at least one of the API for at least one supported prototyping board:
 
@@ -121,4 +122,5 @@ For those who wish to use Git, this repository contains submodules, therefore yo
 - Install [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware). On the `Home` tab find `Add-Ons > Get Hardware Support Packages` then find the Simulink Support Package for Arduino Hardware. Click `Install` and follow the usual installation procedure. Installing a support package requires a MathWorks account.
 
 Tips:
+- We recommend you to use the Arduino Mega2560 for the AutomationShield Simulink API. Simulink examples should run on the Arduino Uno for most cases, but data logging and interactive (External) mode is not guaranteed to work on the Uno. The Simulink compilation process decides whether this functionality will fit into the available memory of the board, and according to our experience, this may change from Simulink release to release - even for the same example.
 - Should you run into the `rtiostream.h` missing error, follow [this](https://www.mathworks.com/matlabcentral/answers/343237-fatal-error-rtiostream_utils-h-no-such-file-or-directory) procedure.
