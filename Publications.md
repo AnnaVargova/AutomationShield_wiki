@@ -88,3 +88,5 @@ of positive position feedback](https://github.com/gergelytakacs/AutomationShield
 ## Thesis works
 
 1. Zuzana Képešiová: [Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Kepesiova2020.pdf) (Intelligent Diagnostic Methods and Control for Mechatronic Systems). Doctoral dissertation thesis. Institute of Automotive Mechatronics of the Faculty of Electrical Engineering and Information Technology, Slovak University of Technology in Bratislava, Bratislava, Slovakia. August 2020. Supervisor: Danica Rosinová. Thesis ID: FEI-100861-8785
+
+2. Adam Benko: [Riadenie tepelného procesu s využitím systému SIMATIC IOT2000](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Benko2021.pdf) (Regulating a Thermodynamic Process Utilizing the SIMATIC IOT2000 System, in Slovak language). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. July 2021. Supervisor: Martin Juhás. Thesis ID: SjF-13432-87686
