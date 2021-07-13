@@ -118,7 +118,7 @@ For those who wish to use Git, this repository contains submodules, therefore yo
 - You may browse for examples in `File > Examples > AutomationShield`
 
 ### Simulink Quick Start
-- Download and install MATLAB / Simulink R2019a or newer. Be sure to install Simulink Coder and [Embedded Coder](https://www.mathworks.com/products/embedded-coder.html) and DSP System Toolbox features along with the base installation. In case your current installation does not support these features, go to  `Add-Ons > Get Add Ons` and find the missing packages.
+- Download and install MATLAB / Simulink R2019a or newer. Be sure to install Simulink Coder and [Embedded Coder](https://www.mathworks.com/products/embedded-coder.html) and [DSP System Toolbox](https://www.mathworks.com/products/dsp-system.html) features along with the base installation. In case your current installation does not support these features, go to  `Add-Ons > Get Add Ons` and find the missing packages.
 - Install [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware). On the `Home` tab find `Add-Ons > Get Hardware Support Packages` then find the Simulink Support Package for Arduino Hardware. Click `Install` and follow the usual installation procedure. Installing a support package requires a MathWorks account.
 
 Tips:
