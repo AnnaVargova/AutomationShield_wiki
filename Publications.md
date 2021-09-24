@@ -24,10 +24,7 @@ There are no articles under review at the moment.
 
 ## Accepted for publication
 
-1. Gergely Takács, Ján Boldocký, Erik Mikuláš, Tibor Konkoly and Martin Gulan: MotoShield: Open Miniaturized DC Motor Hardware Prototype for Control Education. In Proceedings of the 2021 Frontiers in Education Conference, October 13-16, 2021, Lincoln, USA. pp. 1-10, ISBN: TBD. 
-
-2. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b_Presentation.pdf), [Annotated audio/video presentation.](https://youtu.be/UZ5W5xjafzA))  
-
+There are no active preprints at the moment.
 
 
 ## Conference papers
@@ -40,6 +37,10 @@ There are no articles under review at the moment.
 4. Gergely Takács, Tibor Konkoly and Martin Gulan: [OptoShield: A Low-Cost Tool for Control and Mechatronics Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b.pdf). In Proceedings of the 12th Asian Control Conference (ASCC2019), June 9-12, 2019, Kitakyusu, Japan. pp. 1001-1006, ISBN: 978-4-88898-301-3 ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019b_Presentation.pdf))
 
 5. Gergely Takács, Erik Mikuláš, Anna Vargová, Tibor Konkoly, Patrik Šíma, Lukáš Vadovič, Matúš Bíro, Marko Michal, Matej Šimovec and Martin Gulan: [BOBShield: An Open-Source Miniature “Ball and Beam” Device for Control Engineering Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021a.pdf). In Proceedings of the 2021 IEEE Global Engineering Education Conference (EDUCON), April 21-23, 2021, Vienna, Austria. pp. 1155-1161, ISBN: 978-1-7281-8478-4, DOI 10.1109/EDUCON46332.2021.9454013. 
+
+6. Gergely Takács, Ján Boldocký, Erik Mikuláš, Tibor Konkoly and Martin Gulan: [MotoShield: Open Miniaturized DC Motor Hardware Prototype for Control Education](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021c.pdf). In Proceedings of the 2021 Frontiers in Education Conference, October 13-16, 2021, Lincoln, USA. pp. 1-10, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021c_Presentation.pdf), [Annotated audio/video presentation.](https://www.youtube.com/watch?v=hbOY33YBDHA))  
+
+7. Gergely Takács, Martin Vríčan, Erik Mikuláš and Martin Gulan: [An early hardware prototype of a miniature low-cost flexible link experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b.pdf). In Proceedings of the 27th International Congress on Sound and Vibration, July 12-16, 2021, Prague, Czech Republic. pp. 1-8, ISBN: TBD. (Supplementary files: [Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2021b_Presentation.pdf), [Annotated audio/video presentation.](https://youtu.be/UZ5W5xjafzA))  
 
 ## Thesis works
 
