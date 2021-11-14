@@ -10,15 +10,15 @@
 * [TugShield][tug]
 * [TempShield][temp]
 
+## Publications
+* [Publications][publications]
+* [BiBTeX][bibtex]
 
 ## Library and API
 * [Arduino IDE][commonArduino]
 * [MATLAB][MATLABAPI]
 * [Simulink][SimulinkAPI]
 
-## Publications
-* [Publications][publications]
-* [BiBTeX][bibtex]
 
 ## Terms
 * [License][license]
