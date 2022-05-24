@@ -9,6 +9,7 @@
 * [BlowShield][blow]
 * [TugShield][tug]
 * [TempShield][temp]
+* [AeroShield][aero]
 
 ## Publications
 * [Publications][publications]
@@ -43,6 +44,7 @@
 [blow]: https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield
 [tug]: https://github.com/gergelytakacs/AutomationShield/wiki/TugShield
 [link]: https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield
+[aero]: https://github.com/gergelytakacs/AutomationShield/wiki/AeroShield
 [publications]: https://github.com/gergelytakacs/AutomationShield/wiki/Publications
 [license]: https://creativecommons.org/licenses/by-nc/4.0/
 [acknowledgement]: https://github.com/gergelytakacs/AutomationShield/wiki/Funding
