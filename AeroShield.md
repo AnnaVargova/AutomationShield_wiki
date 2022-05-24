@@ -163,9 +163,8 @@ The assembled shield is fixed mechanically and electrically to the Arduino board
 
 <img width="400" alt="pcbFront" src="https://user-images.githubusercontent.com/92367957/169549762-0e1e95af-8825-408b-aebf-c096c23f44c8.png">
 <img width="400" alt="pcbBack" src="https://user-images.githubusercontent.com/92367957/169549758-d3ea9408-d0f5-4cdb-82f9-88305d939af5.png">
-<img width="250" alt="pcbBreakoutBack" src="https://user-images.githubusercontent.com/92367957/169550024-2dce734c-a39d-41ea-841f-86130b06e26c.png">
 <img width="250" alt="pcbBreakoutFront" src="https://user-images.githubusercontent.com/92367957/169550028-c6e83699-5825-4eef-99cf-415a74f5e4d5.png">
-
+<img width="250" alt="pcbBreakoutBack" src="https://user-images.githubusercontent.com/92367957/169550024-2dce734c-a39d-41ea-841f-86130b06e26c.png">
 
 # <a name="about"/>About
 This shield was designed and created as a bachelor's thesis at the Institute of Automation, Measurement and Applied Informatics. The Institute belongs to the Faculty of Mechanical Engineering (FME), Slovak University of Technology in Bratislava in 2021/2022.
