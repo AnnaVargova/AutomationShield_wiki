@@ -39,7 +39,7 @@ The summary of basic functions and the illustration below should get you started
 * Output (Current monitor): `AeroShield.currentMeasure();` 
 * Input  (Actuator): `AeroShield.actuatorWrite();`
 
-<img src="https://user-images.githubusercontent.com/92367957/170064238-90d8fba1-9c8b-4f66-8f34-9986fd7caac4.png" width="750"> 
+<img src="https://user-images.githubusercontent.com/92367957/170064238-90d8fba1-9c8b-4f66-8f34-9986fd7caac4.png" width="600"> 
 
 The following subsections describe the methods used to access the input and outputs of the AeroShield. Note that before you begin an experiment you must initialize the hardware by calling `AeroShield.begin();` which launches the I2C interface and check if rotational encoder detects magnet needed for angle reading.
 
