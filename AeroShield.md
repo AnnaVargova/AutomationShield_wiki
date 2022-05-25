@@ -171,6 +171,6 @@ This shield was designed and created as a bachelor's thesis at the Institute of 
 
 ## <a name="authors"/>Authors
 * 3D-model design: Peter Tibenský
-* Hardware design: Ján Boldocký(R1, Breakout), Denis Skokan(R1, Breakout), Dávid Vereš(R1, Breakout), Tadeas Vojtko(R1, Breakout), Peter Tibenský(R2, R3)
+* Hardware design: Ján Boldocký, Erik Mikuláš, Denis Skokan, Peter Tibenský, Dávid Vereš, Tadeas Vojtko
 * Software design: Peter Tibenský
 * Wiki documentation: Peter Tibenský
