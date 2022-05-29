@@ -19,6 +19,7 @@ Currently the reference designs of these shields are available:
 * [MotoShield](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield) - motor speed and position feedback experiment
 * [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [LinkShield](https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield) - a rotational link feedback experiment
+* [AeroShield](https://github.com/gergelytakacs/AutomationShield/wiki/AeroShield) - motor speed and angle feedback experiment
 
 We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020-2021, namely
 
@@ -49,6 +50,7 @@ The library currently supports the following AutomationShield hardware in their 
 | PressureShield | ✅      |       | R2      | 
 | HeatShield     | ✅      |       | R1      | 
 | OptoShield     | ✅      |       | R1      | 
+| AeroShield     | ✅      |       | R3      |
 | TurboShield    |         |        |❌¹     |        
 | TugShield      |         |✅     | R1      | 
 | TempShield     |         |❌²    | -³        | 
@@ -70,6 +72,7 @@ The current status of the library for individual API is as follows:
 | OptoShield     | ✅        | ❌¹   | ✅          |||||
 | TurboShield    | ✅        |       |              |||||
 | TugShield      | ✅        | ✅    | ✅          |||||
+| AeroShield     | ✅        | ✅    | ✅          |||||
 | TempShield     |            |       |             |||||
 
 - ❌ Can not be deployed for technical reasons.
@@ -91,6 +94,7 @@ The library implements the following feedback control concepts in real-time hard
 | PressureShield |          |✅              |✅    |✅ᵞ    |      |       |        |             |
 | HeatShield     | ✅      |✅              |✅    |       |      |       |        |             |
 | OptoShield     |          |✅             |✅    |       |      |       |        |             |
+| AeroShield     |          |                |✅    |       |      |       |        |             |
 | TurboShield    |          |                |       |       |      |       |        |             |             
 | TugShield      |       
 | TempShield     |          |                |       |       |      |       |        |             |    
