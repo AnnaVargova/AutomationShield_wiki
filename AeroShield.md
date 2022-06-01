@@ -35,9 +35,9 @@ Note, that in the assembly, four parts are 3D printed as shown in the picture be
 The application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the AeroShield is included in the `AeroShield.h` header, which contains the `AeroClass` class that is constructed by default as the `AeroShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
-* Output (Hall effect sensor): `AeroShield.getRawAngle();`
-* Output (Current monitor): `AeroShield.currentMeasure();` 
-* Input  (Actuator): `AeroShield.actuatorWrite();`
+* Output - (°)(Hall effect sensor): `AeroShield.getRawAngle();`
+* Output - (A)(Current monitor): `AeroShield.currentMeasure();` 
+* Input -  (%)(Actuator): `AeroShield.actuatorWrite();`
 
 <img src="https://user-images.githubusercontent.com/92367957/170064238-90d8fba1-9c8b-4f66-8f34-9986fd7caac4.png" width="600"> 
 
