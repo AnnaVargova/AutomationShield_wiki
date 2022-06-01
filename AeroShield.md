@@ -17,8 +17,7 @@
 # <a name="intro"/>Introduction
 The AeroShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of the AeroShield consists of a small motor, mounted to the end of a pendulum, which has a Hall-effect rotational encoder with a magnet connected to it. The pendulum and the rotational encoder are supported by 3D printed parts. The goal is to control the angle of inclination of the pendulum by changing the lift created by the motor. The user may regulate motor thrust manually—using a potentiometer, or automatically by switching to pre-programmed trajectory. 
 
-![FronMainMini](https://user-images.githubusercontent.com/92367957/171400222-e950537e-9c53-495c-9e35-834f09845585.png)
-<img src="https://user-images.githubusercontent.com/92367957/170028520-32bd402c-ecfb-41ff-a051-887effa020e2.png" width="700"> 
+<img src="https://user-images.githubusercontent.com/92367957/171400222-e950537e-9c53-495c-9e35-834f09845585.png" width="700"> 
 
 Note, that in the assembly, four parts are 3D printed as shown in the picture below (from left to right): main body, pendulum connectors, motor holder and a magnet holder. At the moment new model of the pendulum body is being designed. Feel free to download the ready-to-print [parts](https://github.com/cenculis/Bakalarka/files/8733068/AeroShield_readyToPrint.zip).
 
