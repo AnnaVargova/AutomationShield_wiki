@@ -15,11 +15,11 @@
 
 
 # <a name="intro"/>Introduction
-The AeroShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of AeroShield consists of a small motor, mouted to the end of pendulum which has a rotational encoder with a magnet connected to it. The pendulum and the rotational encoder are supported by 3D printed parts. The goal is to control the position of the pendulum by changing the lift created by the motor. User may regulate power of the motor manually—using a potentiometer, or by switching to pre-programmed trajectory. Output from both of the options is then scaled to a pulse width modulated signal (PWM).
+The AeroShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of the AeroShield consists of a small motor, mounted to the end of a pendulum, which has a Hall-effect rotational encoder with a magnet connected to it. The pendulum and the rotational encoder are supported by 3D printed parts. The goal is to control the angle of inclination of the pendulum by changing the lift created by the motor. The user may regulate motor thrust manually—using a potentiometer, or automatically by switching to pre-programmed trajectory. 
 
 ![FronMainMini](https://user-images.githubusercontent.com/92367957/170028520-32bd402c-ecfb-41ff-a051-887effa020e2.png)
 
-Note that in the assembly, four parts are 3D printed as shown in the picture below(from left to right)— main body, pendulum connectors, motor holder and a magnet holder. At the moment new model of the pendulum body is being designed. Feel free to download the ready-to-print [parts](https://github.com/cenculis/Bakalarka/files/8733068/AeroShield_readyToPrint.zip).
+Note, that in the assembly, four parts are 3D printed as shown in the picture below (from left to right): main body, pendulum connectors, motor holder and a magnet holder. At the moment new model of the pendulum body is being designed. Feel free to download the ready-to-print [parts](https://github.com/cenculis/Bakalarka/files/8733068/AeroShield_readyToPrint.zip).
 
 
 <img src="https://user-images.githubusercontent.com/92367957/169500167-15a40533-9bec-4a62-82fc-11c61c7dca08.png" width="170"> 
@@ -32,7 +32,7 @@ Note that in the assembly, four parts are 3D printed as shown in the picture bel
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
-The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the AeroShield is included in the `AeroShield.h` header, which contains the `AeroClass` class that is constructed by default as the `AeroShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+The application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the AeroShield is included in the `AeroShield.h` header, which contains the `AeroClass` class that is constructed by default as the `AeroShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions and the illustration below should get you started quickly:
 * Output (Hall effect sensor): `AeroShield.getRawAngle();`
@@ -41,21 +41,21 @@ The summary of basic functions and the illustration below should get you started
 
 <img src="https://user-images.githubusercontent.com/92367957/170064238-90d8fba1-9c8b-4f66-8f34-9986fd7caac4.png" width="600"> 
 
-The following subsections describe the methods used to access the input and outputs of the AeroShield. Note that before you begin an experiment you must initialize the hardware by calling `AeroShield.begin();` which launches the I2C interface and check if rotational encoder detects magnet needed for angle reading.
+The following subsections describe the methods used to access the input and outputs of the AeroShield. Note, that before you begin an experiment you must initialize the hardware by calling `AeroShield.begin();`, which launches the I2C interface and check if rotational encoder detects magnet needed for angle reading.
 
-The rotational encoder provides angle readings in form of a 12-bit unsigned integer, but for the ease of interpetation the output should be scaled to the range of 0–360°. Though in some cases scaling to the range of 0-100% is better for uniform scaling across all variables. 
+The rotational encoder provides angle readings in the form of a 12-bit unsigned integer, but for the ease of interpretation the output should be scaled to the range of 0–360°. Nevertheless, in some cases such as displaying runs on the Serial Plotter, scaling to the range of 0-100% is better for uniform scaling across all variables. 
 
-After shield initialization, calibration procedure is called by `AeroShield.calibration();` which reads the minimal and maximal angle and correspondingly maps these values to percentage[0-100%]/angle [0-360°]. After calibration, minimal angle value is stored in the form of global variable `startAngle` in the case of later use.
+After initializing the shield, the calibration procedure is called by `AeroShield.calibration();`, which reads the minimal and maximal angle and maps these values correspondingly to percentage [0-100%] / or angle [0-360°]. After calibration, the minimal angle value is stored in the form of global variable `startAngle` for later use.
 
 ### Output
-The angle of the pendulum is read by `y=AeroShield.getRawAngle();` returning the raw angle, which is then converted into an angle reading in the range of 0-360 [°] by mapping function. 
+The angle of the pendulum is read by `y=AeroShield.getRawAngle();` returning the raw angle, which is then converted into an angle reading in the range of 0-360 [°] by a mapping function. 
 
-The current drawn by the motor is read by `y=AeroShield.currentMeasure();` which gives us an averaged out current reading in the form of floating point number. Currently new process of low-pass filtering is being tested, to filter out noise made by operating the motor with PWM signals. 
+The current drawn by the motor is read by `y=AeroShield.currentMeasure();` which provides an averaged current reading in the form of a floating point number.  
 
 ### Input
-By choosing the method of supplying the input power `u` in the range of 0–100 [%] to the `AeroShield.actuatorWrite(u);` method, user can control the motor rpms. This method also constrains the output value to avoid overflow and maps the input to 8-bit PWM integer. Output of this method is then sent to the Arduino pin `D5`, which can deliver PWM signal to the PCB circuitry.
+By choosing the method of supplying the input power `u` in the range of 0–100 [%] to the `AeroShield.actuatorWrite(u);` method, the user can control the motor speed. This method also constrains the output value to avoid overflow and maps the input to a 8-bit PWM integer. The output of this method is then sent to the Arduino pin `D5`, which can deliver PWM signal to the PCB circuitry.
 
-User set reference is acquired from the potentiometer by calling `r=AeroShield.referenceRead();` returning the position of the potentiometer runner as a floating point scaled to 0–100 [%].
+The reference set by the user is acquired from the potentiometer by calling `r=AeroShield.referenceRead();` returning the position of the potentiometer runner as a floating point scaled to 0–100 [%].
 
 ## <a name="matlab"/>MATLAB API
 If you cannot program in C/C++ just yet, you may want to try out the MATLAB API for the AeroShield that enables to access the hardware through the [MATLAB](https://www.mathworks.com/downloads/) command line and scripts. It utilizes the [MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/47522-matlab-support-package-for-arduino-hardware) which enables communication between the Arduino prototyping platform and the development computer.
@@ -64,19 +64,18 @@ To prevent confusion between the C/C++ and the MATLAB API, the two interfaces ar
 
 `AeroShield=AeroShield;` 
 
-AeroShield is then initialized by calling 
+The AeroShield device is then initialized by calling 
 
 `AeroShield.begin();` 
 
-which will simply load a server code to the microcontroller, unless it is not already present. This means that the closed-loop control by the API in MATLAB is not quasi real-time, since commands are transferred through the serial link between the board and the computer and may be affected by transfer speed or operating system behavior. However, being able to use the high-level MATLAB script allows you to run live experiments under this already familiar software platform and, most importantly, to create and test more advanced control frameworks with minimal
-effort.
+which will simply load a server code to the microcontroller, unless it is not already present. This means that the closed-loop control by the API in MATLAB is not strictly real-time, since commands are transferred through the serial link between the board and the computer and may be affected by transfer speed or operating system behavior. However, being able to use the high-level MATLAB script allows you to run live experiments under this already familiar software platform and, most importantly, to create and test more advanced control frameworks with minimal effort.
 
-The operation of the MATLAB API is otherwise completely identical to the before mentioned Arduino version. Therefore methods such as `calibrate()`, `actuatorWrite()` and `referenceRead()` are all implemented for the AeroShield in MATLAB library.
+The operation of the MATLAB API is otherwise completely identical to the Arduino version, mentioned before. Therefore, methods such as `calibrate()`, `actuatorWrite()` and `referenceRead()` are all implemented for the AeroShield in MATLAB library.
 
 ## <a name="simulink"/>Simulink API
-An even more intuitive tool for creating control loops and perform live experiments is the Simulink API for the AeroShield. It utilizes the [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the hardware functionality.
+An even more intuitive tool for creating control loops and perform live experiments is the Simulink API for the AeroShield. It utilizes the [Simulink Support Package for Arduino Hardware](https://www.mathworks.com/matlabcentral/fileexchange/40312-simulink-support-package-for-arduino-hardware) which supplies algorithmic units in blocks that access the core hardware functionality.
 
-All the necessary functions of the AeroShield are built into separate blocks available for use through the [Simulink Library](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/AeroLibrary.slx) (see figure below) and may be combined with all the other available blocks to create feedback control applications.
+All necessary functions of the AeroShield are built into separate blocks available for use through the [Simulink Library](https://github.com/gergelytakacs/AutomationShield/blob/master/simulink/AeroLibrary.slx) (see figure below) and may be combined with all the other available blocks to create feedback control applications.
 
 The Simulink API custom library retains the naming convention and features for individual input and output blocks ('Reference Read', 'Actuator Write' and 'Angle Read') and a comprehensive block representing the entire device is also available ('AeroShield').
 
@@ -87,7 +86,7 @@ In direct contrast with the way MATLAB handles Arduinos, the block scheme in [Si
 # <a name="examples"/>Examples
 
 ## <a name="control"/>Feedback control
-For a start you may want to experiment with a closed-loop control of the pendulum position by the proportional–integral–derivative controller (PID) algorithm.
+As a start, you may want to experiment with a closed-loop control of the pendulum position by the proportional–integral–derivative controller (PID) algorithm.
 
 The implementation of PID control in C/C++ is demonstrated by an [example](https://github.com/gergelytakacs/AutomationShield/tree/master/examples/AeroShield/AeroShield_PID), which makes use of the interrupt-driven sampling subsystem of the AutomationShield library, and also its built-in input-saturated absolute-form PID method with integral windup handling by clamping. The progress of the experiments can be followed in real time through the Serial Plotter of the Arduino IDE or logged in MATLAB.
 
@@ -119,9 +118,9 @@ The circuit schematics has been designed in the Freeware version of the [DIPTrac
 
 The motor **M1** is powered by an N-channel MOSFET **Q1**, and driven by the D5 PWM capable microcontroller pin through an 100Ω current limiting resistor **R8**. Floating states are handled by a 10 kΩ pull-down resistor **R9**, while a diode **D1** ensures back electromotive-force (EMF) protection. A motor is connected to the connector **M1**. Since the motor requires 12 V and more current than the USB-powered Arduino can handle, a separate wall adapter power supply is required to operate the device. 
 
-The operating voltage of the motor is 4,7 V so buck down converter **U1** steps-down the voltage, using custom made resistors **R1/2/3**, capacitors **C1/2** and coil **L1** layout. 
+The operating voltage of the motor is 4,7 V, so a buck-down converter **U1** steps-down the voltage, using custom made resistors **R1/2/3**, capacitors **C1/2** and coil **L1** layout. 
 
-Microchip **U2** is responsible for meassuring the current drawn by the motor. It is done so by comparing the voltage drop across the shunt resistor **R4**. On the output of the current monitor there is a 10 kΩ pull-down resistor **R5**. On both V+ and VIN+ there are a filter capacitors **C3/4**.
+Microchip **U2** is responsible for meassuring the current drawn by the motor. It is done so, by comparing the voltage drop across the shunt resistor **R4**. On the output of the current monitor there is a 10 kΩ pull-down resistor **R5**. On both V+ and VIN+ there are a filter capacitors **C3/4**.
 
 The angle encoder is integrated to custom made breakout board, with two capacitors **C1/2**, and is connected to the I2C bus connectors of the Arduino (SDA,SCL) with a connector **J1/2**. Angle is read by hall sensor AS5600 **U3** which also needs two 4.7 kΩ pull-up resistors **R6/7** on the I2C connections. 
 
