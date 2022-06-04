@@ -31,7 +31,7 @@ We are in the process of developing new types of shields. We are currently worki
 
 ## Where can I buy an AutomationShield Device?
 
-Unfortunately we lack the infrastructure to manufacture, market and sell the shields en-masse, to individuals, using a online shop and at low price points. We may be able to help to equip a laboratory with custom and hand-made devices, please [contact us at automationshield@automationshield.com](mailto:automationshield@automationshield.com) for more information and a quote. 
+Unfortunately we lack the infrastructure to manufacture, market and sell the shields en-masse, to individuals, using a online shop and at low price points. We may be able to help to equip a laboratory with custom and hand-made devices, please contact us at [automationshield@automationshield.com](mailto:automationshield@automationshield.com) for more information and a quote. 
 
 However, remember this is an open-source hardware project and you are welcome to manufacture your own devices. We only ask you not to sell these commercially and to give credit in references to our work. Here, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempt to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
 
