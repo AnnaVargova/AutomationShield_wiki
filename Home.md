@@ -20,17 +20,20 @@ Currently the reference designs of these shields are available:
 * [OptoShield](https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield) - a low cost optical feedback experiment
 * [LinkShield](https://github.com/gergelytakacs/AutomationShield/wiki/LinkShield) - a rotational link feedback experiment
 * [AeroShield](https://github.com/gergelytakacs/AutomationShield/wiki/AeroShield) - motor speed and angle feedback experiment
-
-We are in the process of developing new types of shields. We are currently working on 3 new experimental devices to add to this portfolio in 2020-2021, namely
-
 * [BoBShield](https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield) - the classical ball-on-beam (seesaw) control experiment
-* [BlowShield](https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield) - a pressure control experiment
+* [PressureShield](https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield) - a pressure control experiment
+
+We are in the process of developing new types of shields. We are currently working on a new experimental device to add to this portfolio in the future. Concept devices include
+
 * [TempShield](https://github.com/gergelytakacs/AutomationShield/wiki/TMShield) - a device to teach temperature metrology concepts
+* FurutaShield - a Furuta rotational pendulum shield
 * TugShield - an elastic structural deformation feedback experiment
 
 ## Where can I buy an AutomationShield Device?
 
-Unfortunately we lack the infrastructure to manufacture and sell the shields, also, this is a non-commercial initiative. However, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempt to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
+Unfortunately we lack the infrastructure to manufacture, market and sell the shields en-masse using a online shop and at low price points. We may be able to help to equip a laboratory with custom and hand-made devices, please [contact us](gergelytakacs@gergelytakacs.com) for more information and a quote. 
+
+However, remember this is an open-source hardware project and you are welcome to manufacture your own devices - we only ask you to give credit in references. Here, we include downloadable CAD files for the PCB, a list of required components and in some cases files necessary for 3D printing. A major design goal while making the boards was low-cost, simplicity and universality. We always attempt to exclude exotic mechanical or electrical components. The files necessary to produce the circuit boards are available for download, these can be sent to PCB manufacturing services and made for as low as $5 for 10 pieces. Making the shield itself is a great educational experience too!
 
 # About the Library [![Build Status](https://travis-ci.org/gergelytakacs/AutomationShield.svg?branch=master)](https://travis-ci.org/gergelytakacs/AutomationShield) [![CodeFactor](https://www.codefactor.io/repository/github/gergelytakacs/automationshield/badge)](https://www.codefactor.io/repository/github/gergelytakacs/automationshield) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bae54207cca24ef2929c38b87e279764)](https://app.codacy.com/app/gergelytakacs/AutomationShield?utm_source=github.com&utm_medium=referral&utm_content=gergelytakacs/AutomationShield&utm_campaign=Badge_Grade_Dashboard) [![DOI](https://zenodo.org/badge/126338636.svg)](https://zenodo.org/badge/latestdoi/126338636)
 
@@ -51,7 +54,7 @@ The library currently supports the following AutomationShield hardware in their 
 | HeatShield     | ✅      |       | R1      | 
 | OptoShield     | ✅      |       | R1      | 
 | AeroShield     | ✅      |       | R3      |
-| TurboShield    |         |        |❌¹     |        
+| FurutaShield    |         |        |❌¹     |        
 | TugShield      |         |✅     | R1      | 
 | TempShield     |         |❌²    | -³        | 
 - ¹ Under development
