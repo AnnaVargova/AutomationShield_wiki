@@ -70,7 +70,7 @@ The current status of the library for individual API is as follows:
 | PressureShield | ✅        | ✅    | ✅          |||||
 | HeatShield     | ✅        | ✅¹   | ✅          |||||
 | OptoShield     | ✅        | ❌¹   | ✅          |||||
-| TurboShield    | ✅        |       |              |||||
+| FurutaShield    |         |       |              |||||
 | TugShield      | ✅        | ✅    | ✅          |||||
 | AeroShield     | ✅        | ✅    | ✅          |||||
 | TempShield     |            |       |             |||||
@@ -89,13 +89,13 @@ The library implements the following feedback control concepts in real-time hard
 | MagnetoShield  |✅       |✅              |✅    |✅    |✅    |✅    | ✅     | ✅         |
 | FloatShield    |✅       |✅              |✅    |✅    |✅    |      | ✅     |             |
 | BOBShield      |✅       |✅              |✅    |✅    |       |      |        |             |
-| LinkShield     |✅       |✅              |✅ᵝ   |       |      |       |        |             |
+| LinkShield     |✅       |✅              |✅ᵝ   | ✅    |      |       | ✅        |             |
 | MotoShield     |✅       |✅              |✅    |       |      |       |        |             | 
 | PressureShield |          |✅              |✅    |✅ᵞ    |      |       |        |             |
 | HeatShield     | ✅      |✅              |✅    |       |      |       |        |             |
 | OptoShield     |          |✅             |✅    |       |      |       |        |             |
 | AeroShield     |          |                |✅    |       |      |       |        |             |
-| TurboShield    |          |                |       |       |      |       |        |             |             
+| FurutaShield    |          |                |       |       |      |       |        |             |             
 | TugShield      |       
 | TempShield     |          |                |       |       |      |       |        |             |    
 
