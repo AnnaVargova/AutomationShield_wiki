@@ -15,7 +15,8 @@ The publication status of the shields is as follows:
 | BOBShield    	        |         	| ✅         	| ✅       	|           |
 | LinkShield  	        |         	| ✅         	| ✅          	|           |
 | PressureShield        |         	|         	| ✅         	|           |
-| TurboShield           |         	|         	|          	|           |
+| AeroShield           |         	|         	| ✅         	|           |
+| FurutaShield           |         	|         	|          	|           |
 | TempShield  	        |         	|         	|           	|           |
 
 ## Under review
@@ -57,6 +58,8 @@ experiment](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/VargovaA2
 
 5. Martin Staroň: [PressureShield: miniatúrny prístroj na riadenie
 tlaku v nádobe (PressureShield: A miniature device to control the pressure in a vessel, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Staron2021.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. May 2021. Supervisor: Gergely Takács. Thesis ID: SjF-5226-87740
+
+6. Ján Boldocký: [MotoShield: Miniatúrne didaktické zariadenie pre riadenie jednosmerného motora (MotoShield: A didactic device to control a direct-current motor, in Slovak Language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Boldocky2022.pdf). Master's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. June 2022. Supervisor: Martin Gulan. Thesis ID: SjF-5226-92875
 
 
 ### Bachelor's theses
