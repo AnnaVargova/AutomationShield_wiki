@@ -38,7 +38,7 @@
 [float]: https://github.com/gergelytakacs/AutomationShield/wiki/FloatShield
 [heat]: https://github.com/gergelytakacs/AutomationShield/wiki/HeatShield
 [magneto]: https://github.com/gergelytakacs/AutomationShield/wiki/MagnetoShield
-[moto]: https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield
+[moto]: https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield-R2
 [opto]: https://github.com/gergelytakacs/AutomationShield/wiki/OptoShield
 [bob]: https://github.com/gergelytakacs/AutomationShield/wiki/BoBShield
 [blow]: https://github.com/gergelytakacs/AutomationShield/wiki/BlowShield
