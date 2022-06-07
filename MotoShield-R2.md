@@ -1,3 +1,7 @@
+# Previous versions
+
+[MotoShield R1](https://github.com/gergelytakacs/AutomationShield/wiki/MotoShield)
+
 # Introduction
 
 The MotoShield is a didactic device proposed within the AutomationShield open-source initiative, where the goal was to create a low-cost miniaturized ready-to use experimental tool for examining the well known topic of DC motor feedback control. The device is equipped with a geared motor accompanied by a Hall effect quadrature encoder. Also, we are also able to measure the current draw of the motor, with the use of High-side shunt current measurement sensor. Although, this device was primarily designed to work with micro-controller boards from Arduino family, it is also compatible with many other boards from various manufacturers supporting AVR, SAM, and SAMD architecture. The device is mounted onto a micro-controller board by inserting the stackable headers into the board pins, thus making it modular and compact.
