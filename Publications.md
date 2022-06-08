@@ -78,6 +78,8 @@ tlaku v nádobe (PressureShield: A miniature device to control the pressure in a
 
 6. Peter Tibenský: [AeroShield: Miniatúrny experimentálny modul aerokyvadla (AeroShield: Miniature experimental module of an aeropendulum, in Slovak Language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Tibensky2022.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. June 2022. Supervisor: Anna Vargová. Thesis ID: SjF-13432-106440
 
+7. Michal Bíro: [BoBShield: Miniaturizovaný experiment „guľôčka na tyči“ (BoBShield: Miniature ball on beam experiment, in Slovak Language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Biro2022.pdf). Bachelor's thesis. Institute of Automation, Measurement and Applied Informatics of the Faculty of Mechanical Engineering, Slovak University of Technology in Bratislava, Bratislava, Slovakia. June 2022. Supervisor: Anna Vargová. Thesis ID: SjF-13432-104853
+
 ## Others
 1. Gergely Takács: [Nízkonákladové miniatúrne didaktické prostriedky pre pedagogický proces a výskum automatického riadenia na štandardizovaných mikroradičových platformách (Low-cost miniature didactic devices for teaching and researching automatic control on standardized microcontroller platforms, in Slovak language)](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c.pdf). Spektrum STU, Bratislava, 2019, ISBN: 978-80-227-4943-5. Edition of qualification works: theses for the professorial inauguration lecture. ([Presentation file.](https://github.com/gergelytakacs/AutomationShield/wiki/pdf/Takacs2019c_Presentation.pdf))
 
