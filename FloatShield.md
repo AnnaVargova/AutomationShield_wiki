@@ -203,4 +203,4 @@ This shield was designed and created as a term project at the Institute of Autom
 * 3D-model design: Marcel Vdoleček
 * Hardware design: Peter Šálka, Miloš Podbielančík, Dávid Šroba, Martin Lučan
 * Software design: Gábor Penzinger, Jakub Kulhánek
-* Wiki documentation: Martin Gulan, Gergely Takács
+* Wiki documentation: Martin Gulan, Erik Mikuláš and Gergely Takács
