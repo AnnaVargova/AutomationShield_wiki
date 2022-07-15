@@ -90,7 +90,7 @@ or download the zip.
 
 **3D model design:** Peter Fábry, Marek Sulír 
 
-**Wiki:** Daniel Fazekas, Martin Žlnay
+**Wiki:** Daniel Fazekas, Martin Žlnay, Erik Mikuláš and Gergely Takács
  
 
  
