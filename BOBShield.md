@@ -156,4 +156,4 @@ This shield was designed and created as a term project at the Institute of Autom
 
 * **Hardware and 3D model design:** Tibor Konkoly, Patrik Šíma, Marko Michal, Marek Krippel, Erik Mikuláš, Gergely Takács 
 * **Software design:** Lukáš Vadovič, Matúš Bíro, Anna Vargová, Gergely Takács
-* **Wiki documentation:** Martin Gulan, Gergely Takács
+* Wiki documentation: Martin Gulan, Erik Mikuláš and Gergely Takács
