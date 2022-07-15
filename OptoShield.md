@@ -180,4 +180,4 @@ This shield was designed and created within the framework of a Bachelor's thesis
 ## <a name="authors"/>Authors
 * Hardware design: Tibor Konkoly, Martin Gulan, Gergely Takács
 * Software design: Tibor Konkoly, Gergely Takács
-* Wiki: Martin Gulan, Gergely Takács
+* Wiki: Martin Gulan, Erik Mikuláš and Gergely Takács
