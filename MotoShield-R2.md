@@ -129,4 +129,4 @@ The board was developed within the framework of a bachelor's and master's thesis
 
 * Hardware design: Ján Boldocký, Tibor Konkoly, Gergely Takács
 * Software design: Ján Boldocký
-* Wiki: Ján Boldocký, Tibor Konkoly, Gergely Takács
+* Wiki: Ján Boldocký, Tibor Konkoly, Erik Mikuláš and Gergely Takács
