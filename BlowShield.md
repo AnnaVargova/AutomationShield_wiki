@@ -140,6 +140,6 @@ This shield was designed and created as a term project at the Institute of Autom
 * 3D-model design: Tomáš Tužinský
 * Hardware design: Martin Staroň, Martin Vríčan, Lukáš Kavoň
 * Software design: Anna Vargová, Eva Vargová
-* Wiki documentation: Vladimír Kmeť
+* Wiki documentation: Vladimír Kmeť, Erik Mikuláš and Gergely Takács
 * Postman: Matúš Ľeginus
 * Technical support: Radoslav Gago
