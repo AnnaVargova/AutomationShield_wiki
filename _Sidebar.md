@@ -7,7 +7,6 @@
 * [HeatShield][heat]
 * [OptoShield][opto]
 * [BlowShield][blow]
-* [TugShield][tug]
 * [TempShield][temp]
 * [AeroShield][aero]
 
