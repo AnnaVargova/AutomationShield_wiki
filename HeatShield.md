@@ -219,4 +219,4 @@ This shield was designed and created for the subject of Microcomputers and Micro
 * **Hardware design:** Juraj Bavlna, Michal Kováč, Richard Köplinger, Sohaibullah Zarghoon, Richard Salíni, Gergely Takács
 * **3D model design:** Michal Kováč, Erik Mikuláš
 * **Software design:** Gergely Takács, Richard Köplinger
-* **Wiki:** Martin Gulan, Gergely Takács
+* **Wiki:** Martin Gulan, Erik Mikuláš and Gergely Takács
