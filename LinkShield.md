@@ -216,4 +216,4 @@ This shield is currently designed and created within a Bachelor's thesis at the 
 ## <a name="authors"/>Authors
 * Hardware design: Martin Vríčan, Erik Mikuláš, Gergely Takács 
 * Software design: Martin Vríčan, Gergely Takács
-* Wiki: Martin Gulan, Gergely Takács
+* Wiki documentation: Martin Gulan, Erik Mikuláš and Gergely Takács
