@@ -205,4 +205,4 @@ This shield was designed and created within a Bachelor's thesis at the Institute
 ## <a name="authors"/>Authors
 * Hardware design: Gergely Takács, Jakub Mihalík
 * Software design: Gergely Takács, Jakub Mihalík
-* Wiki: Martin Gulan, Gergely Takács
+* Wiki: Martin Gulan, Erik Mikuláš and Gergely Takács
