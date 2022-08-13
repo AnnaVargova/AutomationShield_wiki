@@ -166,6 +166,6 @@ This shield was designed and created as a bachelor's thesis at the Institute of 
 
 ## <a name="authors"/>Authors
 * 3D-model design: Peter Tibenský
-* Hardware design: Ján Boldocký, Erik Mikuláš, Denis Skokan, Peter Tibenský, Dávid Vereš, Tadeas Vojtko and Gergely Takács
-* Software design: Peter Tibenský and Gergely Takács
+* Hardware design: Ján Boldocký, Erik Mikuláš, Denis Skokan, Peter Tibenský, Anna Vargová, Dávid Vereš, Tadeas Vojtko and Gergely Takács
+* Software design: Peter Tibenský, Anna Vargová and Gergely Takács
 * Wiki documentation: Peter Tibenský, Erik Mikuláš and Gergely Takács
