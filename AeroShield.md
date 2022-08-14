@@ -23,8 +23,10 @@ Note, that in the assembly, four parts are 3D printed as shown in the picture be
 
 <img src="https://user-images.githubusercontent.com/92367957/171638286-62c036c3-7ee2-4045-b979-a0b4a6c38545.png" width="170"> 
 <img src="https://user-images.githubusercontent.com/92367957/171638581-6f7e9fb3-7095-4fd1-824f-13d74b21afbb.png" width="210">
-<img src="https://user-images.githubusercontent.com/92367957/171638589-082fcaf1-0d80-44f2-96b5-10547ee40187.png" width="250"> 
+<img src="https://user-images.githubusercontent.com/92367957/184544749-fa6d400b-73bf-4445-9b48-608adc8e57b2.png" width="250"> 
 <img src="https://user-images.githubusercontent.com/92367957/169500558-a874d23e-f622-4491-a1b3-aaa4bd5b91af.png" width="200"> 
+
+
  
 # <a name="api"/>Application programming interface
 ## <a name="io"/>C/C++ API
