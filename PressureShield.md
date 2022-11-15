@@ -13,7 +13,7 @@
 
 
 # <a name="intro"/>Introduction
-The BlowShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of BlowShield consists of a vessel with integrated pressure sensor that is mapping pressure in the vessel and a pump. The goal is to obtain and keep the required value of pressure in the vessel despite its leakage. The value can be set by the user using the potenciometer. The power of the pump can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating airflow. The pump is an actuator and with the sensor it creates a simple single-input single-output (SISO) feedback loop that can be used in control engineering experiments.
+The PressureShield belongs to the family of control engineering education devices for Arduino that form a part of the [AutomationShield](https://www.automationshield.com) project. The basic design of PressureShield consists of a vessel with integrated pressure sensor that is mapping pressure in the vessel and a pump. The goal is to obtain and keep the required value of pressure in the vessel despite its leakage. The value can be set by the user using the potenciometer. The power of the pump can be varied by applying a pulse width modulated (PWM) signal to it, thus manipulating airflow. The pump is an actuator and with the sensor it creates a simple single-input single-output (SISO) feedback loop that can be used in control engineering experiments.
 
 <img width="500" alt="blow_photo" src="https://github.com/gergelytakacs/AutomationShield/wiki/fig/Blow/Blow_photo.jpg">
 
@@ -26,15 +26,15 @@ For a better visualization the entire assembly was 3D-modeled (see the illustrat
 # <a name="api"/>Application programming interface
 
 ## <a name="io"/>C/C++ API
-The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the BlowShield is included in the `BlowShield.h` header, which contains the `BlowClass` class that is constructed by default as the `BlowShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
+The basic application programming interface (API) serving the device is written in C/C++ and is integrated into the open-source [AutomationShield Arduino library](https://github.com/gergelytakacs/AutomationShield). This library contains hardware drivers and sample exercises for control systems engineering education. All functionality associated with the PressureShield is included in the `PressureShield.h` header, which contains the `PressureClass` class that is constructed by default as the `PressureShield` object. The functions specific to this shield mostly perform input/output peripheral communication.
 
 The summary of basic functions should get you started quickly:
-* Output (sensor): `BlowShield.sensorRead();` 
-* Input  (actuator): `BlowShield.actuatorWrite();`
+* Output (sensor): `PressureShield.sensorRead();` 
+* Input  (actuator): `PressureShield.actuatorWrite();`
 
-The following subsections describe the methods used to access the input and output of the BlowShield. Note that before you begin an experiment you must initialize the hardware by calling
+The following subsections describe the methods used to access the input and output of the PressureShield. Note that before you begin an experiment you must initialize the hardware by calling
 
-`BlowShield.begin();`
+`PressureShield.begin();`
 
 which launches the I2C interface and starting the pressure sensor itself.
 
@@ -42,28 +42,28 @@ Although the sensor provides pressure readings directly in pascals, the outputs 
 100% in order to use the Serial Plotter functionality, where all outputs are scaled to the same axis. The calibration
 procedure is called by
 
-`BlowShield.calibrate();`
+`PressureShield.calibrate();`
 
 finding the minimal pressure readings. The max pressure value is fixed to 106000Pa due to component protection. Then map these values to percentages. 
 
 ### Input
 The actual pressure in the vessel is read by
 
-`y=BlowShield.sensorRead();`
+`y=PressureShield.sensorRead();`
 
 returning the scaled pressure inside the vessel as a floating point value from within the range of 0–100 (%). 
 
 ### Output
 By supplying the input `u` in the range of 0–100 (%) to the
 
-`BlowShield.actuatorWrite(u);`
+`PressureShield.actuatorWrite(u);`
 
 method, the user can set the power sent to the pump through the power circuitry. This method checks for constraints to
 avoid overflow, maps the input to 8-bit PWM integers, then sends it to the D11 pin of the Arduino.
 
 Finally, user reference from the potentiometer is acquired by calling
 
-`r=BlowShield.referenceRead();`
+`r=PressureShield.referenceRead();`
 
 returning the position of the potentiometer runner as a floating point scaled to 0–100 (%).
 
@@ -93,7 +93,7 @@ Finally, the potentiometer **POT1 ** runner is attached to the A0 ADC capable pi
 
 
 ## <a name="parts"/>Parts
-To make a BlowShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
+To make a PressureShield either on a PCB or on a breadboard you will need the following parts or their similar equivalents:
 
 | Part | Name                                                                                                             | Type/Value/Note                               | PCS |
 |------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----|
