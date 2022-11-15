@@ -7,7 +7,7 @@
 * [MotoShield][moto]
 * [HeatShield][heat]
 * [OptoShield][opto]
-* [BlowShield][blow]
+* [PressureShield][blow]
 * [TempShield][temp]
 
 
